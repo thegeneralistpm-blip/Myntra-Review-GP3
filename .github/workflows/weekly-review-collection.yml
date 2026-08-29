@@ -63,14 +63,19 @@ jobs:
         run: node format-email-report.js
 
       - name: Send weekly report via Google Apps Script Web App
-        if: steps.themes.outputs.run_format == 'true' && secrets.GOOGLE_SCRIPT_URL != ''
+        env:
+          GOOGLE_SCRIPT_URL: ${{ secrets.GOOGLE_SCRIPT_URL }}
+        if: steps.themes.outputs.run_format == 'true' && env.GOOGLE_SCRIPT_URL != ''
         run: |
           curl -L -X POST -H "Content-Type: application/json" \
             -d @data/emerging_themes.json \
-            "${{ secrets.GOOGLE_SCRIPT_URL }}"
+            "$GOOGLE_SCRIPT_URL"
 
       - name: Send weekly report via SMTP Email
-        if: steps.themes.outputs.run_format == 'true' && secrets.REPORT_EMAIL_TO != '' && secrets.MAIL_USERNAME != ''
+        env:
+          REPORT_EMAIL_TO: ${{ secrets.REPORT_EMAIL_TO }}
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+        if: steps.themes.outputs.run_format == 'true' && env.REPORT_EMAIL_TO != '' && env.MAIL_USERNAME != ''
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{ secrets.MAIL_SERVER || 'smtp.gmail.com' }}

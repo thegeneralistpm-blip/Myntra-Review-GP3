@@ -4,7 +4,7 @@ const path = require('path');
 const dataDir = path.join(__dirname, 'data');
 const historyDir = path.join(dataDir, 'history');
 const outputPath = path.join(dataDir, 'emerging_themes.json');
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3.6-flash';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
 const GROQ_MODEL = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile';
 
 function readSnapshot(directory) {
