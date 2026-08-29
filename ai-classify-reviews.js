@@ -68,8 +68,20 @@ async function classify(batch, preferredProvider) {
   let lastError;
   for (const provider of providers) {
     if (provider === 'groq' && !process.env.GROQ_API_KEY) continue;
-    try { return { provider, results: provider === 'gemini' ? await askGemini(batch) : await askGroq(batch) }; }
-    catch (error) { lastError = error; if (error.status === 429) await sleep(Number(error.retryAfter || 10) * 1000); }
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        return { provider, results: provider === 'gemini' ? await askGemini(batch) : await askGroq(batch) };
+      } catch (error) {
+        lastError = error;
+        if (error.status === 429 && attempt < 3) {
+          const waitTime = Number(error.retryAfter || 15) * 1000;
+          console.warn(`[${provider.toUpperCase()}] HTTP 429 Rate Limit. Sleeping ${waitTime / 1000}s before retry ${attempt}/3...`);
+          await sleep(waitTime);
+        } else {
+          break;
+        }
+      }
+    }
   }
   throw lastError || new Error('No AI provider key is configured.');
 }
