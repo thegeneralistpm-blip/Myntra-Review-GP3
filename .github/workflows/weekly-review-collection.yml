@@ -62,12 +62,12 @@ jobs:
         if: steps.themes.outputs.run_format == 'true'
         run: node format-email-report.js
 
-      - name: Send weekly report via n8n Webhook
-        if: steps.themes.outputs.run_format == 'true' && secrets.N8N_WEBHOOK_URL != ''
+      - name: Send weekly report via Google Apps Script Web App
+        if: steps.themes.outputs.run_format == 'true' && secrets.GOOGLE_SCRIPT_URL != ''
         run: |
-          curl -X POST -H "Content-Type: application/json" \
+          curl -L -X POST -H "Content-Type: application/json" \
             -d @data/emerging_themes.json \
-            "${{ secrets.N8N_WEBHOOK_URL }}"
+            "${{ secrets.GOOGLE_SCRIPT_URL }}"
 
       - name: Send weekly report via SMTP Email
         if: steps.themes.outputs.run_format == 'true' && secrets.REPORT_EMAIL_TO != '' && secrets.MAIL_USERNAME != ''
