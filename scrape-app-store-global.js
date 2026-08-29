@@ -3,7 +3,7 @@ const path = require('path');
 const https = require('https');
 
 const APPLE_ID = '907394059';
-const STOREFRONTS = ['in', 'gb', 'us', 'au', 'ca', 'nz', 'de', 'fr', 'it', 'es', 'ae', 'sa', 'sg', 'hk', 'my', 'br', 'ch', 'se', 'nl', 'mx', 'id', 'ph', 'th', 'jp', 'kr', 'tr', 'pl', 'dk', 'no', 'be', 'at'];
+const STOREFRONTS = ['in', 'gb', 'us', 'au', 'ca', 'nz', 'de', 'fr', 'it', 'es', 'ae', 'sa', 'sg', 'hk', 'my', 'br', 'ch', 'se', 'nl', 'mx', 'id', 'ph', 'th', 'jp', 'kr', 'tr', 'pl', 'dk', 'no', 'be', 'at', 'ie', 'za', 'pk', 'lk', 'np', 'bd', 'kw', 'qa', 'om', 'bh', 'eg', 'vn', 'tw', 'fi', 'pt', 'gr', 'cz', 'hu', 'ro', 'sk', 'ua', 'ru', 'il', 'ke', 'ng', 'gh', 'tz', 'ug', 'zw', 'zm', 'mu', 'mv', 'kh', 'la', 'mm', 'mo', 'jo', 'lb', 'co', 'pe', 'cl', 'ar'];
 const PAGES_PER_STOREFRONT = 10;
 const LIMIT = Number(process.argv[2] || 2000);
 if (!Number.isInteger(LIMIT) || LIMIT < 1 || LIMIT > 10000) {

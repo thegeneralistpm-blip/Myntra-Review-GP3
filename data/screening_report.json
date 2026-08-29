@@ -1,8 +1,8 @@
 {
-  "screened_at": "2026-08-29T09:11:36.415Z",
-  "total_downloaded": 5290,
-  "in_scope_for_category_discovery_analysis": 815,
-  "excluded_from_themed_analysis": 4475,
+  "screened_at": "2026-08-29T09:55:43.549Z",
+  "total_downloaded": 5651,
+  "in_scope_for_category_discovery_analysis": 903,
+  "excluded_from_themed_analysis": 4748,
   "exclusion_policy": "Excluded only from the category-discovery analysis when no theme keyword was present. Raw reviews are retained and remain visible.",
   "source_breakdown": {
     "Apple App Store (AU)": {
@@ -10,20 +10,65 @@
       "in_scope": 1,
       "excluded": 49
     },
+    "Apple App Store (AE)": {
+      "downloaded": 50,
+      "in_scope": 16,
+      "excluded": 34
+    },
+    "Apple App Store (NP)": {
+      "downloaded": 50,
+      "in_scope": 16,
+      "excluded": 34
+    },
     "Apple App Store (US)": {
       "downloaded": 100,
       "in_scope": 1,
       "excluded": 99
+    },
+    "Apple App Store (CO)": {
+      "downloaded": 4,
+      "in_scope": 0,
+      "excluded": 4
     },
     "Apple App Store (SG)": {
       "downloaded": 50,
       "in_scope": 0,
       "excluded": 50
     },
+    "Apple App Store (GB)": {
+      "downloaded": 50,
+      "in_scope": 17,
+      "excluded": 33
+    },
+    "Apple App Store (NZ)": {
+      "downloaded": 100,
+      "in_scope": 21,
+      "excluded": 79
+    },
+    "Apple App Store (ID)": {
+      "downloaded": 47,
+      "in_scope": 6,
+      "excluded": 41
+    },
+    "Apple App Store (NG)": {
+      "downloaded": 17,
+      "in_scope": 2,
+      "excluded": 15
+    },
     "Apple App Store (DE)": {
       "downloaded": 50,
       "in_scope": 0,
       "excluded": 50
+    },
+    "Apple App Store (JP)": {
+      "downloaded": 25,
+      "in_scope": 6,
+      "excluded": 19
+    },
+    "Apple App Store (CH)": {
+      "downloaded": 16,
+      "in_scope": 4,
+      "excluded": 12
     },
     "Apple App Store (NO)": {
       "downloaded": 14,
@@ -39,6 +84,11 @@
       "downloaded": 6,
       "in_scope": 1,
       "excluded": 5
+    },
+    "Apple App Store (TR)": {
+      "downloaded": 2,
+      "in_scope": 0,
+      "excluded": 2
     },
     "Google Play (India)": {
       "downloaded": 5000,
