@@ -1,0 +1,9 @@
+{
+  "collected_at": "2026-08-29T08:32:09.719Z",
+  "source": "Google Play (India)",
+  "requested_reviews": 2000,
+  "unique_reviews_saved": 2000,
+  "throttle_ms_between_requests": 1000,
+  "file": "myntra_google_play_last_2000.json",
+  "note": "Collection uses publicly accessible Google Play review responses. The final count may be lower if the source has fewer retrievable results or enforces limits."
+}

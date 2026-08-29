@@ -1,0 +1,170 @@
+{
+  "screened_at": "2026-08-29T08:36:39.588Z",
+  "total_downloaded": 5290,
+  "in_scope_for_category_discovery_analysis": 1003,
+  "excluded_from_themed_analysis": 4287,
+  "exclusion_policy": "Excluded only from the category-discovery analysis when no theme keyword was present. Raw reviews are retained and remain visible.",
+  "source_breakdown": {
+    "Apple App Store (AU)": {
+      "downloaded": 50,
+      "in_scope": 14,
+      "excluded": 36
+    },
+    "Apple App Store (US)": {
+      "downloaded": 100,
+      "in_scope": 32,
+      "excluded": 68
+    },
+    "Apple App Store (SG)": {
+      "downloaded": 50,
+      "in_scope": 9,
+      "excluded": 41
+    },
+    "Apple App Store (DE)": {
+      "downloaded": 50,
+      "in_scope": 16,
+      "excluded": 34
+    },
+    "Apple App Store (NO)": {
+      "downloaded": 14,
+      "in_scope": 6,
+      "excluded": 8
+    },
+    "Apple App Store (PL)": {
+      "downloaded": 7,
+      "in_scope": 2,
+      "excluded": 5
+    },
+    "Apple App Store (BR)": {
+      "downloaded": 6,
+      "in_scope": 1,
+      "excluded": 5
+    },
+    "Google Play (India)": {
+      "downloaded": 5000,
+      "in_scope": 910,
+      "excluded": 4090
+    },
+    "Reddit r/myntra": {
+      "downloaded": 6,
+      "in_scope": 6,
+      "excluded": 0
+    },
+    "Shopping Communities": {
+      "downloaded": 2,
+      "in_scope": 2,
+      "excluded": 0
+    },
+    "YouTube Comments": {
+      "downloaded": 2,
+      "in_scope": 2,
+      "excluded": 0
+    },
+    "Social Media Conversations": {
+      "downloaded": 1,
+      "in_scope": 1,
+      "excluded": 0
+    },
+    "Product Q&A": {
+      "downloaded": 2,
+      "in_scope": 2,
+      "excluded": 0
+    }
+  },
+  "theme_definitions": [
+    {
+      "name": "Wishlist Clutter & Organization",
+      "terms": [
+        "wishlist",
+        "clutter",
+        "organize",
+        "forgot",
+        "folders",
+        "categories",
+        "find",
+        "hundreds",
+        "filter wishlist",
+        "add to wishlist",
+        "wishlisted",
+        "discover",
+        "browse",
+        "recommendation",
+        "recommendations",
+        "suggestion",
+        "suggestions",
+        "homepage",
+        "home page",
+        "navigation",
+        "interface",
+        "app layout",
+        "scrolling",
+        "size chart",
+        "filter",
+        "filters"
+      ]
+    },
+    {
+      "name": "Size & Stock Availability",
+      "terms": [
+        "out of stock",
+        "sold out",
+        "restock",
+        "size unavailable",
+        "notify me",
+        "back in stock",
+        "stock"
+      ]
+    },
+    {
+      "name": "Fit & Fabric Anxiety",
+      "terms": [
+        "size fit",
+        "fitting",
+        "tight",
+        "loose",
+        "fabric",
+        "material",
+        "returns",
+        "exchanges",
+        "authenticity",
+        "exchange",
+        "return",
+        "refund",
+        "genuine",
+        "original",
+        "fake",
+        "sizing",
+        "quality",
+        "authentic"
+      ]
+    },
+    {
+      "name": "Delivery & Shipping Friction",
+      "terms": [
+        "shipping fee",
+        "delivery charge",
+        "slow delivery",
+        "delivery date",
+        "postcode",
+        "charges",
+        "shipping charge",
+        "delivery fee"
+      ]
+    },
+    {
+      "name": "Occasion & Styling Inspiration",
+      "terms": [
+        "how to style",
+        "match",
+        "wear",
+        "outfit",
+        "pair with",
+        "lookbook",
+        "looks",
+        "styling",
+        "pair",
+        "matching"
+      ]
+    }
+  ]
+}

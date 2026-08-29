@@ -1,0 +1,47 @@
+name: Daily Myntra AI review screening
+
+on:
+  schedule:
+    # 06:30 UTC daily; free-tier quotas have time to reset between runs.
+    - cron: '30 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Classify the next free-tier-safe batch
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY || secrets.GEMINI }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY || secrets.GROQ }}
+          AI_MAX_REVIEWS_PER_RUN: 200
+          AI_SCOPE: keyword_relevant
+        run: |
+          if [ -z "$GEMINI_API_KEY" ] && [ -z "$GROQ_API_KEY" ]; then
+            echo "No AI provider secrets configured; skipping AI screening."
+          else
+            npm run refresh:ai
+          fi
+
+      - name: Commit AI screening progress
+        run: |
+          git config user.name "myntra-review-bot"
+          git config user.email "actions@github.com"
+          git add data/ai_classifications.json data/review_screening.json data/screening_report.json index.html discovery-lens.html priority-radar.html evidence-library.html copilot.html review-library.html myntra-dashboard.html
+          git diff --staged --quiet || git commit -m "chore: continue Myntra AI review screening"
+          git push

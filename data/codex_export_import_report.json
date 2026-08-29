@@ -1,0 +1,14 @@
+{
+  "imported_at": "2026-08-29T08:32:49.722Z",
+  "input_file": "myntra_wishlist_external.csv",
+  "rows_in_file": 10,
+  "new_unique_records": 10,
+  "total_external_records": 10,
+  "sources": {
+    "Reddit r/myntra": 3,
+    "Shopping Communities": 2,
+    "YouTube Comments": 2,
+    "Social Media Conversations": 1,
+    "Product Q&A": 2
+  }
+}

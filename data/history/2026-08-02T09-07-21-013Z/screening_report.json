@@ -1,0 +1,124 @@
+{
+  "screened_at": "2026-08-02T09:07:20.426Z",
+  "total_downloaded": 20049,
+  "in_scope_for_category_discovery_analysis": 879,
+  "excluded_from_themed_analysis": 19170,
+  "exclusion_policy": "Excluded only from the category-discovery analysis when no theme keyword was present. Raw reviews are retained and remain visible.",
+  "source_breakdown": {
+    "Apple App Store (MY)": {
+      "downloaded": 17,
+      "in_scope": 2,
+      "excluded": 15
+    },
+    "Apple App Store (NZ)": {
+      "downloaded": 22,
+      "in_scope": 3,
+      "excluded": 19
+    },
+    "Apple App Store (BR)": {
+      "downloaded": 10,
+      "in_scope": 0,
+      "excluded": 10
+    },
+    "Google Play (India)": {
+      "downloaded": 20000,
+      "in_scope": 874,
+      "excluded": 19126
+    }
+  },
+  "theme_definitions": [
+    {
+      "name": "Discovery or navigation",
+      "terms": [
+        "discover",
+        "browse",
+        "category",
+        "categories",
+        "recommendation",
+        "recommendations",
+        "suggestion",
+        "suggestions",
+        "homepage",
+        "home page",
+        "navigation",
+        "interface",
+        "app layout",
+        "scrolling"
+      ]
+    },
+    {
+      "name": "Habit or repeat purchase",
+      "terms": [
+        "reorder",
+        "re-order",
+        "repeat",
+        "regularly",
+        "every day",
+        "every week",
+        "daily",
+        "usual",
+        "routine",
+        "always order"
+      ]
+    },
+    {
+      "name": "Category or product exploration",
+      "terms": [
+        "grocery",
+        "groceries",
+        "snack",
+        "beverage",
+        "personal care",
+        "skincare",
+        "skin care",
+        "cosmetic",
+        "baby",
+        "diaper",
+        "pet",
+        "dog food",
+        "cat food",
+        "household",
+        "cleaning",
+        "electronics",
+        "medicine",
+        "product range",
+        "variety",
+        "brand"
+      ]
+    },
+    {
+      "name": "Trial confidence",
+      "terms": [
+        "quality",
+        "genuine",
+        "original",
+        "fake",
+        "expiry",
+        "expired",
+        "fresh",
+        "damaged",
+        "wrong item",
+        "wrong product",
+        "price",
+        "expensive",
+        "overpriced",
+        "rating",
+        "review"
+      ]
+    },
+    {
+      "name": "Availability or substitution",
+      "terms": [
+        "available",
+        "availability",
+        "out of stock",
+        "stock",
+        "missing",
+        "cancel",
+        "cancelled",
+        "substitut",
+        "not delivered"
+      ]
+    }
+  ]
+}

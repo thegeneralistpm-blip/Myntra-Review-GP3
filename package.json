@@ -1,0 +1,30 @@
+{
+  "name": "quick-commerce-discovery-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Voice-of-customer dashboard for category discovery research.",
+  "scripts": {
+    "start": "node server.js",
+    "scrape:reviews": "node scrape-reviews.js",
+    "screen:reviews": "node screen-reviews.js && node build-review-library.js",
+    "scrape:reddit": "node scrape-reddit-discussions.js && npm.cmd run screen:reviews",
+    "import:external": "node import-codex-export.js",
+    "classify:external": "node ai-classify-reviews.js && node screen-reviews.js && node build-review-library.js && node build-myntra-suite.js && node build-merged-dashboard.js",
+    "scrape:app-store-global": "node scrape-app-store-global.js",
+    "classify:ai": "node ai-classify-reviews.js && node screen-reviews.js && node build-review-library.js",
+    "detect:emerging": "node detect-emerging-themes.js",
+    "build:dashboard": "node build-dashboard.js",
+    "build:myntra-dashboard": "node build-myntra-dashboard.js",
+    "build:myntra-suite": "node build-myntra-suite.js",
+    "build:merged-dashboard": "node build-merged-dashboard.js",
+    "archive:reviews": "node archive-snapshot.js",
+    "refresh:reviews": "node scrape-google-play-5000.js 20000 && node scrape-app-store-global.js 2500 && node screen-reviews.js && node build-review-library.js && node build-myntra-suite.js && node build-merged-dashboard.js",
+    "refresh:ai": "node ai-classify-reviews.js && node screen-reviews.js && node build-review-library.js && node build-myntra-suite.js && node build-merged-dashboard.js"
+  },
+  "dependencies": {
+    "google-play-scraper": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
