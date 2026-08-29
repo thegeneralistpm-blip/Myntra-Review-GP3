@@ -1,8 +1,8 @@
 {
-  "screened_at": "2026-08-29T09:55:43.549Z",
-  "total_downloaded": 5651,
-  "in_scope_for_category_discovery_analysis": 903,
-  "excluded_from_themed_analysis": 4748,
+  "screened_at": "2026-08-29T10:17:46.702Z",
+  "total_downloaded": 5683,
+  "in_scope_for_category_discovery_analysis": 905,
+  "excluded_from_themed_analysis": 4778,
   "exclusion_policy": "Excluded only from the category-discovery analysis when no theme keyword was present. Raw reviews are retained and remain visible.",
   "source_breakdown": {
     "Apple App Store (AU)": {
@@ -95,9 +95,139 @@
       "in_scope": 798,
       "excluded": 4202
     },
+    "Reddit r/DesiFragranceAddicts": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/Watches_India": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/LGBTindia": {
+      "downloaded": 1,
+      "in_scope": 1,
+      "excluded": 0
+    },
+    "Reddit r/GoldIndia": {
+      "downloaded": 2,
+      "in_scope": 0,
+      "excluded": 2
+    },
+    "Reddit r/SneakerheadsIndia": {
+      "downloaded": 2,
+      "in_scope": 0,
+      "excluded": 2
+    },
+    "Reddit r/feminineboys": {
+      "downloaded": 1,
+      "in_scope": 1,
+      "excluded": 0
+    },
+    "Reddit r/MyntraSucks": {
+      "downloaded": 4,
+      "in_scope": 1,
+      "excluded": 3
+    },
+    "Reddit r/CreditCardsIndia": {
+      "downloaded": 3,
+      "in_scope": 0,
+      "excluded": 3
+    },
+    "Reddit r/IndiaDealsExchange": {
+      "downloaded": 2,
+      "in_scope": 0,
+      "excluded": 2
+    },
+    "Reddit r/ConsumerAdvice": {
+      "downloaded": 1,
+      "in_scope": 1,
+      "excluded": 0
+    },
+    "Reddit r/IndianBeautyDeals": {
+      "downloaded": 2,
+      "in_scope": 0,
+      "excluded": 2
+    },
+    "Reddit r/topdealsfinder": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/lipstickswatchesindia": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/IndianBeautyDeclutter": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/IndianFashionAddicts": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/LegalAdviceIndia": {
+      "downloaded": 1,
+      "in_scope": 1,
+      "excluded": 0
+    },
+    "Reddit r/FuckFlipkart": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/dealsforindia": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/IndiaDealFinder": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/bangalorerentals": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/indiafitchecks": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/FashionforIndia": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/PunjabiFashionistas": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/AskIndianWomen": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/watchesindia": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
+    "Reddit r/TeenIndia": {
+      "downloaded": 1,
+      "in_scope": 0,
+      "excluded": 1
+    },
     "Reddit r/myntra": {
-      "downloaded": 6,
-      "in_scope": 6,
+      "downloaded": 3,
+      "in_scope": 3,
       "excluded": 0
     },
     "Shopping Communities": {
