@@ -45,15 +45,36 @@ jobs:
         run: npm run archive:reviews
 
       - name: Detect emerging themes
+        id: themes
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY || secrets.GEMINI }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY || secrets.GROQ }}
         run: |
           if [ -z "$GEMINI_API_KEY" ] && [ -z "$GROQ_API_KEY" ]; then
             echo "No AI provider secrets configured; skipping emerging-theme detection."
+            echo "run_format=false" >> $GITHUB_OUTPUT
           else
             npm run detect:emerging
+            echo "run_format=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: Formulate HTML email report
+        if: steps.themes.outputs.run_format == 'true'
+        run: node format-email-report.js
+
+      - name: Send weekly report via email
+        if: steps.themes.outputs.run_format == 'true' && secrets.REPORT_EMAIL_TO != ''
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER || 'smtp.gmail.com' }}
+          server_port: ${{ secrets.MAIL_PORT || 465 }}
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: Myntra Wishlist Conversion - Emerging Report
+          to: ${{ secrets.REPORT_EMAIL_TO }}
+          from: Myntra Review Bot <${{ secrets.MAIL_USERNAME }}>
+          html_body: file://data/email_report.html
+          secure: true
 
       - name: Commit refreshed dataset
         run: |
