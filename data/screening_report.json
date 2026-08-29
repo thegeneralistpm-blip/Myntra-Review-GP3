@@ -1,8 +1,8 @@
 {
-  "screened_at": "2026-08-29T13:19:27.040Z",
-  "total_downloaded": 5683,
-  "in_scope_for_category_discovery_analysis": 591,
-  "excluded_from_themed_analysis": 5092,
+  "screened_at": "2026-08-29T13:56:37.552Z",
+  "total_downloaded": 5703,
+  "in_scope_for_category_discovery_analysis": 599,
+  "excluded_from_themed_analysis": 5104,
   "exclusion_policy": "Excluded only from the category-discovery analysis when no theme keyword was present. Raw reviews are retained and remain visible.",
   "source_breakdown": {
     "Apple App Store (AU)": {
@@ -231,9 +231,9 @@
       "excluded": 0
     },
     "Shopping Communities": {
-      "downloaded": 2,
-      "in_scope": 2,
-      "excluded": 0
+      "downloaded": 12,
+      "in_scope": 4,
+      "excluded": 8
     },
     "YouTube Comments": {
       "downloaded": 2,
@@ -246,9 +246,9 @@
       "excluded": 0
     },
     "Product Q&A": {
-      "downloaded": 2,
-      "in_scope": 2,
-      "excluded": 0
+      "downloaded": 12,
+      "in_scope": 8,
+      "excluded": 4
     }
   },
   "theme_definitions": [
