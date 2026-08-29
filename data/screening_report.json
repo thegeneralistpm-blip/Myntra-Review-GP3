@@ -1,39 +1,39 @@
 {
-  "screened_at": "2026-08-29T08:36:39.588Z",
+  "screened_at": "2026-08-29T09:11:36.415Z",
   "total_downloaded": 5290,
-  "in_scope_for_category_discovery_analysis": 1003,
-  "excluded_from_themed_analysis": 4287,
+  "in_scope_for_category_discovery_analysis": 815,
+  "excluded_from_themed_analysis": 4475,
   "exclusion_policy": "Excluded only from the category-discovery analysis when no theme keyword was present. Raw reviews are retained and remain visible.",
   "source_breakdown": {
     "Apple App Store (AU)": {
       "downloaded": 50,
-      "in_scope": 14,
-      "excluded": 36
+      "in_scope": 1,
+      "excluded": 49
     },
     "Apple App Store (US)": {
       "downloaded": 100,
-      "in_scope": 32,
-      "excluded": 68
+      "in_scope": 1,
+      "excluded": 99
     },
     "Apple App Store (SG)": {
       "downloaded": 50,
-      "in_scope": 9,
-      "excluded": 41
+      "in_scope": 0,
+      "excluded": 50
     },
     "Apple App Store (DE)": {
       "downloaded": 50,
-      "in_scope": 16,
-      "excluded": 34
+      "in_scope": 0,
+      "excluded": 50
     },
     "Apple App Store (NO)": {
       "downloaded": 14,
-      "in_scope": 6,
-      "excluded": 8
+      "in_scope": 1,
+      "excluded": 13
     },
     "Apple App Store (PL)": {
       "downloaded": 7,
-      "in_scope": 2,
-      "excluded": 5
+      "in_scope": 0,
+      "excluded": 7
     },
     "Apple App Store (BR)": {
       "downloaded": 6,
@@ -42,8 +42,8 @@
     },
     "Google Play (India)": {
       "downloaded": 5000,
-      "in_scope": 910,
-      "excluded": 4090
+      "in_scope": 798,
+      "excluded": 4202
     },
     "Reddit r/myntra": {
       "downloaded": 6,

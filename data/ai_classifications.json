@@ -59,6 +59,21 @@
     "provider": "groq",
     "classified_at": "2026-07-31T08:59:59.382Z"
   },
+  "3163455983": {
+    "review_id": "3163455983",
+    "relevant": true,
+    "themes": [],
+    "segment": "Tech & Checkout Friction",
+    "categories": [
+      "UI/UX",
+      "Payments"
+    ],
+    "barrier": "Payment gateway failure",
+    "sentiment": "negative",
+    "reason": "Highlights explicit checkout friction caused by failing payment gateways and difficult search filtering.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:15.180Z"
+  },
   "3644514033": {
     "review_id": "3644514033",
     "relevant": false,
@@ -67246,5 +67261,2912 @@
     "reason": "Receiving expired products across multiple orders destroys customer trust and triggers app uninstallation.",
     "provider": "gemini",
     "classified_at": "2026-08-24T07:36:42.868Z"
+  },
+  "14476779843": {
+    "review_id": "14476779843",
+    "relevant": false,
+    "themes": [],
+    "segment": "App Navigation",
+    "categories": [
+      "Mobile App",
+      "UX"
+    ],
+    "barrier": "Scroll position reset",
+    "sentiment": "negative",
+    "reason": "Reports a search navigation UX bug rather than wishlist or checkout conversion barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:10.796Z"
+  },
+  "14463428748": {
+    "review_id": "14463428748",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery Experience",
+    "categories": [
+      "Express Shipping"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Expresses general satisfaction with fast delivery and overall service.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:10.798Z"
+  },
+  "14456699691": {
+    "review_id": "14456699691",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Provides a standard positive product review without addressing purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:10.799Z"
+  },
+  "14455230168": {
+    "review_id": "14455230168",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [
+      "Packaging",
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive feedback regarding product quality and packaging.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:10.799Z"
+  },
+  "14451072156": {
+    "review_id": "14451072156",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [
+      "Authenticity",
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General compliment on fast delivery and product authenticity.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:10.799Z"
+  },
+  "14440584005": {
+    "review_id": "14440584005",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Apparel",
+      "Fit & Fabric"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive post-purchase feedback on sizing and fabric quality rather than wishlist purchase friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:10.799Z"
+  },
+  "14430669561": {
+    "review_id": "14430669561",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Home & Living"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Simple positive product review for a bedsheet item.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:10.799Z"
+  },
+  "14425769365": {
+    "review_id": "14425769365",
+    "relevant": false,
+    "themes": [],
+    "segment": "Customer Service",
+    "categories": [
+      "Returns"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for return services without details on checkout conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:10.799Z"
+  },
+  "14421914005": {
+    "review_id": "14421914005",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive comment about product quality.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:10.799Z"
+  },
+  "14418721850": {
+    "review_id": "14418721850",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief positive feedback praising product quality.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:10.799Z"
+  },
+  "14402850827": {
+    "review_id": "14402850827",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "This is a brief post-purchase product appreciation review with no discussion of wishlist behavior or buying friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:30.775Z"
+  },
+  "14400933413": {
+    "review_id": "14400933413",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Apparel",
+      "Kids Wear"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "This review only mentions fabric quality after purchase and does not relate to wishlist conversion or checkout obstacles.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:30.775Z"
+  },
+  "14395379207": {
+    "review_id": "14395379207",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "This is a general brand quality endorsement and does not offer insights on wishlist usage or hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:30.775Z"
+  },
+  "14390274408": {
+    "review_id": "14390274408",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "General Shopping"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "This is generic positive feedback about overall app services without addressing wishlist barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:30.775Z"
+  },
+  "14386544869": {
+    "review_id": "14386544869",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Apparel",
+      "Men's Fashion"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "This is a basic product review praising a shirt, unrelated to wishlist conversion dynamics.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:30.775Z"
+  },
+  "14379608077": {
+    "review_id": "14379608077",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Apparel",
+      "Women's Fashion"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "This review simply compliments material and style post-purchase without discussing decision-making hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:30.775Z"
+  },
+  "14377396180": {
+    "review_id": "14377396180",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "General Shopping"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "This short comment expresses generic app praise and lacks relevance to wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:30.775Z"
+  },
+  "14377391884": {
+    "review_id": "14377391884",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Apparel",
+      "Women's Fashion"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "This feedback provides post-purchase comfort evaluation and does not touch on wishlist items or purchase hesitations.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:30.775Z"
+  },
+  "14375880068": {
+    "review_id": "14375880068",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Apparel",
+      "Women's Fashion"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "This is a positive product review encouraging purchase, not detailing any purchase friction or wishlist usage.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:30.775Z"
+  },
+  "14375842456": {
+    "review_id": "14375842456",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Account & Authentication"
+    ],
+    "barrier": "Mandatory mobile verification block",
+    "sentiment": "negative",
+    "reason": "This details account registration friction during checkout rather than wishlist product evaluation or defined fashion wishlist themes.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:30.775Z"
+  },
+  "14371069963": {
+    "review_id": "14371069963",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Shopper",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic short praise with no details on wishlist usage or checkout barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:47.197Z"
+  },
+  "14370199587": {
+    "review_id": "14370199587",
+    "relevant": false,
+    "themes": [],
+    "segment": "Dissatisfied Shopper",
+    "categories": [
+      "Customer Support",
+      "Returns & Exchanges"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Describes a post-purchase fulfillment error and return dispute unrelated to wishlist purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:47.198Z"
+  },
+  "14365034203": {
+    "review_id": "14365034203",
+    "relevant": false,
+    "themes": [],
+    "segment": "Womenswear Shopper",
+    "categories": [
+      "App Experience",
+      "Returns"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General positive feedback on catalog selection and returns policy without wishlist insights.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:47.198Z"
+  },
+  "14361609527": {
+    "review_id": "14361609527",
+    "relevant": false,
+    "themes": [
+      "Fit & Fabric Anxiety"
+    ],
+    "segment": "Kids Wear Shopper",
+    "categories": [
+      "Kids Apparel",
+      "Fit & Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Standard positive feedback regarding size and fabric quality post-purchase.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:47.198Z"
+  },
+  "14359030304": {
+    "review_id": "14359030304",
+    "relevant": false,
+    "themes": [],
+    "segment": "Womenswear Shopper",
+    "categories": [
+      "Tops",
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief positive review offering no insights into wishlist conversion or buying friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:47.198Z"
+  },
+  "14358255468": {
+    "review_id": "14358255468",
+    "relevant": false,
+    "themes": [],
+    "segment": "Dissatisfied Shopper",
+    "categories": [
+      "Returns & Refunds",
+      "Customer Support",
+      "Seller Quality"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Focuses on post-delivery wrong item resolution and refund denial rather than wishlist purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:47.198Z"
+  },
+  "14356586931": {
+    "review_id": "14356586931",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Shopper",
+    "categories": [
+      "App Experience",
+      "Product Variety"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General expression of brand satisfaction without detailing purchase decision factors.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:47.198Z"
+  },
+  "14355232375": {
+    "review_id": "14355232375",
+    "relevant": false,
+    "themes": [],
+    "segment": "Ethnic Wear Shopper",
+    "categories": [
+      "Product Availability",
+      "Returns"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Praises general merchandise selection and return window, with no mention of wishlist friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:47.198Z"
+  },
+  "14350600789": {
+    "review_id": "14350600789",
+    "relevant": false,
+    "themes": [
+      "Fit & Fabric Anxiety"
+    ],
+    "segment": "Satisfied Shopper",
+    "categories": [
+      "Product Quality",
+      "Fit & Sizing"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive post-purchase validation of product imagery and fit without addressing purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:47.198Z"
+  },
+  "14340906505": {
+    "review_id": "14340906505",
+    "relevant": false,
+    "themes": [
+      "Fit & Fabric Anxiety"
+    ],
+    "segment": "Ethnic Wear Shopper",
+    "categories": [
+      "Kurtas",
+      "Fabric & Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Simple positive product review that does not explore wishlist behaviors or conversion friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:05:47.198Z"
+  },
+  "14338130977": {
+    "review_id": "14338130977",
+    "relevant": false,
+    "themes": [],
+    "segment": "Price & Quality",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive product review with no mention of wishlist or purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:06.411Z"
+  },
+  "14334814701": {
+    "review_id": "14334814701",
+    "relevant": false,
+    "themes": [
+      "Delivery & Shipping Friction"
+    ],
+    "segment": "Returns & Charges",
+    "categories": [
+      "Customer Service",
+      "Returns"
+    ],
+    "barrier": "Extra return fees",
+    "sentiment": "negative",
+    "reason": "General complaint about extra return charges without specific link to wishlist item conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:06.411Z"
+  },
+  "14333578390": {
+    "review_id": "14333578390",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General positive comment with no purchase friction or wishlist relevance.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:06.411Z"
+  },
+  "14329308513": {
+    "review_id": "14329308513",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product & Policy",
+    "categories": [
+      "General",
+      "Returns"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback on products and returns without purchase conversion barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:06.411Z"
+  },
+  "14313288521": {
+    "review_id": "14313288521",
+    "relevant": false,
+    "themes": [],
+    "segment": "Quality",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive platform praise regarding item quality.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:06.411Z"
+  },
+  "14311113347": {
+    "review_id": "14311113347",
+    "relevant": false,
+    "themes": [
+      "Fit & Fabric Anxiety"
+    ],
+    "segment": "Apparel Quality",
+    "categories": [
+      "Women's Wear"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback on dress quality and comfort without purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:06.411Z"
+  },
+  "14310322313": {
+    "review_id": "14310322313",
+    "relevant": true,
+    "themes": [
+      "Delivery & Shipping Friction"
+    ],
+    "segment": "Checkout & COD Orders",
+    "categories": [
+      "Payment & Delivery"
+    ],
+    "barrier": "Order cancellation on COD",
+    "sentiment": "negative",
+    "reason": "Describes checkout friction where COD orders are repeatedly canceled despite high spend.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:06.411Z"
+  },
+  "14309743440": {
+    "review_id": "14309743440",
+    "relevant": true,
+    "themes": [
+      "Fit & Fabric Anxiety"
+    ],
+    "segment": "Pricing & Quality Uncertainty",
+    "categories": [
+      "Pricing & Discounting"
+    ],
+    "barrier": "Inflated pricing & poor real quality",
+    "sentiment": "negative",
+    "reason": "Highlights pricing distortion and quality uncertainty that causes hesitation even at deep discounts.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:06.411Z"
+  },
+  "14309206596": {
+    "review_id": "14309206596",
+    "relevant": false,
+    "themes": [],
+    "segment": "Quality",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short positive comment on quality with no purchase conversion insights.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:06.411Z"
+  },
+  "14309072492": {
+    "review_id": "14309072492",
+    "relevant": false,
+    "themes": [
+      "Fit & Fabric Anxiety"
+    ],
+    "segment": "Apparel Sizing & Accuracy",
+    "categories": [
+      "Women's Wear"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive review confirming size accuracy and visual match without any purchase barrier.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:06.411Z"
+  },
+  "14305681867": {
+    "review_id": "14305681867",
+    "relevant": false,
+    "themes": [],
+    "segment": "Beauty & Personal Care",
+    "categories": [
+      "Face Wash",
+      "Skincare"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive product review with no insight into wishlist conversion or purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:23.454Z"
+  },
+  "14300969622": {
+    "review_id": "14300969622",
+    "relevant": false,
+    "themes": [],
+    "segment": "Footwear",
+    "categories": [
+      "Shoes"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General positive feedback on shoe quality and style without addressing purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:23.454Z"
+  },
+  "14298969639": {
+    "review_id": "14298969639",
+    "relevant": false,
+    "themes": [],
+    "segment": "App Experience",
+    "categories": [
+      "E-commerce App",
+      "Returns"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General app appreciation mentioning returns policy, unrelated to wishlist purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:23.454Z"
+  },
+  "14296657348": {
+    "review_id": "14296657348",
+    "relevant": false,
+    "themes": [],
+    "segment": "Apparel",
+    "categories": [
+      "Clothing"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Simple praise for fabric and comfort with no reference to wishlisting or checkout friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:23.454Z"
+  },
+  "14293022706": {
+    "review_id": "14293022706",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Product",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Extremely brief product rating offering no actionable insights into conversion barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:23.454Z"
+  },
+  "14274673538": {
+    "review_id": "14274673538",
+    "relevant": false,
+    "themes": [],
+    "segment": "Apparel",
+    "categories": [
+      "Shirts"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive review about pattern and fit without any context on buying hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:23.454Z"
+  },
+  "14274555008": {
+    "review_id": "14274555008",
+    "relevant": false,
+    "themes": [],
+    "segment": "Apparel",
+    "categories": [
+      "Clothing"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short praise on fabric quality with no connection to wishlist conversion research.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:23.454Z"
+  },
+  "14264472188": {
+    "review_id": "14264472188",
+    "relevant": false,
+    "themes": [],
+    "segment": "App Experience",
+    "categories": [
+      "E-commerce App",
+      "Deals",
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Praise for app interface, deals, and delivery speed without mentioning wishlist or cart abandonment.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:23.454Z"
+  },
+  "14215238513": {
+    "review_id": "14215238513",
+    "relevant": false,
+    "themes": [],
+    "segment": "Apparel",
+    "categories": [
+      "T-Shirts",
+      "Men's Wear"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Standard positive feedback on quality and comfort without wishlist or purchase friction context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:23.454Z"
+  },
+  "14208231585": {
+    "review_id": "14208231585",
+    "relevant": false,
+    "themes": [],
+    "segment": "Apparel",
+    "categories": [
+      "Clothing"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive comment on product value and accuracy, not relevant to studying wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:23.454Z"
+  },
+  "14207602898": {
+    "review_id": "14207602898",
+    "relevant": false,
+    "themes": [],
+    "segment": "Value Seekers",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive review praising product quality and pricing without mentioning wishlist or purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:40.442Z"
+  },
+  "14205698999": {
+    "review_id": "14205698999",
+    "relevant": false,
+    "themes": [],
+    "segment": "Accessory Shoppers",
+    "categories": [
+      "Watches",
+      "Accessories"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General post-purchase compliment on a watch set with no relevance to wishlist conversion friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:40.442Z"
+  },
+  "14197682963": {
+    "review_id": "14197682963",
+    "relevant": false,
+    "themes": [],
+    "segment": "Catalog Browsers",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Standard praise of product range and quality without detailing purchase hesitation or wishlist usage.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:40.442Z"
+  },
+  "14196873239": {
+    "review_id": "14196873239",
+    "relevant": false,
+    "themes": [],
+    "segment": "Quality Seekers",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Extremely brief positive feedback on product quality, lacking conversion or wishlist context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:40.442Z"
+  },
+  "14169387832": {
+    "review_id": "14169387832",
+    "relevant": false,
+    "themes": [],
+    "segment": "Fragrance Buyers",
+    "categories": [
+      "Beauty & Personal Care",
+      "Fragrance"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Post-purchase fragrance feedback with no insights into purchase hesitations or wishlist barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:40.442Z"
+  },
+  "14155289681": {
+    "review_id": "14155289681",
+    "relevant": false,
+    "themes": [],
+    "segment": "Casual Wear Buyers",
+    "categories": [
+      "Apparel",
+      "T-Shirts"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Praise for shirt fabric softness without providing insight into checkout or wishlist friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:40.442Z"
+  },
+  "14154062146": {
+    "review_id": "14154062146",
+    "relevant": false,
+    "themes": [],
+    "segment": "Value Seekers",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic appreciation of Myntra pricing and product quality with no conversion barrier details.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:40.442Z"
+  },
+  "14153017282": {
+    "review_id": "14153017282",
+    "relevant": false,
+    "themes": [],
+    "segment": "Ethnic Wear Shoppers",
+    "categories": [
+      "Apparel",
+      "Ethnic Wear"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback on outfit comfort and style that does not touch upon wishlist or purchasing hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:40.442Z"
+  },
+  "14111054896": {
+    "review_id": "14111054896",
+    "relevant": false,
+    "themes": [],
+    "segment": "Quality Seekers",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General positive product review unrelated to wishlist behavior or checkout friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:40.442Z"
+  },
+  "13985125251": {
+    "review_id": "13985125251",
+    "relevant": false,
+    "themes": [],
+    "segment": "Winterwear Shoppers",
+    "categories": [
+      "Apparel",
+      "Winterwear"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Product utility praise regarding cold weather performance, offering no wishlist research insights.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:40.442Z"
+  },
+  "13912956241": {
+    "review_id": "13912956241",
+    "relevant": true,
+    "themes": [
+      "Fit & Fabric Anxiety"
+    ],
+    "segment": "Visual Representation",
+    "categories": [
+      "Apparel",
+      "Fashion"
+    ],
+    "barrier": "Misleading AI Product Images",
+    "sentiment": "negative",
+    "reason": "Users encounter misleading AI-generated product images that differ from actual items, creating distrust in product appearance.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:55.339Z"
+  },
+  "13761644627": {
+    "review_id": "13761644627",
+    "relevant": false,
+    "themes": [],
+    "segment": "Returns & Refunds",
+    "categories": [
+      "E-commerce Services"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Expresses general satisfaction with doorstep pick-up and fast return credits without addressing wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:55.339Z"
+  },
+  "13709436745": {
+    "review_id": "13709436745",
+    "relevant": false,
+    "themes": [],
+    "segment": "Returns & Refunds",
+    "categories": [
+      "E-commerce Services"
+    ],
+    "barrier": "Complicated Refund Process",
+    "sentiment": "negative",
+    "reason": "Generic complaint regarding refund complexity without specific context linked to wishlist conversion friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:55.339Z"
+  },
+  "13602259910": {
+    "review_id": "13602259910",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Satisfaction",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive feedback regarding product quality and look with no details on wishlist behavior.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:55.339Z"
+  },
+  "13478191878": {
+    "review_id": "13478191878",
+    "relevant": false,
+    "themes": [],
+    "segment": "Beauty",
+    "categories": [
+      "Beauty & Personal Care"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief positive product review for an eyeliner without insights into conversion hesitations.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:55.339Z"
+  },
+  "13359368263": {
+    "review_id": "13359368263",
+    "relevant": false,
+    "themes": [],
+    "segment": "Footwear",
+    "categories": [
+      "Footwear"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for shoe fit and delivery speed that does not touch upon wishlist barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:55.339Z"
+  },
+  "12771461449": {
+    "review_id": "12771461449",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Satisfaction",
+    "categories": [
+      "E-commerce Services"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Standard positive feedback about delivery speed and product quality.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:55.339Z"
+  },
+  "12661515344": {
+    "review_id": "12661515344",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Satisfaction",
+    "categories": [
+      "E-commerce Services"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Extremely brief general feedback mentioning good quality without relevant conversion context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:55.339Z"
+  },
+  "12491538574": {
+    "review_id": "12491538574",
+    "relevant": false,
+    "themes": [],
+    "segment": "App Experience",
+    "categories": [
+      "Mobile App"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic praise for overall app usage experience with no actionable wishlist data.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:55.339Z"
+  },
+  "12408963139": {
+    "review_id": "12408963139",
+    "relevant": false,
+    "themes": [],
+    "segment": "Returns & Exchange",
+    "categories": [
+      "E-commerce Services"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback regarding accurate descriptions and exchange process rather than wishlist purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:06:55.339Z"
+  },
+  "12338138539": {
+    "review_id": "12338138539",
+    "relevant": false,
+    "themes": [],
+    "segment": "Casual Wear Shopper",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive feedback for casual wear without any mention of wishlist or purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:15.179Z"
+  },
+  "12213861824": {
+    "review_id": "12213861824",
+    "relevant": false,
+    "themes": [],
+    "segment": "Kids Wear Shopper",
+    "categories": [
+      "Kids Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Standard product appreciation post-purchase with no details on purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:15.180Z"
+  },
+  "12083878738": {
+    "review_id": "12083878738",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Shopper",
+    "categories": [
+      "E-commerce Platform"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for UI and returns speed without addressing pre-purchase decision barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:15.180Z"
+  },
+  "12076771254": {
+    "review_id": "12076771254",
+    "relevant": false,
+    "themes": [],
+    "segment": "Dissatisfied Shopper",
+    "categories": [
+      "Customer Service",
+      "Returns"
+    ],
+    "barrier": "Strict return policy",
+    "sentiment": "negative",
+    "reason": "Post-purchase complaint regarding counterfeit items and returns policy rather than wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:15.180Z"
+  },
+  "11752999808": {
+    "review_id": "11752999808",
+    "relevant": false,
+    "themes": [],
+    "segment": "Apparel Shopper",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive fit and sizing review post-purchase without details on buying hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:15.180Z"
+  },
+  "9551872649": {
+    "review_id": "9551872649",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Shopper",
+    "categories": [
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic praise for delivery speed and product quality.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:15.180Z"
+  },
+  "8922615429": {
+    "review_id": "8922615429",
+    "relevant": false,
+    "themes": [],
+    "segment": "Dissatisfied Shopper",
+    "categories": [
+      "Customer Care",
+      "Apparel"
+    ],
+    "barrier": "Poor customer support",
+    "sentiment": "negative",
+    "reason": "General customer service and quality complaint unrelated to wishlist or conversion friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:15.180Z"
+  },
+  "8873282771": {
+    "review_id": "8873282771",
+    "relevant": false,
+    "themes": [],
+    "segment": "Loyal Shopper",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short praise regarding general product quality consistency.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:15.180Z"
+  },
+  "7176426486": {
+    "review_id": "7176426486",
+    "relevant": false,
+    "themes": [],
+    "segment": "Fashion Shopper",
+    "categories": [
+      "Apparel",
+      "Handbags"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive recommendation for browsing clothes and handbags.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:15.180Z"
+  },
+  "1189a5d9-3714-4f09-b9f6-5746cd918745": {
+    "review_id": "1189a5d9-3714-4f09-b9f6-5746cd918745",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Returns & Refunds"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise regarding fast returns and refund processes.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:37.274Z"
+  },
+  "574e2812-d951-42fe-98e3-034a94c847c4": {
+    "review_id": "574e2812-d951-42fe-98e3-034a94c847c4",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "App Experience",
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive feedback about delivery and shopping experience.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:37.274Z"
+  },
+  "9ef782ea-a508-4998-8124-6242e2df37d9": {
+    "review_id": "9ef782ea-a508-4998-8124-6242e2df37d9",
+    "relevant": false,
+    "themes": [],
+    "segment": "Elite Customer",
+    "categories": [
+      "Product Quality",
+      "Returns & Refunds"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complaint about receiving expired items without a clear connection to wishlist purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:37.274Z"
+  },
+  "62d789d6-1225-437f-a878-741cc2da1663": {
+    "review_id": "62d789d6-1225-437f-a878-741cc2da1663",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Delivery & Shipping Friction"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Generic logistics complaint regarding lost orders and delayed delivery.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:37.274Z"
+  },
+  "02a11e98-7de8-4786-a2f1-b12e8b41d2d4": {
+    "review_id": "02a11e98-7de8-4786-a2f1-b12e8b41d2d4",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short generic positive comment on clothing quality.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:37.274Z"
+  },
+  "ee1ba4aa-4069-42ff-9f46-04b8ec56ca21": {
+    "review_id": "ee1ba4aa-4069-42ff-9f46-04b8ec56ca21",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "App Experience",
+      "Customer Support"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General feedback praising customer support and app interface.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:37.274Z"
+  },
+  "1cd5e172-8060-4d3c-9b83-8af3d7ab9927": {
+    "review_id": "1cd5e172-8060-4d3c-9b83-8af3d7ab9927",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Brand Trust"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic statement about app authenticity and trust.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:37.274Z"
+  },
+  "0d3f5f52-e236-46a9-bd32-c40d0c1a7c28": {
+    "review_id": "0d3f5f52-e236-46a9-bd32-c40d0c1a7c28",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Product Quality",
+      "Returns & Refunds"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "General complaint about clothes quality and rejected returns.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:37.274Z"
+  },
+  "21856591-8dc4-4838-8129-72e988282fdd": {
+    "review_id": "21856591-8dc4-4838-8129-72e988282fdd",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Delivery",
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief positive feedback on fast delivery and genuine items.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:37.274Z"
+  },
+  "9b40c4eb-1963-4018-a2f0-6ad69ffdf88c": {
+    "review_id": "9b40c4eb-1963-4018-a2f0-6ad69ffdf88c",
+    "relevant": true,
+    "themes": [
+      "Delivery & Shipping Friction"
+    ],
+    "segment": "App User",
+    "categories": [
+      "Checkout Fees",
+      "Returns & Refunds"
+    ],
+    "barrier": "Non-refundable platform fee charged per item during checkout and returns",
+    "sentiment": "negative",
+    "reason": "Highlights checkout friction caused by non-refundable platform fees added to items, especially when returning for size issues.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:37.274Z"
+  },
+  "5963cf67-2144-48fd-a55b-5026c4c48552": {
+    "review_id": "5963cf67-2144-48fd-a55b-5026c4c48552",
+    "relevant": false,
+    "themes": [],
+    "segment": "Budget Shopper",
+    "categories": [
+      "General",
+      "Pricing"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic praise for quality and pricing without mention of wishlist or conversion barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:57.815Z"
+  },
+  "cc5372ef-8b8b-43e5-bd37-c072feaf8506": {
+    "review_id": "cc5372ef-8b8b-43e5-bd37-c072feaf8506",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Customer",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive feedback on product quality with no relevance to wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:57.815Z"
+  },
+  "d015589d-fd8c-4569-b639-c96edfdce151": {
+    "review_id": "d015589d-fd8c-4569-b639-c96edfdce151",
+    "relevant": false,
+    "themes": [],
+    "segment": "Brand Conscious Customer",
+    "categories": [
+      "App Experience",
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for app and authentic brand delivery, unrelated to wishlist purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:57.815Z"
+  },
+  "298a5583-517b-4c6b-84ff-b9ac21c11986": {
+    "review_id": "298a5583-517b-4c6b-84ff-b9ac21c11986",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Customer",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short generic compliment with no details relevant to wishlist or purchase friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:57.815Z"
+  },
+  "5850084f-9a66-4a3b-87ae-dc433bd212b1": {
+    "review_id": "5850084f-9a66-4a3b-87ae-dc433bd212b1",
+    "relevant": false,
+    "themes": [],
+    "segment": "Value Shopper",
+    "categories": [
+      "Pricing",
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive comment about price and quality without wishlist context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:57.815Z"
+  },
+  "db061634-5558-4fab-b181-77feff2c725d": {
+    "review_id": "db061634-5558-4fab-b181-77feff2c725d",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Customer",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief generic product quality compliment.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:57.815Z"
+  },
+  "ddf8800c-b38c-42e9-8dda-46f69d58fb7b": {
+    "review_id": "ddf8800c-b38c-42e9-8dda-46f69d58fb7b",
+    "relevant": false,
+    "themes": [],
+    "segment": "Dissatisfied Buyer",
+    "categories": [
+      "Watches",
+      "Quality & Returns"
+    ],
+    "barrier": "Short return window for defective items",
+    "sentiment": "negative",
+    "reason": "Describes post-purchase product failure and return policy friction rather than pre-purchase wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:57.815Z"
+  },
+  "eb0b0081-53ab-4e99-8908-fe14749cd20a": {
+    "review_id": "eb0b0081-53ab-4e99-8908-fe14749cd20a",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Customer",
+    "categories": [
+      "General",
+      "Customer Service"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive rating for product quality and app service.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:57.815Z"
+  },
+  "80fbda2f-00ab-48d9-a312-4cc9d8f5a0e8": {
+    "review_id": "80fbda2f-00ab-48d9-a312-4cc9d8f5a0e8",
+    "relevant": false,
+    "themes": [],
+    "segment": "Apparel Shopper",
+    "categories": [
+      "Fabric & Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief compliment on material quality without wishlist or purchase friction details.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:57.815Z"
+  },
+  "56c8d03e-d8b7-4e1c-9b08-bb0896b0b85c": {
+    "review_id": "56c8d03e-d8b7-4e1c-9b08-bb0896b0b85c",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Customer",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic praise for product quality.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:07:57.815Z"
+  },
+  "fb437a34-eaa1-4f61-a831-b1f6f69a9618": {
+    "review_id": "fb437a34-eaa1-4f61-a831-b1f6f69a9618",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Product Quality",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic feedback praising overall product quality without mentioning wishlist or checkout friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:18.554Z"
+  },
+  "c9a8ca81-3e8d-45c6-ad5d-0cc92dc35505": {
+    "review_id": "c9a8ca81-3e8d-45c6-ad5d-0cc92dc35505",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Product Quality",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short compliment on quality, irrelevant to wishlist conversion research.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:18.554Z"
+  },
+  "dcfaa7c3-537a-41ea-aecc-4519f4ec22c9": {
+    "review_id": "dcfaa7c3-537a-41ea-aecc-4519f4ec22c9",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Product Quality",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General positive comment on product quality without purchase barrier context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:18.554Z"
+  },
+  "574c73b4-2d13-441b-86d2-bf826ddf3966": {
+    "review_id": "574c73b4-2d13-441b-86d2-bf826ddf3966",
+    "relevant": false,
+    "themes": [],
+    "segment": "Post-Purchase & Returns",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": "Return Rejection",
+    "sentiment": "negative",
+    "reason": "Post-delivery issue regarding wrong item delivered and rejected return, unrelated to pre-purchase or wishlist behavior.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:18.554Z"
+  },
+  "a6ae6860-bba7-4f94-be53-d0b77cbd8cd2": {
+    "review_id": "a6ae6860-bba7-4f94-be53-d0b77cbd8cd2",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Product Quality",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive note about clothing quality without details on purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:18.554Z"
+  },
+  "bc3fce08-ea91-4c2f-abad-2561ed66cd95": {
+    "review_id": "bc3fce08-ea91-4c2f-abad-2561ed66cd95",
+    "relevant": false,
+    "themes": [],
+    "segment": "Brand Authenticity",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Praise for app featuring original brands without addressing wishlist or purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:18.554Z"
+  },
+  "e516e4a0-0a06-40b1-8180-bea1e07490e6": {
+    "review_id": "e516e4a0-0a06-40b1-8180-bea1e07490e6",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Delivery & Quality",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive review covering delivery speed and product quality without purchase friction insights.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:18.554Z"
+  },
+  "0e686907-f202-4074-a22c-dde5beefdf37": {
+    "review_id": "0e686907-f202-4074-a22c-dde5beefdf37",
+    "relevant": false,
+    "themes": [],
+    "segment": "Post-Purchase & Returns",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": "Used Item Delivered",
+    "sentiment": "negative",
+    "reason": "Post-purchase complaint about receiving used shirts and return refusal, unrelated to wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:18.554Z"
+  },
+  "01b49296-294c-48bf-a1d4-87f5dac1110b": {
+    "review_id": "01b49296-294c-48bf-a1d4-87f5dac1110b",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Product Quality",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic feedback regarding good experience and clothing quality.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:18.554Z"
+  },
+  "ee993904-0cdb-40cf-aa26-122c774f3949": {
+    "review_id": "ee993904-0cdb-40cf-aa26-122c774f3949",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Product Quality",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic praise for product quality without mentioning wishlist or checkout friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:18.554Z"
+  },
+  "3a2cfbbb-e521-488c-850a-200f54a33edb": {
+    "review_id": "3a2cfbbb-e521-488c-850a-200f54a33edb",
+    "relevant": false,
+    "themes": [],
+    "segment": "Post-purchase customer",
+    "categories": [
+      "App Experience"
+    ],
+    "barrier": "Return & refund delays",
+    "sentiment": "negative",
+    "reason": "Generic post-purchase return and refund complaint unrelated to wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:40.195Z"
+  },
+  "d4df34a4-a4c4-4db8-b0ef-7c9460019b64": {
+    "review_id": "d4df34a4-a4c4-4db8-b0ef-7c9460019b64",
+    "relevant": false,
+    "themes": [],
+    "segment": "Satisfied shopper",
+    "categories": [
+      "Fashion & Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive feedback with no insights into purchase hesitation or wishlist usage.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:40.195Z"
+  },
+  "dd237855-06dd-47cd-b353-49f4171432cc": {
+    "review_id": "dd237855-06dd-47cd-b353-49f4171432cc",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delayed order buyer",
+    "categories": [
+      "App Experience"
+    ],
+    "barrier": "Delivery delay and refund failure",
+    "sentiment": "negative",
+    "reason": "Generic fulfillment delay and customer support issue not linked to wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:40.195Z"
+  },
+  "3aad17aa-d966-464a-a602-b08a10d1671a": {
+    "review_id": "3aad17aa-d966-464a-a602-b08a10d1671a",
+    "relevant": false,
+    "themes": [],
+    "segment": "Express delivery buyer",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": "Non-delivery of express order",
+    "sentiment": "negative",
+    "reason": "Specific complaint about instant delivery logistics failure without wishlist context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:40.195Z"
+  },
+  "3f8a248f-96c4-4854-b255-718074af8d2b": {
+    "review_id": "3f8a248f-96c4-4854-b255-718074af8d2b",
+    "relevant": false,
+    "themes": [],
+    "segment": "Value shopper",
+    "categories": [
+      "App Experience"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short positive review regarding pricing and collection without purchase barrier details.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:40.195Z"
+  },
+  "7205785f-3f91-48e2-8cbb-bbe647bd2164": {
+    "review_id": "7205785f-3f91-48e2-8cbb-bbe647bd2164",
+    "relevant": true,
+    "themes": [
+      "Delivery & Shipping Friction",
+      "Occasion & Styling Inspiration"
+    ],
+    "segment": "Occasion shopper",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": "Unexpected cancellation for planned occasion",
+    "sentiment": "negative",
+    "reason": "Sudden cancellation prevents timely purchase for a planned occasion, highlighting delivery risk.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:40.195Z"
+  },
+  "e079bff9-1b46-4bc1-aab9-828841024dd8": {
+    "review_id": "e079bff9-1b46-4bc1-aab9-828841024dd8",
+    "relevant": true,
+    "themes": [
+      "Delivery & Shipping Friction",
+      "Occasion & Styling Inspiration"
+    ],
+    "segment": "Festival & event shopper",
+    "categories": [
+      "Ethnic Wear",
+      "Kids Wear"
+    ],
+    "barrier": "Delivery delays missing holiday occasion deadline",
+    "sentiment": "negative",
+    "reason": "Repeated non-delivery of occasion-specific clothing creates reluctance to purchase planned outfits.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:40.195Z"
+  },
+  "90f1f530-0a78-4fff-86b9-38ed00173a63": {
+    "review_id": "90f1f530-0a78-4fff-86b9-38ed00173a63",
+    "relevant": false,
+    "themes": [],
+    "segment": "Cancelled order buyer",
+    "categories": [
+      "App Experience"
+    ],
+    "barrier": "Order cancellation and refund issue",
+    "sentiment": "negative",
+    "reason": "Brief order cancellation feedback without wishlist or pre-purchase friction context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:40.195Z"
+  },
+  "92fabc49-daca-4cc9-a145-ce7b94f8e446": {
+    "review_id": "92fabc49-daca-4cc9-a145-ce7b94f8e446",
+    "relevant": false,
+    "themes": [],
+    "segment": "Satisfied customer",
+    "categories": [
+      "Fashion & Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for product authenticity with no relevance to wishlist research.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:40.195Z"
+  },
+  "d271794e-a715-457e-b899-b9f53f7808ec": {
+    "review_id": "d271794e-a715-457e-b899-b9f53f7808ec",
+    "relevant": false,
+    "themes": [],
+    "segment": "Satisfied customer",
+    "categories": [
+      "Fashion & Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Extremely brief generic positive rating.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:40.195Z"
+  },
+  "fec3c530-476f-49e5-99a4-09962bab6d7a": {
+    "review_id": "fec3c530-476f-49e5-99a4-09962bab6d7a",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Appreciation",
+    "categories": [
+      "App Performance & UX"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "This is generic positive feedback about product selection and quality with no mention of wishlist or purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:58.418Z"
+  },
+  "a6e57053-d783-4440-82ea-51a8170d44d0": {
+    "review_id": "a6e57053-d783-4440-82ea-51a8170d44d0",
+    "relevant": false,
+    "themes": [],
+    "segment": "Brand Authenticity",
+    "categories": [
+      "App Performance & UX"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The user provides broad praise regarding brand authenticity without detailing any shopping friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:58.418Z"
+  },
+  "c614d585-0191-42ac-b522-d2532d8c6dea": {
+    "review_id": "c614d585-0191-42ac-b522-d2532d8c6dea",
+    "relevant": false,
+    "themes": [],
+    "segment": "Pricing & Usability",
+    "categories": [
+      "App Performance & UX"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Expresses general satisfaction with low prices and ease of use without discussing purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:58.418Z"
+  },
+  "6099f622-7bfa-4aaf-81a2-76afcdc1a051": {
+    "review_id": "6099f622-7bfa-4aaf-81a2-76afcdc1a051",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Appreciation",
+    "categories": [
+      "App Performance & UX"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief compliment on brand availability with no relevance to wishlist conversion study.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:58.418Z"
+  },
+  "ed55be18-0a04-420f-8621-08206d80fb8e": {
+    "review_id": "ed55be18-0a04-420f-8621-08206d80fb8e",
+    "relevant": true,
+    "themes": [
+      "Fit & Fabric Anxiety",
+      "Size & Stock Availability"
+    ],
+    "segment": "Size Confusion",
+    "categories": [
+      "Apparel",
+      "Sizing & Fit"
+    ],
+    "barrier": "Unclear sizing distinction between XL and XXL",
+    "sentiment": "positive",
+    "reason": "Highlights sizing ambiguity between XL and XXL which causes purchase anxiety and leads to product exchanges.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:58.418Z"
+  },
+  "2942ff84-8adb-43ad-b02d-02ed8e58f94f": {
+    "review_id": "2942ff84-8adb-43ad-b02d-02ed8e58f94f",
+    "relevant": false,
+    "themes": [],
+    "segment": "Return & Fee Policy",
+    "categories": [
+      "Returns & Refunds"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Focuses on post-purchase return charges rather than purchase hesitation or wishlist usage.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:58.418Z"
+  },
+  "babd5b51-5f09-42f5-abb3-ba4c2eda5b3b": {
+    "review_id": "babd5b51-5f09-42f5-abb3-ba4c2eda5b3b",
+    "relevant": false,
+    "themes": [],
+    "segment": "UI Experience",
+    "categories": [
+      "App Performance & UX"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Complements the app interface and deal visibility without highlighting purchase conversion obstacles.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:58.418Z"
+  },
+  "d193433b-d705-4671-852e-2edae01f2d4e": {
+    "review_id": "d193433b-d705-4671-852e-2edae01f2d4e",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Quality",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Provides general positive sentiment regarding prices and garment quality.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:58.418Z"
+  },
+  "67ac471c-a681-47ba-8754-7df4e737c9c9": {
+    "review_id": "67ac471c-a681-47ba-8754-7df4e737c9c9",
+    "relevant": false,
+    "themes": [],
+    "segment": "Discounts & Pricing",
+    "categories": [
+      "Promotions & Discounts"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Praises brand discounts during sales without addressing why items remain unpurchased.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:58.418Z"
+  },
+  "a983cef7-9cec-434a-9ff7-e755f1f3106d": {
+    "review_id": "a983cef7-9cec-434a-9ff7-e755f1f3106d",
+    "relevant": false,
+    "themes": [],
+    "segment": "Customer Service",
+    "categories": [
+      "Customer Service",
+      "Returns & Refunds"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Details a negative customer service experience after receiving a wrong product rather than wishlist or checkout friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:08:58.418Z"
+  },
+  "1cedf4fb-0505-4e4b-aeaa-0fc1c7ed2b3e": {
+    "review_id": "1cedf4fb-0505-4e4b-aeaa-0fc1c7ed2b3e",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery & Logistics",
+    "categories": [
+      "Delivery Delay",
+      "Customer Support"
+    ],
+    "barrier": "Severe fulfillment delays",
+    "sentiment": "negative",
+    "reason": "Generic delivery and exchange delay complaints are not explicitly linked to wishlist purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:16.164Z"
+  },
+  "4d5ba7af-beff-4bef-b859-e9bccb2a90e5": {
+    "review_id": "4d5ba7af-beff-4bef-b859-e9bccb2a90e5",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for product quality does not offer insights into wishlist conversion barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:16.164Z"
+  },
+  "427ff322-9b15-4a14-a51f-367e79d10161": {
+    "review_id": "427ff322-9b15-4a14-a51f-367e79d10161",
+    "relevant": false,
+    "themes": [],
+    "segment": "Returns & Refunds",
+    "categories": [
+      "Refund Speed"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Praise for refund speed does not address wishlist purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:16.164Z"
+  },
+  "496d30fe-9c4b-4e7e-a9c7-6a778730c5fa": {
+    "review_id": "496d30fe-9c4b-4e7e-a9c7-6a778730c5fa",
+    "relevant": false,
+    "themes": [],
+    "segment": "Customer Support",
+    "categories": [
+      "Exchanges",
+      "Customer Support"
+    ],
+    "barrier": "Failed exchange process",
+    "sentiment": "negative",
+    "reason": "Exchange failure and customer service complaints are unrelated to wishlist purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:16.164Z"
+  },
+  "3b0e330d-1271-416f-873c-06d4c026909b": {
+    "review_id": "3b0e330d-1271-416f-873c-06d4c026909b",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise does not reveal any wishlist-to-purchase conversion insights.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:16.164Z"
+  },
+  "0ee496c0-b0d1-4246-8b96-d3a43f65a800": {
+    "review_id": "0ee496c0-b0d1-4246-8b96-d3a43f65a800",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback regarding overall product quality is not relevant to wishlist conversion research.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:16.164Z"
+  },
+  "4a488ef1-4486-4c72-9235-987171b46845": {
+    "review_id": "4a488ef1-4486-4c72-9235-987171b46845",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Representation",
+    "categories": [
+      "Apparel Quality",
+      "Product Discrepancy"
+    ],
+    "barrier": "Inaccurate product photos and quality",
+    "sentiment": "negative",
+    "reason": "A post-purchase quality and photo discrepancy complaint is not directly tied to wishlist conversion barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:16.164Z"
+  },
+  "8e71f6a4-ef8f-4d75-843e-565ae52246dc": {
+    "review_id": "8e71f6a4-ef8f-4d75-843e-565ae52246dc",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [
+      "Delivery",
+      "Returns & Refunds"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive feedback regarding app experience and returns does not offer insights into wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:16.164Z"
+  },
+  "35d719e7-c6f1-4e59-ba52-923443720ab1": {
+    "review_id": "35d719e7-c6f1-4e59-ba52-923443720ab1",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [
+      "Product Authenticity"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short general positive comment does not provide wishlist conversion insights.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:16.164Z"
+  },
+  "6d0b1ab0-0ea5-465c-b947-40a5181b47c3": {
+    "review_id": "6d0b1ab0-0ea5-465c-b947-40a5181b47c3",
+    "relevant": false,
+    "themes": [],
+    "segment": "Customer Service",
+    "categories": [
+      "Wrong Item Delivered",
+      "Customer Support"
+    ],
+    "barrier": "Incorrect item delivery",
+    "sentiment": "negative",
+    "reason": "Generic customer service and delivery complaints do not address wishlist conversion barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:16.164Z"
+  },
+  "7a70ba9b-74ba-499e-8109-ed677f91e967": {
+    "review_id": "7a70ba9b-74ba-499e-8109-ed677f91e967",
+    "relevant": false,
+    "themes": [],
+    "segment": "Refund Policy & App UX",
+    "categories": [
+      "Refunds",
+      "App UX"
+    ],
+    "barrier": "Complex bank details refund process",
+    "sentiment": "negative",
+    "reason": "Focuses on post-purchase refund process friction rather than wishlist conversion or pre-purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:37.896Z"
+  },
+  "3cd29756-dcb6-4f7a-ae54-6c61218c73e1": {
+    "review_id": "3cd29756-dcb6-4f7a-ae54-6c61218c73e1",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Satisfaction",
+    "categories": [
+      "Product Authenticity"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive review regarding product authenticity without insights into wishlist usage or purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:37.896Z"
+  },
+  "046560fb-5a52-47fd-b175-9017ac0d271f": {
+    "review_id": "046560fb-5a52-47fd-b175-9017ac0d271f",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Fabric Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Provides general feedback on fabric comfort without addressing pre-purchase hesitation or wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:37.896Z"
+  },
+  "7929e2df-4ae5-473a-9e7a-6bace4c12094": {
+    "review_id": "7929e2df-4ae5-473a-9e7a-6bace4c12094",
+    "relevant": false,
+    "themes": [],
+    "segment": "Returns & Logistics",
+    "categories": [
+      "Returns",
+      "Customer Support"
+    ],
+    "barrier": "Return tracking status failure",
+    "sentiment": "negative",
+    "reason": "Pertains to post-purchase return tracking and refund delays rather than wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:37.896Z"
+  },
+  "6e130ea7-c07f-487c-a946-0c8306e83eb9": {
+    "review_id": "6e130ea7-c07f-487c-a946-0c8306e83eb9",
+    "relevant": false,
+    "themes": [],
+    "segment": "Returns & Fulfilment",
+    "categories": [
+      "Wrong Item",
+      "Returns"
+    ],
+    "barrier": "Rejected return pickup",
+    "sentiment": "negative",
+    "reason": "Describes a wrong product delivery and return pickup conflict without wishlist context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:37.896Z"
+  },
+  "d76c8d32-5eb7-449e-afb4-418cfbc57fbe": {
+    "review_id": "d76c8d32-5eb7-449e-afb4-418cfbc57fbe",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Satisfaction",
+    "categories": [
+      "Pricing",
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Broad positive sentiment regarding product quality and affordability with no wishlist relevance.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:37.896Z"
+  },
+  "2376b6da-1295-48a6-9d44-5de5c995a1e7": {
+    "review_id": "2376b6da-1295-48a6-9d44-5de5c995a1e7",
+    "relevant": false,
+    "themes": [],
+    "segment": "Catalog Assortment",
+    "categories": [
+      "Product Variety"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Expresses general satisfaction with clothing selection without touching upon wishlist purchase conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:37.896Z"
+  },
+  "e0a58e4d-53de-4d7d-b8a9-7df2207235e4": {
+    "review_id": "e0a58e4d-53de-4d7d-b8a9-7df2207235e4",
+    "relevant": false,
+    "themes": [],
+    "segment": "Value for Money",
+    "categories": [
+      "Pricing",
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short generic feedback about value for money unrelated to saved items or purchasing barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:37.896Z"
+  },
+  "b3acdcb6-62bf-4474-b8fc-12deef7b3504": {
+    "review_id": "b3acdcb6-62bf-4474-b8fc-12deef7b3504",
+    "relevant": false,
+    "themes": [],
+    "segment": "Refund Issues",
+    "categories": [
+      "Refunds"
+    ],
+    "barrier": "Delayed refunds",
+    "sentiment": "negative",
+    "reason": "Customer complaint about unreceived refunds post-return, not directly linked to wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:37.896Z"
+  },
+  "68ec011e-4550-4e0d-820d-f50068867a20": {
+    "review_id": "68ec011e-4550-4e0d-820d-f50068867a20",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Satisfaction",
+    "categories": [
+      "Discounts",
+      "Delivery Speed"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive feedback on discounts and fast delivery without wishlist purchase insights.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:37.896Z"
+  },
+  "c5bb991a-b2f8-4712-8ffe-eb136c09253f": {
+    "review_id": "c5bb991a-b2f8-4712-8ffe-eb136c09253f",
+    "relevant": false,
+    "themes": [],
+    "segment": "Incorrect Item Received",
+    "categories": [
+      "Jewelry & Accessories"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "This review concerns a post-purchase seller mismatch and fraud issue, unrelated to wishlist conversion or checkout hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:59.628Z"
+  },
+  "963bbf30-a3bd-40b7-bc12-15356151715a": {
+    "review_id": "963bbf30-a3bd-40b7-bc12-15356151715a",
+    "relevant": false,
+    "themes": [],
+    "segment": "Customer Support & Returns",
+    "categories": [
+      "General E-commerce"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "This is a post-purchase return dispute and customer service issue, not related to pre-purchase wishlist friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:59.629Z"
+  },
+  "d34fda9f-c95a-406c-917c-127a7fafd544": {
+    "review_id": "d34fda9f-c95a-406c-917c-127a7fafd544",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Appreciation",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General positive feedback about apparel quality with no mention of wishlist behavior or purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:59.629Z"
+  },
+  "417247b4-adef-451c-8c32-b7f3583b54d9": {
+    "review_id": "417247b4-adef-451c-8c32-b7f3583b54d9",
+    "relevant": false,
+    "themes": [],
+    "segment": "Return Logistics",
+    "categories": [
+      "Logistics"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Focuses on post-purchase return pickup delays rather than wishlist conversion or purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:59.629Z"
+  },
+  "49762eda-e37a-4a0f-ba22-e0cbe7de09f2": {
+    "review_id": "49762eda-e37a-4a0f-ba22-e0cbe7de09f2",
+    "relevant": false,
+    "themes": [],
+    "segment": "Return Technical Issues",
+    "categories": [
+      "Logistics",
+      "Technical Issues"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Describes a post-purchase technical failure with seal tag verification during return pickup.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:59.629Z"
+  },
+  "b5294115-81a4-4977-9365-7a9965ff6747": {
+    "review_id": "b5294115-81a4-4977-9365-7a9965ff6747",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery Cancellation",
+    "categories": [
+      "Beauty & Personal Care",
+      "Logistics"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Generic delivery failure complaint following an order placement.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:59.629Z"
+  },
+  "5421ea6c-8dba-42c5-b89c-1feb3ba142f4": {
+    "review_id": "5421ea6c-8dba-42c5-b89c-1feb3ba142f4",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality Praise",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short positive review praising material quality without providing insights on buying barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:59.629Z"
+  },
+  "5a62218e-5b17-4775-93d9-083274347eb7": {
+    "review_id": "5a62218e-5b17-4775-93d9-083274347eb7",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality Praise",
+    "categories": [
+      "General E-commerce"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic quality compliment with no context on wishlist features or checkout friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:59.629Z"
+  },
+  "acb5b20c-615c-45ef-94eb-ee31d67b2825": {
+    "review_id": "acb5b20c-615c-45ef-94eb-ee31d67b2825",
+    "relevant": false,
+    "themes": [],
+    "segment": "Missing Delivery Item",
+    "categories": [
+      "Logistics",
+      "Customer Support"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Pertains to post-purchase fulfillment issues regarding missing items and unissued refunds.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:59.629Z"
+  },
+  "fdca8e65-f48c-4431-9f90-f6e628d9b770": {
+    "review_id": "fdca8e65-f48c-4431-9f90-f6e628d9b770",
+    "relevant": false,
+    "themes": [],
+    "segment": "Account Access & Exchange Issues",
+    "categories": [
+      "Apparel",
+      "Technical Issues"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Details post-purchase account deactivation preventing a size exchange, rather than wishlist pre-purchase conversion barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:09:59.629Z"
+  },
+  "20f71647-5627-461b-b4dd-5a5e52f6b7ff": {
+    "review_id": "20f71647-5627-461b-b4dd-5a5e52f6b7ff",
+    "relevant": false,
+    "themes": [],
+    "segment": "Apparel Shopper",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General positive feedback on shirt and pant value without wishlist or checkout context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:19.389Z"
+  },
+  "85b0452f-b93b-4588-bccb-3890fb9848ca": {
+    "review_id": "85b0452f-b93b-4588-bccb-3890fb9848ca",
+    "relevant": false,
+    "themes": [],
+    "segment": "E-commerce Shopper",
+    "categories": [
+      "Customer Service",
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Generic complaint about delivery delay and missing refund not linked to wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:19.389Z"
+  },
+  "c6a4a649-61ea-489e-9062-c70e0b348b84": {
+    "review_id": "c6a4a649-61ea-489e-9062-c70e0b348b84",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Shopper",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive rating of product quality and pricing without wishlist relevance.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:19.389Z"
+  },
+  "8164ef11-effa-4aa8-9e6f-628fc1d435aa": {
+    "review_id": "8164ef11-effa-4aa8-9e6f-628fc1d435aa",
+    "relevant": false,
+    "themes": [],
+    "segment": "Platform Seller",
+    "categories": [
+      "Logistics",
+      "Seller Experience"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Seller complaint regarding logistics loss rather than consumer wishlist behavior.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:19.389Z"
+  },
+  "e13281a8-35e5-48f9-aa7e-f0b189d35d1c": {
+    "review_id": "e13281a8-35e5-48f9-aa7e-f0b189d35d1c",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Shopper",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief positive sentiment about service and quality lacking wishlist context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:19.389Z"
+  },
+  "493c9eb0-01e9-43e9-9a14-0b253357dd0f": {
+    "review_id": "493c9eb0-01e9-43e9-9a14-0b253357dd0f",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Shopper",
+    "categories": [
+      "Delivery",
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for fast delivery and product quality with no wishlist insight.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:19.389Z"
+  },
+  "b013abac-bc28-4588-bb50-9ad20a0e2550": {
+    "review_id": "b013abac-bc28-4588-bb50-9ad20a0e2550",
+    "relevant": false,
+    "themes": [],
+    "segment": "Apparel Shopper",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short compliment on clothing quality with no mention of wishlist barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:19.389Z"
+  },
+  "9f422394-7ef8-46af-a81d-5ac84f5c8224": {
+    "review_id": "9f422394-7ef8-46af-a81d-5ac84f5c8224",
+    "relevant": false,
+    "themes": [],
+    "segment": "Account Holder",
+    "categories": [
+      "Account Management"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Account suspension feedback unrelated to wishlist conversion or purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:19.389Z"
+  },
+  "64d3e810-301c-481f-829e-2f81e00f2e7f": {
+    "review_id": "64d3e810-301c-481f-829e-2f81e00f2e7f",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Shopper",
+    "categories": [
+      "Delivery",
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback on delivery speed and quality with no wishlist relevance.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:19.389Z"
+  },
+  "97f3dd84-ecb4-49e0-a4ba-36c545fddf14": {
+    "review_id": "97f3dd84-ecb4-49e0-a4ba-36c545fddf14",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Shopper",
+    "categories": [
+      "General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for the shopping app without context on wishlist or purchasing friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:19.389Z"
+  },
+  "62f2d17d-3036-450f-a579-205c2f4d071c": {
+    "review_id": "62f2d17d-3036-450f-a579-205c2f4d071c",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [
+      "App General"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive feedback about products and offers without wishlist or checkout conversion insights.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:43.327Z"
+  },
+  "1f6f3432-5859-4a3c-8227-fef5f1e0eff0": {
+    "review_id": "1f6f3432-5859-4a3c-8227-fef5f1e0eff0",
+    "relevant": false,
+    "themes": [],
+    "segment": "Fulfillment & Returns",
+    "categories": [
+      "Apparel",
+      "Customer Support"
+    ],
+    "barrier": "Incorrect item delivered",
+    "sentiment": "negative",
+    "reason": "Post-purchase complaint regarding incorrect fulfillment and refund delays rather than pre-purchase conversion barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:43.327Z"
+  },
+  "41ac0c7a-4051-4775-b745-aec5146768f7": {
+    "review_id": "41ac0c7a-4051-4775-b745-aec5146768f7",
+    "relevant": false,
+    "themes": [],
+    "segment": "Returns & Refunds",
+    "categories": [
+      "Refunds / Customer Support"
+    ],
+    "barrier": "Refund processing delay",
+    "sentiment": "negative",
+    "reason": "Post-purchase refund tracking issue not connected to wishlist purchase decisions or checkout friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:43.327Z"
+  },
+  "4004fbd4-8931-464e-bad9-f4dd6afc2426": {
+    "review_id": "4004fbd4-8931-464e-bad9-f4dd6afc2426",
+    "relevant": false,
+    "themes": [],
+    "segment": "Apparel",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for fabric quality without specific insights into wishlist retention or purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:43.327Z"
+  },
+  "df0eec88-48ad-433f-ad3d-31930b78d061": {
+    "review_id": "df0eec88-48ad-433f-ad3d-31930b78d061",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery & Shipping",
+    "categories": [
+      "Delivery"
+    ],
+    "barrier": "Unreliable express delivery",
+    "sentiment": "negative",
+    "reason": "Standard post-purchase delivery delay complaint not explicitly tied to wishlist purchase friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:43.327Z"
+  },
+  "c5219aca-bc2d-4647-9f01-e47c5762bdfc": {
+    "review_id": "c5219aca-bc2d-4647-9f01-e47c5762bdfc",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [
+      "Beauty & Personal Care",
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short generic positive comment with no detailed conversion or wishlist insights.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:43.327Z"
+  },
+  "b053dd4b-7af8-4682-8786-2b8092021e3e": {
+    "review_id": "b053dd4b-7af8-4682-8786-2b8092021e3e",
+    "relevant": false,
+    "themes": [],
+    "segment": "Apparel",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief positive feedback on photo accuracy without context on wishlist behavior or purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:43.327Z"
+  },
+  "cd55709f-ae67-486a-8a26-43b1f261b612": {
+    "review_id": "cd55709f-ae67-486a-8a26-43b1f261b612",
+    "relevant": false,
+    "themes": [],
+    "segment": "Returns & Quality",
+    "categories": [
+      "Apparel",
+      "Customer Support"
+    ],
+    "barrier": "Return period expiration friction",
+    "sentiment": "negative",
+    "reason": "Post-purchase quality and return delay complaint not linked to wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:43.327Z"
+  },
+  "f57d72de-5a1c-4c4e-b598-dbaf2d91cea0": {
+    "review_id": "f57d72de-5a1c-4c4e-b598-dbaf2d91cea0",
+    "relevant": false,
+    "themes": [],
+    "segment": "Returns & Refunds",
+    "categories": [
+      "Footwear",
+      "Apparel",
+      "Customer Support"
+    ],
+    "barrier": "Missing refund and agent dispute",
+    "sentiment": "negative",
+    "reason": "Post-purchase dispute regarding pickup agent and missing refund unrelated to wishlist barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:43.327Z"
+  },
+  "faaa5142-5ba2-4949-8c67-e3cd06f82808": {
+    "review_id": "faaa5142-5ba2-4949-8c67-e3cd06f82808",
+    "relevant": false,
+    "themes": [],
+    "segment": "Returns & Refunds",
+    "categories": [
+      "Refunds / Customer Support"
+    ],
+    "barrier": "Inflexible bank detail updates",
+    "sentiment": "negative",
+    "reason": "Post-purchase customer support issue regarding account detail updates for refunds.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:10:43.327Z"
+  },
+  "266d7385-2475-4c19-82ab-539bb8d659df": {
+    "review_id": "266d7385-2475-4c19-82ab-539bb8d659df",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Reviewer",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive feedback regarding fabric quality with no wishlist or conversion context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:05.447Z"
+  },
+  "a97e3ea8-18f3-4db0-ab2d-e8815d30a3f1": {
+    "review_id": "a97e3ea8-18f3-4db0-ab2d-e8815d30a3f1",
+    "relevant": true,
+    "themes": [
+      "Fit & Fabric Anxiety",
+      "Delivery & Shipping Friction"
+    ],
+    "segment": "Dissatisfied Shopper",
+    "categories": [
+      "Apparel",
+      "E-commerce"
+    ],
+    "barrier": "Listing vs reality mismatch",
+    "sentiment": "negative",
+    "reason": "Highlights discrepancy between listing photos and actual product quality, creating purchase hesitation and distrust.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:05.447Z"
+  },
+  "b44a5e75-1051-49c5-bb6f-30b1f9b8bdde": {
+    "review_id": "b44a5e75-1051-49c5-bb6f-30b1f9b8bdde",
+    "relevant": false,
+    "themes": [],
+    "segment": "Satisfied Customer",
+    "categories": [
+      "E-commerce"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive app review with no detailed insights on buying friction or wishlist.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:05.447Z"
+  },
+  "784b5201-e43b-4ee8-8e49-1923d7fcfbeb": {
+    "review_id": "784b5201-e43b-4ee8-8e49-1923d7fcfbeb",
+    "relevant": false,
+    "themes": [],
+    "segment": "App User",
+    "categories": [
+      "Mobile App"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for app UI improvements without addressing purchase decisions.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:05.447Z"
+  },
+  "069c8e2f-1fd8-4738-a71b-31d97aa5d808": {
+    "review_id": "069c8e2f-1fd8-4738-a71b-31d97aa5d808",
+    "relevant": false,
+    "themes": [],
+    "segment": "Footwear Purchaser",
+    "categories": [
+      "Footwear"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Standard positive product review after purchase.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:05.447Z"
+  },
+  "32014453-d9d5-42e6-a89d-cb83cbc99631": {
+    "review_id": "32014453-d9d5-42e6-a89d-cb83cbc99631",
+    "relevant": true,
+    "themes": [
+      "Wishlist Clutter & Organization"
+    ],
+    "segment": "Wishlist User",
+    "categories": [
+      "Mobile App",
+      "Wishlist"
+    ],
+    "barrier": "Wishlist capacity limit",
+    "sentiment": "negative",
+    "reason": "Explicit feedback demanding removal of wishlist limits that hinder item saving.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:05.447Z"
+  },
+  "188752fc-3cd6-4c9f-8519-d9424c391e52": {
+    "review_id": "188752fc-3cd6-4c9f-8519-d9424c391e52",
+    "relevant": false,
+    "themes": [],
+    "segment": "Satisfied Customer",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief positive comment on product quality without specific purchase friction details.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:05.447Z"
+  },
+  "8b1322fa-16a3-4ce1-ac39-1fdc6495d280": {
+    "review_id": "8b1322fa-16a3-4ce1-ac39-1fdc6495d280",
+    "relevant": false,
+    "themes": [],
+    "segment": "Satisfied Customer",
+    "categories": [
+      "Apparel"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short generic positive praise for quality.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:05.447Z"
+  },
+  "b7a3e0ae-8e61-4a7d-9f40-37929d4a639d": {
+    "review_id": "b7a3e0ae-8e61-4a7d-9f40-37929d4a639d",
+    "relevant": false,
+    "themes": [],
+    "segment": "Return Process User",
+    "categories": [
+      "Apparel",
+      "Customer Support"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Generic post-purchase pickup failure complaint unrelated to wishlist purchase hesitation.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:05.447Z"
+  },
+  "2040b5d3-a649-453f-871d-ff6cb1b6725a": {
+    "review_id": "2040b5d3-a649-453f-871d-ff6cb1b6725a",
+    "relevant": true,
+    "themes": [
+      "Size & Stock Availability"
+    ],
+    "segment": "Exchange Shopper",
+    "categories": [
+      "Apparel",
+      "Exchange & Returns"
+    ],
+    "barrier": "Sizing uncertainty and exchange stock failure",
+    "sentiment": "negative",
+    "reason": "Details sizing errors and unfulfilled stock exchanges that deter confident fashion purchases.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:05.447Z"
+  },
+  "03460ba7-42b2-459d-8b41-0c32c7da71e1": {
+    "review_id": "03460ba7-42b2-459d-8b41-0c32c7da71e1",
+    "relevant": true,
+    "themes": [
+      "Wishlist Clutter & Organization"
+    ],
+    "segment": "Wishlist Power Users",
+    "categories": [
+      "Wishlist",
+      "User Experience"
+    ],
+    "barrier": "Wishlist capacity limit",
+    "sentiment": "negative",
+    "reason": "The user explicitly states that the wishlist limit hinders their ability to save and compare clothing items before deciding to purchase.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:27.176Z"
+  },
+  "16e28580-e7df-45db-81f8-940551b88e42": {
+    "review_id": "16e28580-e7df-45db-81f8-940551b88e42",
+    "relevant": false,
+    "themes": [],
+    "segment": "Post-Purchase Support",
+    "categories": [
+      "Customer Service",
+      "Exchanges & Refunds"
+    ],
+    "barrier": "Exchange & refund delays",
+    "sentiment": "negative",
+    "reason": "This is a post-purchase customer service complaint regarding exchanges and refunds, unrelated to wishlist purchase friction.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:27.176Z"
+  },
+  "18b844df-4020-4cfa-89ee-24e2c4acda14": {
+    "review_id": "18b844df-4020-4cfa-89ee-24e2c4acda14",
+    "relevant": false,
+    "themes": [],
+    "segment": "Satisfied Shoppers",
+    "categories": [
+      "App Performance",
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive feedback admiring app performance and smooth delivery without any wishlist context.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:27.176Z"
+  },
+  "5e1545ee-a6e9-40ac-93e2-9469e308c078": {
+    "review_id": "5e1545ee-a6e9-40ac-93e2-9469e308c078",
+    "relevant": false,
+    "themes": [],
+    "segment": "Satisfied Shoppers",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive review complimenting product quality without mentioning wishlist features or purchase barriers.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:27.176Z"
+  },
+  "d7806d03-2cbc-4576-bed4-da6f4746ed0c": {
+    "review_id": "d7806d03-2cbc-4576-bed4-da6f4746ed0c",
+    "relevant": false,
+    "themes": [],
+    "segment": "Post-Purchase Support",
+    "categories": [
+      "Exchanges"
+    ],
+    "barrier": "Delayed exchange process",
+    "sentiment": "negative",
+    "reason": "A post-purchase exchange complaint unrelated to pre-purchase wishlist behavior.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:27.176Z"
+  },
+  "e36f1bd7-44a8-43c3-8990-04ac60653593": {
+    "review_id": "e36f1bd7-44a8-43c3-8990-04ac60653593",
+    "relevant": false,
+    "themes": [],
+    "segment": "Value Seekers",
+    "categories": [
+      "Pricing",
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic praise of product quality and low prices without insights into wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:27.176Z"
+  },
+  "d719acf9-f44f-46c9-81e1-83412db47425": {
+    "review_id": "d719acf9-f44f-46c9-81e1-83412db47425",
+    "relevant": false,
+    "themes": [],
+    "segment": "Satisfied Shoppers",
+    "categories": [
+      "App Experience"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic review complimenting reasonable prices and product quality.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:27.176Z"
+  },
+  "f0d31b9e-b0b0-4fc7-b1b1-1ba593d77255": {
+    "review_id": "f0d31b9e-b0b0-4fc7-b1b1-1ba593d77255",
+    "relevant": false,
+    "themes": [],
+    "segment": "Account Issues",
+    "categories": [
+      "Account Management",
+      "Returns"
+    ],
+    "barrier": "Account deactivation",
+    "sentiment": "negative",
+    "reason": "Complaint regarding account deactivation and order returns, unrelated to wishlist usage.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:27.176Z"
+  },
+  "e0e9570d-5b76-4646-8c1a-7e77e09dd95b": {
+    "review_id": "e0e9570d-5b76-4646-8c1a-7e77e09dd95b",
+    "relevant": false,
+    "themes": [],
+    "segment": "Brand Loyalists",
+    "categories": [
+      "Product Authenticity"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive review confirming product authenticity.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:27.176Z"
+  },
+  "d8599ca4-827e-48ef-b2a2-dd2faf173b5d": {
+    "review_id": "d8599ca4-827e-48ef-b2a2-dd2faf173b5d",
+    "relevant": false,
+    "themes": [],
+    "segment": "Dissatisfied Buyers",
+    "categories": [
+      "Product Quality",
+      "Returns"
+    ],
+    "barrier": "Poor product quality",
+    "sentiment": "negative",
+    "reason": "Post-purchase complaint regarding poor fabric quality and missed return windows, not tied to wishlist conversion.",
+    "provider": "gemini",
+    "classified_at": "2026-08-29T09:11:27.176Z"
   }
 }
