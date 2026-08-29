@@ -38733,11 +38733,21 @@
     "title": "",
     "text": "very Best quality delivered",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=df26270d-1b73-4729-afbe-2d3b6928af98",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review only praises product quality and does not mention wishlist or purchase friction.",
+    "ai": {
+      "review_id": "df26270d-1b73-4729-afbe-2d3b6928af98",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review only praises product quality and does not mention wishlist or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-29T14:12:44.045Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -38747,11 +38757,21 @@
     "title": "",
     "text": "nice app for cloth Brand genuine quality .",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=3f13b895-e14c-4ec4-93e1-6688afcd9e60",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review comments on brand authenticity and quality, with no reference to wishlist behavior.",
+    "ai": {
+      "review_id": "3f13b895-e14c-4ec4-93e1-6688afcd9e60",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review comments on brand authenticity and quality, with no reference to wishlist behavior.",
+      "provider": "groq",
+      "classified_at": "2026-08-29T14:12:44.046Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -38785,11 +38805,21 @@
     "title": "",
     "text": "myntra matlab original brand ka saman",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=34d5df0c-5fc8-4fcc-bbd4-b9d291bc9722",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review simply states that products are original, lacking any wishlist‑related insight.",
+    "ai": {
+      "review_id": "34d5df0c-5fc8-4fcc-bbd4-b9d291bc9722",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review simply states that products are original, lacking any wishlist‑related insight.",
+      "provider": "groq",
+      "classified_at": "2026-08-29T14:12:44.046Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -38799,11 +38829,21 @@
     "title": "",
     "text": "Myntra mein hamesha original aur best quality products hote Hain. price thoda high hota hai but no compromise with quality. and product exchange and style change policies best hai.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e3416d3d-1ce6-4db2-801f-6b13d92a40a5",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): While it mentions price and policies, it does not discuss wishlist hesitation or checkout friction.",
+    "ai": {
+      "review_id": "e3416d3d-1ce6-4db2-801f-6b13d92a40a5",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "While it mentions price and policies, it does not discuss wishlist hesitation or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-29T14:12:44.046Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -38885,11 +38925,21 @@
     "title": "",
     "text": "this app help me alot in my outfit and the price here are sooo good I love this app alot love it",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=4ae106f4-9175-4006-99d9-23b60560cc0f",
-    "study_relevant": true,
-    "matched_themes": [
-      "Occasion & Styling Inspiration"
-    ],
-    "screening_reason": "Matched: Occasion & Styling Inspiration"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The feedback praises the app and pricing but contains no wishlist‑related content.",
+    "ai": {
+      "review_id": "4ae106f4-9175-4006-99d9-23b60560cc0f",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The feedback praises the app and pricing but contains no wishlist‑related content.",
+      "provider": "groq",
+      "classified_at": "2026-08-29T14:12:44.046Z"
+    }
   },
   {
     "source": "Google Play (India)",

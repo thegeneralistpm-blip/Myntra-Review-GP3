@@ -74288,5 +74288,65 @@
     "reason": "User finds the app easy to use and comprehensive.",
     "provider": "groq",
     "classified_at": "2026-08-29T13:18:44.149Z"
+  },
+  "df26270d-1b73-4729-afbe-2d3b6928af98": {
+    "review_id": "df26270d-1b73-4729-afbe-2d3b6928af98",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review only praises product quality and does not mention wishlist or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-29T14:12:44.045Z"
+  },
+  "3f13b895-e14c-4ec4-93e1-6688afcd9e60": {
+    "review_id": "3f13b895-e14c-4ec4-93e1-6688afcd9e60",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review comments on brand authenticity and quality, with no reference to wishlist behavior.",
+    "provider": "groq",
+    "classified_at": "2026-08-29T14:12:44.046Z"
+  },
+  "34d5df0c-5fc8-4fcc-bbd4-b9d291bc9722": {
+    "review_id": "34d5df0c-5fc8-4fcc-bbd4-b9d291bc9722",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review simply states that products are original, lacking any wishlist‑related insight.",
+    "provider": "groq",
+    "classified_at": "2026-08-29T14:12:44.046Z"
+  },
+  "e3416d3d-1ce6-4db2-801f-6b13d92a40a5": {
+    "review_id": "e3416d3d-1ce6-4db2-801f-6b13d92a40a5",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "While it mentions price and policies, it does not discuss wishlist hesitation or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-29T14:12:44.046Z"
+  },
+  "4ae106f4-9175-4006-99d9-23b60560cc0f": {
+    "review_id": "4ae106f4-9175-4006-99d9-23b60560cc0f",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The feedback praises the app and pricing but contains no wishlist‑related content.",
+    "provider": "groq",
+    "classified_at": "2026-08-29T14:12:44.046Z"
   }
 }
