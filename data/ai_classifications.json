@@ -74348,5 +74348,2230 @@
     "reason": "The feedback praises the app and pricing but contains no wishlist‑related content.",
     "provider": "groq",
     "classified_at": "2026-08-29T14:12:44.046Z"
+  },
+  "6a9c4caf-83f8-42d3-a613-06876baefa09": {
+    "review_id": "6a9c4caf-83f8-42d3-a613-06876baefa09",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review praises the purchase but does not mention wishlist or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:17.340Z"
+  },
+  "3d6cb93a-1b47-44b5-bd82-3388483cb0b3": {
+    "review_id": "3d6cb93a-1b47-44b5-bd82-3388483cb0b3",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review comments on product variety without referencing wishlist or checkout issues.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:17.346Z"
+  },
+  "d4c4be51-7b18-48e2-9120-e64b1552d0c8": {
+    "review_id": "d4c4be51-7b18-48e2-9120-e64b1552d0c8",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review expresses overall satisfaction but lacks any wishlist‑related insight.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:17.346Z"
+  },
+  "69a3bcaa-8495-41e3-9af1-895814f1fcf7": {
+    "review_id": "69a3bcaa-8495-41e3-9af1-895814f1fcf7",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review mentions quality and facilities without discussing wishlist or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:17.346Z"
+  },
+  "5b38f801-be40-4d42-b579-87bdae40fcd1": {
+    "review_id": "5b38f801-be40-4d42-b579-87bdae40fcd1",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review highlights brand preference and discounts but does not address wishlist hesitation or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:17.346Z"
+  },
+  "895f1a3c-f1eb-4078-90eb-0816367f4236": {
+    "review_id": "895f1a3c-f1eb-4078-90eb-0816367f4236",
+    "relevant": false,
+    "themes": [],
+    "segment": "Support",
+    "categories": [
+      "Refund Issue",
+      "Delivery Problem"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complaint about refund and undelivered order, not related to wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:22.087Z"
+  },
+  "e5915576-7797-4626-a584-afc5543df3a5": {
+    "review_id": "e5915576-7797-4626-a584-afc5543df3a5",
+    "relevant": false,
+    "themes": [],
+    "segment": "Praise",
+    "categories": [
+      "App Preference",
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for the app and product quality, no wishlist context.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:22.087Z"
+  },
+  "d73224be-f99e-45d5-a43f-449ed74c96cc": {
+    "review_id": "d73224be-f99e-45d5-a43f-449ed74c96cc",
+    "relevant": false,
+    "themes": [],
+    "segment": "Praise",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback on product quality, unrelated to wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:22.087Z"
+  },
+  "e4b999de-6fc0-4535-a839-72d1f8a66ca7": {
+    "review_id": "e4b999de-6fc0-4535-a839-72d1f8a66ca7",
+    "relevant": false,
+    "themes": [],
+    "segment": "Praise",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief positive comment on quality, no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:22.087Z"
+  },
+  "d87c4f18-e36d-4a2a-b76a-84245ea4f895": {
+    "review_id": "d87c4f18-e36d-4a2a-b76a-84245ea4f895",
+    "relevant": false,
+    "themes": [],
+    "segment": "Support",
+    "categories": [
+      "Loyalty Points",
+      "Account Issue"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Issue with loyalty points not reflecting, not tied to wishlist purchase.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:22.087Z"
+  },
+  "fd0df4f7-83f8-4457-a1a5-c3eb38aa673f": {
+    "review_id": "fd0df4f7-83f8-4457-a1a5-c3eb38aa673f",
+    "relevant": false,
+    "themes": [],
+    "segment": "Service",
+    "categories": [
+      "Order Issue",
+      "Customer Service"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "User received the wrong item and experienced poor customer service.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:58.027Z"
+  },
+  "a9ab63b2-7d65-494e-8571-cd04ea6115b3": {
+    "review_id": "a9ab63b2-7d65-494e-8571-cd04ea6115b3",
+    "relevant": false,
+    "themes": [],
+    "segment": "Overall",
+    "categories": [
+      "User Experience",
+      "Product Information",
+      "Payments",
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback about the overall shopping experience and app usability.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:58.027Z"
+  },
+  "ea600788-fdd9-40ad-a117-821a1b28adb2": {
+    "review_id": "ea600788-fdd9-40ad-a117-821a1b28adb2",
+    "relevant": false,
+    "themes": [],
+    "segment": "Service",
+    "categories": [
+      "Order Issue",
+      "Customer Support",
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "User frustrated with incorrect order status, delivery problems, and lack of support.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:58.028Z"
+  },
+  "922de038-b1b0-48f0-b095-732d5cbda8fd": {
+    "review_id": "922de038-b1b0-48f0-b095-732d5cbda8fd",
+    "relevant": false,
+    "themes": [],
+    "segment": "Overall",
+    "categories": [
+      "App Usability",
+      "Product Variety",
+      "Delivery",
+      "Returns",
+      "Discounts"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "User praises the app, product range, quick delivery, and hassle‑free returns.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:58.028Z"
+  },
+  "56130f0b-4746-40b9-82c1-be6960f3f13e": {
+    "review_id": "56130f0b-4746-40b9-82c1-be6960f3f13e",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product",
+    "categories": [
+      "Quality",
+      "Fit",
+      "Pricing",
+      "Brands"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "User highlights good quality, fit, brand variety, and reasonable price.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:00:58.028Z"
+  },
+  "cb7d21a7-c37b-4538-b412-937186da5784": {
+    "review_id": "cb7d21a7-c37b-4538-b412-937186da5784",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The comment praises product quality but does not mention wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:02.638Z"
+  },
+  "3299976e-b448-4ac9-8567-a741c50ac379": {
+    "review_id": "3299976e-b448-4ac9-8567-a741c50ac379",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Praise",
+    "categories": [
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback about product quality without any reference to wishlist or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:02.639Z"
+  },
+  "538f7280-38c0-4e72-a1d4-17fd6ba576f9": {
+    "review_id": "538f7280-38c0-4e72-a1d4-17fd6ba576f9",
+    "relevant": false,
+    "themes": [],
+    "segment": "Service Speed",
+    "categories": [
+      "Service"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Mentions fast service and quality but does not discuss wishlist behavior or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:02.639Z"
+  },
+  "d3df6cc9-e511-4b99-a9b1-37798b5aaa07": {
+    "review_id": "d3df6cc9-e511-4b99-a9b1-37798b5aaa07",
+    "relevant": false,
+    "themes": [],
+    "segment": "Account/Login Issue",
+    "categories": [
+      "Technical Issue"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Focuses on login problems rather than wishlist conversion or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:02.639Z"
+  },
+  "0c4cb816-ada0-4e61-91b0-eb12ba5444cb": {
+    "review_id": "0c4cb816-ada0-4e61-91b0-eb12ba5444cb",
+    "relevant": false,
+    "themes": [],
+    "segment": "Return/Refund Complaint",
+    "categories": [
+      "Customer Service",
+      "Refund Issue"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Describes a scam/return issue without any connection to wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:02.639Z"
+  },
+  "20f7b243-1259-41a9-abe6-f296595e150b": {
+    "review_id": "20f7b243-1259-41a9-abe6-f296595e150b",
+    "relevant": false,
+    "themes": [],
+    "segment": "App Performance",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Mentions slow app response, no wishlist or purchase‑related friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:07.623Z"
+  },
+  "5628caa2-4a0e-4f6c-9404-2846c057d3a1": {
+    "review_id": "5628caa2-4a0e-4f6c-9404-2846c057d3a1",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive comment on quality and fit, but does not discuss wishlist or checkout issues.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:07.623Z"
+  },
+  "d9e8513b-e006-4c55-8bd4-6aee8db1ab94": {
+    "review_id": "d9e8513b-e006-4c55-8bd4-6aee8db1ab94",
+    "relevant": false,
+    "themes": [],
+    "segment": "Purchase Experience",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Expresses dislike for buying clothes due to quality and price, but no reference to wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:07.623Z"
+  },
+  "591cade2-d3a8-4b51-a11e-0f2b68fd232d": {
+    "review_id": "591cade2-d3a8-4b51-a11e-0f2b68fd232d",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality & Service",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complains about low quality, high price and service, without mentioning wishlist or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:07.623Z"
+  },
+  "5b1f7c7d-500c-4da8-8dad-c3612f7d0541": {
+    "review_id": "5b1f7c7d-500c-4da8-8dad-c3612f7d0541",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback on quality, unrelated to wishlist or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:07.623Z"
+  },
+  "88e20d13-d60a-4cd8-ac4d-422bad13f05f": {
+    "review_id": "88e20d13-d60a-4cd8-ac4d-422bad13f05f",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Praise",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The comment praises fit but does not mention wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:27.660Z"
+  },
+  "86aa1118-8e01-4c5e-bb81-6e600bdf0fcc": {
+    "review_id": "86aa1118-8e01-4c5e-bb81-6e600bdf0fcc",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Praise",
+    "categories": [
+      "Material Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review highlights material quality without referencing wishlist behavior.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:27.660Z"
+  },
+  "0ca3bd7e-7bed-4483-abb9-46953fe5ccc5": {
+    "review_id": "0ca3bd7e-7bed-4483-abb9-46953fe5ccc5",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Praise",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General positive feedback on quality, no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:27.660Z"
+  },
+  "1fda5c88-63c1-4158-90b9-fdc8d7acf088": {
+    "review_id": "1fda5c88-63c1-4158-90b9-fdc8d7acf088",
+    "relevant": false,
+    "themes": [],
+    "segment": "Service Complaint",
+    "categories": [
+      "Return Process",
+      "Customer Support"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complaint about return experience, not linked to wishlist purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:27.660Z"
+  },
+  "c37da33e-cad9-48bb-95f1-937e4e678211": {
+    "review_id": "c37da33e-cad9-48bb-95f1-937e4e678211",
+    "relevant": false,
+    "themes": [],
+    "segment": "Refund Issue",
+    "categories": [
+      "Refund",
+      "Payment"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Refund not received; unrelated to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:27.660Z"
+  },
+  "70d30ab3-1dd4-409a-8e6d-cf5cf38070b8": {
+    "review_id": "70d30ab3-1dd4-409a-8e6d-cf5cf38070b8",
+    "relevant": false,
+    "themes": [],
+    "segment": "Customer Service",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review praises return handling and support but does not mention wishlists or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:32.376Z"
+  },
+  "ed52defa-89a0-47ff-8694-d744efa4c771": {
+    "review_id": "ed52defa-89a0-47ff-8694-d744efa4c771",
+    "relevant": false,
+    "themes": [],
+    "segment": "Overall Experience",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General positive feedback about the app experience without any wishlist‑related insight.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:32.376Z"
+  },
+  "3d1c982c-9d7f-4d6a-8e4c-192e636141f4": {
+    "review_id": "3d1c982c-9d7f-4d6a-8e4c-192e636141f4",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Focuses on product quality and authenticity, not on wishlist or checkout issues.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:32.376Z"
+  },
+  "1f14962f-58aa-4dad-aea9-8dda5e575157": {
+    "review_id": "1f14962f-58aa-4dad-aea9-8dda5e575157",
+    "relevant": false,
+    "themes": [],
+    "segment": "Offers",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Mentions lack of offers as a drawback but does not relate to wishlist behavior.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:32.376Z"
+  },
+  "5a2978aa-0fd5-400f-b475-333c8f6df501": {
+    "review_id": "5a2978aa-0fd5-400f-b475-333c8f6df501",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Authenticity",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive comment on product genuineness with no reference to wishlists or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:32.376Z"
+  },
+  "e5207d25-a6c6-4830-9795-b884772c185a": {
+    "review_id": "e5207d25-a6c6-4830-9795-b884772c185a",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Comments only on app usability and product trendiness, no wishlist or purchase‑hesitation insight.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:52.520Z"
+  },
+  "a11564d6-01c6-4bf7-b377-6aac2b0b664d": {
+    "review_id": "a11564d6-01c6-4bf7-b377-6aac2b0b664d",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Mentions convenience and product variety but does not discuss wishlist behavior or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:52.520Z"
+  },
+  "eab5ed4c-6aa7-4e5c-88b4-48c11a454d40": {
+    "review_id": "eab5ed4c-6aa7-4e5c-88b4-48c11a454d40",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief product‑quality comment without any reference to wishlisting or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:52.520Z"
+  },
+  "586ba7a8-75ee-49d2-a43e-6863de01cb5e": {
+    "review_id": "586ba7a8-75ee-49d2-a43e-6863de01cb5e",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Focuses on refund and size‑mismatch issues, not on wishlist conversion or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:52.520Z"
+  },
+  "6b0f0e05-f1db-4df6-932b-2d48c1b2ad4a": {
+    "review_id": "6b0f0e05-f1db-4df6-932b-2d48c1b2ad4a",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive product‑quality feedback with no mention of wishlisting or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:52.520Z"
+  },
+  "8d238d0b-4c16-4b10-81a6-3eec8e213fcf": {
+    "review_id": "8d238d0b-4c16-4b10-81a6-3eec8e213fcf",
+    "relevant": false,
+    "themes": [],
+    "segment": "App Experience",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise about navigation and pricing, no mention of wishlist or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:57.085Z"
+  },
+  "f4b2fafa-ea3b-445f-bb1d-f556664172eb": {
+    "review_id": "f4b2fafa-ea3b-445f-bb1d-f556664172eb",
+    "relevant": false,
+    "themes": [],
+    "segment": "Return/Refund",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Focuses on return and refund delays, not on wishlist or checkout barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:57.085Z"
+  },
+  "17d1a40c-3026-44ea-a51b-403a553d33ab": {
+    "review_id": "17d1a40c-3026-44ea-a51b-403a553d33ab",
+    "relevant": false,
+    "themes": [],
+    "segment": "Overall Experience",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Broad positive feedback about app features and delivery, no wishlist‑related insight.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:57.085Z"
+  },
+  "3aadbf0d-91ad-4559-a896-afc86ce2c35a": {
+    "review_id": "3aadbf0d-91ad-4559-a896-afc86ce2c35a",
+    "relevant": false,
+    "themes": [],
+    "segment": "Pricing/Quality",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Simple comment on price and quality, unrelated to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:57.085Z"
+  },
+  "88fc9b89-1b8b-4834-906e-98c6689a8075": {
+    "review_id": "88fc9b89-1b8b-4834-906e-98c6689a8075",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Accuracy",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Mentions product matching photos, but does not address wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:01:57.086Z"
+  },
+  "9beab9fb-ceaa-458e-8550-02fee80c450d": {
+    "review_id": "9beab9fb-ceaa-458e-8550-02fee80c450d",
+    "relevant": true,
+    "themes": [
+      "Delivery & Shipping Friction"
+    ],
+    "segment": "Delivery Reliability",
+    "categories": [
+      "Delivery Delay",
+      "Order Cancellation"
+    ],
+    "barrier": "Delivery Reliability",
+    "sentiment": "negative",
+    "reason": "Unreliable delivery dates and cancellations discourage wishlist purchases.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:02:20.605Z"
+  },
+  "9d65fcf4-2baa-4426-985c-bcdd49e2d3e5": {
+    "review_id": "9d65fcf4-2baa-4426-985c-bcdd49e2d3e5",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General product praise not linked to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:02:20.605Z"
+  },
+  "6032c538-6759-46a4-a56e-31709beae20d": {
+    "review_id": "6032c538-6759-46a4-a56e-31709beae20d",
+    "relevant": true,
+    "themes": [],
+    "segment": "Refund Issue",
+    "categories": [
+      "Refund Delay",
+      "Customer Service"
+    ],
+    "barrier": "Refund Issue",
+    "sentiment": "negative",
+    "reason": "Refund not processed creates hesitation to buy from wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:02:20.605Z"
+  },
+  "5853b47e-ee05-498a-85da-6b23c580148f": {
+    "review_id": "5853b47e-ee05-498a-85da-6b23c580148f",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Generic coupon and product quality complaints not tied to wishlist purchase.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:02:20.605Z"
+  },
+  "b0d947fa-0d5c-4fe2-8349-d20a5c764628": {
+    "review_id": "b0d947fa-0d5c-4fe2-8349-d20a5c764628",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "neutral",
+    "reason": "App filter bug unrelated to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:02:20.605Z"
+  },
+  "1aea2d81-652f-431d-b606-f10a56c7fca6": {
+    "review_id": "1aea2d81-652f-431d-b606-f10a56c7fca6",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery",
+    "categories": [
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complaint about delivery delays, no mention of wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:02:40.092Z"
+  },
+  "32f630f5-c44e-4991-b29d-d609fa49f83f": {
+    "review_id": "32f630f5-c44e-4991-b29d-d609fa49f83f",
+    "relevant": false,
+    "themes": [],
+    "segment": "Refund",
+    "categories": [
+      "Refund"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Issue with refund processing, unrelated to wishlist or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:02:40.092Z"
+  },
+  "4851ebc0-0622-4d90-a71c-7e077267bb48": {
+    "review_id": "4851ebc0-0622-4d90-a71c-7e077267bb48",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery",
+    "categories": [
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive comment on delivery speed, no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:02:40.092Z"
+  },
+  "b928c118-c889-4a4d-aa3b-266ae57ee49f": {
+    "review_id": "b928c118-c889-4a4d-aa3b-266ae57ee49f",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise of product quality, not linked to wishlist behavior.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:02:40.092Z"
+  },
+  "70093a33-88ba-4078-a14b-9f457d86e75e": {
+    "review_id": "70093a33-88ba-4078-a14b-9f457d86e75e",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short compliment on material quality, no wishlist or purchase hesitation mentioned.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:02:40.092Z"
+  },
+  "91ea36f9-ee78-46b7-afce-50f7fd53a69f": {
+    "review_id": "91ea36f9-ee78-46b7-afce-50f7fd53a69f",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Review praises collection quality without referencing wishlist or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:01.818Z"
+  },
+  "191ddbca-8b33-4b46-81c2-7b74e82f643a": {
+    "review_id": "191ddbca-8b33-4b46-81c2-7b74e82f643a",
+    "relevant": false,
+    "themes": [],
+    "segment": "Service Complaint",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Focuses on return service quality, no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:01.818Z"
+  },
+  "2522b36a-bc07-4c8e-9b72-6f5099ad73e3": {
+    "review_id": "2522b36a-bc07-4c8e-9b72-6f5099ad73e3",
+    "relevant": false,
+    "themes": [],
+    "segment": "Trust",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Highlights site reliability and product quality, unrelated to wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:01.818Z"
+  },
+  "f8e9e3ce-d503-4f44-913b-55a9163739ca": {
+    "review_id": "f8e9e3ce-d503-4f44-913b-55a9163739ca",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery Issue",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complains about delivery delays and cancellations, not about wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:01.818Z"
+  },
+  "5ddcc65d-92ac-473a-a476-3f685ef41aa5": {
+    "review_id": "5ddcc65d-92ac-473a-a476-3f685ef41aa5",
+    "relevant": false,
+    "themes": [],
+    "segment": "Value",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive about product value and return policy, no wishlist mention.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:01.818Z"
+  },
+  "e31a85be-6242-4e51-bcdd-9af9484dc8df": {
+    "review_id": "e31a85be-6242-4e51-bcdd-9af9484dc8df",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The comment praises app ease and returns but does not mention wishlists or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:06.281Z"
+  },
+  "22bade5d-6546-47fa-ace7-feeb05b16e8f": {
+    "review_id": "22bade5d-6546-47fa-ace7-feeb05b16e8f",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Focuses on product quality only, with no reference to wishlists or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:06.282Z"
+  },
+  "b2ba7d16-30ce-42b0-9b45-8e1219d0bad0": {
+    "review_id": "b2ba7d16-30ce-42b0-9b45-8e1219d0bad0",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery & Support Complaint",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complains about delivery delays and support, unrelated to wishlist behavior.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:06.282Z"
+  },
+  "ca236e65-72f2-42e8-905e-60e981493a12": {
+    "review_id": "ca236e65-72f2-42e8-905e-60e981493a12",
+    "relevant": false,
+    "themes": [],
+    "segment": "Quality Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Mentions good quality but provides no insight on wishlists or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:06.282Z"
+  },
+  "e85336ea-cdc3-429d-b160-05a1e5cac3b5": {
+    "review_id": "e85336ea-cdc3-429d-b160-05a1e5cac3b5",
+    "relevant": false,
+    "themes": [],
+    "segment": "Fraud Complaint",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Describes a fraud incident; does not discuss wishlist conversion or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:06.282Z"
+  },
+  "c6ae99a6-1c12-4946-841a-92a952385e08": {
+    "review_id": "c6ae99a6-1c12-4946-841a-92a952385e08",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review only praises product quality and does not mention wishlist or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:11.482Z"
+  },
+  "31b4d35b-13b7-4d91-83ab-e5d82482e975": {
+    "review_id": "31b4d35b-13b7-4d91-83ab-e5d82482e975",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review discusses delivery and variety but makes no reference to wishlist or buying hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:11.482Z"
+  },
+  "b66495ba-03b4-4839-ac52-2ae4500aecbd": {
+    "review_id": "b66495ba-03b4-4839-ac52-2ae4500aecbd",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review praises service and product quality without mentioning wishlist or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:11.482Z"
+  },
+  "6721971e-8db1-48cb-8b1c-1426ae112cf6": {
+    "review_id": "6721971e-8db1-48cb-8b1c-1426ae112cf6",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review expresses gratitude for the app and product quality, with no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:11.482Z"
+  },
+  "10c11fe0-1ea2-496a-95e9-54336c560888": {
+    "review_id": "10c11fe0-1ea2-496a-95e9-54336c560888",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review highlights overall satisfaction but does not address wishlist or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:11.482Z"
+  },
+  "088b285b-b779-4fa0-aaff-afc0e3dc1d73": {
+    "review_id": "088b285b-b779-4fa0-aaff-afc0e3dc1d73",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review praises product authenticity but does not mention wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:16.067Z"
+  },
+  "9757018b-69aa-4ec0-bcdf-ae190fa57f15": {
+    "review_id": "9757018b-69aa-4ec0-bcdf-ae190fa57f15",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review compliments app and pricing but contains no wishlist‑related insight.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:16.067Z"
+  },
+  "db9412b0-c391-43ca-a27b-63038b3911c8": {
+    "review_id": "db9412b0-c391-43ca-a27b-63038b3911c8",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review describes overall shopping experience without referencing wishlist or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:16.067Z"
+  },
+  "1edcf834-5ded-4b85-8477-3d0b0d8f6958": {
+    "review_id": "1edcf834-5ded-4b85-8477-3d0b0d8f6958",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review mentions pricing concerns but does not link them to wishlist behavior.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:16.067Z"
+  },
+  "603fb9b8-d0fc-4fb7-ae4c-1a90d78fb723": {
+    "review_id": "603fb9b8-d0fc-4fb7-ae4c-1a90d78fb723",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review thanks the team for an original product but lacks any wishlist‑related content.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:16.067Z"
+  },
+  "d6688f91-8bf1-4cbd-bab3-7ad2338f79a8": {
+    "review_id": "d6688f91-8bf1-4cbd-bab3-7ad2338f79a8",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Mentions product quality but no wishlist context.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:36.295Z"
+  },
+  "9f48f413-c69d-4ba9-9b29-9e0569870c09": {
+    "review_id": "9f48f413-c69d-4ba9-9b29-9e0569870c09",
+    "relevant": false,
+    "themes": [],
+    "segment": "Return & Service",
+    "categories": [
+      "Return Options",
+      "Customer Service"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Talks about return options without any wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:36.295Z"
+  },
+  "d8d231a5-6dcf-4ed7-a188-939a01f055ac": {
+    "review_id": "d8d231a5-6dcf-4ed7-a188-939a01f055ac",
+    "relevant": false,
+    "themes": [],
+    "segment": "Refund / Customer Service",
+    "categories": [
+      "Refund Delay",
+      "Customer Service"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Focuses on refund delays, not on wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:36.295Z"
+  },
+  "b53b77a8-2613-48dc-8eda-db189c0f4317": {
+    "review_id": "b53b77a8-2613-48dc-8eda-db189c0f4317",
+    "relevant": false,
+    "themes": [],
+    "segment": "App Praise",
+    "categories": [
+      "App Experience",
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise of the app and product quality, no wishlist mention.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:36.295Z"
+  },
+  "438de6d7-150e-4bb9-9b42-750e12e182bf": {
+    "review_id": "438de6d7-150e-4bb9-9b42-750e12e182bf",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery Issues",
+    "categories": [
+      "Delivery Delay",
+      "Order Cancellation"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Describes delivery delays and cancellation, unrelated to wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:36.295Z"
+  },
+  "8ee691dd-576d-4ddf-9110-73333639f162": {
+    "review_id": "8ee691dd-576d-4ddf-9110-73333639f162",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [
+      "Positive Feedback"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review praises the platform but does not mention wishlist or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:40.583Z"
+  },
+  "e1a48815-cdd2-4692-b130-6719c0e0a34d": {
+    "review_id": "e1a48815-cdd2-4692-b130-6719c0e0a34d",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [
+      "Positive Feedback"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review only comments on product quality without referencing wishlist behavior.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:40.583Z"
+  },
+  "2209a654-5503-448f-bc64-c12490223e34": {
+    "review_id": "2209a654-5503-448f-bc64-c12490223e34",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [
+      "Positive Feedback"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Mentions return policy but does not link it to wishlist hesitation or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:40.583Z"
+  },
+  "f4df0731-9943-4b7a-9d38-c4b7a2288f8c": {
+    "review_id": "f4df0731-9943-4b7a-9d38-c4b7a2288f8c",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [
+      "Positive Feedback"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Provides generic praise for clothes and quality, no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:40.583Z"
+  },
+  "067a3393-1ab7-450f-ab3f-a1964d62f2eb": {
+    "review_id": "067a3393-1ab7-450f-ab3f-a1964d62f2eb",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [
+      "Positive Feedback"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Describes the platform positively without any wishlist or purchase barrier context.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:03:40.583Z"
+  },
+  "c8b72edf-5bc5-472b-b141-107dcc8ebba0": {
+    "review_id": "c8b72edf-5bc5-472b-b141-107dcc8ebba0",
+    "relevant": false,
+    "themes": [],
+    "segment": "Refund Issue",
+    "categories": [
+      "Refund",
+      "Order Cancellation"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "The review discusses a refund delay and order cancellation, not wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:16.256Z"
+  },
+  "c7bb17a0-5f39-4d45-860f-353a10a396e4": {
+    "review_id": "c7bb17a0-5f39-4d45-860f-353a10a396e4",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Mismatch",
+    "categories": [
+      "Wrong Product",
+      "Customer Service"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "The complaint is about receiving the wrong product, unrelated to wishlist behavior.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:16.256Z"
+  },
+  "f65ec8cc-2651-4978-adaa-785bf94948a4": {
+    "review_id": "f65ec8cc-2651-4978-adaa-785bf94948a4",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Praise",
+    "categories": [
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The short praise about product quality does not mention wishlist or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:16.256Z"
+  },
+  "f6a960ed-ada5-4254-861c-aebf42de2737": {
+    "review_id": "f6a960ed-ada5-4254-861c-aebf42de2737",
+    "relevant": false,
+    "themes": [],
+    "segment": "App Praise",
+    "categories": [
+      "Pricing",
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General positive feedback about the app, not related to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:16.256Z"
+  },
+  "3efccfa9-84ae-4f96-885d-41e2830d47b1": {
+    "review_id": "3efccfa9-84ae-4f96-885d-41e2830d47b1",
+    "relevant": false,
+    "themes": [],
+    "segment": "Exchange Experience",
+    "categories": [
+      "Exchange"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive comment about exchange experience, with no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:16.256Z"
+  },
+  "9aad35b6-75d5-4d31-a3a1-900ba461c15f": {
+    "review_id": "9aad35b6-75d5-4d31-a3a1-900ba461c15f",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Praise for on‑time delivery and product quality, no wishlist‑related barrier mentioned.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:36.564Z"
+  },
+  "bffbb6fd-9e13-4c95-b2b6-83e90069e5dd": {
+    "review_id": "bffbb6fd-9e13-4c95-b2b6-83e90069e5dd",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Enthusiastic about app and low prices, but does not discuss wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:36.564Z"
+  },
+  "9b023fd2-ca4e-4832-83b5-90232211d269": {
+    "review_id": "9b023fd2-ca4e-4832-83b5-90232211d269",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complains about poor returns experience and long customer‑care wait times, unrelated to wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:36.564Z"
+  },
+  "87cbd938-be38-4f39-b031-c0403b79b4c0": {
+    "review_id": "87cbd938-be38-4f39-b031-c0403b79b4c0",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Describes size‑exchange and delivery issues, but does not mention wishlist friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:36.564Z"
+  },
+  "6b367d07-7270-4082-b8af-21bf15d17354": {
+    "review_id": "6b367d07-7270-4082-b8af-21bf15d17354",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Mentions product quality in a regional language, with no reference to wishlist concerns.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:36.564Z"
+  },
+  "7f2d6c0c-28ef-44e1-b7de-cefa25881c44": {
+    "review_id": "7f2d6c0c-28ef-44e1-b7de-cefa25881c44",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive review",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:42.148Z"
+  },
+  "627cfeab-d5ef-40e3-a422-ee2233daeca8": {
+    "review_id": "627cfeab-d5ef-40e3-a422-ee2233daeca8",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive review",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:42.148Z"
+  },
+  "301d3d05-03c6-430e-92ec-5a5940f939d8": {
+    "review_id": "301d3d05-03c6-430e-92ec-5a5940f939d8",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive review",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:42.148Z"
+  },
+  "1100e3fc-3b3b-46c3-9fca-2429680a79d7": {
+    "review_id": "1100e3fc-3b3b-46c3-9fca-2429680a79d7",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive review",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:42.148Z"
+  },
+  "35d86bf3-cb5a-4ef3-9c4e-33b9f648bb83": {
+    "review_id": "35d86bf3-cb5a-4ef3-9c4e-33b9f648bb83",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive review",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:04:42.148Z"
+  },
+  "3370eff2-43f7-42e8-9b14-0e5220e27cfc": {
+    "review_id": "3370eff2-43f7-42e8-9b14-0e5220e27cfc",
+    "relevant": false,
+    "themes": [],
+    "segment": "App Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "User praises overall app experience and variety, with no mention of wishlist or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:02.379Z"
+  },
+  "306d53ef-7348-44f0-b65a-1bddbf4a4f5c": {
+    "review_id": "306d53ef-7348-44f0-b65a-1bddbf4a4f5c",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery Issues",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complaint focuses on delayed delivery and order cancellation, not on wishlist or checkout barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:02.379Z"
+  },
+  "0c531e04-fc1f-4046-89aa-3f00d4d9991f": {
+    "review_id": "0c531e04-fc1f-4046-89aa-3f00d4d9991f",
+    "relevant": false,
+    "themes": [],
+    "segment": "Return Issues",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "User is frustrated with return delays, which does not relate to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:02.379Z"
+  },
+  "1e0c454c-305e-4d4d-a71c-de56b8339de4": {
+    "review_id": "1e0c454c-305e-4d4d-a71c-de56b8339de4",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback on product quality and pricing, without reference to wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:02.379Z"
+  },
+  "4c8b3d0e-3c82-4ecd-9c6b-615d2b0dcc74": {
+    "review_id": "4c8b3d0e-3c82-4ecd-9c6b-615d2b0dcc74",
+    "relevant": false,
+    "themes": [],
+    "segment": "Quality Praise",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief endorsement of app quality, not mentioning wishlist or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:02.379Z"
+  },
+  "4971aa10-606b-4e84-8fe0-7f0e123abd61": {
+    "review_id": "4971aa10-606b-4e84-8fe0-7f0e123abd61",
+    "relevant": false,
+    "themes": [],
+    "segment": "Other",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Issue with OTP for exchange, unrelated to wishlist purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:07.119Z"
+  },
+  "b651b9ad-fa72-467c-9233-c6a9793cd990": {
+    "review_id": "b651b9ad-fa72-467c-9233-c6a9793cd990",
+    "relevant": false,
+    "themes": [],
+    "segment": "Other",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complaints about delivery tags and refund delays, not tied to wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:07.119Z"
+  },
+  "72e4784f-04e0-4a1b-94c5-15d342e48442": {
+    "review_id": "72e4784f-04e0-4a1b-94c5-15d342e48442",
+    "relevant": false,
+    "themes": [],
+    "segment": "Other",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Short praise of quality, no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:07.119Z"
+  },
+  "494bed9c-8020-43e6-9ac4-28538d5160d6": {
+    "review_id": "494bed9c-8020-43e6-9ac4-28538d5160d6",
+    "relevant": false,
+    "themes": [],
+    "segment": "Other",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Generic positive comment about product quality, unrelated to wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:07.119Z"
+  },
+  "92b69cc5-922c-4657-839e-ced4df755698": {
+    "review_id": "92b69cc5-922c-4657-839e-ced4df755698",
+    "relevant": false,
+    "themes": [],
+    "segment": "Other",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Order cancellation and coupon issue, but not linked to wishlist hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:07.119Z"
+  },
+  "5d34215e-dc26-4cde-805c-f0a7bdd72062": {
+    "review_id": "5d34215e-dc26-4cde-805c-f0a7bdd72062",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Does not discuss wishlist or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:29.857Z"
+  },
+  "7e7e5c0c-18c6-4b0e-995b-879d74567273": {
+    "review_id": "7e7e5c0c-18c6-4b0e-995b-879d74567273",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Does not discuss wishlist or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:29.857Z"
+  },
+  "6de01bd9-a577-8c9c-af14-1b2c3d4e5f6a": {
+    "review_id": "6de01bd9-a577-8c9c-af14-1b2c3d4e5f6a",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Does not discuss wishlist or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:29.857Z"
+  },
+  "007b70ff-5523-40c3-985b-0d6948be2cab": {
+    "review_id": "007b70ff-5523-40c3-985b-0d6948be2cab",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Does not discuss wishlist or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:29.857Z"
+  },
+  "e5fdb82e-cab2-4978-9f74-be385232dcee": {
+    "review_id": "e5fdb82e-cab2-4978-9f74-be385232dcee",
+    "relevant": false,
+    "themes": [],
+    "segment": "",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Does not discuss wishlist or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:29.857Z"
+  },
+  "11dc929d-802e-4726-a387-0e2dcb270c69": {
+    "review_id": "11dc929d-802e-4726-a387-0e2dcb270c69",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Review praises the app and product quality but does not mention wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:53.045Z"
+  },
+  "a51bbc16-57e9-4b7f-82be-5f28e25275fc": {
+    "review_id": "a51bbc16-57e9-4b7f-82be-5f28e25275fc",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complaint about late delivery, unrelated to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:53.045Z"
+  },
+  "debbb27f-4163-4c9a-a86f-7157e81d71eb": {
+    "review_id": "debbb27f-4163-4c9a-a86f-7157e81d71eb",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback on product authenticity and buying experience, no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:53.045Z"
+  },
+  "9f3ec675-29be-44ff-b2e1-7b3ac08adb79": {
+    "review_id": "9f3ec675-29be-44ff-b2e1-7b3ac08adb79",
+    "relevant": false,
+    "themes": [],
+    "segment": "Pricing",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Mentions good quality at cheap price, but does not discuss wishlist or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:53.045Z"
+  },
+  "f5dcbe5a-24c4-483a-a9ed-5a37f5e52d82": {
+    "review_id": "f5dcbe5a-24c4-483a-a9ed-5a37f5e52d82",
+    "relevant": false,
+    "themes": [],
+    "segment": "Support",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Negative experience with customer support, not related to wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:53.045Z"
+  },
+  "e3659912-0c8a-4c7b-a8af-b4d94558ea86": {
+    "review_id": "e3659912-0c8a-4c7b-a8af-b4d94558ea86",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Quality Feedback"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The comment praises quality but does not mention wishlists or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:58.152Z"
+  },
+  "ec08f106-092e-49c2-9c5e-1649712a2dfc": {
+    "review_id": "ec08f106-092e-49c2-9c5e-1649712a2dfc",
+    "relevant": false,
+    "themes": [],
+    "segment": "Brand Trust",
+    "categories": [
+      "Trust",
+      "Pricing"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Focuses on overall trust and price, not on wishlist behavior or checkout issues.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:58.152Z"
+  },
+  "e5148d99-27c7-4548-973b-5792c425fab1": {
+    "review_id": "e5148d99-27c7-4548-973b-5792c425fab1",
+    "relevant": false,
+    "themes": [],
+    "segment": "Account Issues",
+    "categories": [
+      "Account",
+      "Support"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complaint about account deactivation without any reference to wishlists.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:58.152Z"
+  },
+  "fe0fc924-7375-4ffe-a072-601d65ded613": {
+    "review_id": "fe0fc924-7375-4ffe-a072-601d65ded613",
+    "relevant": false,
+    "themes": [],
+    "segment": "App Performance",
+    "categories": [
+      "App Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback on app quality, unrelated to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:58.152Z"
+  },
+  "96e4f7ae-80f1-4d2d-af78-c02b035f7552": {
+    "review_id": "96e4f7ae-80f1-4d2d-af78-c02b035f7552",
+    "relevant": false,
+    "themes": [],
+    "segment": "UI/UX",
+    "categories": [
+      "Interface"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Mentions good interface but does not address wishlist or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:05:58.152Z"
+  },
+  "7b9bc85c-b939-4bcb-86c8-165ebb2fe64d": {
+    "review_id": "7b9bc85c-b939-4bcb-86c8-165ebb2fe64d",
+    "relevant": false,
+    "themes": [],
+    "segment": "Quality & Support",
+    "categories": [
+      "Product Quality",
+      "Customer Service",
+      "Returns"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Mentions product quality and support issues, not wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:02.971Z"
+  },
+  "b09d6c64-a2d2-449a-80d1-d466e465084c": {
+    "review_id": "b09d6c64-a2d2-449a-80d1-d466e465084c",
+    "relevant": false,
+    "themes": [],
+    "segment": "Delivery Delays",
+    "categories": [
+      "Delivery",
+      "Customer Service"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Focuses on delivery delays, no wishlist context.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:02.971Z"
+  },
+  "3e10ea39-49e0-4c18-91b2-da9531ee8772": {
+    "review_id": "3e10ea39-49e0-4c18-91b2-da9531ee8772",
+    "relevant": false,
+    "themes": [],
+    "segment": "Order Cancellation",
+    "categories": [
+      "Order Management",
+      "Delivery"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Talks about order cancellation and delivery, unrelated to wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:02.972Z"
+  },
+  "8de59836-ecc3-4b20-8373-a9a70b7d1caf": {
+    "review_id": "8de59836-ecc3-4b20-8373-a9a70b7d1caf",
+    "relevant": false,
+    "themes": [],
+    "segment": "Incorrect Order & Refund",
+    "categories": [
+      "Order Accuracy",
+      "Refund",
+      "Customer Service"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Describes incorrect order and refund problems, not about wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:02.972Z"
+  },
+  "facb8eb9-b59d-4ee8-891a-504e818866e7": {
+    "review_id": "facb8eb9-b59d-4ee8-891a-504e818866e7",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Praise",
+    "categories": [
+      "Product Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Praises product quality, no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:02.972Z"
+  },
+  "c09d388f-39db-44ca-9a6a-2614f78b24a1": {
+    "review_id": "c09d388f-39db-44ca-9a6a-2614f78b24a1",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "The review discusses order cancellation and refund issues but does not mention wishlist hesitation or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:22.988Z"
+  },
+  "b750a1f8-7c57-4a55-ad3c-7d5f88875ce1": {
+    "review_id": "b750a1f8-7c57-4a55-ad3c-7d5f88875ce1",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "The review only praises product quality without any reference to wishlist or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:22.988Z"
+  },
+  "2852d4cc-511a-4b42-973b-ac4b4ae2cfed": {
+    "review_id": "2852d4cc-511a-4b42-973b-ac4b4ae2cfed",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for the app and quality, no wishlist‑related content.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:22.988Z"
+  },
+  "1e3f743e-8a51-43f9-a36d-dfe41727f8bf": {
+    "review_id": "1e3f743e-8a51-43f9-a36d-dfe41727f8bf",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Simple positive comment on quality, unrelated to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:22.988Z"
+  },
+  "66b3344b-83db-4171-ab22-546d4641c57d": {
+    "review_id": "66b3344b-83db-4171-ab22-546d4641c57d",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complaints about customer service and refunds, but no mention of wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:22.988Z"
+  },
+  "5b32c917-d6c5-46fa-850f-973540777b24": {
+    "review_id": "5b32c917-d6c5-46fa-850f-973540777b24",
+    "relevant": false,
+    "themes": [],
+    "segment": "Order & Refund Issue",
+    "categories": [
+      "Order",
+      "Refund",
+      "App"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "User reports missing product and refund problems.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:27.923Z"
+  },
+  "a1855e4f-69e4-4ce2-be02-eb77041215d9": {
+    "review_id": "a1855e4f-69e4-4ce2-be02-eb77041215d9",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Quality",
+      "Pricing"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "User praises good quality at a low price.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:27.923Z"
+  },
+  "9f5692f9-d84f-4996-9ac8-c9b566e79472": {
+    "review_id": "9f5692f9-d84f-4996-9ac8-c9b566e79472",
+    "relevant": false,
+    "themes": [],
+    "segment": "Exchange Policy",
+    "categories": [
+      "Exchange",
+      "Customer Service"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "User unhappy that exchange was not allowed.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:27.923Z"
+  },
+  "4de559ff-720b-4b10-bea0-00048d4ed881": {
+    "review_id": "4de559ff-720b-4b10-bea0-00048d4ed881",
+    "relevant": false,
+    "themes": [],
+    "segment": "App Usability",
+    "categories": [
+      "App Interface"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "User finds the app easy to use.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:27.923Z"
+  },
+  "7ad0ad7b-c545-430e-9d27-3c5f1eb32e8f": {
+    "review_id": "7ad0ad7b-c545-430e-9d27-3c5f1eb32e8f",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "User compliments product quality.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:27.923Z"
+  },
+  "dcf8f967-0c94-4b90-a47d-d17fdc7e97d8": {
+    "review_id": "dcf8f967-0c94-4b90-a47d-d17fdc7e97d8",
+    "relevant": false,
+    "themes": [],
+    "segment": "UI/Design",
+    "categories": [
+      "UI",
+      "Design"
+    ],
+    "barrier": null,
+    "sentiment": "neutral",
+    "reason": "The review discusses app UI and generic feel, without mentioning wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:48.273Z"
+  },
+  "2bac4ac9-a6b9-43e6-9dbd-b9c9b3e97ebd": {
+    "review_id": "2bac4ac9-a6b9-43e6-9dbd-b9c9b3e97ebd",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Focuses on cloth quality, not related to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:48.273Z"
+  },
+  "f416cfdc-56d6-49e3-b49a-3fe7fec06b98": {
+    "review_id": "f416cfdc-56d6-49e3-b49a-3fe7fec06b98",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Praises product quality, with no mention of wishlist or purchase barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:48.273Z"
+  },
+  "88382b29-f8a2-4b0a-a091-58af9259c935": {
+    "review_id": "88382b29-f8a2-4b0a-a091-58af9259c935",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Authenticity",
+    "categories": [
+      "Authenticity"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Comments on authenticity of products, unrelated to wishlist behavior.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:48.273Z"
+  },
+  "c98e512e-0ac6-4315-ba0c-7bec82913123": {
+    "review_id": "c98e512e-0ac6-4315-ba0c-7bec82913123",
+    "relevant": false,
+    "themes": [],
+    "segment": "Overall Experience",
+    "categories": [
+      "Variety",
+      "Convenience",
+      "User-friendliness"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise of the app’s variety and usability, without any wishlist-specific insight.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:48.273Z"
+  },
+  "af3f461b-3583-4736-bcaa-66329e3a7d1c": {
+    "review_id": "af3f461b-3583-4736-bcaa-66329e3a7d1c",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Only praises product quality and trust, no wishlist or purchase barrier mentioned.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:52.947Z"
+  },
+  "97cc9834-bb17-4327-b081-029811af5fd8": {
+    "review_id": "97cc9834-bb17-4327-b081-029811af5fd8",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complains about inconsistent quality and return fee, but does not reference wishlist or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:52.947Z"
+  },
+  "6add0060-993d-42e2-bb4a-4546648ec481": {
+    "review_id": "6add0060-993d-42e2-bb4a-4546648ec481",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive feedback on product quality and delivery, no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:52.947Z"
+  },
+  "e235f589-d7bf-43cc-aa93-62634304960b": {
+    "review_id": "e235f589-d7bf-43cc-aa93-62634304960b",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Mentions good product quality and customer care, unrelated to wishlist.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:52.947Z"
+  },
+  "03c388ea-978f-4f3b-943a-3de9da67682c": {
+    "review_id": "03c388ea-978f-4f3b-943a-3de9da67682c",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for quality and service, no wishlist or purchase hesitation discussed.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:06:52.947Z"
+  },
+  "f74b8950-03c1-4ace-b96e-0da972a04622": {
+    "review_id": "f74b8950-03c1-4ace-b96e-0da972a04622",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "User praises affordable prices, quality, and app convenience.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:12.749Z"
+  },
+  "56e18abc-749b-44b5-bc68-69856a38d6ac": {
+    "review_id": "56e18abc-749b-44b5-bc68-69856a38d6ac",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "User complains about poor product quality compared to a competitor.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:12.749Z"
+  },
+  "b45f82b7-f880-40bf-8245-9ffbb7903a07": {
+    "review_id": "b45f82b7-f880-40bf-8245-9ffbb7903a07",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "User highlights strong return and refund policy as a trust factor.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:12.749Z"
+  },
+  "ac164485-a3db-41dd-9f32-439c32da4be7": {
+    "review_id": "ac164485-a3db-41dd-9f32-439c32da4be7",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "User reports a delayed refund after order cancellation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:12.749Z"
+  },
+  "458060ea-fe84-480f-946c-20d8ac6d3df8": {
+    "review_id": "458060ea-fe84-480f-946c-20d8ac6d3df8",
+    "relevant": false,
+    "themes": [],
+    "segment": "General",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "User compliments overall product quality.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:12.749Z"
+  },
+  "3cf6986a-9ab3-4caa-88a6-11e762899ef5": {
+    "review_id": "3cf6986a-9ab3-4caa-88a6-11e762899ef5",
+    "relevant": false,
+    "themes": [],
+    "segment": "Positive Feedback",
+    "categories": [
+      "Quality",
+      "Service"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise for quality and express service, no wishlist or purchase friction mentioned.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:17.378Z"
+  },
+  "0f057c13-ba3b-44ed-a1c7-e306d1766802": {
+    "review_id": "0f057c13-ba3b-44ed-a1c7-e306d1766802",
+    "relevant": false,
+    "themes": [],
+    "segment": "Positive Feedback",
+    "categories": [
+      "Quality",
+      "Delivery",
+      "Shopping Experience"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Enthusiastic review of quality and fast delivery, unrelated to wishlist or checkout barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:17.378Z"
+  },
+  "a602e4ae-4d0c-4d9f-9a76-28ab9a5d9348": {
+    "review_id": "a602e4ae-4d0c-4d9f-9a76-28ab9a5d9348",
+    "relevant": false,
+    "themes": [],
+    "segment": "Positive Feedback",
+    "categories": [
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief positive comment on ease and quality, no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:17.378Z"
+  },
+  "07015f27-c191-486b-8759-30b46d07d8c3": {
+    "review_id": "07015f27-c191-486b-8759-30b46d07d8c3",
+    "relevant": false,
+    "themes": [],
+    "segment": "Negative Experience",
+    "categories": [
+      "Delivery",
+      "Fit"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Complaints about delivery location and incorrect sizing, but no mention of wishlist or purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:17.378Z"
+  },
+  "6d329008-c837-4955-bba3-efaa876a9408": {
+    "review_id": "6d329008-c837-4955-bba3-efaa876a9408",
+    "relevant": false,
+    "themes": [],
+    "segment": "Positive Feedback",
+    "categories": [
+      "Quality"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive statement about product authenticity and quality, unrelated to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:17.378Z"
+  },
+  "db960692-859f-4b9f-9488-862ee97bfc71": {
+    "review_id": "db960692-859f-4b9f-9488-862ee97bfc71",
+    "relevant": false,
+    "themes": [],
+    "segment": "negative",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Exchange issues are post‑purchase and not tied to wishlist or checkout friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:45.364Z"
+  },
+  "e99bc08c-abbf-445b-b558-da4dafbcc71a": {
+    "review_id": "e99bc08c-abbf-445b-b558-da4dafbcc71a",
+    "relevant": false,
+    "themes": [],
+    "segment": "positive",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive product praise without wishlist or purchase‑friction context.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:45.364Z"
+  },
+  "e3881119-a121-4082-9584-773f6c8e8627": {
+    "review_id": "e3881119-a121-4082-9584-773f6c8e8627",
+    "relevant": false,
+    "themes": [],
+    "segment": "positive",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General satisfaction with product and delivery, not related to wishlist or checkout barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:45.364Z"
+  },
+  "3a061dc2-d942-49f0-ad3a-79f91f95c2e2": {
+    "review_id": "3a061dc2-d942-49f0-ad3a-79f91f95c2e2",
+    "relevant": false,
+    "themes": [],
+    "segment": "positive",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Brief positive comment about fit, no wishlist or purchase‑friction insight.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:45.364Z"
+  },
+  "6fea96f4-48c9-473d-afca-6e0559a8cea7": {
+    "review_id": "6fea96f4-48c9-473d-afca-6e0559a8cea7",
+    "relevant": true,
+    "themes": [
+      "Delivery & Shipping Friction"
+    ],
+    "segment": "negative",
+    "categories": [],
+    "barrier": "refund",
+    "sentiment": "negative",
+    "reason": "User reports difficulty receiving refunds after returns, a checkout barrier that can deter purchases.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:45.364Z"
+  },
+  "2b33a51b-c010-4966-9b67-d1c0149c6383": {
+    "review_id": "2b33a51b-c010-4966-9b67-d1c0149c6383",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "General praise without any mention of wishlist or purchase friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:49.777Z"
+  },
+  "b0f78814-2940-49f1-a842-0066533a34ff": {
+    "review_id": "b0f78814-2940-49f1-a842-0066533a34ff",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Simple product endorsement not linked to wishlist behavior.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:49.778Z"
+  },
+  "1f0de8f9-a667-4da9-ad57-c24038d9a6a0": {
+    "review_id": "1f0de8f9-a667-4da9-ad57-c24038d9a6a0",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Positive comment about quality, no wishlist relevance.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:49.778Z"
+  },
+  "1b2be6a0-f616-44f2-ad91-94eb0246fd91": {
+    "review_id": "1b2be6a0-f616-44f2-ad91-94eb0246fd91",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Expresses enjoyment of shopping, but does not discuss wishlist barriers.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:49.778Z"
+  },
+  "897bbf1e-793f-4927-8247-25b6a66be0fd": {
+    "review_id": "897bbf1e-793f-4927-8247-25b6a66be0fd",
+    "relevant": false,
+    "themes": [],
+    "segment": "General Feedback",
+    "categories": [],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Highlights easy ordering and returns, not tied to wishlist conversion.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:07:49.778Z"
   }
 }

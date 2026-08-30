@@ -38949,12 +38949,21 @@
     "title": "",
     "text": "“Really happy with this purchase. The product arrived on time and was packed properly. The quality is good and it looks just like the pictures. It works/feels as expected, and I’m satisfied with the purchase. Good value for money. Would recommend.”",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=6a9c4caf-83f8-42d3-a613-06876baefa09",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety",
-      "Occasion & Styling Inspiration"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety; Occasion & Styling Inspiration"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review praises the purchase but does not mention wishlist or purchase friction.",
+    "ai": {
+      "review_id": "6a9c4caf-83f8-42d3-a613-06876baefa09",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review praises the purchase but does not mention wishlist or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:17.340Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -38964,11 +38973,21 @@
     "title": "",
     "text": "you can find all sorts of of clothes",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=3d6cb93a-1b47-44b5-bd82-3388483cb0b3",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review comments on product variety without referencing wishlist or checkout issues.",
+    "ai": {
+      "review_id": "3d6cb93a-1b47-44b5-bd82-3388483cb0b3",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review comments on product variety without referencing wishlist or checkout issues.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:17.346Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -39014,11 +39033,21 @@
     "title": "",
     "text": "the experience of using myntra is always satisfying. the filters, the deals, the options always meet your expectations.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=d4c4be51-7b18-48e2-9120-e64b1552d0c8",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review expresses overall satisfaction but lacks any wishlist‑related insight.",
+    "ai": {
+      "review_id": "d4c4be51-7b18-48e2-9120-e64b1552d0c8",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review expresses overall satisfaction but lacks any wishlist‑related insight.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:17.346Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -39184,11 +39213,21 @@
     "title": "",
     "text": "good quality and nice facilities",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=69a3bcaa-8495-41e3-9af1-895814f1fcf7",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review mentions quality and facilities without discussing wishlist or purchase barriers.",
+    "ai": {
+      "review_id": "69a3bcaa-8495-41e3-9af1-895814f1fcf7",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review mentions quality and facilities without discussing wishlist or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:17.346Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -39270,11 +39309,21 @@
     "title": "",
     "text": "That's Good App, Selling Genuine & Branded Clothes. Loved the Myntra. Myntra is always my first preference for Clothing & other stuff. Have express delivery options & Most discounts also.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=5b38f801-be40-4d42-b579-87bdae40fcd1",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review highlights brand preference and discounts but does not address wishlist hesitation or checkout friction.",
+    "ai": {
+      "review_id": "5b38f801-be40-4d42-b579-87bdae40fcd1",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review highlights brand preference and discounts but does not address wishlist hesitation or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:17.346Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -39284,11 +39333,24 @@
     "title": "",
     "text": "!bekar app hai !refund nhi dete !saman deliver hua nahi or bol rahe hai deliver ho gya hai refund bhi nahi de rahe",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=895f1a3c-f1eb-4078-90eb-0816367f4236",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complaint about refund and undelivered order, not related to wishlist.",
+    "ai": {
+      "review_id": "895f1a3c-f1eb-4078-90eb-0816367f4236",
+      "relevant": false,
+      "themes": [],
+      "segment": "Support",
+      "categories": [
+        "Refund Issue",
+        "Delivery Problem"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complaint about refund and undelivered order, not related to wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:22.087Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -39322,11 +39384,24 @@
     "title": "",
     "text": "Myntra is my all time favourite app and the quality of their products are also excellent.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e5915576-7797-4626-a584-afc5543df3a5",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General praise for the app and product quality, no wishlist context.",
+    "ai": {
+      "review_id": "e5915576-7797-4626-a584-afc5543df3a5",
+      "relevant": false,
+      "themes": [],
+      "segment": "Praise",
+      "categories": [
+        "App Preference",
+        "Product Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General praise for the app and product quality, no wishlist context.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:22.087Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -39336,11 +39411,23 @@
     "title": "",
     "text": "quality product always received, thankyou myntra",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=d73224be-f99e-45d5-a43f-449ed74c96cc",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive feedback on product quality, unrelated to wishlist.",
+    "ai": {
+      "review_id": "d73224be-f99e-45d5-a43f-449ed74c96cc",
+      "relevant": false,
+      "themes": [],
+      "segment": "Praise",
+      "categories": [
+        "Product Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive feedback on product quality, unrelated to wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:22.087Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -39374,11 +39461,23 @@
     "title": "",
     "text": "good quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e4b999de-6fc0-4535-a839-72d1f8a66ca7",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Brief positive comment on quality, no wishlist relevance.",
+    "ai": {
+      "review_id": "e4b999de-6fc0-4535-a839-72d1f8a66ca7",
+      "relevant": false,
+      "themes": [],
+      "segment": "Praise",
+      "categories": [
+        "Product Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Brief positive comment on quality, no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:22.087Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -39412,11 +39511,24 @@
     "title": "",
     "text": "Myn points 5200 points added but the system is not showing on my profile after talking to grievance customer care they told points have expired even i purchase march 2026 many shirts even those points have not been updated from day one till now system is fooling genuine customer i have shared e-mail and documation for all very pathetic",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=d87c4f18-e36d-4a2a-b76a-84245ea4f895",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Issue with loyalty points not reflecting, not tied to wishlist purchase.",
+    "ai": {
+      "review_id": "d87c4f18-e36d-4a2a-b76a-84245ea4f895",
+      "relevant": false,
+      "themes": [],
+      "segment": "Support",
+      "categories": [
+        "Loyalty Points",
+        "Account Issue"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Issue with loyalty points not reflecting, not tied to wishlist purchase.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:22.087Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -39498,11 +39610,24 @@
     "title": "",
     "text": "Very disappointed with Myntra’s service. I received a tampered package with cotton inside instead of the ₹1,079 trousers I ordered. I reported the issue immediately, but my complaint was later closed without showing any investigation or evidence. This is extremely poor customer service. Myntra should properly investigate such cases and provide a genuine resolution instead of closing complaints without explanation.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=fd0df4f7-83f8-4457-a1a5-c3eb38aa673f",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User received the wrong item and experienced poor customer service.",
+    "ai": {
+      "review_id": "fd0df4f7-83f8-4457-a1a5-c3eb38aa673f",
+      "relevant": false,
+      "themes": [],
+      "segment": "Service",
+      "categories": [
+        "Order Issue",
+        "Customer Service"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "User received the wrong item and experienced poor customer service.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:58.027Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -39692,12 +39817,26 @@
     "title": "",
     "text": "My overall shopping experience with Myntra has been excellent. The platform offers a wide range of products from different brands, and I find the interface very user-friendly, which makes browsing and purchasing convenient. I particularly appreciate the detailed product descriptions, customer reviews, size guides, multiple payment options, and reliable delivery services. The return and exchange process is also quite convenient. Overall, Myntra provides a smooth, convenient, and trustworthy onlin",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=a9ab63b2-7d65-494e-8571-cd04ea6115b3",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization",
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization; Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive feedback about the overall shopping experience and app usability.",
+    "ai": {
+      "review_id": "a9ab63b2-7d65-494e-8571-cd04ea6115b3",
+      "relevant": false,
+      "themes": [],
+      "segment": "Overall",
+      "categories": [
+        "User Experience",
+        "Product Information",
+        "Payments",
+        "Delivery"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive feedback about the overall shopping experience and app usability.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:58.027Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -39815,11 +39954,25 @@
     "title": "",
     "text": "Extremely disappointed with Myntra’s customer service. I received and paid for a dress on the 12th, but the Myntra app is incorrectly showing that it was never delivered and has been cancelled. The dress doesn’t fit me, and I want to return it. I have been continuously contacting customer support for over 10 days, but there has been no proper solution. I am genuinely frustrated with this poor service. Please resolve this issue and arrange my return and refund immediately.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=ea600788-fdd9-40ad-a117-821a1b28adb2",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User frustrated with incorrect order status, delivery problems, and lack of support.",
+    "ai": {
+      "review_id": "ea600788-fdd9-40ad-a117-821a1b28adb2",
+      "relevant": false,
+      "themes": [],
+      "segment": "Service",
+      "categories": [
+        "Order Issue",
+        "Customer Support",
+        "Delivery"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "User frustrated with incorrect order status, delivery problems, and lack of support.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:58.028Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40201,11 +40354,27 @@
     "title": "",
     "text": "⭐⭐⭐⭐⭐I've been using Myntra for a long time, and my experience has been amazing. The app is easy to use, offers a huge variety of brands and styles, and the quality of products is usually excellent. Deliveries are quick, packaging is neat, and returns or exchanges are hassle-free. I also love the frequent sales and discounts, which make shopping even more enjoyable. Overall, Myntra is one of the best online shopping apps, and I highly recommend it!",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=922de038-b1b0-48f0-b095-732d5cbda8fd",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User praises the app, product range, quick delivery, and hassle‑free returns.",
+    "ai": {
+      "review_id": "922de038-b1b0-48f0-b095-732d5cbda8fd",
+      "relevant": false,
+      "themes": [],
+      "segment": "Overall",
+      "categories": [
+        "App Usability",
+        "Product Variety",
+        "Delivery",
+        "Returns",
+        "Discounts"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "User praises the app, product range, quick delivery, and hassle‑free returns.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:58.028Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40239,11 +40408,26 @@
     "title": "",
     "text": "The quality and fitting of the clothes is best. There are many good clothes brands available. And the price is also quite worth it.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=56130f0b-4746-40b9-82c1-be6960f3f13e",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User highlights good quality, fit, brand variety, and reasonable price.",
+    "ai": {
+      "review_id": "56130f0b-4746-40b9-82c1-be6960f3f13e",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product",
+      "categories": [
+        "Quality",
+        "Fit",
+        "Pricing",
+        "Brands"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "User highlights good quality, fit, brand variety, and reasonable price.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:00:58.028Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40253,11 +40437,23 @@
     "title": "",
     "text": "the quality of the products are fabulous everything feels so premium",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=cb7d21a7-c37b-4538-b412-937186da5784",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The comment praises product quality but does not mention wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "cb7d21a7-c37b-4538-b412-937186da5784",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [
+        "Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The comment praises product quality but does not mention wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:02.638Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40267,11 +40463,23 @@
     "title": "",
     "text": "attractive quality product i 👍",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=3299976e-b448-4ac9-8567-a741c50ac379",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive feedback about product quality without any reference to wishlist or checkout friction.",
+    "ai": {
+      "review_id": "3299976e-b448-4ac9-8567-a741c50ac379",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Praise",
+      "categories": [
+        "Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive feedback about product quality without any reference to wishlist or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:02.639Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40317,11 +40525,23 @@
     "title": "",
     "text": "so quickly service and best quality i",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=538f7280-38c0-4e72-a1d4-17fd6ba576f9",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions fast service and quality but does not discuss wishlist behavior or purchase barriers.",
+    "ai": {
+      "review_id": "538f7280-38c0-4e72-a1d4-17fd6ba576f9",
+      "relevant": false,
+      "themes": [],
+      "segment": "Service Speed",
+      "categories": [
+        "Service"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Mentions fast service and quality but does not discuss wishlist behavior or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:02.639Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40475,11 +40695,23 @@
     "title": "",
     "text": "Myntra Review Myntra has been my favorite shopping platform for the past 7 years, and overall, I’ve always had a great experience. The product quality is really good, and I’ve been happy with most of my purchases. ❤️ Recently, I faced an issue while trying to create and log in to a new account. The login process isn’t working properly, which is quite frustrating. Please look into this issue and fix it as soon as possible. Apart from this, my overall experience with Myntra has been very good,",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=d3df6cc9-e511-4b99-a9b1-37798b5aaa07",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Focuses on login problems rather than wishlist conversion or checkout friction.",
+    "ai": {
+      "review_id": "d3df6cc9-e511-4b99-a9b1-37798b5aaa07",
+      "relevant": false,
+      "themes": [],
+      "segment": "Account/Login Issue",
+      "categories": [
+        "Technical Issue"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Focuses on login problems rather than wishlist conversion or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:02.639Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40489,11 +40721,24 @@
     "title": "",
     "text": "I never knew that myntra is such a scam, few days ago I ordered 2 kurta set from myntra & instead i recieved used jogger & know when I'm returned it after so many efforts but only i could return 1 of it even though I didn't recieved any of the money but the myntra said that I have recieved the amount... never ever thought that I could be scammed from myntra like this . I have lost about 1k ruppe & mentally suffered bcoz of the daily complaint",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=0c4cb816-ada0-4e61-91b0-eb12ba5444cb",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Describes a scam/return issue without any connection to wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "0c4cb816-ada0-4e61-91b0-eb12ba5444cb",
+      "relevant": false,
+      "themes": [],
+      "segment": "Return/Refund Complaint",
+      "categories": [
+        "Customer Service",
+        "Refund Issue"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Describes a scam/return issue without any connection to wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:02.639Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40611,11 +40856,21 @@
     "title": "",
     "text": "App response time is the worst, and even a simple filter takes time to respond. Aside from this, app seems good.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=20f7b243-1259-41a9-abe6-f296595e150b",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions slow app response, no wishlist or purchase‑related friction.",
+    "ai": {
+      "review_id": "20f7b243-1259-41a9-abe6-f296595e150b",
+      "relevant": false,
+      "themes": [],
+      "segment": "App Performance",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Mentions slow app response, no wishlist or purchase‑related friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:07.623Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40673,11 +40928,21 @@
     "title": "",
     "text": "wonderful quality. perfect size and giving glorious look.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=5628caa2-4a0e-4f6c-9404-2846c057d3a1",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive comment on quality and fit, but does not discuss wishlist or checkout issues.",
+    "ai": {
+      "review_id": "5628caa2-4a0e-4f6c-9404-2846c057d3a1",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive comment on quality and fit, but does not discuss wishlist or checkout issues.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:07.623Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40699,11 +40964,21 @@
     "title": "",
     "text": "i hate purchasing clothes from myntra. Every time it either sends me the wrong product or a cheap quality product. Even after exchanging the product is still the same. The prices are also too high as compared to the product quality. Never buying clothes from myntra again. its a waste of money",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=d9e8513b-e006-4c55-8bd4-6aee8db1ab94",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Expresses dislike for buying clothes due to quality and price, but no reference to wishlist.",
+    "ai": {
+      "review_id": "d9e8513b-e006-4c55-8bd4-6aee8db1ab94",
+      "relevant": false,
+      "themes": [],
+      "segment": "Purchase Experience",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Expresses dislike for buying clothes due to quality and price, but no reference to wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:07.623Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40737,11 +41012,21 @@
     "title": "",
     "text": "Worst app ever sells product of low quality with 2x price...Not even their customer service is effective they don't listen any of your problem and delete the real reviews!! They don't let me write the real review of my product... Messho is far better I'll say!! MYNTRA FIX YOUR CUSTOMER SERVICE AND YOUR THE PRODUCTS YOU SELL. selling 2k watch with writing STAINLESS STEEL everywhere still the product fails within 3 months",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=591cade2-d3a8-4b51-a11e-0f2b68fd232d",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complains about low quality, high price and service, without mentioning wishlist or checkout friction.",
+    "ai": {
+      "review_id": "591cade2-d3a8-4b51-a11e-0f2b68fd232d",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality & Service",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complains about low quality, high price and service, without mentioning wishlist or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:07.623Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40763,11 +41048,21 @@
     "title": "",
     "text": "super quality,I never expect this type of quality from myntra.I really happy to have this type of online shopping app",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=5b1f7c7d-500c-4da8-8dad-c3612f7d0541",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive feedback on quality, unrelated to wishlist or purchase barriers.",
+    "ai": {
+      "review_id": "5b1f7c7d-500c-4da8-8dad-c3612f7d0541",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive feedback on quality, unrelated to wishlist or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:07.623Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40777,11 +41072,23 @@
     "title": "",
     "text": "very nice and fitting superrrr",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=88e20d13-d60a-4cd8-ac4d-422bad13f05f",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The comment praises fit but does not mention wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "88e20d13-d60a-4cd8-ac4d-422bad13f05f",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Praise",
+      "categories": [
+        "Product Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The comment praises fit but does not mention wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:27.660Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40839,11 +41146,23 @@
     "title": "",
     "text": "Good material and expected quality nice one",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=86aa1118-8e01-4c5e-bb81-6e600bdf0fcc",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review highlights material quality without referencing wishlist behavior.",
+    "ai": {
+      "review_id": "86aa1118-8e01-4c5e-bb81-6e600bdf0fcc",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Praise",
+      "categories": [
+        "Material Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review highlights material quality without referencing wishlist behavior.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:27.660Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40937,11 +41256,23 @@
     "title": "",
     "text": "nice quality products",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=0ca3bd7e-7bed-4483-abb9-46953fe5ccc5",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General positive feedback on quality, no wishlist relevance.",
+    "ai": {
+      "review_id": "0ca3bd7e-7bed-4483-abb9-46953fe5ccc5",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Praise",
+      "categories": [
+        "Product Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General positive feedback on quality, no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:27.660Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -40999,12 +41330,24 @@
     "title": "",
     "text": "Extremely frustrating experience with Myntra. I ordered a product and requested a return, but the app showed that the pickup partner was “out for pickup.” However, no one actually came to pick it up. After waiting 3–4 days, Myntra cancelled the return request from their side without properly resolving the issue. What’s even worse is the Help Center. The interface is so poorly designed that getting actual help feels almost impossible. There’s no proper way to explain the issue",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1fda5c88-63c1-4158-90b9-fdc8d7acf088",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization",
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization; Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complaint about return experience, not linked to wishlist purchase barriers.",
+    "ai": {
+      "review_id": "1fda5c88-63c1-4158-90b9-fdc8d7acf088",
+      "relevant": false,
+      "themes": [],
+      "segment": "Service Complaint",
+      "categories": [
+        "Return Process",
+        "Customer Support"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complaint about return experience, not linked to wishlist purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:27.660Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41026,11 +41369,24 @@
     "title": "",
     "text": "The worst app, when I returned or cancelled the order the app showed refund credited but when I checked my bank statement and upi history it said I didn't receive any amount, I even complained many times but my bank still says no amount received and I knew about this a few days ago. before I had many return parcels but didn't notice in my upi account history that whether I received any amount or not. I have complained multiple times that I have not received any refund amount in my bank.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=c37da33e-cad9-48bb-95f1-937e4e678211",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Refund not received; unrelated to wishlist conversion.",
+    "ai": {
+      "review_id": "c37da33e-cad9-48bb-95f1-937e4e678211",
+      "relevant": false,
+      "themes": [],
+      "segment": "Refund Issue",
+      "categories": [
+        "Refund",
+        "Payment"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Refund not received; unrelated to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:27.660Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41076,12 +41432,21 @@
     "title": "",
     "text": "Literally Myntra your doing a very great job I have one issue of Return request and all and it was a super smooth although it was a bit late of cancelling but Myntra has managed a lot I just called to the customer support and they are supportive also your quality is not matchable and providing great deals in your app and focus on your customer service as your focusing now and that's all.....you are doing a fantastic job... One suggestion is that work on your chatbot service 😊",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=70d30ab3-1dd4-409a-8e6d-cf5cf38070b8",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization",
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization; Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review praises return handling and support but does not mention wishlists or purchase friction.",
+    "ai": {
+      "review_id": "70d30ab3-1dd4-409a-8e6d-cf5cf38070b8",
+      "relevant": false,
+      "themes": [],
+      "segment": "Customer Service",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review praises return handling and support but does not mention wishlists or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:32.376Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41199,11 +41564,21 @@
     "title": "",
     "text": "“My overall experience with Myntra has been very good. The app is easy to use, with a wide variety of products, brands, and styles. I like the convenient search, product details, order tracking, and smooth delivery experience. The different price ranges make shopping easier, and I appreciate the convenience of shopping from home. Overall, Myntra provides a simple and enjoyable online shopping experience, and I would happily use the app again.”",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=ed52defa-89a0-47ff-8694-d744efa4c771",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General positive feedback about the app experience without any wishlist‑related insight.",
+    "ai": {
+      "review_id": "ed52defa-89a0-47ff-8694-d744efa4c771",
+      "relevant": false,
+      "themes": [],
+      "segment": "Overall Experience",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General positive feedback about the app experience without any wishlist‑related insight.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:32.376Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41249,11 +41624,21 @@
     "title": "",
     "text": "Very Good Quality And Genuine Products Selling Platform",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=3d1c982c-9d7f-4d6a-8e4c-192e636141f4",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Focuses on product quality and authenticity, not on wishlist or checkout issues.",
+    "ai": {
+      "review_id": "3d1c982c-9d7f-4d6a-8e4c-192e636141f4",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Focuses on product quality and authenticity, not on wishlist or checkout issues.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:32.376Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41299,12 +41684,21 @@
     "title": "",
     "text": "Good app to find good quality trend wears also can't find that mutch offers that's a bad point",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1f14962f-58aa-4dad-aea9-8dda5e575157",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization",
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization; Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions lack of offers as a drawback but does not relate to wishlist behavior.",
+    "ai": {
+      "review_id": "1f14962f-58aa-4dad-aea9-8dda5e575157",
+      "relevant": false,
+      "themes": [],
+      "segment": "Offers",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Mentions lack of offers as a drawback but does not relate to wishlist behavior.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:32.376Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41314,11 +41708,21 @@
     "title": "",
     "text": "all products i ordered that's genuine",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=5a2978aa-0fd5-400f-b475-333c8f6df501",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive comment on product genuineness with no reference to wishlists or purchase friction.",
+    "ai": {
+      "review_id": "5a2978aa-0fd5-400f-b475-333c8f6df501",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Authenticity",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive comment on product genuineness with no reference to wishlists or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:32.376Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41352,11 +41756,21 @@
     "title": "",
     "text": "the app is fluent easy to use and well collection of trendy and quality products",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e5207d25-a6c6-4830-9795-b884772c185a",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Comments only on app usability and product trendiness, no wishlist or purchase‑hesitation insight.",
+    "ai": {
+      "review_id": "e5207d25-a6c6-4830-9795-b884772c185a",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Comments only on app usability and product trendiness, no wishlist or purchase‑hesitation insight.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:52.520Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41378,11 +41792,21 @@
     "title": "",
     "text": "The app is very convenient to use it also gives free cash sometimes. clothes are in very good quality and also in affordable price i bought so many clothes and not only clothes we can also buy skin care and makeup and footwear from the app",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=a11564d6-01c6-4bf7-b377-6aac2b0b664d",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions convenience and product variety but does not discuss wishlist behavior or checkout friction.",
+    "ai": {
+      "review_id": "a11564d6-01c6-4bf7-b377-6aac2b0b664d",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Mentions convenience and product variety but does not discuss wishlist behavior or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:52.520Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41440,11 +41864,21 @@
     "title": "",
     "text": "fabric was good",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=eab5ed4c-6aa7-4e5c-88b4-48c11a454d40",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Brief product‑quality comment without any reference to wishlisting or purchase barriers.",
+    "ai": {
+      "review_id": "eab5ed4c-6aa7-4e5c-88b4-48c11a454d40",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Brief product‑quality comment without any reference to wishlisting or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:52.520Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41466,12 +41900,21 @@
     "title": "",
     "text": "worst shopping app in india. don't buy anything if products are damaged or the seller sent the wrong size products or any fault then your platform charged not refund. other platforms like flipkart or Amazon refund your platform charges but Myntra does not. Maximum time Myntra sent the wrong product and if you want to replace then your produce has not replaced only return and platform charges not refunded. Myntra is the worst playing games in the Online shopping market. Don't buy on Mantra.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=586ba7a8-75ee-49d2-a43e-6863de01cb5e",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety",
-      "Delivery & Shipping Friction"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety; Delivery & Shipping Friction"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Focuses on refund and size‑mismatch issues, not on wishlist conversion or checkout friction.",
+    "ai": {
+      "review_id": "586ba7a8-75ee-49d2-a43e-6863de01cb5e",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Focuses on refund and size‑mismatch issues, not on wishlist conversion or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:52.520Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41493,11 +41936,21 @@
     "title": "",
     "text": "Very good Product quality provide and love it",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=6b0f0e05-f1db-4df6-932b-2d48c1b2ad4a",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive product‑quality feedback with no mention of wishlisting or purchase hesitation.",
+    "ai": {
+      "review_id": "6b0f0e05-f1db-4df6-932b-2d48c1b2ad4a",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive product‑quality feedback with no mention of wishlisting or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:52.520Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41555,11 +42008,21 @@
     "title": "",
     "text": "great app with easy navigation and best prices and deals",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=8d238d0b-4c16-4b10-81a6-3eec8e213fcf",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General praise about navigation and pricing, no mention of wishlist or purchase friction.",
+    "ai": {
+      "review_id": "8d238d0b-4c16-4b10-81a6-3eec8e213fcf",
+      "relevant": false,
+      "themes": [],
+      "segment": "App Experience",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General praise about navigation and pricing, no mention of wishlist or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:57.085Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41605,11 +42068,21 @@
     "title": "",
     "text": "hectic return and refund is really late without 2 calls it will keep on failing it's really hustle 😞 very disappointing",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=f4b2fafa-ea3b-445f-bb1d-f556664172eb",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Focuses on return and refund delays, not on wishlist or checkout barriers.",
+    "ai": {
+      "review_id": "f4b2fafa-ea3b-445f-bb1d-f556664172eb",
+      "relevant": false,
+      "themes": [],
+      "segment": "Return/Refund",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Focuses on return and refund delays, not on wishlist or checkout barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:57.085Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41679,11 +42152,21 @@
     "title": "",
     "text": "I’ve had a really good experience using Myntra. The app is easy to use, has a huge variety of clothes, footwear, accessories, and beauty products, and the filters make it easy to find what you’re looking for. I also like that there are plenty of reviews and size-related details before placing an order. The delivery is generally quick, and the overall shopping experience is smooth. There are occasional issues, but overall, Myntra is one of my go-to apps for online shopping.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=17d1a40c-3026-44ea-a51b-403a553d33ab",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Broad positive feedback about app features and delivery, no wishlist‑related insight.",
+    "ai": {
+      "review_id": "17d1a40c-3026-44ea-a51b-403a553d33ab",
+      "relevant": false,
+      "themes": [],
+      "segment": "Overall Experience",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Broad positive feedback about app features and delivery, no wishlist‑related insight.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:57.085Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41729,11 +42212,21 @@
     "title": "",
     "text": "Reasonable price, good quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=3aadbf0d-91ad-4559-a896-afc86ce2c35a",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Simple comment on price and quality, unrelated to wishlist conversion.",
+    "ai": {
+      "review_id": "3aadbf0d-91ad-4559-a896-afc86ce2c35a",
+      "relevant": false,
+      "themes": [],
+      "segment": "Pricing/Quality",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Simple comment on price and quality, unrelated to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:57.085Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41755,11 +42248,21 @@
     "title": "",
     "text": "perfect the clothes come as the picture no fake pics perfect",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=88fc9b89-1b8b-4834-906e-98c6689a8075",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions product matching photos, but does not address wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "88fc9b89-1b8b-4834-906e-98c6689a8075",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Accuracy",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Mentions product matching photos, but does not address wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:01:57.086Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41821,7 +42324,24 @@
     "matched_themes": [
       "Delivery & Shipping Friction"
     ],
-    "screening_reason": "Matched: Delivery & Shipping Friction"
+    "screening_reason": "AI (groq): Unreliable delivery dates and cancellations discourage wishlist purchases.",
+    "ai": {
+      "review_id": "9beab9fb-ceaa-458e-8550-02fee80c450d",
+      "relevant": true,
+      "themes": [
+        "Delivery & Shipping Friction"
+      ],
+      "segment": "Delivery Reliability",
+      "categories": [
+        "Delivery Delay",
+        "Order Cancellation"
+      ],
+      "barrier": "Delivery Reliability",
+      "sentiment": "negative",
+      "reason": "Unreliable delivery dates and cancellations discourage wishlist purchases.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:02:20.605Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41843,11 +42363,21 @@
     "title": "",
     "text": "best quality of product",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=9d65fcf4-2baa-4426-985c-bcdd49e2d3e5",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General product praise not linked to wishlist conversion.",
+    "ai": {
+      "review_id": "9d65fcf4-2baa-4426-985c-bcdd49e2d3e5",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General product praise not linked to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:02:20.605Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41942,10 +42472,23 @@
     "text": "The app service is so bad. they didn't make a refund even after an open query that lasted for 20 days. The customer service sucks",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=6032c538-6759-46a4-a56e-31709beae20d",
     "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Refund not processed creates hesitation to buy from wishlist.",
+    "ai": {
+      "review_id": "6032c538-6759-46a4-a56e-31709beae20d",
+      "relevant": true,
+      "themes": [],
+      "segment": "Refund Issue",
+      "categories": [
+        "Refund Delay",
+        "Customer Service"
+      ],
+      "barrier": "Refund Issue",
+      "sentiment": "negative",
+      "reason": "Refund not processed creates hesitation to buy from wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:02:20.605Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41979,11 +42522,21 @@
     "title": "",
     "text": "app ekadam bakwas hai Koi coupon nahin lagta aur product quality bhi ghatiya hai",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=5853b47e-ee05-498a-85da-6b23c580148f",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Generic coupon and product quality complaints not tied to wishlist purchase.",
+    "ai": {
+      "review_id": "5853b47e-ee05-498a-85da-6b23c580148f",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Generic coupon and product quality complaints not tied to wishlist purchase.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:02:20.605Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -41993,11 +42546,21 @@
     "title": "",
     "text": "filters are not working",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b0d947fa-0d5c-4fe2-8349-d20a5c764628",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): App filter bug unrelated to wishlist conversion.",
+    "ai": {
+      "review_id": "b0d947fa-0d5c-4fe2-8349-d20a5c764628",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "neutral",
+      "reason": "App filter bug unrelated to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:02:20.605Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42139,11 +42702,23 @@
     "title": "",
     "text": "I am not satisfied with your service, my last 2 orders did not arrive on the delivery date given by myntra and the customer executive gave silly reasons.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1aea2d81-652f-431d-b606-f10a56c7fca6",
-    "study_relevant": true,
-    "matched_themes": [
-      "Delivery & Shipping Friction"
-    ],
-    "screening_reason": "Matched: Delivery & Shipping Friction"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complaint about delivery delays, no mention of wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "1aea2d81-652f-431d-b606-f10a56c7fca6",
+      "relevant": false,
+      "themes": [],
+      "segment": "Delivery",
+      "categories": [
+        "Delivery"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complaint about delivery delays, no mention of wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:02:40.092Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42237,11 +42812,23 @@
     "title": "",
     "text": "I returned a product 10 days ago and still didn't receive the refund even after contacting customer service several times they kept saying your refund will be done soon but nothing happened. Its been 10 days I didn't receive my refund. I'll never buy anything from Myntra again",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=32f630f5-c44e-4991-b29d-d609fa49f83f",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Issue with refund processing, unrelated to wishlist or checkout friction.",
+    "ai": {
+      "review_id": "32f630f5-c44e-4991-b29d-d609fa49f83f",
+      "relevant": false,
+      "themes": [],
+      "segment": "Refund",
+      "categories": [
+        "Refund"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Issue with refund processing, unrelated to wishlist or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:02:40.092Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42419,11 +43006,23 @@
     "title": "",
     "text": "delivery is fast and product quality also good",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=4851ebc0-0622-4d90-a71c-7e077267bb48",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive comment on delivery speed, no wishlist relevance.",
+    "ai": {
+      "review_id": "4851ebc0-0622-4d90-a71c-7e077267bb48",
+      "relevant": false,
+      "themes": [],
+      "segment": "Delivery",
+      "categories": [
+        "Delivery"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive comment on delivery speed, no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:02:40.092Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42505,11 +43104,23 @@
     "title": "",
     "text": "Amazing and Quality Products Delivered.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b928c118-c889-4a4d-aa3b-266ae57ee49f",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General praise of product quality, not linked to wishlist behavior.",
+    "ai": {
+      "review_id": "b928c118-c889-4a4d-aa3b-266ae57ee49f",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [
+        "Product Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General praise of product quality, not linked to wishlist behavior.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:02:40.092Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42555,11 +43166,23 @@
     "title": "",
     "text": "💯%good material",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=70093a33-88ba-4078-a14b-9f457d86e75e",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Short compliment on material quality, no wishlist or purchase hesitation mentioned.",
+    "ai": {
+      "review_id": "70093a33-88ba-4078-a14b-9f457d86e75e",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [
+        "Product Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Short compliment on material quality, no wishlist or purchase hesitation mentioned.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:02:40.092Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42665,11 +43288,21 @@
     "title": "",
     "text": "superb collection and quality 🥰",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=91ea36f9-ee78-46b7-afce-50f7fd53a69f",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Review praises collection quality without referencing wishlist or purchase friction.",
+    "ai": {
+      "review_id": "91ea36f9-ee78-46b7-afce-50f7fd53a69f",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Review praises collection quality without referencing wishlist or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:01.818Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42715,11 +43348,21 @@
     "title": "",
     "text": "bad quality Cloth. when we return they taken the dress and give back and said return one more time and we return. they didn't came for take the dress. very bad service",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=191ddbca-8b33-4b46-81c2-7b74e82f643a",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Focuses on return service quality, no wishlist relevance.",
+    "ai": {
+      "review_id": "191ddbca-8b33-4b46-81c2-7b74e82f643a",
+      "relevant": false,
+      "themes": [],
+      "segment": "Service Complaint",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Focuses on return service quality, no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:01.818Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42729,11 +43372,21 @@
     "title": "",
     "text": "Nice product quality is available on this site. you can rely on this site",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=2522b36a-bc07-4c8e-9b72-6f5099ad73e3",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Highlights site reliability and product quality, unrelated to wishlist.",
+    "ai": {
+      "review_id": "2522b36a-bc07-4c8e-9b72-6f5099ad73e3",
+      "relevant": false,
+      "themes": [],
+      "segment": "Trust",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Highlights site reliability and product quality, unrelated to wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:01.818Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42767,11 +43420,21 @@
     "title": "",
     "text": "Very disappointing experience with Myntra.Whenever I place an order, it gets confirmed easily.But when the delivery date arrives,they postpone it. Even on the new delivery date, the product is not delivered.After waiting for so long, they eventually cancel the order.If you cannot deliver, why accept the order in the first place?This has happened to me repeatedly.The delivery service is extremely poor.Customers have to keep waiting without any proper solution.I am really disappointed with Myntra.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=f8e9e3ce-d503-4f44-913b-55a9163739ca",
-    "study_relevant": true,
-    "matched_themes": [
-      "Delivery & Shipping Friction"
-    ],
-    "screening_reason": "Matched: Delivery & Shipping Friction"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complains about delivery delays and cancellations, not about wishlist.",
+    "ai": {
+      "review_id": "f8e9e3ce-d503-4f44-913b-55a9163739ca",
+      "relevant": false,
+      "themes": [],
+      "segment": "Delivery Issue",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complains about delivery delays and cancellations, not about wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:01.818Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42829,11 +43492,21 @@
     "title": "",
     "text": "excellent products value of money.return policy is very prompt.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=5ddcc65d-92ac-473a-a476-3f685ef41aa5",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive about product value and return policy, no wishlist mention.",
+    "ai": {
+      "review_id": "5ddcc65d-92ac-473a-a476-3f685ef41aa5",
+      "relevant": false,
+      "themes": [],
+      "segment": "Value",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive about product value and return policy, no wishlist mention.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:01.818Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42927,11 +43600,21 @@
     "title": "",
     "text": "I love to shop on this app as prices and quality matches on the same platform. It's so simple and easy to return, exchange in single click 🙂🙂",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e31a85be-6242-4e51-bcdd-9af9484dc8df",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The comment praises app ease and returns but does not mention wishlists or purchase hesitation.",
+    "ai": {
+      "review_id": "e31a85be-6242-4e51-bcdd-9af9484dc8df",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The comment praises app ease and returns but does not mention wishlists or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:06.281Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -42941,11 +43624,21 @@
     "title": "",
     "text": "excellent product quality available",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=22bade5d-6546-47fa-ace7-feeb05b16e8f",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Focuses on product quality only, with no reference to wishlists or checkout friction.",
+    "ai": {
+      "review_id": "22bade5d-6546-47fa-ace7-feeb05b16e8f",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Focuses on product quality only, with no reference to wishlists or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:06.282Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43003,11 +43696,21 @@
     "title": "",
     "text": "I feels like very sad Experience about this app because of as quality And quantity is no issues And this app delivery Agents couldn't delivered by hurryup And they are delayed the orders Day by day it's A worst thing that's why I don't liked this App myntra better' then Apart from All apps even Customer support also not working on this app then it will know order agents numbers or any need help for customes Banned this App first of all .........😡😡😡",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b2ba7d16-30ce-42b0-9b45-8e1219d0bad0",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complains about delivery delays and support, unrelated to wishlist behavior.",
+    "ai": {
+      "review_id": "b2ba7d16-30ce-42b0-9b45-8e1219d0bad0",
+      "relevant": false,
+      "themes": [],
+      "segment": "Delivery & Support Complaint",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complains about delivery delays and support, unrelated to wishlist behavior.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:06.282Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43017,11 +43720,21 @@
     "title": "",
     "text": "good quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=ca236e65-72f2-42e8-905e-60e981493a12",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions good quality but provides no insight on wishlists or purchase barriers.",
+    "ai": {
+      "review_id": "ca236e65-72f2-42e8-905e-60e981493a12",
+      "relevant": false,
+      "themes": [],
+      "segment": "Quality Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Mentions good quality but provides no insight on wishlists or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:06.282Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43247,12 +43960,21 @@
     "title": "",
     "text": "I trust myntra. But recently myntra is doing fraud with me. I ordered a OnePlus earbuds and they gave me duplicate one plus product. it's look like a cheap copy of original product. very first day I can't take it seriously but yesterday I saw the review from the customer on myntra and after that I saw my product it looks different. I can't expect this from myntra.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e85336ea-cdc3-429d-b160-05a1e5cac3b5",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety",
-      "Occasion & Styling Inspiration"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety; Occasion & Styling Inspiration"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Describes a fraud incident; does not discuss wishlist conversion or checkout friction.",
+    "ai": {
+      "review_id": "e85336ea-cdc3-429d-b160-05a1e5cac3b5",
+      "relevant": false,
+      "themes": [],
+      "segment": "Fraud Complaint",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Describes a fraud incident; does not discuss wishlist conversion or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:06.282Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43274,11 +43996,21 @@
     "title": "",
     "text": "great quality product",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=c6ae99a6-1c12-4946-841a-92a952385e08",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review only praises product quality and does not mention wishlist or purchase friction.",
+    "ai": {
+      "review_id": "c6ae99a6-1c12-4946-841a-92a952385e08",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review only praises product quality and does not mention wishlist or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:11.482Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43336,11 +44068,21 @@
     "title": "",
     "text": "Customer get variety of dresses. On time delivery even fast also. Good return policy. delivery partner ask before delivery on whatsapp. You can reshefule ur delivery also.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=31b4d35b-13b7-4d91-83ab-e5d82482e975",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review discusses delivery and variety but makes no reference to wishlist or buying hesitation.",
+    "ai": {
+      "review_id": "31b4d35b-13b7-4d91-83ab-e5d82482e975",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review discusses delivery and variety but makes no reference to wishlist or buying hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:11.482Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43350,11 +44092,21 @@
     "title": "",
     "text": "very good service best quality product best rate.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b66495ba-03b4-4839-ac52-2ae4500aecbd",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review praises service and product quality without mentioning wishlist or checkout friction.",
+    "ai": {
+      "review_id": "b66495ba-03b4-4839-ac52-2ae4500aecbd",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review praises service and product quality without mentioning wishlist or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:11.482Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43364,11 +44116,21 @@
     "title": "",
     "text": "great app thanks for good product and quality delivered thanks one more time too much good ❤️❤️❤️ thanks myntra... 👍",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=6721971e-8db1-48cb-8b1c-1426ae112cf6",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review expresses gratitude for the app and product quality, with no wishlist relevance.",
+    "ai": {
+      "review_id": "6721971e-8db1-48cb-8b1c-1426ae112cf6",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review expresses gratitude for the app and product quality, with no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:11.482Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43582,11 +44344,21 @@
     "title": "",
     "text": "It's great whenever I use myntra I can rest assured with my product quality....👍👍 a great app for all your fashion needs",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=10c11fe0-1ea2-496a-95e9-54336c560888",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review highlights overall satisfaction but does not address wishlist or purchase barriers.",
+    "ai": {
+      "review_id": "10c11fe0-1ea2-496a-95e9-54336c560888",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review highlights overall satisfaction but does not address wishlist or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:11.482Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43620,11 +44392,21 @@
     "title": "",
     "text": "selling original brands and genuine products.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=088b285b-b779-4fa0-aaff-afc0e3dc1d73",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review praises product authenticity but does not mention wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "088b285b-b779-4fa0-aaff-afc0e3dc1d73",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Feedback",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review praises product authenticity but does not mention wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:16.067Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43706,11 +44488,21 @@
     "title": "",
     "text": "very good app specially for premium and high quality products at affordable price",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=9757018b-69aa-4ec0-bcdf-ae190fa57f15",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review compliments app and pricing but contains no wishlist‑related insight.",
+    "ai": {
+      "review_id": "9757018b-69aa-4ec0-bcdf-ae190fa57f15",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Feedback",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review compliments app and pricing but contains no wishlist‑related insight.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:16.067Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43888,11 +44680,21 @@
     "title": "",
     "text": "Myntra par shopping ka experience bahut achha raha. Products ki variety, quality, offers aur delivery service sab kaafi badhiya hain. App use karna bhi easy hai aur order tracking bhi simple hai. Fashion shopping ke liye ek hi jagah par bahut saare options mil jaate hain. Highly recommended! ❤️🛍️",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=db9412b0-c391-43ca-a27b-63038b3911c8",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review describes overall shopping experience without referencing wishlist or checkout friction.",
+    "ai": {
+      "review_id": "db9412b0-c391-43ca-a27b-63038b3911c8",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Feedback",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review describes overall shopping experience without referencing wishlist or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:16.067Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -43950,11 +44752,21 @@
     "title": "",
     "text": "The customer support team is quite helpful and does work professionally without wasting time.. The app itself is fine but yeah almost every item has a higher rate than other ones, this is the most concerning thing here otherwise quality and authenticity is fine here, hope they work more of reducing the rates and make it more affordable.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1edcf834-5ded-4b85-8477-3d0b0d8f6958",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review mentions pricing concerns but does not link them to wishlist behavior.",
+    "ai": {
+      "review_id": "1edcf834-5ded-4b85-8477-3d0b0d8f6958",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Feedback",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review mentions pricing concerns but does not link them to wishlist behavior.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:16.067Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44012,11 +44824,21 @@
     "title": "",
     "text": "this is original cream thnk u myntra team",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=603fb9b8-d0fc-4fb7-ae4c-1a90d78fb723",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review thanks the team for an original product but lacks any wishlist‑related content.",
+    "ai": {
+      "review_id": "603fb9b8-d0fc-4fb7-ae4c-1a90d78fb723",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Feedback",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review thanks the team for an original product but lacks any wishlist‑related content.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:16.067Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44122,11 +44944,23 @@
     "title": "",
     "text": "good quality 👍",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=d6688f91-8bf1-4cbd-bab3-7ad2338f79a8",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions product quality but no wishlist context.",
+    "ai": {
+      "review_id": "d6688f91-8bf1-4cbd-bab3-7ad2338f79a8",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [
+        "Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Mentions product quality but no wishlist context.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:36.295Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44184,11 +45018,24 @@
     "title": "",
     "text": "good very good. return options, replacement, all things r good",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=9f48f413-c69d-4ba9-9b29-9e0569870c09",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Talks about return options without any wishlist relevance.",
+    "ai": {
+      "review_id": "9f48f413-c69d-4ba9-9b29-9e0569870c09",
+      "relevant": false,
+      "themes": [],
+      "segment": "Return & Service",
+      "categories": [
+        "Return Options",
+        "Customer Service"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Talks about return options without any wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:36.295Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44210,11 +45057,24 @@
     "title": "",
     "text": "worst shopping app ever I used maine first 999₹ ke heels liye lekin uska size mujhe chhota padd gya to maine return kar diya lekin abhi tak refund nhi mila hai mujhe maine February mein kra tha lekin ab August chal rha hai abhi tak nhi mila and maine kuch months pahle blockheels liya tha wo 699₹ ka uska bhi size chhota pad gya to maine wo bhi return kra lekin abhi tak refund nhi aaya chahe to mujhe refund do ya phir mai legal case file kar dungi , and customer service are total useless",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=d8d231a5-6dcf-4ed7-a188-939a01f055ac",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Focuses on refund delays, not on wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "d8d231a5-6dcf-4ed7-a188-939a01f055ac",
+      "relevant": false,
+      "themes": [],
+      "segment": "Refund / Customer Service",
+      "categories": [
+        "Refund Delay",
+        "Customer Service"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Focuses on refund delays, not on wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:36.295Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44224,11 +45084,24 @@
     "title": "",
     "text": "Myntra is a very good app, you can get everything related to fashion on it, and the quality of Myntra is also quite good 😊👍,and better than another app ❤️😊",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b53b77a8-2613-48dc-8eda-db189c0f4317",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General praise of the app and product quality, no wishlist mention.",
+    "ai": {
+      "review_id": "b53b77a8-2613-48dc-8eda-db189c0f4317",
+      "relevant": false,
+      "themes": [],
+      "segment": "App Praise",
+      "categories": [
+        "App Experience",
+        "Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General praise of the app and product quality, no wishlist mention.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:36.295Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44298,11 +45171,24 @@
     "title": "",
     "text": "worst experience with Myntra. I booked a dress for my kid but I can't get my order till now. they increase delivery date day by day. so after a long wait I cancelled my order. I raise queries most of the time but no valid response by Myntra helps the team. I recommend the Messho app much better than Myntra. Myntra help team focus on your weak point otherwise you lose your valuable customers.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=438de6d7-150e-4bb9-9b42-750e12e182bf",
-    "study_relevant": true,
-    "matched_themes": [
-      "Delivery & Shipping Friction"
-    ],
-    "screening_reason": "Matched: Delivery & Shipping Friction"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Describes delivery delays and cancellation, unrelated to wishlist.",
+    "ai": {
+      "review_id": "438de6d7-150e-4bb9-9b42-750e12e182bf",
+      "relevant": false,
+      "themes": [],
+      "segment": "Delivery Issues",
+      "categories": [
+        "Delivery Delay",
+        "Order Cancellation"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Describes delivery delays and cancellation, unrelated to wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:36.295Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44336,11 +45222,23 @@
     "title": "",
     "text": "user experience is nice.. produts are good and amazing prices.. user convenient... good with returns.. a nice platform",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=8ee691dd-576d-4ddf-9110-73333639f162",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review praises the platform but does not mention wishlist or purchase friction.",
+    "ai": {
+      "review_id": "8ee691dd-576d-4ddf-9110-73333639f162",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [
+        "Positive Feedback"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review praises the platform but does not mention wishlist or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:40.583Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44410,11 +45308,23 @@
     "title": "",
     "text": "This quality is very good 💯",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e1a48815-cdd2-4692-b130-6719c0e0a34d",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review only comments on product quality without referencing wishlist behavior.",
+    "ai": {
+      "review_id": "e1a48815-cdd2-4692-b130-6719c0e0a34d",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [
+        "Positive Feedback"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review only comments on product quality without referencing wishlist behavior.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:40.583Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44436,11 +45346,23 @@
     "title": "",
     "text": "Return/exchange policy is pretty good, though they charge a small fee for every transaction. But it's less complicated and fast.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=2209a654-5503-448f-bc64-c12490223e34",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions return policy but does not link it to wishlist hesitation or checkout friction.",
+    "ai": {
+      "review_id": "2209a654-5503-448f-bc64-c12490223e34",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [
+        "Positive Feedback"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Mentions return policy but does not link it to wishlist hesitation or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:40.583Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44462,11 +45384,23 @@
     "title": "",
     "text": "amazing clothes and quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=f4df0731-9943-4b7a-9d38-c4b7a2288f8c",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Provides generic praise for clothes and quality, no wishlist relevance.",
+    "ai": {
+      "review_id": "f4df0731-9943-4b7a-9d38-c4b7a2288f8c",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [
+        "Positive Feedback"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Provides generic praise for clothes and quality, no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:40.583Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44476,11 +45410,23 @@
     "title": "",
     "text": "excellent platform for fashion wear",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=067a3393-1ab7-450f-ab3f-a1964d62f2eb",
-    "study_relevant": true,
-    "matched_themes": [
-      "Occasion & Styling Inspiration"
-    ],
-    "screening_reason": "Matched: Occasion & Styling Inspiration"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Describes the platform positively without any wishlist or purchase barrier context.",
+    "ai": {
+      "review_id": "067a3393-1ab7-450f-ab3f-a1964d62f2eb",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [
+        "Positive Feedback"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Describes the platform positively without any wishlist or purchase barrier context.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:03:40.583Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44526,11 +45472,24 @@
     "title": "",
     "text": "worst shopping app! I ordered jeans. The order was canceled because the address was incorrect and the order was prepaid. I’m really disappointed with the refund service. It has been more than 15 days, but I still haven’t received my refund. The refund was supposed to be processed by now, but there is no update yet. Please look into this issue and process my refund as soon as possible.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=c8b72edf-5bc5-472b-b141-107dcc8ebba0",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review discusses a refund delay and order cancellation, not wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "c8b72edf-5bc5-472b-b141-107dcc8ebba0",
+      "relevant": false,
+      "themes": [],
+      "segment": "Refund Issue",
+      "categories": [
+        "Refund",
+        "Order Cancellation"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "The review discusses a refund delay and order cancellation, not wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:16.256Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44540,11 +45499,24 @@
     "title": "",
     "text": "Don't purchase anything from this they send you wrong product and after that they claimed that we investigate and find that you received right product. It's repeating with me. please don't purchase anything from this app. It's service is very bad.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=c7bb17a0-5f39-4d45-860f-353a10a396e4",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The complaint is about receiving the wrong product, unrelated to wishlist behavior.",
+    "ai": {
+      "review_id": "c7bb17a0-5f39-4d45-860f-353a10a396e4",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Mismatch",
+      "categories": [
+        "Wrong Product",
+        "Customer Service"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "The complaint is about receiving the wrong product, unrelated to wishlist behavior.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:16.256Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44554,11 +45526,23 @@
     "title": "",
     "text": "product is super quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=f65ec8cc-2651-4978-adaa-785bf94948a4",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The short praise about product quality does not mention wishlist or purchase friction.",
+    "ai": {
+      "review_id": "f65ec8cc-2651-4978-adaa-785bf94948a4",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Praise",
+      "categories": [
+        "Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The short praise about product quality does not mention wishlist or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:16.256Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44604,11 +45588,24 @@
     "title": "",
     "text": "very good app... at price and quality best in this I think.. that is best app",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=f6a960ed-ada5-4254-861c-aebf42de2737",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General positive feedback about the app, not related to wishlist conversion.",
+    "ai": {
+      "review_id": "f6a960ed-ada5-4254-861c-aebf42de2737",
+      "relevant": false,
+      "themes": [],
+      "segment": "App Praise",
+      "categories": [
+        "Pricing",
+        "Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General positive feedback about the app, not related to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:16.256Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44666,11 +45663,23 @@
     "title": "",
     "text": "very nice experience for exchange..",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=3efccfa9-84ae-4f96-885d-41e2830d47b1",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive comment about exchange experience, with no wishlist relevance.",
+    "ai": {
+      "review_id": "3efccfa9-84ae-4f96-885d-41e2830d47b1",
+      "relevant": false,
+      "themes": [],
+      "segment": "Exchange Experience",
+      "categories": [
+        "Exchange"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive comment about exchange experience, with no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:16.256Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44728,11 +45737,21 @@
     "title": "",
     "text": "nice app got delivery on time and the product was also of good quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=9aad35b6-75d5-4d31-a3a1-900ba461c15f",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Praise for on‑time delivery and product quality, no wishlist‑related barrier mentioned.",
+    "ai": {
+      "review_id": "9aad35b6-75d5-4d31-a3a1-900ba461c15f",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Praise for on‑time delivery and product quality, no wishlist‑related barrier mentioned.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:36.564Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44742,11 +45761,21 @@
     "title": "",
     "text": "very good app very good quality products in low price 😍 go and shop now 🤩😊💫",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=bffbb6fd-9e13-4c95-b2b6-83e90069e5dd",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Enthusiastic about app and low prices, but does not discuss wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "bffbb6fd-9e13-4c95-b2b6-83e90069e5dd",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Enthusiastic about app and low prices, but does not discuss wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:36.564Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44804,11 +45833,21 @@
     "title": "",
     "text": "Myntra returns are too worst. Calling customer care will take 2,3 hrs to connect with agent",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=9b023fd2-ca4e-4832-83b5-90232211d269",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complains about poor returns experience and long customer‑care wait times, unrelated to wishlist.",
+    "ai": {
+      "review_id": "9b023fd2-ca4e-4832-83b5-90232211d269",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complains about poor returns experience and long customer‑care wait times, unrelated to wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:36.564Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44818,12 +45857,21 @@
     "title": "",
     "text": "Pathetic experience from such a big brand. I requested a size exchange and I was out of town. I came back only to find out that the exchange was never delivered. I also never shared any OTP. Customer care told me that timeline has now breached and I got stuck with the wrong product.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=87cbd938-be38-4f39-b031-c0403b79b4c0",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization",
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization; Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Describes size‑exchange and delivery issues, but does not mention wishlist friction.",
+    "ai": {
+      "review_id": "87cbd938-be38-4f39-b031-c0403b79b4c0",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Describes size‑exchange and delivery issues, but does not mention wishlist friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:36.564Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44953,11 +46001,21 @@
     "title": "",
     "text": "quality bagguntundhi",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=6b367d07-7270-4082-b8af-21bf15d17354",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions product quality in a regional language, with no reference to wishlist concerns.",
+    "ai": {
+      "review_id": "6b367d07-7270-4082-b8af-21bf15d17354",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Mentions product quality in a regional language, with no reference to wishlist concerns.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:36.564Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44967,11 +46025,21 @@
     "title": "",
     "text": "The articles are so awesome,cool and good quality.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=7f2d6c0c-28ef-44e1-b7de-cefa25881c44",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Generic positive review",
+    "ai": {
+      "review_id": "7f2d6c0c-28ef-44e1-b7de-cefa25881c44",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Generic positive review",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:42.148Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -44981,11 +46049,21 @@
     "title": "",
     "text": "toogood and genuine products",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=627cfeab-d5ef-40e3-a422-ee2233daeca8",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Generic positive review",
+    "ai": {
+      "review_id": "627cfeab-d5ef-40e3-a422-ee2233daeca8",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Generic positive review",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:42.148Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -45031,11 +46109,21 @@
     "title": "",
     "text": "Best quality products",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=301d3d05-03c6-430e-92ec-5a5940f939d8",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Generic positive review",
+    "ai": {
+      "review_id": "301d3d05-03c6-430e-92ec-5a5940f939d8",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Generic positive review",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:42.148Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -45093,11 +46181,21 @@
     "title": "",
     "text": "excellent quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1100e3fc-3b3b-46c3-9fca-2429680a79d7",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Generic positive review",
+    "ai": {
+      "review_id": "1100e3fc-3b3b-46c3-9fca-2429680a79d7",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Generic positive review",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:42.148Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -45143,11 +46241,21 @@
     "title": "",
     "text": "The user interface needs improvement. Make it more interactive redesigning menu.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=35d86bf3-cb5a-4ef3-9c4e-33b9f648bb83",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Generic positive review",
+    "ai": {
+      "review_id": "35d86bf3-cb5a-4ef3-9c4e-33b9f648bb83",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Generic positive review",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:04:42.148Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -45349,12 +46457,21 @@
     "title": "",
     "text": "It provides very good quality fabric and has a very good app.Myntra is honestly a fashion lover’s dream! From trendy outfits and stylish footwear to beautiful accessories, everything feels so easy to find in one place. The variety is amazing, the styles are always on point, and there’s something for every vibe. Myntra truly makes shopping feel effortless, exciting, and aesthetic! 📜",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=3370eff2-43f7-42e8-9b14-0e5220e27cfc",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization",
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization; Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User praises overall app experience and variety, with no mention of wishlist or purchase friction.",
+    "ai": {
+      "review_id": "3370eff2-43f7-42e8-9b14-0e5220e27cfc",
+      "relevant": false,
+      "themes": [],
+      "segment": "App Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "User praises overall app experience and variety, with no mention of wishlist or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:02.379Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -45496,11 +46613,21 @@
     "title": "",
     "text": "Myntra's entire management team is extremely negligent😡; they pay no heed to complaints and take months to deliver items. I ordered a pair of shoes, but they haven't been delivered even after a month; the order was cancelled by them three times on their own.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=306d53ef-7348-44f0-b65a-1bddbf4a4f5c",
-    "study_relevant": true,
-    "matched_themes": [
-      "Occasion & Styling Inspiration"
-    ],
-    "screening_reason": "Matched: Occasion & Styling Inspiration"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complaint focuses on delayed delivery and order cancellation, not on wishlist or checkout barriers.",
+    "ai": {
+      "review_id": "306d53ef-7348-44f0-b65a-1bddbf4a4f5c",
+      "relevant": false,
+      "themes": [],
+      "segment": "Delivery Issues",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complaint focuses on delayed delivery and order cancellation, not on wishlist or checkout barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:02.379Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -45582,11 +46709,21 @@
     "title": "",
     "text": "i am very disappointed from myntra I try to return my order but they kept delay my return request I had been try from past week and they didn't resolve my concern and kept saying wait for 24 hr now it's too frustrating...",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=0c531e04-fc1f-4046-89aa-3f00d4d9991f",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User is frustrated with return delays, which does not relate to wishlist conversion.",
+    "ai": {
+      "review_id": "0c531e04-fc1f-4046-89aa-3f00d4d9991f",
+      "relevant": false,
+      "themes": [],
+      "segment": "Return Issues",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "User is frustrated with return delays, which does not relate to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:02.379Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -45620,11 +46757,21 @@
     "title": "",
     "text": "Myntra was so good and I love it so much all clothes are very much good quality and prices adorable affordable but quality was so good I like all clothes from internet I want to buy to know many clothes in the offers clothes collection literally I really appreciate",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1e0c454c-305e-4d4d-a71c-de56b8339de4",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive feedback on product quality and pricing, without reference to wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "1e0c454c-305e-4d4d-a71c-de56b8339de4",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive feedback on product quality and pricing, without reference to wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:02.379Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -45790,11 +46937,21 @@
     "title": "",
     "text": "best shopping app if you want to quality then use this",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=4c8b3d0e-3c82-4ecd-9c6b-615d2b0dcc74",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Brief endorsement of app quality, not mentioning wishlist or checkout friction.",
+    "ai": {
+      "review_id": "4c8b3d0e-3c82-4ecd-9c6b-615d2b0dcc74",
+      "relevant": false,
+      "themes": [],
+      "segment": "Quality Praise",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Brief endorsement of app quality, not mentioning wishlist or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:02.379Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -45828,11 +46985,21 @@
     "title": "",
     "text": "I can't exchange my order because I'm not able to receive OTP in WhatsApp or Gmail ,because my phone is missing and I can only access the WhatsApp and gmail. Please fix it as soon as possible ,🙏",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=4971aa10-606b-4e84-8fe0-7f0e123abd61",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Issue with OTP for exchange, unrelated to wishlist purchase barriers.",
+    "ai": {
+      "review_id": "4971aa10-606b-4e84-8fe0-7f0e123abd61",
+      "relevant": false,
+      "themes": [],
+      "segment": "Other",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Issue with OTP for exchange, unrelated to wishlist purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:07.119Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -45914,11 +47081,21 @@
     "title": "",
     "text": "Poor service.I m purchasing products from myntra since 6-7 years.but now they deliver without tag product.when we try to return delivery boys refuse to pic up without tag.2nd problem is picked up product tym is too late and after returning they said that When product quality check passed.then refund given to your account.it takes a month..poor service",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b651b9ad-fa72-467c-9233-c6a9793cd990",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complaints about delivery tags and refund delays, not tied to wishlist.",
+    "ai": {
+      "review_id": "b651b9ad-fa72-467c-9233-c6a9793cd990",
+      "relevant": false,
+      "themes": [],
+      "segment": "Other",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complaints about delivery tags and refund delays, not tied to wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:07.119Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -45988,11 +47165,21 @@
     "title": "",
     "text": "best.quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=72e4784f-04e0-4a1b-94c5-15d342e48442",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Short praise of quality, no wishlist relevance.",
+    "ai": {
+      "review_id": "72e4784f-04e0-4a1b-94c5-15d342e48442",
+      "relevant": false,
+      "themes": [],
+      "segment": "Other",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Short praise of quality, no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:07.119Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46062,11 +47249,21 @@
     "title": "",
     "text": "super quality nice dress worth of money",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=494bed9c-8020-43e6-9ac4-28538d5160d6",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Generic positive comment about product quality, unrelated to wishlist.",
+    "ai": {
+      "review_id": "494bed9c-8020-43e6-9ac4-28538d5160d6",
+      "relevant": false,
+      "themes": [],
+      "segment": "Other",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Generic positive comment about product quality, unrelated to wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:07.119Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46148,11 +47345,21 @@
     "title": "",
     "text": "Very bad experience with Myntra. My order was cancelled by Myntra due to \"unforeseen circumstances\" after 5 days of expected delivery date without any proper explanation. I was expecting the product, but instead the order was simply cancelled. Very disappointing service and poor customer experience. Myntra should improve its delivery and order management. even the coupon for first use is cancelled with that order and I can't use that coupon now . new user offer is a scam .",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=92b69cc5-922c-4657-839e-ced4df755698",
-    "study_relevant": true,
-    "matched_themes": [
-      "Delivery & Shipping Friction"
-    ],
-    "screening_reason": "Matched: Delivery & Shipping Friction"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Order cancellation and coupon issue, but not linked to wishlist hesitation.",
+    "ai": {
+      "review_id": "92b69cc5-922c-4657-839e-ced4df755698",
+      "relevant": false,
+      "themes": [],
+      "segment": "Other",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Order cancellation and coupon issue, but not linked to wishlist hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:07.119Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46186,11 +47393,21 @@
     "title": "",
     "text": "everything on this app is a quality product",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=5d34215e-dc26-4cde-805c-f0a7bdd72062",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Does not discuss wishlist or purchase barriers.",
+    "ai": {
+      "review_id": "5d34215e-dc26-4cde-805c-f0a7bdd72062",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Does not discuss wishlist or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:29.857Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46236,11 +47453,21 @@
     "title": "",
     "text": "woooow it's very good product i received form myntra quality is awesome love this product tq myntra",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=7e7e5c0c-18c6-4b0e-995b-879d74567273",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Does not discuss wishlist or purchase barriers.",
+    "ai": {
+      "review_id": "7e7e5c0c-18c6-4b0e-995b-879d74567273",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Does not discuss wishlist or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:29.857Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46324,11 +47551,21 @@
     "title": "",
     "text": "the quick exchange experience made it give it 5 STAR. Thank you for providing such great PRODUCT and Service.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=007b70ff-5523-40c3-985b-0d6948be2cab",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Does not discuss wishlist or purchase barriers.",
+    "ai": {
+      "review_id": "007b70ff-5523-40c3-985b-0d6948be2cab",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Does not discuss wishlist or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:29.857Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46362,11 +47599,21 @@
     "title": "",
     "text": "Customer care service is very bad..no solution from them. very poor service. I bought an item of 5,000. I return it.but I don't get my money back",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e5fdb82e-cab2-4978-9f74-be385232dcee",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Does not discuss wishlist or purchase barriers.",
+    "ai": {
+      "review_id": "e5fdb82e-cab2-4978-9f74-be385232dcee",
+      "relevant": false,
+      "themes": [],
+      "segment": "",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Does not discuss wishlist or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:29.857Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46376,11 +47623,21 @@
     "title": "",
     "text": "very good app and product quality is too good",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=11dc929d-802e-4726-a387-0e2dcb270c69",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Review praises the app and product quality but does not mention wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "11dc929d-802e-4726-a387-0e2dcb270c69",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Review praises the app and product quality but does not mention wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:53.045Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46390,11 +47647,21 @@
     "title": "",
     "text": "6 days late delivery date.. “Order shows delivered but I have not received it",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=a51bbc16-57e9-4b7f-82be-5f28e25275fc",
-    "study_relevant": true,
-    "matched_themes": [
-      "Delivery & Shipping Friction"
-    ],
-    "screening_reason": "Matched: Delivery & Shipping Friction"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complaint about late delivery, unrelated to wishlist conversion.",
+    "ai": {
+      "review_id": "a51bbc16-57e9-4b7f-82be-5f28e25275fc",
+      "relevant": false,
+      "themes": [],
+      "segment": "Delivery",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complaint about late delivery, unrelated to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:53.045Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46464,11 +47731,21 @@
     "title": "",
     "text": "GENUINE PRODUCTS OFFERED AND OVERALL BUYING EXPERIENCE IS GREAT.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=debbb27f-4163-4c9a-a86f-7157e81d71eb",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive feedback on product authenticity and buying experience, no wishlist relevance.",
+    "ai": {
+      "review_id": "debbb27f-4163-4c9a-a86f-7157e81d71eb",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive feedback on product authenticity and buying experience, no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:53.045Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46526,11 +47803,21 @@
     "title": "",
     "text": "this aap provide best quality products in cheap price",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=9f3ec675-29be-44ff-b2e1-7b3ac08adb79",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions good quality at cheap price, but does not discuss wishlist or checkout friction.",
+    "ai": {
+      "review_id": "9f3ec675-29be-44ff-b2e1-7b3ac08adb79",
+      "relevant": false,
+      "themes": [],
+      "segment": "Pricing",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Mentions good quality at cheap price, but does not discuss wishlist or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:53.045Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46720,11 +48007,21 @@
     "title": "",
     "text": "very bad customer support experience. They cancelled the part of the orders without my consent and deduct platform fee and others charge and do not refund full money. If you are not able to deliver the product then why does the customer bear the loss.Thier customer support experience is worst they do not solve the problem and just switch call from one executive to other and finally customer fill annoyed and leave it . Waah kya badiya tarka hai Customer ka problem solve karne ka.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=f5dcbe5a-24c4-483a-a9ed-5a37f5e52d82",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Negative experience with customer support, not related to wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "f5dcbe5a-24c4-483a-a9ed-5a37f5e52d82",
+      "relevant": false,
+      "themes": [],
+      "segment": "Support",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Negative experience with customer support, not related to wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:53.045Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46770,11 +48067,23 @@
     "title": "",
     "text": "Nice quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e3659912-0c8a-4c7b-a8af-b4d94558ea86",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The comment praises quality but does not mention wishlists or purchase friction.",
+    "ai": {
+      "review_id": "e3659912-0c8a-4c7b-a8af-b4d94558ea86",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [
+        "Quality Feedback"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The comment praises quality but does not mention wishlists or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:58.152Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46832,11 +48141,24 @@
     "title": "",
     "text": "Always my one stop go for shopping,can trust myntra for quality and price",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=ec08f106-092e-49c2-9c5e-1649712a2dfc",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Focuses on overall trust and price, not on wishlist behavior or checkout issues.",
+    "ai": {
+      "review_id": "ec08f106-092e-49c2-9c5e-1649712a2dfc",
+      "relevant": false,
+      "themes": [],
+      "segment": "Brand Trust",
+      "categories": [
+        "Trust",
+        "Pricing"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Focuses on overall trust and price, not on wishlist behavior or checkout issues.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:58.152Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46942,11 +48264,24 @@
     "title": "",
     "text": "wrost app every , no reply and response given by myntra myntra deactivated my account and I'm very loyal and genuine customer since many years and I'm also very good creator on glam clan they deactivate my account without any proper reason",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e5148d99-27c7-4548-973b-5792c425fab1",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complaint about account deactivation without any reference to wishlists.",
+    "ai": {
+      "review_id": "e5148d99-27c7-4548-973b-5792c425fab1",
+      "relevant": false,
+      "themes": [],
+      "segment": "Account Issues",
+      "categories": [
+        "Account",
+        "Support"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complaint about account deactivation without any reference to wishlists.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:58.152Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -46968,11 +48303,23 @@
     "title": "",
     "text": "application quality so best for other applications and my personal experience more than satisfied app another app",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=fe0fc924-7375-4ffe-a072-601d65ded613",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive feedback on app quality, unrelated to wishlist conversion.",
+    "ai": {
+      "review_id": "fe0fc924-7375-4ffe-a072-601d65ded613",
+      "relevant": false,
+      "themes": [],
+      "segment": "App Performance",
+      "categories": [
+        "App Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive feedback on app quality, unrelated to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:58.152Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47018,11 +48365,23 @@
     "title": "",
     "text": "Good interface",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=96e4f7ae-80f1-4d2d-af78-c02b035f7552",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions good interface but does not address wishlist or purchase friction.",
+    "ai": {
+      "review_id": "96e4f7ae-80f1-4d2d-af78-c02b035f7552",
+      "relevant": false,
+      "themes": [],
+      "segment": "UI/UX",
+      "categories": [
+        "Interface"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Mentions good interface but does not address wishlist or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:05:58.152Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47260,12 +48619,25 @@
     "title": "",
     "text": "I have been a Myntra customer for years but of late the product quality has deteriorated. customer care / contact us goes straight to AI and no solution we can find ever . product are send without quality check,. Tags are missing. The product sent of different company than what is ordered. seems like a big scam is going on . The app developer is responsible for providing good service. Return request are not being processed. Extremely disappointed.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=7b9bc85c-b939-4bcb-86c8-165ebb2fe64d",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization",
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization; Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions product quality and support issues, not wishlist.",
+    "ai": {
+      "review_id": "7b9bc85c-b939-4bcb-86c8-165ebb2fe64d",
+      "relevant": false,
+      "themes": [],
+      "segment": "Quality & Support",
+      "categories": [
+        "Product Quality",
+        "Customer Service",
+        "Returns"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Mentions product quality and support issues, not wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:02.971Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47335,11 +48707,24 @@
     "title": "",
     "text": "What exactly happened to you Myntra? Since when you stopped caring about customers? How can you call Online Shopping app when you can't even deliver the products to users after charging them Money! Products won't be delivered even after weeks of promised delivery date. When issue was raised you simply keep on extending it to next 48 hours, it always ask us to wait for 24hrs simply to extend it to further days. Only reason you'll have is \"high volume\". How is that a valid reason for torturing us.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b09d6c64-a2d2-449a-80d1-d466e465084c",
-    "study_relevant": true,
-    "matched_themes": [
-      "Delivery & Shipping Friction"
-    ],
-    "screening_reason": "Matched: Delivery & Shipping Friction"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Focuses on delivery delays, no wishlist context.",
+    "ai": {
+      "review_id": "b09d6c64-a2d2-449a-80d1-d466e465084c",
+      "relevant": false,
+      "themes": [],
+      "segment": "Delivery Delays",
+      "categories": [
+        "Delivery",
+        "Customer Service"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Focuses on delivery delays, no wishlist context.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:02.971Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47493,11 +48878,24 @@
     "title": "",
     "text": "Good interface and shopping experience.I placed the order and it showed,it will be delivered in 2 days.I waited for it and on the day of delivery,they ghosted me at evening saying order cancelled due to operation constrains.Like why did you waste my time,would not recommend to people that actually need the product on time.Wasted my 2 days.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=3e10ea39-49e0-4c18-91b2-da9531ee8772",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Talks about order cancellation and delivery, unrelated to wishlist.",
+    "ai": {
+      "review_id": "3e10ea39-49e0-4c18-91b2-da9531ee8772",
+      "relevant": false,
+      "themes": [],
+      "segment": "Order Cancellation",
+      "categories": [
+        "Order Management",
+        "Delivery"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Talks about order cancellation and delivery, unrelated to wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:02.972Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47555,11 +48953,25 @@
     "title": "",
     "text": "shittiest services ...they deliver the incorrect order first and then delay the exchange, making it worse, don't even let me cancel the order and then I get stuck in the endless customer care loop, they disconnected the calls in between and don't even provide refund later...worst experience",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=8de59836-ecc3-4b20-8373-a9a70b7d1caf",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Describes incorrect order and refund problems, not about wishlist.",
+    "ai": {
+      "review_id": "8de59836-ecc3-4b20-8373-a9a70b7d1caf",
+      "relevant": false,
+      "themes": [],
+      "segment": "Incorrect Order & Refund",
+      "categories": [
+        "Order Accuracy",
+        "Refund",
+        "Customer Service"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Describes incorrect order and refund problems, not about wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:02.972Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47653,11 +49065,23 @@
     "title": "",
     "text": "excellent quality of cloths ... go for it",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=facb8eb9-b59d-4ee8-891a-504e818866e7",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Praises product quality, no wishlist relevance.",
+    "ai": {
+      "review_id": "facb8eb9-b59d-4ee8-891a-504e818866e7",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Praise",
+      "categories": [
+        "Product Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Praises product quality, no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:02.972Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47739,11 +49163,21 @@
     "title": "",
     "text": "I don't know why I give1 star also...my offer order directly canceled...without my knowledge and refund credited...but atleast check why we ordered on your site..& also check customer urgencies...My experience is very very bad 👎",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=c09d388f-39db-44ca-9a6a-2614f78b24a1",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review discusses order cancellation and refund issues but does not mention wishlist hesitation or checkout friction.",
+    "ai": {
+      "review_id": "c09d388f-39db-44ca-9a6a-2614f78b24a1",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "The review discusses order cancellation and refund issues but does not mention wishlist hesitation or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:22.988Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47849,11 +49283,21 @@
     "title": "",
     "text": "genuine quality genuine products",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b750a1f8-7c57-4a55-ad3c-7d5f88875ce1",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review only praises product quality without any reference to wishlist or purchase barriers.",
+    "ai": {
+      "review_id": "b750a1f8-7c57-4a55-ad3c-7d5f88875ce1",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "The review only praises product quality without any reference to wishlist or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:22.988Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47863,11 +49307,21 @@
     "title": "",
     "text": "best quality and best Shopping App Myntra",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=2852d4cc-511a-4b42-973b-ac4b4ae2cfed",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General praise for the app and quality, no wishlist‑related content.",
+    "ai": {
+      "review_id": "2852d4cc-511a-4b42-973b-ac4b4ae2cfed",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General praise for the app and quality, no wishlist‑related content.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:22.988Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47889,11 +49343,21 @@
     "title": "",
     "text": "Good quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1e3f743e-8a51-43f9-a36d-dfe41727f8bf",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Simple positive comment on quality, unrelated to wishlist conversion.",
+    "ai": {
+      "review_id": "1e3f743e-8a51-43f9-a36d-dfe41727f8bf",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Simple positive comment on quality, unrelated to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:22.988Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47903,11 +49367,21 @@
     "title": "",
     "text": "we have to continuously report a single issue multiple times but still they do not care about your concern. without resolving the issue they just show that the issue has been resolved. the products were missing. and also when you get refund for a return item the money is shown that it has been transferred but actually it has not been transferred. the customer care service is too slow, and very rigid.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=66b3344b-83db-4171-ab22-546d4641c57d",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complaints about customer service and refunds, but no mention of wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "66b3344b-83db-4171-ab22-546d4641c57d",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complaints about customer service and refunds, but no mention of wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:22.988Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -47917,11 +49391,25 @@
     "title": "",
     "text": "one of the worst app I have ever experienced I ordered from there of 1100 words which was not of good quality return the product later on I got the message that I cancelled the request to return the product I don't even get the product and not even my refund show customers be aware about Myntra adjust cause fraud scams whatever you can call it",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=5b32c917-d6c5-46fa-850f-973540777b24",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User reports missing product and refund problems.",
+    "ai": {
+      "review_id": "5b32c917-d6c5-46fa-850f-973540777b24",
+      "relevant": false,
+      "themes": [],
+      "segment": "Order & Refund Issue",
+      "categories": [
+        "Order",
+        "Refund",
+        "App"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "User reports missing product and refund problems.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:27.923Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -48015,11 +49503,24 @@
     "title": "",
     "text": "Product quality is good at a low range price 🙌",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=a1855e4f-69e4-4ce2-be02-eb77041215d9",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User praises good quality at a low price.",
+    "ai": {
+      "review_id": "a1855e4f-69e4-4ce2-be02-eb77041215d9",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [
+        "Quality",
+        "Pricing"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "User praises good quality at a low price.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:27.923Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -48053,11 +49554,24 @@
     "title": "",
     "text": "very bad experience... they don't exchange a hrx product",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=9f5692f9-d84f-4996-9ac8-c9b566e79472",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User unhappy that exchange was not allowed.",
+    "ai": {
+      "review_id": "9f5692f9-d84f-4996-9ac8-c9b566e79472",
+      "relevant": false,
+      "themes": [],
+      "segment": "Exchange Policy",
+      "categories": [
+        "Exchange",
+        "Customer Service"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "User unhappy that exchange was not allowed.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:27.923Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -48187,11 +49701,23 @@
     "title": "",
     "text": "Good App, easy interface.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=4de559ff-720b-4b10-bea0-00048d4ed881",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User finds the app easy to use.",
+    "ai": {
+      "review_id": "4de559ff-720b-4b10-bea0-00048d4ed881",
+      "relevant": false,
+      "themes": [],
+      "segment": "App Usability",
+      "categories": [
+        "App Interface"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "User finds the app easy to use.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:27.923Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -48201,11 +49727,23 @@
     "title": "",
     "text": "good quality stuff",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=7ad0ad7b-c545-430e-9d27-3c5f1eb32e8f",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User compliments product quality.",
+    "ai": {
+      "review_id": "7ad0ad7b-c545-430e-9d27-3c5f1eb32e8f",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [
+        "Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "User compliments product quality.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:27.923Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -48275,11 +49813,24 @@
     "title": "",
     "text": "app is good as well as user friendly and all the aspects are great except that they have made it very basic n generic ... doesn't feel good to scroll on it .. makers should enhance its quality and make it more chic and elegant it's giving very cheap vibes",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=dcf8f967-0c94-4b90-a47d-d17fdc7e97d8",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): The review discusses app UI and generic feel, without mentioning wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "dcf8f967-0c94-4b90-a47d-d17fdc7e97d8",
+      "relevant": false,
+      "themes": [],
+      "segment": "UI/Design",
+      "categories": [
+        "UI",
+        "Design"
+      ],
+      "barrier": null,
+      "sentiment": "neutral",
+      "reason": "The review discusses app UI and generic feel, without mentioning wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:48.273Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -48649,11 +50200,23 @@
     "title": "",
     "text": "Myntra is Tag good quality Cloth we ordered 90% good quality Cloth.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=2bac4ac9-a6b9-43e6-9dbd-b9c9b3e97ebd",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Focuses on cloth quality, not related to wishlist conversion.",
+    "ai": {
+      "review_id": "2bac4ac9-a6b9-43e6-9dbd-b9c9b3e97ebd",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [
+        "Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Focuses on cloth quality, not related to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:48.273Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -48771,11 +50334,23 @@
     "title": "",
     "text": "every product have excellent.. superb quality...thanks myntra",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=f416cfdc-56d6-49e3-b49a-3fe7fec06b98",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Praises product quality, with no mention of wishlist or purchase barriers.",
+    "ai": {
+      "review_id": "f416cfdc-56d6-49e3-b49a-3fe7fec06b98",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Quality",
+      "categories": [
+        "Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Praises product quality, with no mention of wishlist or purchase barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:48.273Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -48845,11 +50420,23 @@
     "title": "",
     "text": "this app is very good for original product quality of product is genuine",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=88382b29-f8a2-4b0a-a091-58af9259c935",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Comments on authenticity of products, unrelated to wishlist behavior.",
+    "ai": {
+      "review_id": "88382b29-f8a2-4b0a-a091-58af9259c935",
+      "relevant": false,
+      "themes": [],
+      "segment": "Product Authenticity",
+      "categories": [
+        "Authenticity"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Comments on authenticity of products, unrelated to wishlist behavior.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:48.273Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -48895,12 +50482,25 @@
     "title": "",
     "text": "Myntra is one of my favorite shopping apps because it offers a fantastic combination of variety, quality, convenience, and a smooth shopping experience. The app has a huge collection of clothing, footwear, accessories, beauty products, and many other lifestyle items, making it easy to find something for every style and occasion. I especially love how simple and user-friendly the app is, with clear product pictures, detailed descriptions, size options, customer reviews.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=c98e512e-0ac6-4315-ba0c-7bec82913123",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization",
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization; Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General praise of the app’s variety and usability, without any wishlist-specific insight.",
+    "ai": {
+      "review_id": "c98e512e-0ac6-4315-ba0c-7bec82913123",
+      "relevant": false,
+      "themes": [],
+      "segment": "Overall Experience",
+      "categories": [
+        "Variety",
+        "Convenience",
+        "User-friendliness"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General praise of the app’s variety and usability, without any wishlist-specific insight.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:48.273Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49066,11 +50666,21 @@
     "title": "",
     "text": "all product is good quality nd myntra is trusted side",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=af3f461b-3583-4736-bcaa-66329e3a7d1c",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Only praises product quality and trust, no wishlist or purchase barrier mentioned.",
+    "ai": {
+      "review_id": "af3f461b-3583-4736-bcaa-66329e3a7d1c",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Only praises product quality and trust, no wishlist or purchase barrier mentioned.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:52.947Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49092,11 +50702,21 @@
     "title": "",
     "text": "very bad experience sem kapde ki quality ek bar acchi aati hai aur dusra mangaane per bahut hi bekar quality mein aata Hai return karne per rs 10 kat ke aate Hain",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=97cc9834-bb17-4327-b081-029811af5fd8",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complains about inconsistent quality and return fee, but does not reference wishlist or checkout friction.",
+    "ai": {
+      "review_id": "97cc9834-bb17-4327-b081-029811af5fd8",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complains about inconsistent quality and return fee, but does not reference wishlist or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:52.947Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49106,11 +50726,21 @@
     "title": "",
     "text": "Exellent. High premium quality of products deliver every time at very reasonable price. Packing and delivery good. Thanks Myntra Team.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=6add0060-993d-42e2-bb4a-4546648ec481",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive feedback on product quality and delivery, no wishlist relevance.",
+    "ai": {
+      "review_id": "6add0060-993d-42e2-bb4a-4546648ec481",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive feedback on product quality and delivery, no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:52.947Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49168,11 +50798,21 @@
     "title": "",
     "text": "product quality is very good , and customer care also good",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e235f589-d7bf-43cc-aa93-62634304960b",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Mentions good product quality and customer care, unrelated to wishlist.",
+    "ai": {
+      "review_id": "e235f589-d7bf-43cc-aa93-62634304960b",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Mentions good product quality and customer care, unrelated to wishlist.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:52.947Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49206,11 +50846,21 @@
     "title": "",
     "text": "Good Quality Good service thank you Myntra",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=03c388ea-978f-4f3b-943a-3de9da67682c",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General praise for quality and service, no wishlist or purchase hesitation discussed.",
+    "ai": {
+      "review_id": "03c388ea-978f-4f3b-943a-3de9da67682c",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General praise for quality and service, no wishlist or purchase hesitation discussed.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:06:52.947Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49280,11 +50930,21 @@
     "title": "",
     "text": "it has very affordable prices and great quality and product and no problem while ordering any product i will recommend everyone to download and use this app it's very convenient and affordable thank you myntra",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=f74b8950-03c1-4ace-b96e-0da972a04622",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User praises affordable prices, quality, and app convenience.",
+    "ai": {
+      "review_id": "f74b8950-03c1-4ace-b96e-0da972a04622",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "User praises affordable prices, quality, and app convenience.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:12.749Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49354,11 +51014,21 @@
     "title": "",
     "text": "earlier ordered a salwar kurta from myntra from another Id which was of much high price. But received product was with worst quality. same product was available at flipkart for just Rs. 250. It was seen as if flipkart product was delivered not myntras product. The received product was of very cheap quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=56e18abc-749b-44b5-bc68-69856a38d6ac",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User complains about poor product quality compared to a competitor.",
+    "ai": {
+      "review_id": "56e18abc-749b-44b5-bc68-69856a38d6ac",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "User complains about poor product quality compared to a competitor.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:12.749Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49404,12 +51074,21 @@
     "title": "",
     "text": "my best experience over myntra is bcz you have great return and refund policy, if i find any brand over there website even with little extra discount but still i choose to order it from myntra i feel safe , secure and not to be cheated. 🫠🫠",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b45f82b7-f880-40bf-8245-9ffbb7903a07",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization",
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization; Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User highlights strong return and refund policy as a trust factor.",
+    "ai": {
+      "review_id": "b45f82b7-f880-40bf-8245-9ffbb7903a07",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "User highlights strong return and refund policy as a trust factor.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:12.749Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49575,11 +51254,21 @@
     "title": "",
     "text": "I have cancelled my order and it has been 11 days still I haven't received my refund",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=ac164485-a3db-41dd-9f32-439c32da4be7",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User reports a delayed refund after order cancellation.",
+    "ai": {
+      "review_id": "ac164485-a3db-41dd-9f32-439c32da4be7",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "User reports a delayed refund after order cancellation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:12.749Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49637,11 +51326,21 @@
     "title": "",
     "text": "everything are amazing and products quality is awesome👍",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=458060ea-fe84-480f-946c-20d8ac6d3df8",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): User compliments overall product quality.",
+    "ai": {
+      "review_id": "458060ea-fe84-480f-946c-20d8ac6d3df8",
+      "relevant": false,
+      "themes": [],
+      "segment": "General",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "User compliments overall product quality.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:12.749Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49675,11 +51374,24 @@
     "title": "",
     "text": "My experience with Myntra has been quite good. The express service, the quality everything is great.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=3cf6986a-9ab3-4caa-88a6-11e762899ef5",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General praise for quality and express service, no wishlist or purchase friction mentioned.",
+    "ai": {
+      "review_id": "3cf6986a-9ab3-4caa-88a6-11e762899ef5",
+      "relevant": false,
+      "themes": [],
+      "segment": "Positive Feedback",
+      "categories": [
+        "Quality",
+        "Service"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General praise for quality and express service, no wishlist or purchase friction mentioned.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:17.378Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49773,11 +51485,25 @@
     "title": "",
     "text": "Great quality, fast delivery, and smooth shopping experience. Loved it! 🛍️✨",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=0f057c13-ba3b-44ed-a1c7-e306d1766802",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Enthusiastic review of quality and fast delivery, unrelated to wishlist or checkout barriers.",
+    "ai": {
+      "review_id": "0f057c13-ba3b-44ed-a1c7-e306d1766802",
+      "relevant": false,
+      "themes": [],
+      "segment": "Positive Feedback",
+      "categories": [
+        "Quality",
+        "Delivery",
+        "Shopping Experience"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Enthusiastic review of quality and fast delivery, unrelated to wishlist or checkout barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:17.378Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49787,11 +51513,23 @@
     "title": "",
     "text": "easy and good quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=a602e4ae-4d0c-4d9f-9a76-28ab9a5d9348",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Brief positive comment on ease and quality, no wishlist relevance.",
+    "ai": {
+      "review_id": "a602e4ae-4d0c-4d9f-9a76-28ab9a5d9348",
+      "relevant": false,
+      "themes": [],
+      "segment": "Positive Feedback",
+      "categories": [
+        "Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Brief positive comment on ease and quality, no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:17.378Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49837,11 +51575,24 @@
     "title": "",
     "text": "I have never had such a bad experience buying a product. The product itself is good, but first of all, it was not delivered to my home or anywhere near my house, so I had to travel 4 km to collect it. Also, the T-shirt I received was much larger than a normal L size. I requested an exchange, and when I travelled 4 km again from my home for the exchange, the delivery person told me that the exchange could not be processed because the system was unable to scan the product. Now, I will have to trav",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=07015f27-c191-486b-8759-30b46d07d8c3",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Complaints about delivery location and incorrect sizing, but no mention of wishlist or purchase hesitation.",
+    "ai": {
+      "review_id": "07015f27-c191-486b-8759-30b46d07d8c3",
+      "relevant": false,
+      "themes": [],
+      "segment": "Negative Experience",
+      "categories": [
+        "Delivery",
+        "Fit"
+      ],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Complaints about delivery location and incorrect sizing, but no mention of wishlist or purchase hesitation.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:17.378Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49863,11 +51614,23 @@
     "title": "",
     "text": "nice aap sb bhi product mgva sakte ho real h , quality h",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=6d329008-c837-4955-bba3-efaa876a9408",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive statement about product authenticity and quality, unrelated to wishlist conversion.",
+    "ai": {
+      "review_id": "6d329008-c837-4955-bba3-efaa876a9408",
+      "relevant": false,
+      "themes": [],
+      "segment": "Positive Feedback",
+      "categories": [
+        "Quality"
+      ],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive statement about product authenticity and quality, unrelated to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:17.378Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49889,12 +51652,21 @@
     "title": "",
     "text": "very bad experience did not expect this, I wanted a size exchange the shoe comes to my door step the delivery person approves the item,that no damage has been made but the code on the tag doesn't match.Days have passed no assist from the apps side.Even the exchange day had passed no notice was made whether it will be sent or not.Then suddenly today it is showing cancelled no notifications of that either that the delivery would be done today and now the exchange has been cancelled by employee",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=db960692-859f-4b9f-9488-862ee97bfc71",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety",
-      "Occasion & Styling Inspiration"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety; Occasion & Styling Inspiration"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Exchange issues are post‑purchase and not tied to wishlist or checkout friction.",
+    "ai": {
+      "review_id": "db960692-859f-4b9f-9488-862ee97bfc71",
+      "relevant": false,
+      "themes": [],
+      "segment": "negative",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "negative",
+      "reason": "Exchange issues are post‑purchase and not tied to wishlist or checkout friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:45.364Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -49976,11 +51748,21 @@
     "title": "",
     "text": "⭐️⭐️⭐️⭐️⭐️ “Overall, Mamaearth Charcoal Black Long Stay Kajal mujhe kaafi achha laga. Iska black colour deep aur beautiful hai, jo eyes ko instantly define karta hai. Application smooth hai aur lagane mein zyada effort nahi lagta. Kajal comfortable feel hota hai aur everyday makeup ke saath-saath party looks ke liye bhi perfect hai. Pack of 2 hona bhi kaafi convenient hai aur value for money feel hota hai. Simple eye look ko enhance karne ke liye definitely a great choice! 🖤✨”amazing app 👍🏻",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e99bc08c-abbf-445b-b558-da4dafbcc71a",
-    "study_relevant": true,
-    "matched_themes": [
-      "Occasion & Styling Inspiration"
-    ],
-    "screening_reason": "Matched: Occasion & Styling Inspiration"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive product praise without wishlist or purchase‑friction context.",
+    "ai": {
+      "review_id": "e99bc08c-abbf-445b-b558-da4dafbcc71a",
+      "relevant": false,
+      "themes": [],
+      "segment": "positive",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive product praise without wishlist or purchase‑friction context.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:45.364Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -50074,13 +51856,21 @@
     "title": "",
     "text": "Best Fashion Find Ever—Totally Worth It! ⭐⭐⭐⭐⭐\"Myntra never disappoints with its clothing collection! This piece offers incredible value for money. The fabric didn't shrink or lose color after the first wash, which proves its top-notch quality. The entire shopping experience—from browsing to the lightning-fast delivery—was incredibly smooth. Check out my styling video to see how it moves!\"",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=e3881119-a121-4082-9584-773f6c8e8627",
-    "study_relevant": true,
-    "matched_themes": [
-      "Wishlist Clutter & Organization",
-      "Fit & Fabric Anxiety",
-      "Occasion & Styling Inspiration"
-    ],
-    "screening_reason": "Matched: Wishlist Clutter & Organization; Fit & Fabric Anxiety; Occasion & Styling Inspiration"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General satisfaction with product and delivery, not related to wishlist or checkout barriers.",
+    "ai": {
+      "review_id": "e3881119-a121-4082-9584-773f6c8e8627",
+      "relevant": false,
+      "themes": [],
+      "segment": "positive",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General satisfaction with product and delivery, not related to wishlist or checkout barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:45.364Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -50090,11 +51880,21 @@
     "title": "",
     "text": "amazing product, fitting as per the specifications.",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=3a061dc2-d942-49f0-ad3a-79f91f95c2e2",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Brief positive comment about fit, no wishlist or purchase‑friction insight.",
+    "ai": {
+      "review_id": "3a061dc2-d942-49f0-ad3a-79f91f95c2e2",
+      "relevant": false,
+      "themes": [],
+      "segment": "positive",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Brief positive comment about fit, no wishlist or purchase‑friction insight.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:45.364Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -50106,9 +51906,23 @@
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=6fea96f4-48c9-473d-afca-6e0559a8cea7",
     "study_relevant": true,
     "matched_themes": [
-      "Fit & Fabric Anxiety"
+      "Delivery & Shipping Friction"
     ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "screening_reason": "AI (groq): User reports difficulty receiving refunds after returns, a checkout barrier that can deter purchases.",
+    "ai": {
+      "review_id": "6fea96f4-48c9-473d-afca-6e0559a8cea7",
+      "relevant": true,
+      "themes": [
+        "Delivery & Shipping Friction"
+      ],
+      "segment": "negative",
+      "categories": [],
+      "barrier": "refund",
+      "sentiment": "negative",
+      "reason": "User reports difficulty receiving refunds after returns, a checkout barrier that can deter purchases.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:45.364Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -50166,11 +51980,21 @@
     "title": "",
     "text": "superb Application for online shopping, And providing very good quality products. Trustable App",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=2b33a51b-c010-4966-9b67-d1c0149c6383",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): General praise without any mention of wishlist or purchase friction.",
+    "ai": {
+      "review_id": "2b33a51b-c010-4966-9b67-d1c0149c6383",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Feedback",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "General praise without any mention of wishlist or purchase friction.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:49.777Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -50264,11 +52088,21 @@
     "title": "",
     "text": "genuine product",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=b0f78814-2940-49f1-a842-0066533a34ff",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Simple product endorsement not linked to wishlist behavior.",
+    "ai": {
+      "review_id": "b0f78814-2940-49f1-a842-0066533a34ff",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Feedback",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Simple product endorsement not linked to wishlist behavior.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:49.778Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -50542,11 +52376,21 @@
     "title": "",
     "text": "best quality and love all products 💝😍",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1f0de8f9-a667-4da9-ad57-c24038d9a6a0",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Positive comment about quality, no wishlist relevance.",
+    "ai": {
+      "review_id": "1f0de8f9-a667-4da9-ad57-c24038d9a6a0",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Feedback",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Positive comment about quality, no wishlist relevance.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:49.778Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -50580,11 +52424,21 @@
     "title": "",
     "text": "i love to shop From. every time new style with good quality",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=1b2be6a0-f616-44f2-ad91-94eb0246fd91",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Expresses enjoyment of shopping, but does not discuss wishlist barriers.",
+    "ai": {
+      "review_id": "1b2be6a0-f616-44f2-ad91-94eb0246fd91",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Feedback",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Expresses enjoyment of shopping, but does not discuss wishlist barriers.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:49.778Z"
+    }
   },
   {
     "source": "Google Play (India)",
@@ -50630,11 +52484,21 @@
     "title": "",
     "text": "easy to place order, return and exchange sizes or any other item on behalf of it.... 😍👍",
     "url": "https://play.google.com/store/apps/details?id=com.myntra.android&reviewId=897bbf1e-793f-4927-8247-25b6a66be0fd",
-    "study_relevant": true,
-    "matched_themes": [
-      "Fit & Fabric Anxiety"
-    ],
-    "screening_reason": "Matched: Fit & Fabric Anxiety"
+    "study_relevant": false,
+    "matched_themes": [],
+    "screening_reason": "AI (groq): Highlights easy ordering and returns, not tied to wishlist conversion.",
+    "ai": {
+      "review_id": "897bbf1e-793f-4927-8247-25b6a66be0fd",
+      "relevant": false,
+      "themes": [],
+      "segment": "General Feedback",
+      "categories": [],
+      "barrier": null,
+      "sentiment": "positive",
+      "reason": "Highlights easy ordering and returns, not tied to wishlist conversion.",
+      "provider": "groq",
+      "classified_at": "2026-08-30T05:07:49.778Z"
+    }
   },
   {
     "source": "Google Play (India)",
