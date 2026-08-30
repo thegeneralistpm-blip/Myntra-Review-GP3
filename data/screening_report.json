@@ -1,8 +1,8 @@
 {
-  "screened_at": "2026-08-30T05:08:27.401Z",
+  "screened_at": "2026-08-30T05:12:08.991Z",
   "total_downloaded": 5703,
-  "in_scope_for_category_discovery_analysis": 428,
-  "excluded_from_themed_analysis": 5275,
+  "in_scope_for_category_discovery_analysis": 423,
+  "excluded_from_themed_analysis": 5280,
   "exclusion_policy": "Excluded only from the category-discovery analysis when no theme keyword was present. Raw reviews are retained and remain visible.",
   "source_breakdown": {
     "Apple App Store (AU)": {
@@ -92,8 +92,8 @@
     },
     "Google Play (India)": {
       "downloaded": 5000,
-      "in_scope": 399,
-      "excluded": 4601
+      "in_scope": 394,
+      "excluded": 4606
     },
     "Reddit r/DesiFragranceAddicts": {
       "downloaded": 1,

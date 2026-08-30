@@ -76573,5 +76573,75 @@
     "reason": "Highlights easy ordering and returns, not tied to wishlist conversion.",
     "provider": "groq",
     "classified_at": "2026-08-30T05:07:49.778Z"
+  },
+  "6de01bd9-a577-4e8c-9caf-e514ec6d5017": {
+    "review_id": "6de01bd9-a577-4e8c-9caf-e514ec6d5017",
+    "relevant": false,
+    "themes": [],
+    "segment": "Returns",
+    "categories": [
+      "Return Policy"
+    ],
+    "barrier": null,
+    "sentiment": "negative",
+    "reason": "Talks about return pickup issues, not about wishlist purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:11:30.716Z"
+  },
+  "7c48fc9a-eb24-409c-8a9b-6db5419c380a": {
+    "review_id": "7c48fc9a-eb24-409c-8a9b-6db5419c380a",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Quality Praise"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Praises product quality, unrelated to wishlist conversion friction.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:11:30.718Z"
+  },
+  "82d647be-aee1-4e33-b2f7-7bc4efb65fab": {
+    "review_id": "82d647be-aee1-4e33-b2f7-7bc4efb65fab",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Quality Praise"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Mentions a nice portfolio of quality products, not a wishlist barrier.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:11:30.718Z"
+  },
+  "f61f803d-44bf-4d2f-aab6-7527b14a61a2": {
+    "review_id": "f61f803d-44bf-4d2f-aab6-7527b14a61a2",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Quality Praise"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "Comments on superb quality, unrelated to wishlist purchase hesitation.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:11:30.718Z"
+  },
+  "15dc6936-3bda-40b7-894f-c53919ce2c48": {
+    "review_id": "15dc6936-3bda-40b7-894f-c53919ce2c48",
+    "relevant": false,
+    "themes": [],
+    "segment": "Product Quality",
+    "categories": [
+      "Quality Praise"
+    ],
+    "barrier": null,
+    "sentiment": "positive",
+    "reason": "States excellent quality, does not address wishlist conversion issues.",
+    "provider": "groq",
+    "classified_at": "2026-08-30T05:11:30.718Z"
   }
 }
