@@ -42,6 +42,6 @@ jobs:
         run: |
           git config user.name "myntra-review-bot"
           git config user.email "actions@github.com"
-          git add data/ai_classifications.json data/review_screening.json data/screening_report.json index.html discovery-lens.html priority-radar.html evidence-library.html copilot.html review-library.html myntra-dashboard.html
+          git add data/ai_classifications.json data/review_screening.json data/screening_report.json index.html discovery-lens.html priority-radar.html evidence-library.html copilot.html review-library.html
           git diff --staged --quiet || git commit -m "chore: continue Myntra AI review screening"
           git push
