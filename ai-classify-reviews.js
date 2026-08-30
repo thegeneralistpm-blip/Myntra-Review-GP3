@@ -104,4 +104,4 @@ async function classify(batch, preferredProvider) {
     console.log(`Classified ${Math.min(index + BATCH_SIZE, pending.length)}/${pending.length} pending reviews via ${provider}.`);
     await sleep(provider === 'gemini' ? 3000 : 2200);
   }
-})().catch(error => { console.error(error.message); process.exit(1); });
+})().catch(error => { console.warn(`AI classification paused: ${error.message}`); process.exit(0); });

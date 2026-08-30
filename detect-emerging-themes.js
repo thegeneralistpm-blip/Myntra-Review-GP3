@@ -47,4 +47,4 @@ async function askModel(prompt) {
   const analysis = JSON.parse((result.text || '').replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim());
   fs.writeFileSync(outputPath, JSON.stringify({ generated_at: new Date().toISOString(), provider: result.provider, snapshots_used: snapshots, analysis }, null, 2));
   console.log(`Saved emerging-theme analysis using ${result.provider}.`);
-})().catch(error => { console.error(error.message); process.exit(1); });
+})().catch(error => { console.warn(`Emerging theme detection skipped: ${error.message}`); process.exit(0); });
