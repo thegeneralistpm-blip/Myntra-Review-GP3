@@ -619,7 +619,7 @@
     function directLogin(id, name, phone, role) {
       currentPersona = { id, name, phone, role };
       localStorage.setItem('myntra_active_persona', id.toString());
-      window.location.href = 'prototype.html?persona=' + id;
+      window.location.href = 'home.html?persona=' + id;
     }
 
     function selectPersona(id, name, phone, role) {
@@ -664,13 +664,13 @@
       localStorage.setItem('myntra_active_persona', currentPersona.id.toString());
 
       setTimeout(() => {
-        window.location.href = 'prototype.html?persona=' + currentPersona.id;
-      }, 500);
+        window.location.href = 'home.html?persona=' + currentPersona.id;
+      }, 400);
     }
 
     function continueToWishlist() {
       const id = localStorage.getItem('myntra_active_persona') || '1';
-      window.location.href = 'prototype.html?persona=' + id;
+      window.location.href = 'home.html?persona=' + id;
     }
 
     validateForm();
