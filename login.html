@@ -3,42 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Myntra Login · Appliqué Design System</title>
+  <title>Myntra Appliqué · Login & Persona Switcher</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      /* Myntra Appliqué Design Tokens */
-      --myntra-pink: #ff3f6c;
-      --myntra-pink-hover: #e01e52;
-      --myntra-pink-light: #fff0f5;
-      --applique-ink: #282c3f;
-      --applique-muted: #535766;
-      --applique-subdued: #94969f;
-      --applique-line: #d4d5d9;
-      --applique-bg: #f5f5f6;
-      --applique-card: #ffffff;
-      --applique-purple-soft: #f5f2fe;
+      /* Official Myntra Appliqué Design System Tokens (http://applique.myntra.com) */
+      --applique-primary: #ff3f6c;
+      --applique-primary-hover: #e01e52;
+      --applique-primary-light: #fff0f5;
+      
+      --applique-text-primary: #282c3f;
+      --applique-text-secondary: #535766;
+      --applique-text-subdued: #94969f;
+      --applique-text-disabled: #bfc0c6;
+      
+      --applique-border-default: #d4d5d9;
+      --applique-border-light: #eaeaec;
+      --applique-bg-page: #f5f5f6;
+      --applique-bg-card: #ffffff;
+      
+      --applique-purple-bg: #f5f2fe;
       --applique-purple-text: #523399;
-      --applique-btn-disabled: #bfc0c6;
+      --applique-success: #03a685;
+      --applique-warning: #f16521;
+      
+      --applique-radius-xs: 4px;
+      --applique-radius-sm: 8px;
+      --applique-radius-md: 12px;
+      --applique-radius-lg: 16px;
+      --applique-radius-full: 9999px;
+      
+      --applique-shadow-sm: 0 2px 8px rgba(40, 44, 63, 0.06);
+      --applique-shadow-md: 0 8px 24px rgba(40, 44, 63, 0.10);
+      --applique-shadow-lg: 0 16px 40px rgba(40, 44, 63, 0.16);
+      
+      --font-applique: 'Assistant', 'Roboto', -apple-system, sans-serif;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background: var(--applique-bg);
-      color: var(--applique-ink);
-      font-family: 'Assistant', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--applique-bg-page);
+      color: var(--applique-text-primary);
+      font-family: var(--font-applique);
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
       padding: 16px 8px;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* Evaluator Top Bar */
+    /* Evaluator Top Navigation Bar */
     .top-bar {
       width: 100%;
-      max-width: 440px;
+      max-width: 420px;
       margin-bottom: 12px;
       display: flex;
       justify-content: space-between;
@@ -46,25 +65,27 @@
       background: #20242e;
       color: #fff;
       padding: 10px 14px;
-      border-radius: 12px;
+      border-radius: var(--applique-radius-md);
       font-size: 12px;
+      box-shadow: var(--applique-shadow-sm);
     }
-    .top-bar strong { color: var(--myntra-pink); font-weight: 800; }
-    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; background: rgba(255,255,255,0.15); padding: 4px 10px; border-radius: 99px; }
+    .top-bar strong { color: var(--applique-primary); font-weight: 800; }
+    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; background: rgba(255,255,255,0.15); padding: 4px 10px; border-radius: var(--applique-radius-full); transition: background 0.15s; }
+    .top-bar a:hover { background: rgba(255,255,255,0.25); }
 
     /* Mobile Container Frame */
     .phone-frame {
       width: 100%;
       max-width: 420px;
-      background: #ffffff;
+      background: var(--applique-bg-card);
       border-radius: 28px;
       overflow: hidden;
-      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
-      border: 1px solid #e2e2e8;
+      box-shadow: var(--applique-shadow-lg);
+      border: 1px solid var(--applique-border-light);
       position: relative;
       display: flex;
       flex-direction: column;
-      min-height: 820px;
+      min-height: 840px;
     }
 
     /* Top Status Bar & Close */
@@ -77,41 +98,43 @@
     .close-btn {
       width: 32px;
       height: 32px;
-      border-radius: 50%;
+      border-radius: var(--applique-radius-full);
       background: rgba(255, 255, 255, 0.95);
       border: 0;
       display: grid;
       place-items: center;
       font-size: 16px;
-      color: #333;
+      color: var(--applique-text-primary);
       cursor: pointer;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      box-shadow: var(--applique-shadow-sm);
+      transition: transform 0.1s;
     }
+    .close-btn:active { transform: scale(0.92); }
 
-    /* Header Promo Banner (Matches Screenshot) */
+    /* Header Promo Banner (Exact Applique Screenshot Match) */
     .promo-banner {
       background: radial-gradient(circle at 50% 30%, #fdfcff 0%, #f1ecfc 60%, #e9e2fa 100%);
-      padding: 40px 20px 24px;
+      padding: 42px 20px 24px;
       text-align: center;
       position: relative;
       overflow: hidden;
     }
-    /* Subtle decorative sparkle stars */
     .sparkle {
       position: absolute;
       color: #f59e0b;
       font-size: 14px;
+      user-select: none;
     }
     .gift-box-card {
       width: 140px;
       height: 110px;
       background: #ffffff;
-      border-radius: 16px;
+      border-radius: var(--applique-radius-lg);
       margin: 0 auto 16px;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 8px 24px rgba(82, 51, 153, 0.08);
+      box-shadow: var(--applique-shadow-md);
       position: relative;
     }
     .gift-svg {
@@ -137,39 +160,41 @@
     .login-heading {
       font-size: 20px;
       font-weight: 800;
-      color: var(--applique-ink);
+      color: var(--applique-text-primary);
       margin-bottom: 20px;
       letter-spacing: -0.2px;
     }
     .login-heading span {
       font-size: 14px;
       font-weight: 600;
-      color: var(--applique-muted);
+      color: var(--applique-text-secondary);
       margin: 0 4px;
     }
 
-    /* Input Field */
+    /* Appliqué Standard Input Field */
     .input-wrap {
       position: relative;
       display: flex;
       align-items: center;
-      border: 1px solid var(--applique-line);
-      border-radius: 4px;
-      padding: 0 12px;
+      border: 1px solid var(--applique-border-default);
+      border-radius: var(--applique-radius-xs);
+      padding: 0 14px;
       height: 48px;
-      background: #fff;
-      transition: border-color 0.2s;
+      background: #ffffff;
+      transition: border-color 0.2s, box-shadow 0.2s;
     }
     .input-wrap:focus-within {
-      border-color: var(--applique-ink);
+      border-color: var(--applique-text-primary);
+      box-shadow: 0 0 0 1px var(--applique-text-primary);
     }
     .country-code {
       font-size: 14px;
-      font-weight: 600;
-      color: var(--applique-ink);
-      padding-right: 10px;
-      border-right: 1px solid var(--applique-line);
-      margin-right: 10px;
+      font-weight: 700;
+      color: var(--applique-text-primary);
+      padding-right: 12px;
+      border-right: 1px solid var(--applique-border-default);
+      margin-right: 12px;
+      user-select: none;
     }
     .mobile-input {
       flex: 1;
@@ -177,12 +202,14 @@
       outline: 0;
       font-size: 14px;
       font-family: inherit;
-      color: var(--applique-ink);
-      font-weight: 600;
+      color: var(--applique-text-primary);
+      font-weight: 700;
+      letter-spacing: 0.5px;
     }
     .mobile-input::placeholder {
-      color: var(--applique-subdued);
+      color: var(--applique-text-subdued);
       font-weight: 400;
+      letter-spacing: normal;
     }
 
     /* Terms Checkbox */
@@ -192,81 +219,87 @@
       gap: 10px;
       margin-top: 22px;
       font-size: 11.5px;
-      color: var(--applique-muted);
+      color: var(--applique-text-secondary);
       line-height: 1.45;
     }
     .terms-checkbox {
       margin-top: 2px;
-      accent-color: var(--myntra-pink);
+      accent-color: var(--applique-primary);
       width: 16px;
       height: 16px;
       cursor: pointer;
     }
     .terms-row a {
-      color: var(--myntra-pink);
+      color: var(--applique-primary);
       font-weight: 700;
       text-decoration: none;
     }
 
-    /* OTP Login Button */
+    /* Appliqué Primary Solid Button */
     .login-btn {
       width: 100%;
       height: 46px;
       margin-top: 22px;
-      border-radius: 4px;
-      background: var(--applique-btn-disabled);
-      color: #fff;
+      border-radius: var(--applique-radius-xs);
+      background: var(--applique-text-disabled);
+      color: #ffffff;
       border: 0;
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 800;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
       cursor: not-allowed;
       transition: all 0.2s ease;
       font-family: inherit;
     }
     .login-btn.active {
-      background: var(--myntra-pink);
+      background: var(--applique-primary);
       cursor: pointer;
       box-shadow: 0 4px 14px rgba(255, 63, 108, 0.35);
     }
     .login-btn.active:hover {
-      background: var(--myntra-pink-hover);
+      background: var(--applique-primary-hover);
+    }
+    .login-btn.active:active {
+      transform: translateY(1px);
     }
 
     /* Footer Help */
     .footer-help {
       margin-top: 18px;
       font-size: 12px;
-      color: var(--applique-muted);
+      color: var(--applique-text-secondary);
     }
     .footer-help a {
-      color: var(--myntra-pink);
+      color: var(--applique-primary);
       font-weight: 700;
       text-decoration: none;
     }
 
-    /* Persona Switcher Section (For Evaluators) */
+    /* Appliqué Persona Switcher Card */
     .persona-section {
       margin-top: 24px;
       background: #fafafc;
-      border: 1px solid #ebebec;
-      border-radius: 12px;
+      border: 1px solid var(--applique-border-light);
+      border-radius: var(--applique-radius-md);
       padding: 14px;
     }
     .persona-title {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 800;
-      color: var(--applique-ink);
-      margin-bottom: 8px;
+      color: var(--applique-text-primary);
+      margin-bottom: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
     }
     .persona-badge {
-      background: var(--myntra-pink-light);
-      color: var(--myntra-pink);
-      padding: 2px 6px;
-      border-radius: 4px;
+      background: var(--applique-primary-light);
+      color: var(--applique-primary);
+      padding: 2px 7px;
+      border-radius: var(--applique-radius-xs);
       font-size: 10px;
       font-weight: 800;
     }
@@ -276,29 +309,30 @@
       gap: 8px;
     }
     .persona-card {
-      background: #fff;
-      border: 1.5px solid var(--applique-line);
-      border-radius: 8px;
-      padding: 9px 11px;
+      background: #ffffff;
+      border: 1.5px solid var(--applique-border-default);
+      border-radius: var(--applique-radius-sm);
+      padding: 10px 12px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
-      transition: all 0.15s;
+      transition: all 0.15s ease;
     }
     .persona-card:hover, .persona-card.selected {
-      border-color: var(--myntra-pink);
+      border-color: var(--applique-primary);
       background: #fff8f9;
+      box-shadow: 0 2px 8px rgba(255, 63, 108, 0.10);
     }
     .persona-avatar {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      border-radius: var(--applique-radius-full);
       background: #f0f0f4;
       display: grid;
       place-items: center;
-      font-size: 14px;
-      margin-right: 9px;
+      font-size: 15px;
+      margin-right: 10px;
       flex-shrink: 0;
     }
     .persona-info {
@@ -306,27 +340,26 @@
       text-align: left;
     }
     .persona-name {
-      font-size: 12px;
+      font-size: 12.5px;
       font-weight: 800;
-      color: var(--applique-ink);
+      color: var(--applique-text-primary);
     }
     .persona-desc {
-      font-size: 10px;
-      color: var(--applique-muted);
+      font-size: 10.5px;
+      color: var(--applique-text-secondary);
       margin-top: 1px;
     }
     .persona-select-radio {
-      accent-color: var(--myntra-pink);
+      accent-color: var(--applique-primary);
       margin-left: 8px;
     }
 
-    /* Bottom Home Indicator */
     .home-indicator {
       width: 120px;
       height: 4px;
       background: #111;
-      border-radius: 99px;
-      margin: 14px auto 8px;
+      border-radius: var(--applique-radius-full);
+      margin: 16px auto 8px;
       opacity: 0.8;
     }
   </style>
@@ -335,37 +368,31 @@
 
   <!-- Top Evaluator Banner -->
   <div class="top-bar">
-    <div><strong>Part 5 Prototype:</strong> Page 1 · Myntra Appliqué Login</div>
+    <div><strong>Appliqué Prototype:</strong> Page 1 · Login &amp; Personas</div>
     <a href="home.html">Home Page →</a>
   </div>
 
   <!-- Mobile Phone Frame -->
   <div class="phone-frame">
     
-    <!-- Status bar close button -->
     <div class="status-bar">
       <button class="close-btn" onclick="continueToWishlist()">✕</button>
     </div>
 
-    <!-- Promo Banner (Matches Screenshot with Appliqué Styling) -->
+    <!-- Promo Banner (Exact Applique Design) -->
     <header class="promo-banner">
       <div class="sparkle" style="top:18px;left:24px">✦</div>
       <div class="sparkle" style="top:32px;right:48px;font-size:10px">✦</div>
       <div class="sparkle" style="bottom:20px;left:36px;font-size:11px">✦</div>
       <div class="sparkle" style="bottom:16px;right:28px">✦</div>
 
-      <!-- Gift Box Illustration -->
+      <!-- Applique Gift Box Card -->
       <div class="gift-box-card">
         <svg class="gift-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Shadow -->
           <ellipse cx="50" cy="85" rx="30" ry="6" fill="#e8dff8"/>
-          <!-- Box Base -->
           <rect x="22" y="42" width="56" height="40" rx="8" fill="#6941c6"/>
-          <!-- Box Lid -->
           <rect x="18" y="32" width="64" height="14" rx="4" fill="#7f56d9"/>
-          <!-- Yellow Ribbon Vertical -->
           <rect x="44" y="32" width="12" height="50" fill="#fbbf24"/>
-          <!-- Yellow Bow Loops -->
           <path d="M50 32C42 20 30 22 36 32C42 34 48 33 50 32Z" fill="#f59e0b"/>
           <path d="M50 32C58 20 70 22 64 32C58 34 52 33 50 32Z" fill="#f59e0b"/>
           <circle cx="50" cy="32" r="4" fill="#fbbf24"/>
@@ -408,11 +435,11 @@
         Having trouble logging in? <a href="#">Get help</a>
       </div>
 
-      <!-- 4-5 Persona Switcher for Evaluators -->
+      <!-- 5 Applique Persona Cards -->
       <section class="persona-section">
         <div class="persona-title">
           <span>SELECT TEST PERSONA</span>
-          <span class="persona-badge">5 Profiles Loaded</span>
+          <span class="persona-badge">5 Profiles</span>
         </div>
 
         <div class="persona-list">
@@ -421,7 +448,7 @@
           <div class="persona-card selected" onclick="selectPersona(1, 'Priya Sharma', '9876543210', 'High-Intent Accumulator · 18 Wishlist items')">
             <div class="persona-avatar">👩</div>
             <div class="persona-info">
-              <div class="persona-name">Priya Sharma <small style="color:var(--myntra-pink);font-weight:800">(Target Segment)</small></div>
+              <div class="persona-name">Priya Sharma <small style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></div>
               <div class="persona-desc">26, Bangalore · 18 Saved items · Fit Anxiety on Zara &amp; Biba</div>
             </div>
             <input type="radio" name="persona" class="persona-select-radio" checked>
@@ -462,7 +489,7 @@
             <div class="persona-avatar">🛍️</div>
             <div class="persona-info">
               <div class="persona-name">Sneha Rao</div>
-              <div class="persona-desc">First-time user · Exploring ₹300 welcome coupon</div>
+              <div class="persona-desc">First-time user · Exploring ₹300 welcome voucher</div>
             </div>
             <input type="radio" name="persona" class="persona-select-radio">
           </div>
@@ -520,7 +547,6 @@
       btn.textContent = 'Verifying OTP...';
       btn.style.opacity = '0.85';
 
-      // Store selected persona in localStorage for the prototype
       localStorage.setItem('myntra_active_persona', JSON.stringify(currentPersona));
 
       setTimeout(() => {
@@ -532,7 +558,6 @@
       window.location.href = 'home.html';
     }
 
-    // Initialize form validation
     validateForm();
   </script>
 </body>

@@ -3,33 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Myntra · Home</title>
+  <title>Myntra Appliqué · Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      /* Myntra Appliqué Design Tokens */
-      --myntra-pink: #ff3f6c;
-      --myntra-pink-hover: #e01e52;
-      --myntra-pink-light: #fff0f5;
-      --applique-ink: #282c3f;
-      --applique-muted: #535766;
-      --applique-subdued: #94969f;
-      --applique-line: #eaeaec;
-      --applique-bg: #f4f4f6;
-      --header-gradient: linear-gradient(180deg, #dbe4ff 0%, #ede8ff 60%, #ffffff 100%);
+      /* Official Myntra Appliqué Design System Tokens (http://applique.myntra.com) */
+      --applique-primary: #ff3f6c;
+      --applique-primary-hover: #e01e52;
+      --applique-primary-light: #fff0f5;
+      
+      --applique-text-primary: #282c3f;
+      --applique-text-secondary: #535766;
+      --applique-text-subdued: #94969f;
+      --applique-text-disabled: #bfc0c6;
+      
+      --applique-border-default: #d4d5d9;
+      --applique-border-light: #eaeaec;
+      --applique-bg-page: #f5f5f6;
+      --applique-bg-card: #ffffff;
+      
+      --applique-purple-bg: #f5f2fe;
+      --applique-purple-text: #523399;
+      --applique-success: #03a685;
+      --applique-warning: #f16521;
+      
+      --applique-radius-xs: 4px;
+      --applique-radius-sm: 8px;
+      --applique-radius-md: 12px;
+      --applique-radius-lg: 16px;
+      --applique-radius-full: 9999px;
+      
+      --applique-shadow-sm: 0 2px 8px rgba(40, 44, 63, 0.06);
+      --applique-shadow-md: 0 8px 24px rgba(40, 44, 63, 0.10);
+      --applique-shadow-lg: 0 16px 40px rgba(40, 44, 63, 0.16);
+      
+      --font-applique: 'Assistant', 'Roboto', -apple-system, sans-serif;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background: var(--applique-bg);
-      color: var(--applique-ink);
-      font-family: 'Assistant', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--applique-bg-page);
+      color: var(--applique-text-primary);
+      font-family: var(--font-applique);
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
       padding: 16px 8px;
+      -webkit-font-smoothing: antialiased;
     }
 
     /* Evaluator Top Bar */
@@ -43,21 +65,22 @@
       background: #20242e;
       color: #fff;
       padding: 10px 14px;
-      border-radius: 12px;
+      border-radius: var(--applique-radius-md);
       font-size: 12px;
+      box-shadow: var(--applique-shadow-sm);
     }
-    .top-bar strong { color: var(--myntra-pink); font-weight: 800; }
-    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; background: rgba(255,255,255,0.15); padding: 4px 10px; border-radius: 99px; }
+    .top-bar strong { color: var(--applique-primary); font-weight: 800; }
+    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; background: rgba(255,255,255,0.15); padding: 4px 10px; border-radius: var(--applique-radius-full); }
 
     /* Mobile Container Frame */
     .phone-frame {
       width: 100%;
       max-width: 420px;
-      background: #ffffff;
+      background: var(--applique-bg-card);
       border-radius: 28px;
       overflow: hidden;
-      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
-      border: 1px solid #e2e2e8;
+      box-shadow: var(--applique-shadow-lg);
+      border: 1px solid var(--applique-border-light);
       position: relative;
       display: flex;
       flex-direction: column;
@@ -77,7 +100,7 @@
       align-items: center;
       font-size: 12px;
       font-weight: 700;
-      color: #282c3f;
+      color: var(--applique-text-primary);
       margin-bottom: 10px;
     }
     .address-left {
@@ -87,15 +110,16 @@
       cursor: pointer;
     }
     .wallet-pill {
-      background: rgba(255,255,255,0.9);
-      border: 1px solid #d4d5d9;
+      background: rgba(255,255,255,0.92);
+      border: 1px solid var(--applique-border-default);
       padding: 3px 8px;
-      border-radius: 99px;
+      border-radius: var(--applique-radius-full);
       font-size: 11px;
       font-weight: 800;
       display: flex;
       align-items: center;
       gap: 4px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
     }
 
     /* Search & Header Icons Bar */
@@ -109,12 +133,12 @@
       flex: 1;
       height: 42px;
       background: #ffffff;
-      border-radius: 99px;
+      border-radius: var(--applique-radius-full);
       display: flex;
       align-items: center;
       padding: 0 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-      border: 1px solid #e2e2e8;
+      box-shadow: var(--applique-shadow-sm);
+      border: 1px solid var(--applique-border-light);
     }
     .myntra-m-logo {
       width: 22px;
@@ -125,13 +149,13 @@
     .search-input-text {
       flex: 1;
       font-size: 13px;
-      color: #7e818c;
+      color: var(--applique-text-subdued);
       font-weight: 600;
     }
     .search-actions {
       display: flex;
       gap: 10px;
-      color: #535766;
+      color: var(--applique-text-secondary);
       font-size: 15px;
     }
     .header-icon-group {
@@ -142,28 +166,30 @@
     .icon-btn {
       position: relative;
       cursor: pointer;
-      color: #282c3f;
+      color: var(--applique-text-primary);
       font-size: 19px;
       display: grid;
       place-items: center;
       text-decoration: none;
+      transition: transform 0.1s;
     }
+    .icon-btn:active { transform: scale(0.92); }
     .bell-badge {
       position: absolute;
       top: -4px;
       right: -4px;
-      background: var(--myntra-pink);
+      background: var(--applique-primary);
       color: #fff;
       font-size: 9px;
       font-weight: 800;
       width: 14px;
       height: 14px;
-      border-radius: 50%;
+      border-radius: var(--applique-radius-full);
       display: grid;
       place-items: center;
     }
     .wishlist-heart-pulse {
-      color: var(--myntra-pink);
+      color: var(--applique-primary);
       animation: heartPulse 1.8s infinite ease-in-out;
     }
     @keyframes heartPulse {
@@ -177,27 +203,27 @@
       align-items: center;
       gap: 8px;
       padding: 4px 0 8px;
-      border-bottom: 1px solid #f0f0f2;
+      border-bottom: 1px solid var(--applique-border-light);
     }
     .gender-tab {
       font-size: 12px;
       font-weight: 800;
-      color: #535766;
+      color: var(--applique-text-secondary);
       padding: 6px 14px;
-      border-radius: 99px;
+      border-radius: var(--applique-radius-full);
       cursor: pointer;
       letter-spacing: 0.5px;
       transition: all 0.15s;
     }
     .gender-tab.active {
-      color: #282c3f;
+      color: var(--applique-text-primary);
       background: #eef2ff;
       border: 1px solid #c7d2fe;
     }
     .grid-menu-icon {
       margin-left: auto;
       font-size: 16px;
-      color: #282c3f;
+      color: var(--applique-text-primary);
       cursor: pointer;
     }
 
@@ -223,10 +249,11 @@
     .cat-img-box {
       width: 58px;
       height: 58px;
-      border-radius: 12px;
+      border-radius: var(--applique-radius-md);
       overflow: hidden;
       background: #f8f8fa;
       border: 1px solid #eee;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
     }
     .cat-img-box img {
       width: 100%;
@@ -236,10 +263,10 @@
     .cat-name {
       font-size: 11px;
       font-weight: 700;
-      color: #282c3f;
+      color: var(--applique-text-primary);
     }
     .cat-name.active {
-      color: var(--myntra-pink);
+      color: var(--applique-primary);
     }
 
     /* Main Scrollable Content */
@@ -254,18 +281,20 @@
     .bingo-nudge-banner {
       margin: 12px 14px;
       background: linear-gradient(135deg, #20242e 0%, #2e3444 100%);
-      border-radius: 16px;
+      border-radius: var(--applique-radius-lg);
       padding: 14px 16px;
       color: #fff;
-      box-shadow: 0 6px 18px rgba(32,36,46,0.15);
+      box-shadow: var(--applique-shadow-md);
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border: 1px solid rgba(255,255,255,0.1);
+      transition: transform 0.15s;
     }
+    .bingo-nudge-banner:active { transform: scale(0.99); }
     .bingo-nudge-left h4 {
-      font-size: 13px;
+      font-size: 13.5px;
       font-weight: 800;
       color: #fff;
       display: flex;
@@ -273,12 +302,12 @@
       gap: 6px;
     }
     .bingo-badge-pink {
-      background: var(--myntra-pink);
+      background: var(--applique-primary);
       color: #fff;
       font-size: 9px;
       font-weight: 900;
       padding: 2px 6px;
-      border-radius: 4px;
+      border-radius: var(--applique-radius-xs);
       letter-spacing: 0.5px;
     }
     .bingo-nudge-left p {
@@ -288,25 +317,27 @@
       line-height: 1.35;
     }
     .bingo-nudge-btn {
-      background: var(--myntra-pink);
+      background: var(--applique-primary);
       color: #fff;
       border: 0;
       padding: 8px 12px;
-      border-radius: 8px;
+      border-radius: var(--applique-radius-sm);
       font-size: 11px;
       font-weight: 800;
       white-space: nowrap;
       margin-left: 10px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(255,63,108,0.3);
     }
 
-    /* Hero Big Brands Bash Wheel (Exact Screenshot Match) */
+    /* Hero Banner: Big Brands Bash (Exact Match to Screenshot) */
     .hero-banner-wrap {
       margin: 6px 14px 12px;
       background: #ffffff;
       border-radius: 20px;
       overflow: hidden;
-      border: 1px solid #eaeaea;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+      border: 1px solid var(--applique-border-light);
+      box-shadow: var(--applique-shadow-sm);
       position: relative;
     }
     .hero-banner-inner {
@@ -322,7 +353,7 @@
       font-size: 14px;
       font-weight: 900;
       padding: 4px 14px;
-      border-radius: 99px;
+      border-radius: var(--applique-radius-full);
       letter-spacing: 0.5px;
       box-shadow: 0 4px 12px rgba(255,51,75,0.3);
       border: 2px solid #fff;
@@ -335,7 +366,7 @@
       background: #111;
       color: #4ade80;
       padding: 2px 6px;
-      border-radius: 99px;
+      border-radius: var(--applique-radius-full);
       font-weight: 800;
       margin-top: 4px;
     }
@@ -391,7 +422,7 @@
       font-size: 18px;
       font-weight: 900;
       padding: 6px 20px;
-      border-radius: 10px;
+      border-radius: var(--applique-radius-md);
       display: inline-block;
       margin-top: 10px;
       letter-spacing: 0.5px;
@@ -406,7 +437,7 @@
       color: #111;
       border: 1px solid #ddd;
       padding: 5px 14px;
-      border-radius: 99px;
+      border-radius: var(--applique-radius-full);
       font-size: 11px;
       font-weight: 800;
       margin-top: 10px;
@@ -417,7 +448,7 @@
     .bank-strip {
       background: #ffffff;
       padding: 9px 14px;
-      border-top: 1px solid #f0f0f2;
+      border-top: 1px solid var(--applique-border-light);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -431,7 +462,7 @@
       font-weight: 900;
     }
 
-    /* 4 Feature Action Cards Carousel (Deal Clock, Mega Drop, etc.) */
+    /* Sub-Features Grid */
     .sub-features-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -440,10 +471,11 @@
     }
     .sub-card {
       background: #ffffff;
-      border-radius: 14px;
+      border-radius: var(--applique-radius-md);
       padding: 12px;
-      border: 1px solid #eaeaea;
+      border: 1px solid var(--applique-border-light);
       cursor: pointer;
+      box-shadow: var(--applique-shadow-sm);
     }
     .sub-card-deal {
       background: linear-gradient(135deg, #450a0a, #7f1d1d);
@@ -464,7 +496,7 @@
       position: sticky;
       bottom: 0;
       background: #ffffff;
-      border-top: 1px solid #eaeaea;
+      border-top: 1px solid var(--applique-border-light);
       display: flex;
       justify-content: space-around;
       padding: 8px 0 10px;
@@ -477,12 +509,12 @@
       gap: 3px;
       font-size: 10px;
       font-weight: 700;
-      color: #7e818c;
+      color: var(--applique-text-subdued);
       text-decoration: none;
       cursor: pointer;
     }
     .nav-item.active {
-      color: var(--myntra-pink);
+      color: var(--applique-primary);
     }
     .nav-icon {
       font-size: 16px;
@@ -506,7 +538,7 @@
 
   <!-- Top Evaluator Banner -->
   <div class="top-bar">
-    <div><strong>Part 5 Prototype:</strong> Page 2 · Myntra Appliqué Home</div>
+    <div><strong>Appliqué Prototype:</strong> Page 2 · Home Screen</div>
     <a href="login.html">← Login</a>
   </div>
 
@@ -518,7 +550,7 @@
       
       <!-- Delivery Address & Credit Bar -->
       <div class="address-bar">
-        <div class="address-left">
+        <div class="address-left" onclick="window.location.href='login.html'">
           <span>📍</span>
           <span id="userLocation">Deliver to: <strong>Priya Sharma, Bangalore</strong> ⌄</span>
         </div>
@@ -531,7 +563,6 @@
       <!-- Search & Action Icons -->
       <div class="search-row">
         <div class="search-box">
-          <!-- Pink M Logo SVG -->
           <svg class="myntra-m-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 80V35L35 60L55 35V80" stroke="#ff3f6c" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M45 80V35L65 60L85 35V80" stroke="#f472b6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
@@ -670,8 +701,7 @@
     <!-- Applique Bottom Navigation Bar (Matches Screenshot) -->
     <nav class="bottom-nav">
       <a class="nav-item active" href="home.html">
-        <!-- Pink M Icon -->
-        <span class="nav-icon" style="color:var(--myntra-pink);font-weight:900">M</span>
+        <span class="nav-icon" style="color:var(--applique-primary);font-weight:900">M</span>
         <span>Home</span>
       </a>
       <a class="nav-item" href="prototype.html">
