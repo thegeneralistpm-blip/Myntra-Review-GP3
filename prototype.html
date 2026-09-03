@@ -758,7 +758,7 @@
 
     <!-- Persona Switcher Bar -->
     <div class="persona-banner">
-      <span>👤 Logged in as: <strong id="personaDisplay">Priya Sharma</strong> <small style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></span>
+      <span>👤 Logged in as: <strong id="personaDisplay">Priya Sharma</strong> <small id="personaRole" style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></span>
       <a onclick="openPersonaDrawer()">Switch Profile ⇄</a>
     </div>
 
@@ -778,251 +778,17 @@
       </div>
     </header>
 
-    <!-- Feature 2: Bingo Auto-Occasion Clustering Strip & Tabs -->
+    <!-- Feature 2: Bingo Auto-Occasion Clustering Strip & Dynamic Tabs -->
     <div class="ai-cluster-banner">
-      <span>✨ <strong>Bingo Auto-Cluster:</strong> Organized by upcoming occasions</span>
+      <span id="clusterSubTitle">✨ <strong>Bingo Auto-Cluster:</strong> Organized by upcoming occasions</span>
       <span class="ai-badge-pulse">ACTIVE</span>
     </div>
 
-    <!-- Smart Occasion Tabs -->
-    <nav class="tabs-wrap" id="folderTabs">
-      <button class="tab-pill active" data-folder="all">All (4)</button>
-      <button class="tab-pill" data-folder="vacation">🌴 Vacation / Resort (1)</button>
-      <button class="tab-pill" data-folder="workwear">💼 Monday Office (2)</button>
-      <button class="tab-pill" data-folder="wedding">✨ Wedding &amp; Festive (1)</button>
-    </nav>
+    <!-- Dynamic Smart Occasion Tabs Container -->
+    <nav class="tabs-wrap" id="folderTabs"></nav>
 
-    <!-- Product Feed -->
-    <main class="feed" id="productFeed">
-      
-      <!-- Card 1: Vacation Floral Dress -->
-      <article class="product-card" data-folder="vacation" data-id="1">
-        <div class="product-img-wrap">
-          <img class="product-img" src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=700&q=80" alt="Floral Midi Dress">
-          <div class="rating-badge"><span>★</span> 4.5 | 1.2k</div>
-          <div class="wish-heart" onclick="toggleHeart(this)">♥</div>
-        </div>
-        <div class="product-info">
-          <div class="product-brand">Zara</div>
-          <div class="product-name">Floral Print V-Neck A-Line Midi Dress</div>
-          
-          <div class="price-row">
-            <span class="current-price">₹1,499</span>
-            <span class="mrp">₹2,999</span>
-            <span class="discount-pct">(50% OFF)</span>
-          </div>
-
-          <!-- Feature 5: Smart Value Check with 60-day Sparkline -->
-          <div class="smart-value-badge">
-            <div class="smart-value-left">
-              <span class="smart-value-title">💡 Smart Value Check: 9.4/10</span>
-              <span class="smart-value-note">Stable at ₹1,499 for 12d · Lowest in 60 days</span>
-            </div>
-            <svg class="sparkline-svg" viewBox="0 0 60 24" fill="none">
-              <path d="M2 18 L15 18 L28 14 L42 14 L58 4" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="58" cy="4" r="3" fill="#d97706"/>
-            </svg>
-          </div>
-
-          <!-- Sizing & FitConfidence -->
-          <div class="fit-box">
-            <div class="fit-header">
-              <span class="fit-label">✨ FitConfidence</span>
-              <button class="buyer-photos-btn" onclick="openBuyerModal('Zara Floral Dress')">👁️ 14 Buyer Photos</button>
-            </div>
-            <div class="size-selector">
-              <button class="size-btn" onclick="selectSize(this, 'S', 'Snug at shoulders')">S</button>
-              <button class="size-btn selected" onclick="selectSize(this, 'M', '86% say True to Size · Recommended')">M</button>
-              <button class="size-btn" onclick="selectSize(this, 'L', 'Relaxed waist drape')">L</button>
-            </div>
-            <div class="fit-hint">
-              <span>📏 <strong>86% say True to Size</strong> · Snug bust, true waist. 100% opaque.</span>
-            </div>
-          </div>
-
-          <!-- Feature 3: AI Wardrobe Matchmaker -->
-          <div class="wardrobe-match">
-            <div class="wardrobe-text">
-              ✨ <strong>AI Style Match:</strong> Pairs with your <em>[White Straw Tote]</em> + <em>[Tan Slides]</em>
-            </div>
-            <button class="preview-outfit-btn" onclick="openOutfitModal('Vacation Resort Look', 'Zara Floral Dress', 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=700&q=80', 'Tan Flat Slides (In Your Closet)', 'https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=400&q=80')">Preview Look</button>
-          </div>
-
-          <button class="move-to-bag-btn" onclick="addToBag('Zara Floral Dress', 'M')">
-            <span>🛍️ Move Size M to Bag</span>
-          </button>
-        </div>
-      </article>
-
-      <!-- Card 2: Workwear Formal Blazer -->
-      <article class="product-card" data-folder="workwear" data-id="2">
-        <div class="product-img-wrap">
-          <img class="product-img" src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80" alt="Structured Formal Blazer">
-          <div class="rating-badge"><span>★</span> 4.7 | 840</div>
-          <div class="wish-heart" onclick="toggleHeart(this)">♥</div>
-        </div>
-        <div class="product-info">
-          <div class="product-brand">Mango</div>
-          <div class="product-name">Structured Single-Breasted Tailored Blazer</div>
-          
-          <div class="price-row">
-            <span class="current-price">₹2,499</span>
-            <span class="mrp">₹4,999</span>
-            <span class="discount-pct">(50% OFF)</span>
-          </div>
-
-          <div class="smart-value-badge">
-            <div class="smart-value-left">
-              <span class="smart-value-title">💡 Smart Value Check: 9.6/10</span>
-              <span class="smart-value-note">Stable at ₹2,499 for 8d · Restock in 6 wks</span>
-            </div>
-            <svg class="sparkline-svg" viewBox="0 0 60 24" fill="none">
-              <path d="M2 14 L20 14 L35 10 L58 4" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="58" cy="4" r="3" fill="#d97706"/>
-            </svg>
-          </div>
-
-          <div class="fit-box">
-            <div class="fit-header">
-              <span class="fit-label">✨ FitConfidence</span>
-              <button class="buyer-photos-btn" onclick="openBuyerModal('Mango Structured Blazer')">👁️ 9 Buyer Photos</button>
-            </div>
-            <div class="size-selector">
-              <button class="size-btn selected" onclick="selectSize(this, 'S', '92% say True to Size · Recommended')">S</button>
-              <button class="size-btn" onclick="selectSize(this, 'M', 'Oversized boxy look')">M</button>
-              <button class="size-btn" onclick="selectSize(this, 'L', 'Loose fit')">L</button>
-            </div>
-            <div class="fit-hint">
-              <span>📏 <strong>92% say True to Size</strong> · Tailored padded shoulders. No shine.</span>
-            </div>
-          </div>
-
-          <div class="wardrobe-match">
-            <div class="wardrobe-text">
-              ✨ <strong>AI Style Match:</strong> Pairs with your <em>[Levi's 711 Jeans (Bought June)]</em>
-            </div>
-            <button class="preview-outfit-btn" onclick="openOutfitModal('Smart Casual Office Look', 'Mango Blazer', 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80', 'Levi\'s 711 Jeans (Your Past Order)', 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=400&q=80')">Preview Look</button>
-          </div>
-
-          <button class="move-to-bag-btn" onclick="addToBag('Mango Structured Blazer', 'S')">
-            <span>🛍️ Move Size S to Bag</span>
-          </button>
-        </div>
-      </article>
-
-      <!-- Card 3: Wedding Kurti Set -->
-      <article class="product-card" data-folder="wedding" data-id="3">
-        <div class="product-img-wrap">
-          <img class="product-img" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80" alt="Embroidered Kurti">
-          <div class="rating-badge"><span>★</span> 4.6 | 2.1k</div>
-          <div class="wish-heart" onclick="toggleHeart(this)">♥</div>
-        </div>
-        <div class="product-info">
-          <div class="product-brand">Biba</div>
-          <div class="product-name">Embroidered Silk Blend Anarkali Kurta Set</div>
-          
-          <div class="price-row">
-            <span class="current-price">₹2,199</span>
-            <span class="mrp">₹3,999</span>
-            <span class="discount-pct">(45% OFF)</span>
-          </div>
-
-          <div class="smart-value-badge">
-            <div class="smart-value-left">
-              <span class="smart-value-title">💡 Smart Value Check: 9.1/10</span>
-              <span class="smart-value-note">Stable at ₹2,199 · Festive seasonal benchmark</span>
-            </div>
-            <svg class="sparkline-svg" viewBox="0 0 60 24" fill="none">
-              <path d="M2 16 L25 16 L45 8 L58 4" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="58" cy="4" r="3" fill="#d97706"/>
-            </svg>
-          </div>
-
-          <div class="fit-box">
-            <div class="fit-header">
-              <span class="fit-label">✨ FitConfidence</span>
-              <button class="buyer-photos-btn" onclick="openBuyerModal('Biba Anarkali Kurta')">👁️ 22 Buyer Photos</button>
-            </div>
-            <div class="size-selector">
-              <button class="size-btn" onclick="selectSize(this, '38', 'Fits 32-34 bust')">38</button>
-              <button class="size-btn selected" onclick="selectSize(this, '40', '88% say True to Size · Recommended')">40</button>
-              <button class="size-btn" onclick="selectSize(this, '42', 'Flared skirt')">42</button>
-            </div>
-            <div class="fit-hint">
-              <span>📏 <strong>88% say True to Size</strong> · 100% Breathable Silk-Cotton. No shrinkage.</span>
-            </div>
-          </div>
-
-          <div class="wardrobe-match">
-            <div class="wardrobe-text">
-              ✨ <strong>AI Style Match:</strong> Pairs with your <em>[Kundan Jhumkas (In Wishlist)]</em>
-            </div>
-            <button class="preview-outfit-btn" onclick="openOutfitModal('Sangeet Night Look', 'Biba Anarkali Set', 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80', 'Gold Kundan Jhumkas (In Wishlist)', 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=400&q=80')">Preview Look</button>
-          </div>
-
-          <button class="move-to-bag-btn" onclick="addToBag('Biba Anarkali Kurta', '40')">
-            <span>🛍️ Move Size 40 to Bag</span>
-          </button>
-        </div>
-      </article>
-
-      <!-- Card 4: Workwear High-Rise Jeans -->
-      <article class="product-card" data-folder="workwear" data-id="4">
-        <div class="product-img-wrap">
-          <img class="product-img" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80" alt="Slim Jeans">
-          <div class="rating-badge"><span>★</span> 4.4 | 1.9k</div>
-          <div class="wish-heart" onclick="toggleHeart(this)">♥</div>
-        </div>
-        <div class="product-info">
-          <div class="product-brand">Levi's</div>
-          <div class="product-name">711 High-Rise Skinny Stretch Jeans</div>
-          
-          <div class="price-row">
-            <span class="current-price">₹1,899</span>
-            <span class="mrp">₹3,199</span>
-            <span class="discount-pct">(40% OFF)</span>
-          </div>
-
-          <div class="smart-value-badge">
-            <div class="smart-value-left">
-              <span class="smart-value-title">💡 Smart Value Check: 9.8/10</span>
-              <span class="smart-value-note">Stable at ₹1,899 · Core staple, rarely discounted</span>
-            </div>
-            <svg class="sparkline-svg" viewBox="0 0 60 24" fill="none">
-              <path d="M2 10 L22 10 L44 8 L58 6" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="58" cy="6" r="3" fill="#d97706"/>
-            </svg>
-          </div>
-
-          <div class="fit-box">
-            <div class="fit-header">
-              <span class="fit-label">✨ FitConfidence</span>
-              <button class="buyer-photos-btn" onclick="openBuyerModal('Levis 711 Jeans')">👁️ 31 Buyer Photos</button>
-            </div>
-            <div class="size-selector">
-              <button class="size-btn" onclick="selectSize(this, '26', 'Tight waist')">26</button>
-              <button class="size-btn selected" onclick="selectSize(this, '28', '94% say True to Size · Recommended')">28</button>
-              <button class="size-btn" onclick="selectSize(this, '30', 'Comfort waist')">30</button>
-            </div>
-            <div class="fit-hint">
-              <span>📏 <strong>94% say True to Size</strong> · High-Stretch Cotton Blend.</span>
-            </div>
-          </div>
-
-          <div class="wardrobe-match">
-            <div class="wardrobe-text">
-              ✨ <strong>AI Style Match:</strong> Pairs with <em>[Mango Blazer]</em> in your wishlist!
-            </div>
-            <button class="preview-outfit-btn" onclick="openOutfitModal('Executive Chic Look', 'Levi\'s 711 Jeans', 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80', 'Mango Structured Blazer (Wishlist)', 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=400&q=80')">Preview Look</button>
-          </div>
-
-          <button class="move-to-bag-btn" onclick="addToBag('Levis 711 Jeans', '28')">
-            <span>🛍️ Move Size 28 to Bag</span>
-          </button>
-        </div>
-      </article>
-
-    </main>
+    <!-- Dynamic Product Feed -->
+    <main class="feed" id="productFeed"></main>
 
     <!-- Applique Bottom Navigation Bar -->
     <nav class="bottom-nav">
@@ -1056,70 +822,70 @@
       <div class="persona-sheet-header">
         <div>
           <h3>Switch User Profile</h3>
-          <p style="font-size:11px;color:var(--applique-text-secondary)">Explore different user personas &amp; purchase histories</p>
+          <p style="font-size:11px;color:var(--applique-text-secondary)">Experience tailored wishlists &amp; wardrobe matchmaker for each persona</p>
         </div>
         <button style="font-size:22px;border:0;background:transparent;cursor:pointer;color:#888" onclick="closePersonaDrawer()">✕</button>
       </div>
 
       <!-- 5 Interactive Profiles -->
-      <div class="persona-card-item active-persona" onclick="switchPersona(1)">
+      <div class="persona-card-item" id="pCard1" onclick="switchPersona(1)">
         <div class="persona-item-top">
           <div class="p-avatar">👩</div>
           <div class="p-info">
             <div class="p-name">Priya Sharma <small style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></div>
             <div class="p-meta">26, Bangalore · 18 Wishlist Items · 4 Past Orders</div>
-            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Levi's 711 Jeans, Tan Slides, White Tote</div>
+            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Levi's 711 Jeans, Tan Slides, White Straw Tote</div>
           </div>
         </div>
-        <button class="p-btn-switch">Active Profile ✓</button>
+        <button class="p-btn-switch">Switch Profile →</button>
       </div>
 
-      <div class="persona-card-item" onclick="switchPersona(2)">
+      <div class="persona-card-item" id="pCard2" onclick="switchPersona(2)">
         <div class="persona-item-top">
           <div class="p-avatar">👨</div>
           <div class="p-info">
-            <div class="p-name">Rohan Mehta</div>
+            <div class="p-name">Rohan Mehta <small style="color:#0284c7;font-weight:800">(Workwear Specialist)</small></div>
             <div class="p-meta">29, Mumbai · 12 Wishlist Items · 6 Past Orders</div>
-            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Puma Sneakers, Linen Shirts, Chinos</div>
+            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Puma Sneakers, Linen Shirts, Navy Blazer</div>
           </div>
         </div>
-        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+        <button class="p-btn-switch">Switch Profile →</button>
       </div>
 
-      <div class="persona-card-item" onclick="switchPersona(3)">
+      <div class="persona-card-item" id="pCard3" onclick="switchPersona(3)">
         <div class="persona-item-top">
           <div class="p-avatar">💃</div>
           <div class="p-info">
-            <div class="p-name">Ananya Verma</div>
+            <div class="p-name">Ananya Verma <small style="color:#d97706;font-weight:800">(Festive Shopper)</small></div>
             <div class="p-meta">24, Delhi · 22 Wishlist Items · 5 Past Orders</div>
-            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Kundan Jewelry, Silk Dupattas</div>
+            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Kundan Jewelry, Silk Dupattas, Metallic Heels</div>
           </div>
         </div>
-        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+        <button class="p-btn-switch">Switch Profile →</button>
       </div>
 
-      <div class="persona-card-item" onclick="switchPersona(4)">
+      <div class="persona-card-item" id="pCard4" onclick="switchPersona(4)">
         <div class="persona-item-top">
           <div class="p-avatar">✨</div>
           <div class="p-info">
-            <div class="p-name">Meera Nair</div>
+            <div class="p-name">Meera Nair <small style="color:#7c3aed;font-weight:800">(Gen-Z Trend Explorer)</small></div>
             <div class="p-meta">22, Pune · 35 Wishlist Items · 8 Past Orders</div>
-            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Oversized Hoodies, Cargo Pants</div>
+            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Parachute Cargo Pants, Crocs, Oversized Tees</div>
           </div>
         </div>
-        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+        <button class="p-btn-switch">Switch Profile →</button>
       </div>
 
-      <div class="persona-card-item" onclick="switchPersona(5)">
+      <div class="persona-card-item" id="pCard5" onclick="switchPersona(5)">
         <div class="persona-item-top">
           <div class="p-avatar">🛍️</div>
           <div class="p-info">
-            <div class="p-name">Sneha Rao</div>
-            <div class="p-meta">New Shopper · 4 Wishlist Items · 0 Past Orders</div>
+            <div class="p-name">Sneha Rao <small style="color:#059669;font-weight:800">(First-Time Shopper)</small></div>
+            <div class="p-meta">21, Hyderabad · 4 Wishlist Items · 0 Past Orders</div>
             <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Exploring first order voucher (₹300 off)</div>
           </div>
         </div>
-        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+        <button class="p-btn-switch">Switch Profile →</button>
       </div>
 
     </div>
@@ -1149,7 +915,7 @@
         </div>
       </div>
 
-      <div style="background:#f4f0ff;border:1px solid #e2d9ff;padding:10px 12px;border-radius:8px;font-size:11px;color:#3b2c75;margin:8px 0;line-height:1.4">
+      <div id="outfitRationaleBox" style="background:#f4f0ff;border:1px solid #e2d9ff;padding:10px 12px;border-radius:8px;font-size:11px;color:#3b2c75;margin:8px 0;line-height:1.4">
         ✨ <strong>AI Styling Rationale:</strong> The silhouette balance works because the structured upper offsets the relaxed drape below. Tested by 40+ fashion community members.
       </div>
 
@@ -1169,21 +935,21 @@
         </div>
         <button class="close-modal" onclick="closeBuyerModal()">✕</button>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px" id="buyerGrid">
         <div style="background:#f8f8f9;border-radius:10px;overflow:hidden;border:1px solid #eee;font-size:11px">
           <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80" style="width:100%;height:150px;object-fit:cover">
           <div style="padding:8px">
-            <strong style="color:var(--applique-text-primary)">Pooja M. · Verified</strong>
-            <span style="display:block;color:var(--applique-text-secondary);font-size:10px">Height: 5'4" · Size: M</span>
-            <p style="margin-top:4px;font-size:10px;color:#444">"Drapes perfectly, zero transparent lining issues!"</p>
+            <strong style="color:var(--applique-text-primary)">Verified Buyer · 5'4"</strong>
+            <span style="display:block;color:var(--applique-text-secondary);font-size:10px">Recommended Size</span>
+            <p style="margin-top:4px;font-size:10px;color:#444">"Drapes perfectly, true to waist and bust measurements!"</p>
           </div>
         </div>
         <div style="background:#f8f8f9;border-radius:10px;overflow:hidden;border:1px solid #eee;font-size:11px">
           <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80" style="width:100%;height:150px;object-fit:cover">
           <div style="padding:8px">
-            <strong style="color:var(--applique-text-primary)">Ananya K. · Verified</strong>
-            <span style="display:block;color:var(--applique-text-secondary);font-size:10px">Height: 5'6" · Size: M</span>
-            <p style="margin-top:4px;font-size:10px;color:#444">"Fits true on waist, exactly like the model."</p>
+            <strong style="color:var(--applique-text-primary)">Verified Buyer · 5'6"</strong>
+            <span style="display:block;color:var(--applique-text-secondary);font-size:10px">Recommended Size</span>
+            <p style="margin-top:4px;font-size:10px;color:#444">"Fabric is 100% opaque, no color bleeding."</p>
           </div>
         </div>
       </div>
@@ -1200,42 +966,460 @@
   <script>
     let cartCount = 0;
 
-    // Dynamic Persona Loader
-    const personas = {
-      '1': { name: 'Priya Sharma', role: '(Target Segment)' },
-      '2': { name: 'Rohan Mehta', role: '(Workwear Profile)' },
-      '3': { name: 'Ananya Verma', role: '(Festive Profile)' },
-      '4': { name: 'Meera Nair', role: '(Trend Explorer)' },
-      '5': { name: 'Sneha Rao', role: '(New Shopper)' }
+    // 5 Unique Persona Catalogs with Individual Occasion Folders & Products
+    const personaCatalogs = {
+      '1': {
+        name: 'Priya Sharma',
+        role: '(Target Segment)',
+        city: 'Bangalore',
+        totalItems: 18,
+        tabs: [
+          { id: 'all', label: 'All (4)' },
+          { id: 'vacation', label: '🌴 Vacation / Resort (1)' },
+          { id: 'workwear', label: '💼 Monday Office (2)' },
+          { id: 'wedding', label: '✨ Wedding & Festive (1)' }
+        ],
+        products: [
+          {
+            id: '1-1', folder: 'vacation', brand: 'Zara', name: 'Floral Print V-Neck A-Line Midi Dress',
+            price: '₹1,499', mrp: '₹2,999', discount: '(50% OFF)', rating: '4.5 | 1.2k',
+            img: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.4/10 · Stable at ₹1,499 for 12d · Lowest in 60 days',
+            sparkline: 'M2 18 L15 18 L28 14 L42 14 L58 4',
+            sizes: ['S', 'M', 'L'], selectedSize: 'M',
+            fitHint: '📏 <strong>86% say True to Size</strong> · Snug bust, true waist. 100% opaque.',
+            matchText: 'Pairs with your <em>[White Straw Tote]</em> + <em>[Tan Slides]</em>',
+            outfitLook: 'Vacation Resort Look',
+            outfitPairName: 'Tan Flat Slides (In Your Closet)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=400&q=80',
+            rationale: 'The silhouette balance works because the structured upper offsets the relaxed drape below. Tested by 40+ fashion community members.'
+          },
+          {
+            id: '1-2', folder: 'workwear', brand: 'Mango', name: 'Structured Single-Breasted Tailored Blazer',
+            price: '₹2,499', mrp: '₹4,999', discount: '(50% OFF)', rating: '4.7 | 840',
+            img: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.6/10 · Stable at ₹2,499 for 8d · Restock in 6 wks',
+            sparkline: 'M2 14 L20 14 L35 10 L58 4',
+            sizes: ['S', 'M', 'L'], selectedSize: 'S',
+            fitHint: '📏 <strong>92% say True to Size</strong> · Tailored padded shoulders. No shine.',
+            matchText: 'Pairs with your <em>[Levi\'s 711 Jeans (Bought June)]</em>',
+            outfitLook: 'Smart Casual Office Look',
+            outfitPairName: 'Levi\'s 711 Jeans (Your Past Order)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Padded blazer shoulders create an executive taper when paired with slim stretch denim.'
+          },
+          {
+            id: '1-3', folder: 'wedding', brand: 'Biba', name: 'Embroidered Silk Blend Anarkali Kurta Set',
+            price: '₹2,199', mrp: '₹3,999', discount: '(45% OFF)', rating: '4.6 | 2.1k',
+            img: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.1/10 · Stable at ₹2,199 · Festive seasonal benchmark',
+            sparkline: 'M2 16 L25 16 L45 8 L58 4',
+            sizes: ['38', '40', '42'], selectedSize: '40',
+            fitHint: '📏 <strong>88% say True to Size</strong> · 100% Breathable Silk-Cotton.',
+            matchText: 'Pairs with your <em>[Kundan Jhumkas (In Wishlist)]</em>',
+            outfitLook: 'Sangeet Night Look',
+            outfitPairName: 'Gold Kundan Jhumkas (In Wishlist)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Rich silk embroidery is complemented by gold kundan ear drops without visual crowding.'
+          },
+          {
+            id: '1-4', folder: 'workwear', brand: 'Levi\'s', name: '711 High-Rise Skinny Stretch Jeans',
+            price: '₹1,899', mrp: '₹3,199', discount: '(40% OFF)', rating: '4.4 | 1.9k',
+            img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.8/10 · Stable at ₹1,899 · Core staple, rarely discounted',
+            sparkline: 'M2 10 L22 10 L44 8 L58 6',
+            sizes: ['26', '28', '30'], selectedSize: '28',
+            fitHint: '📏 <strong>94% say True to Size</strong> · High-Stretch Recovery Cotton.',
+            matchText: 'Pairs with <em>[Mango Blazer]</em> in your wishlist!',
+            outfitLook: 'Executive Chic Look',
+            outfitPairName: 'Mango Structured Blazer (Wishlist)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=400&q=80',
+            rationale: 'High waist provides secure support for all-day desk posture.'
+          }
+        ]
+      },
+
+      '2': {
+        name: 'Rohan Mehta',
+        role: '(Workwear Specialist)',
+        city: 'Mumbai',
+        totalItems: 12,
+        tabs: [
+          { id: 'all', label: 'All (4)' },
+          { id: 'client', label: '💼 Client Meetings (2)' },
+          { id: 'weekend', label: '☕ Weekend Casual (1)' },
+          { id: 'active', label: '🏃‍♂️ Gym & Active (1)' }
+        ],
+        products: [
+          {
+            id: '2-1', folder: 'client', brand: 'Tommy Hilfiger', name: 'Solid Pure Linen Slim Fit Formal Shirt',
+            price: '₹2,199', mrp: '₹3,999', discount: '(45% OFF)', rating: '4.8 | 920',
+            img: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.7/10 · Stable at ₹2,199 for 14d · Lowest in 90 days',
+            sparkline: 'M2 18 L18 18 L34 12 L58 4',
+            sizes: ['38', '40', '42'], selectedSize: '40',
+            fitHint: '📏 <strong>95% say True to Size</strong> · Pre-washed European flax linen.',
+            matchText: 'Pairs with your <em>[Puma White Court Sneakers (Bought May)]</em>',
+            outfitLook: 'Smart Casual Tech Office Look',
+            outfitPairName: 'Puma White Sneakers (In Your Closet)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Crisp breathable linen balances the clean minimal sneaker look for modern office wear.'
+          },
+          {
+            id: '2-2', folder: 'client', brand: 'Blackberrys', name: 'Tech-Stretch Slim Fit Formal Trousers',
+            price: '₹1,899', mrp: '₹3,299', discount: '(42% OFF)', rating: '4.6 | 650',
+            img: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.4/10 · Stable at ₹1,899 · Premium staple benchmark',
+            sparkline: 'M2 14 L22 14 L40 10 L58 6',
+            sizes: ['30', '32', '34'], selectedSize: '32',
+            fitHint: '📏 <strong>93% say True to Size</strong> · Wrinkle-free mechanical stretch.',
+            matchText: 'Pairs with your <em>[Park Avenue Navy Blazer (Past Order)]</em>',
+            outfitLook: 'Boardroom Presentation Look',
+            outfitPairName: 'Park Avenue Navy Blazer (Your Closet)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Tonal grey-navy contrast creates classic professional presence.'
+          },
+          {
+            id: '2-3', folder: 'active', brand: 'Nike', name: 'Air Max SC Lightweight Street Sneakers',
+            price: '₹4,495', mrp: '₹5,995', discount: '(25% OFF)', rating: '4.9 | 3.4k',
+            img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.8/10 · Rare 25% drop · Next restock in 8 weeks',
+            sparkline: 'M2 20 L25 15 L45 10 L58 4',
+            sizes: ['UK 8', 'UK 9', 'UK 10'], selectedSize: 'UK 9',
+            fitHint: '📏 <strong>96% say True to Size</strong> · Visible Max Air heel cushioning.',
+            matchText: 'Pairs with your <em>[Levi\'s 511 Slim Indigo Jeans]</em>',
+            outfitLook: 'Weekend City Stride Look',
+            outfitPairName: 'Levi\'s 511 Slim Jeans (Wishlist)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Iconic retro runner styling lifts everyday dark denim.'
+          },
+          {
+            id: '2-4', folder: 'weekend', brand: 'Levi\'s', name: '511 Slim Fit Dark Clean Indigo Jeans',
+            price: '₹2,299', mrp: '₹3,599', discount: '(36% OFF)', rating: '4.7 | 2.8k',
+            img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.5/10 · Price floor stable · 100% Cotton recovery',
+            sparkline: 'M2 12 L20 12 L40 8 L58 6',
+            sizes: ['30', '32', '34'], selectedSize: '32',
+            fitHint: '📏 <strong>94% say True to Size</strong> · Sits below waist, slim leg.',
+            matchText: 'Pairs with <em>[Tommy Linen Shirt]</em> in your wishlist!',
+            outfitLook: 'Brunch Casual Look',
+            outfitPairName: 'Tommy Linen Shirt (Wishlist)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Clean rinse finish works seamlessly across coffee shops and casual Fridays.'
+          }
+        ]
+      },
+
+      '3': {
+        name: 'Ananya Verma',
+        role: '(Festive & Wedding Shopper)',
+        city: 'Delhi',
+        totalItems: 22,
+        tabs: [
+          { id: 'all', label: 'All (4)' },
+          { id: 'sangeet', label: '✨ Sangeet Night (1)' },
+          { id: 'diwali', label: '🪔 Diwali Puja (2)' },
+          { id: 'reception', label: '💃 Reception Party (1)' }
+        ],
+        products: [
+          {
+            id: '3-1', folder: 'sangeet', brand: 'W for Woman', name: 'Gold Printed Tiered Sharara & Peplum Set',
+            price: '₹3,499', mrp: '₹5,999', discount: '(42% OFF)', rating: '4.7 | 1.4k',
+            img: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.6/10 · Festive collection benchmark price',
+            sparkline: 'M2 16 L20 16 L40 10 L58 4',
+            sizes: ['S', 'M', 'L'], selectedSize: 'M',
+            fitHint: '📏 <strong>89% say True to Size</strong> · Elasticated back waist.',
+            matchText: 'Pairs with your <em>[Kundan Pearl Choker (In Your Closet)]</em>',
+            outfitLook: 'Grand Sangeet Glam Look',
+            outfitPairName: 'Kundan Pearl Choker (Past Order)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Gold foil accents on the sharara pick up the warm luster of your kundan choker.'
+          },
+          {
+            id: '3-2', folder: 'reception', brand: 'Indya', name: 'Foil Georgette Crop Top & Flared Maxi Skirt',
+            price: '₹2,899', mrp: '₹4,999', discount: '(42% OFF)', rating: '4.6 | 890',
+            img: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.3/10 · Stable price for 10d · 100% lining',
+            sparkline: 'M2 14 L24 14 L42 8 L58 4',
+            sizes: ['XS', 'S', 'M'], selectedSize: 'S',
+            fitHint: '📏 <strong>87% say True to Size</strong> · Padded bust cups included.',
+            matchText: 'Pairs with your <em>[Rose Gold Metallic Heels (Past Order)]</em>',
+            outfitLook: 'Modern Cocktail Reception Look',
+            outfitPairName: 'Rose Gold Block Heels (Your Closet)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Contemporary indo-western drape paired with height-elevating metallic footwear.'
+          },
+          {
+            id: '3-3', folder: 'diwali', brand: 'FabIndia', name: 'Tussar Silk Hand-Woven Zari Dupatta',
+            price: '₹1,490', mrp: '₹2,490', discount: '(40% OFF)', rating: '4.8 | 2.6k',
+            img: 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.7/10 · Pure silk mark certified · Zero color bleed',
+            sparkline: 'M2 18 L20 18 L40 12 L58 6',
+            sizes: ['Free Size'], selectedSize: 'Free Size',
+            fitHint: '📏 <strong>2.5 Metres Length</strong> · Rich textured natural tussar silk.',
+            matchText: 'Pairs with your <em>[Beige Raw Silk Kurta Set]</em>',
+            outfitLook: 'Diwali Puja Traditional Look',
+            outfitPairName: 'Beige Raw Silk Kurta (Your Closet)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Lustrous zari border frames neutral solid kurtas with heritage elegance.'
+          },
+          {
+            id: '3-4', folder: 'diwali', brand: 'Metro', name: 'Embellished Block Heel Festive Sandals',
+            price: '₹1,990', mrp: '₹2,990', discount: '(33% OFF)', rating: '4.5 | 1.1k',
+            img: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.2/10 · Cushioned memory insole · Anti-slip sole',
+            sparkline: 'M2 12 L22 12 L45 8 L58 4',
+            sizes: ['UK 4', 'UK 5', 'UK 6'], selectedSize: 'UK 5',
+            fitHint: '📏 <strong>91% say True to Size</strong> · 2.5 inch sturdy block heel.',
+            matchText: 'Pairs with <em>[W for Woman Sharara Set]</em>!',
+            outfitLook: 'All-Day Festive Comfort Look',
+            outfitPairName: 'Sharara Set (Wishlist)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Block heel provides all-night standing stability during wedding rituals.'
+          }
+        ]
+      },
+
+      '4': {
+        name: 'Meera Nair',
+        role: '(Gen-Z Trend Explorer)',
+        city: 'Pune',
+        totalItems: 35,
+        tabs: [
+          { id: 'all', label: 'All (4)' },
+          { id: 'college', label: '🛹 College Streetwear (2)' },
+          { id: 'cafe', label: '☕ Cafe Aesthetic (1)' },
+          { id: 'concert', label: '🎶 Concert Night (1)' }
+        ],
+        products: [
+          {
+            id: '4-1', folder: 'college', brand: 'H&M', name: 'Oversized Heavyweight Graphic Cotton Hoodie',
+            price: '₹1,799', mrp: '₹2,499', discount: '(28% OFF)', rating: '4.7 | 3.8k',
+            img: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.5/10 · 380 GSM fleece cotton · No wash pilling',
+            sparkline: 'M2 16 L20 16 L38 10 L58 4',
+            sizes: ['XS', 'S', 'M'], selectedSize: 'S',
+            fitHint: '📏 <strong>Drop Shoulder Boxy Fit</strong> · Size down for regular fit.',
+            matchText: 'Pairs with your <em>[Olive Parachute Cargo Pants (Past Order)]</em>',
+            outfitLook: 'Street Core Campus Look',
+            outfitPairName: 'Olive Cargo Pants (Your Closet)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Voluminous hoodie proportions balance the tapered cuff of utility cargos.'
+          },
+          {
+            id: '4-2', folder: 'college', brand: 'Urbanic', name: 'Baggy Wide-Leg Parachute Track Pants',
+            price: '₹1,290', mrp: '₹1,990', discount: '(35% OFF)', rating: '4.5 | 1.7k',
+            img: 'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.3/10 · Drawstring toggle waistband',
+            sparkline: 'M2 14 L22 14 L42 8 L58 4',
+            sizes: ['S', 'M', 'L'], selectedSize: 'S',
+            fitHint: '📏 <strong>94% say True to Size</strong> · Lightweight ripstop nylon.',
+            matchText: 'Pairs with your <em>[Crocs Classic Lavender Clogs]</em>',
+            outfitLook: 'Y2K Relaxed Vibe Look',
+            outfitPairName: 'Crocs Lavender Clogs (Wishlist)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Wide-leg hems pool naturally over chunkier footwear silhouettes.'
+          },
+          {
+            id: '4-3', folder: 'cafe', brand: 'Crocs', name: 'Classic Clog Lightweight Sandal in Lavender',
+            price: '₹2,995', mrp: '₹3,995', discount: '(25% OFF)', rating: '4.9 | 8.2k',
+            img: 'https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.9/10 · Water-resistant Croslite foam',
+            sparkline: 'M2 18 L24 18 L44 10 L58 4',
+            sizes: ['UK 4', 'UK 5', 'UK 6'], selectedSize: 'UK 5',
+            fitHint: '📏 <strong>Roomy Iconic Fit</strong> · Pivoting heel straps.',
+            matchText: 'Pairs with your <em>[White Ribbed Crew Socks + Jibbitz]</em>',
+            outfitLook: 'Clean Girl Cozy Aesthetic',
+            outfitPairName: 'Crew Socks Pack (In Your Closet)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1582965372481-6380ed138d38?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Pastel foam clogs paired with high socks create the quintessential casual weekend outfit.'
+          },
+          {
+            id: '4-4', folder: 'concert', brand: 'Roadster', name: 'Vintage Acid Washed Denim Trucker Jacket',
+            price: '₹1,499', mrp: '₹2,999', discount: '(50% OFF)', rating: '4.6 | 4.1k',
+            img: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.4/10 · Heavyweight 100% durable cotton denim',
+            sparkline: 'M2 12 L20 12 L40 6 L58 4',
+            sizes: ['S', 'M', 'L'], selectedSize: 'M',
+            fitHint: '📏 <strong>92% say True to Size</strong> · Vintage distressed metal buttons.',
+            matchText: 'Pairs with <em>[H&M Graphic Hoodie]</em>!',
+            outfitLook: 'Indie Concert Layered Look',
+            outfitPairName: 'H&M Hoodie (Wishlist)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Acid wash outerwear gives rugged texture over solid hoodies.'
+          }
+        ]
+      },
+
+      '5': {
+        name: 'Sneha Rao',
+        role: '(First-Time Shopper)',
+        city: 'Hyderabad',
+        totalItems: 4,
+        tabs: [
+          { id: 'all', label: 'All (4)' },
+          { id: 'haul', label: '🛍️ First Haul (₹300 Off) (3)' },
+          { id: 'daily', label: '✨ Everyday Essentials (1)' }
+        ],
+        products: [
+          {
+            id: '5-1', folder: 'haul', brand: 'Tokyo Talkies', name: 'Ribbed Square Neck Sleeveless Crop Top',
+            price: '₹449', mrp: '₹999', discount: '(55% OFF)', rating: '4.4 | 5.2k',
+            img: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.6/10 · Best seller under ₹500 · ₹300 coupon eligible',
+            sparkline: 'M2 18 L20 18 L38 12 L58 4',
+            sizes: ['XS', 'S', 'M'], selectedSize: 'S',
+            fitHint: '📏 <strong>90% say True to Size</strong> · 95% Cotton 5% Spandex.',
+            matchText: 'Pairs with <em>[High Star Straight Jeans]</em> in your bag!',
+            outfitLook: 'Effortless First Haul Look',
+            outfitPairName: 'High Star Straight Jeans (In Bag)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Clean square neckline pairs with high-rise waistline to give an elongated silhouette.'
+          },
+          {
+            id: '5-2', folder: 'haul', brand: 'Mast & Harbour', name: 'Minimalist Structured Shoulder Bag',
+            price: '₹899', mrp: '₹1,799', discount: '(50% OFF)', rating: '4.6 | 2.4k',
+            img: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.4/10 · Premium textured vegan leather',
+            sparkline: 'M2 14 L22 14 L42 8 L58 4',
+            sizes: ['One Size'], selectedSize: 'One Size',
+            fitHint: '📏 <strong>Dimensions: 24x15x6 cm</strong> · Fits iPhone + wallet.',
+            matchText: 'Pairs with <em>[Tokyo Talkies Crop Top]</em>',
+            outfitLook: 'Minimalist Chic Look',
+            outfitPairName: 'Tokyo Talkies Top (Wishlist)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Structured faux leather accessory instantly elevates budget cotton basics.'
+          },
+          {
+            id: '5-3', folder: 'daily', brand: 'High Star', name: 'High-Waist Clean Straight Leg Denim',
+            price: '₹1,099', mrp: '₹1,999', discount: '(45% OFF)', rating: '4.5 | 3.1k',
+            img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.5/10 · Non-stretch rigid vintage cotton',
+            sparkline: 'M2 16 L20 16 L40 10 L58 4',
+            sizes: ['26', '28', '30'], selectedSize: '28',
+            fitHint: '📏 <strong>92% say True to Size</strong> · Full ankle length.',
+            matchText: 'Pairs with <em>[Tokyo Talkies Top + Mast Bag]</em>!',
+            outfitLook: 'Everyday Clean Denim Look',
+            outfitPairName: 'Mast & Harbour Bag (Wishlist)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Straight cut leg drapes smoothly without ankle bunching.'
+          },
+          {
+            id: '5-4', folder: 'haul', brand: 'Zaveri Pearls', name: '18K Gold Plated Layered Herringbone Chain',
+            price: '₹349', mrp: '₹899', discount: '(61% OFF)', rating: '4.7 | 6.8k',
+            img: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=80',
+            valueScore: '9.8/10 · Anti-tarnish coated · Zero skin irritation',
+            sparkline: 'M2 10 L20 10 L40 6 L58 4',
+            sizes: ['Adjustable'], selectedSize: 'Adjustable',
+            fitHint: '📏 <strong>Anti-Tarnish e-coating</strong> · High shine finish.',
+            matchText: 'Pairs with <em>[Square Neck Crop Top]</em>',
+            outfitLook: 'Gold Accented First Look',
+            outfitPairName: 'Square Neck Top (Wishlist)',
+            outfitPairImg: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80',
+            rationale: 'Fills the open square neckline with radiant layered gold strands.'
+          }
+        ]
+      }
     };
+
+    // Render Persona Wishlist Dynamically
     const params = new URLSearchParams(window.location.search);
     const personaId = params.get('persona') || '1';
-    const persona = personas[personaId] || personas['1'];
-    const pDisplay = document.getElementById('personaDisplay');
-    if (pDisplay) {
-      pDisplay.textContent = persona.name;
-    }
+    const activeCatalog = personaCatalogs[personaId] || personaCatalogs['1'];
 
-    function openPersonaDrawer() {
-      document.getElementById('personaDrawer').classList.add('open');
-    }
-    function closePersonaDrawer() {
-      document.getElementById('personaDrawer').classList.remove('open');
-    }
-    function switchPersona(id) {
-      window.location.href = 'prototype.html?persona=' + id;
-    }
+    // Update Header and Profile Banner
+    document.getElementById('personaDisplay').textContent = activeCatalog.name;
+    document.getElementById('personaRole').textContent = activeCatalog.role;
+    document.getElementById('totalCount').textContent = '(' + activeCatalog.products.length + ' items)';
 
-    // Feature 2: Smart Occasion Tabs
-    const tabs = document.querySelectorAll('.tab-pill');
-    const cards = document.querySelectorAll('.product-card');
-    tabs.forEach(tab => {
+    // Mark active card in drawer
+    document.querySelectorAll('.persona-card-item').forEach((c, idx) => {
+      if ((idx + 1) == personaId) {
+        c.classList.add('active-persona');
+        c.querySelector('.p-btn-switch').textContent = 'Active Profile ✓';
+      } else {
+        c.classList.remove('active-persona');
+        c.querySelector('.p-btn-switch').textContent = 'Switch Profile →';
+      }
+    });
+
+    // Render Smart Occasion Tabs
+    const tabsContainer = document.getElementById('folderTabs');
+    tabsContainer.innerHTML = activeCatalog.tabs.map((t, i) => 
+      `<button class="tab-pill ${i === 0 ? 'active' : ''}" data-folder="${t.id}">${t.label}</button>`
+    ).join('');
+
+    // Render Product Feed
+    const feedContainer = document.getElementById('productFeed');
+    feedContainer.innerHTML = activeCatalog.products.map(p => `
+      <article class="product-card" data-folder="${p.folder}" data-id="${p.id}">
+        <div class="product-img-wrap">
+          <img class="product-img" src="${p.img}" alt="${p.name}">
+          <div class="rating-badge"><span>★</span> ${p.rating}</div>
+          <div class="wish-heart" onclick="toggleHeart(this)">♥</div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand">${p.brand}</div>
+          <div class="product-name">${p.name}</div>
+          
+          <div class="price-row">
+            <span class="current-price">${p.price}</span>
+            <span class="mrp">${p.mrp}</span>
+            <span class="discount-pct">${p.discount}</span>
+          </div>
+
+          <!-- Feature 5: Smart Value Check -->
+          <div class="smart-value-badge">
+            <div class="smart-value-left">
+              <span class="smart-value-title">💡 Smart Value Check</span>
+              <span class="smart-value-note">${p.valueScore}</span>
+            </div>
+            <svg class="sparkline-svg" viewBox="0 0 60 24" fill="none">
+              <path d="${p.sparkline}" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="58" cy="4" r="3" fill="#d97706"/>
+            </svg>
+          </div>
+
+          <!-- Sizing & FitConfidence -->
+          <div class="fit-box">
+            <div class="fit-header">
+              <span class="fit-label">✨ FitConfidence</span>
+              <button class="buyer-photos-btn" onclick="openBuyerModal('${p.brand} ${p.name}')">👁️ Verified Buyer Photos</button>
+            </div>
+            <div class="size-selector">
+              ${p.sizes.map(s => `
+                <button class="size-btn ${s === p.selectedSize ? 'selected' : ''}" onclick="selectSize(this, '${s}')">${s}</button>
+              `).join('')}
+            </div>
+            <div class="fit-hint">
+              <span>${p.fitHint}</span>
+            </div>
+          </div>
+
+          <!-- Feature 3: AI Wardrobe Matchmaker -->
+          <div class="wardrobe-match">
+            <div class="wardrobe-text">
+              ✨ <strong>AI Style Match:</strong> ${p.matchText}
+            </div>
+            <button class="preview-outfit-btn" onclick="openOutfitModal('${p.outfitLook}', '${p.brand} ${p.name}', '${p.img}', '${p.outfitPairName}', '${p.outfitPairImg}', '${p.rationale.replace(/'/g, "\\'")}')">Preview Look</button>
+          </div>
+
+          <button class="move-to-bag-btn" onclick="addToBag('${p.brand} ${p.name}', '${p.selectedSize}')">
+            <span>🛍️ Move Size ${p.selectedSize} to Bag</span>
+          </button>
+        </div>
+      </article>
+    `).join('');
+
+    // Attach Tab Filtering Event
+    document.querySelectorAll('.tab-pill').forEach(tab => {
       tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-pill').forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
         const folder = tab.dataset.folder;
         let count = 0;
-        cards.forEach(card => {
+        document.querySelectorAll('.product-card').forEach(card => {
           if (folder === 'all' || card.dataset.folder === folder) {
             card.style.display = 'block';
             count++;
@@ -1247,8 +1431,19 @@
       });
     });
 
+    // Drawer Controls
+    function openPersonaDrawer() {
+      document.getElementById('personaDrawer').classList.add('open');
+    }
+    function closePersonaDrawer() {
+      document.getElementById('personaDrawer').classList.remove('open');
+    }
+    function switchPersona(id) {
+      window.location.href = 'prototype.html?persona=' + id;
+    }
+
     // Size Selector
-    function selectSize(btn, size, fitAdvice) {
+    function selectSize(btn, size) {
       const card = btn.closest('.product-card');
       card.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
@@ -1276,15 +1471,16 @@
       showToast('Wishlist updated!');
     }
 
-    // Feature 3: Outfit Modal
+    // Outfit Modal
     let activeOutfitTitle = '';
-    function openOutfitModal(lookTitle, name1, img1, name2, img2) {
+    function openOutfitModal(lookTitle, name1, img1, name2, img2, rationale) {
       activeOutfitTitle = name1;
       document.getElementById('outfitTitle').textContent = 'AI Look: ' + lookTitle;
       document.getElementById('outfitName1').textContent = name1;
       document.getElementById('outfitImg1').src = img1;
       document.getElementById('outfitName2').textContent = name2;
       document.getElementById('outfitImg2').src = img2;
+      document.getElementById('outfitRationaleBox').innerHTML = '✨ <strong>AI Styling Rationale:</strong> ' + rationale;
       document.getElementById('outfitModal').classList.add('open');
     }
     function closeOutfitModal() {
