@@ -951,35 +951,42 @@
     </div>
   </div>
 
-  <!-- Real Buyer Photos Modal -->
+  <!-- Real Verified Buyer Try-On & Fit Photos Modal (Ultra-Realistic UGC Gallery) -->
   <div class="modal-overlay" id="buyerModal">
-    <div class="modal-sheet">
-      <div class="modal-header">
+    <div class="modal-sheet" style="max-height: 90vh; padding: 18px 16px;">
+      <div class="modal-header" style="margin-bottom: 8px;">
         <div>
-          <h3 id="modalTitle">Real Buyer Try-On Photos</h3>
-          <p style="font-size:11px;color:var(--applique-text-secondary)">Verified buyers wearing recommended size</p>
+          <h3 id="modalTitle" style="font-size: 15px; font-weight: 800; color: var(--applique-text-primary);">Verified Buyer Try-On Reviews</h3>
+          <p style="font-size: 11px; color: var(--applique-text-secondary);">Real photos &amp; body metrics from verified purchasers</p>
         </div>
-        <button class="close-modal" onclick="closeBuyerModal()">✕</button>
+        <button class="close-modal" onclick="closeBuyerModal()" style="font-size:24px; border:0; background:transparent; cursor:pointer; color:#888;">✕</button>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px" id="buyerGrid">
-        <div style="background:#f8f8f9;border-radius:10px;overflow:hidden;border:1px solid #eee;font-size:11px">
-          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80" style="width:100%;height:150px;object-fit:cover">
-          <div style="padding:8px">
-            <strong style="color:var(--applique-text-primary)">Verified Buyer · 5'4"</strong>
-            <span style="display:block;color:var(--applique-text-secondary);font-size:10px">Recommended Size</span>
-            <p style="margin-top:4px;font-size:10px;color:#444">"Drapes perfectly, true to waist and bust measurements!"</p>
-          </div>
+
+      <!-- Fit Summary Strip -->
+      <div style="background:#f9f9fb; border:1px solid #eaeaec; border-radius:12px; padding:10px 12px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center;">
+        <div>
+          <div style="font-size:18px; font-weight:900; color:var(--applique-text-primary);">4.7 <span style="color:#03a685; font-size:14px;">★</span></div>
+          <div style="font-size:10px; color:var(--applique-text-secondary);">Based on 1.2k verified buyers</div>
         </div>
-        <div style="background:#f8f8f9;border-radius:10px;overflow:hidden;border:1px solid #eee;font-size:11px">
-          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80" style="width:100%;height:150px;object-fit:cover">
-          <div style="padding:8px">
-            <strong style="color:var(--applique-text-primary)">Verified Buyer · 5'6"</strong>
-            <span style="display:block;color:var(--applique-text-secondary);font-size:10px">Recommended Size</span>
-            <p style="margin-top:4px;font-size:10px;color:#444">"Fabric is 100% opaque, no color bleeding."</p>
-          </div>
+        <div style="font-size:11px; font-weight:700; color:#03a685; background:#e6f7f3; padding:4px 10px; border-radius:9999px;">
+          ✓ 88% say True to Size
         </div>
       </div>
-      <button class="move-to-bag-btn" style="margin-top:14px" onclick="closeBuyerModal()">Looks Good · Close</button>
+
+      <!-- Quick Filter Pills -->
+      <div style="display:flex; gap:6px; overflow-x:auto; padding-bottom:8px; margin-bottom:10px; scrollbar-width:none;">
+        <button class="tab-pill active" style="font-size:10.5px; padding:4px 10px;">All Photos (14)</button>
+        <button class="tab-pill" style="font-size:10.5px; padding:4px 10px;">Size M (6)</button>
+        <button class="tab-pill" style="font-size:10.5px; padding:4px 10px;">Height: 5'2" - 5'5" (8)</button>
+        <button class="tab-pill" style="font-size:10.5px; padding:4px 10px;">Bust Fit Feedback (5)</button>
+      </div>
+
+      <!-- Dynamic Verified Buyer Reviews Feed -->
+      <div id="buyerReviewFeed" style="display:flex; flex-direction:column; gap:14px;"></div>
+
+      <button class="move-to-bag-btn" style="margin-top:16px;" onclick="closeBuyerModal()">
+        <span>✓ Sizing Confirmed · Close</span>
+      </button>
     </div>
   </div>
 
@@ -1430,9 +1437,197 @@
       addToBag(activeOutfitTitle, 'Recommended');
     }
 
-    // Buyer Photo Modal
+    // Dynamic Realistic Buyer Photo & Review Generator
     function openBuyerModal(title) {
-      document.getElementById('modalTitle').textContent = 'Buyer Try-On: ' + title;
+      document.getElementById('modalTitle').textContent = 'Verified Try-Ons: ' + title;
+      
+      const lower = title.toLowerCase();
+      let reviews = [];
+
+      if (lower.includes('dress') || lower.includes('midi') || lower.includes('maxi') || lower.includes('crochet')) {
+        reviews = [
+          {
+            name: 'Pooja Sharma',
+            city: 'Bangalore',
+            size: 'Size M',
+            height: '5\'4" (162 cm)',
+            weight: '56 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '3 days ago',
+            tags: ['🛡️ 100% Opaque Lining', '📏 Reaches Mid-Calf', '👗 Snug Bust Fit'],
+            img: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80',
+            text: 'I was really anxious about the bust fit because I\'m 34C, but Size M fits like a glove! The fabric is completely opaque so you don\'t need an extra slip underneath. The length falls perfectly below the knee on my 5\'4" frame.',
+            helpful: 48
+          },
+          {
+            name: 'Divya Nambiar',
+            city: 'Kochi',
+            size: 'Size M',
+            height: '5\'6" (167 cm)',
+            weight: '59 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '1 week ago',
+            tags: ['💧 Zero Color Bleed', '✨ Breathable Rayon', '🧺 No Wash Shrinkage'],
+            img: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80',
+            text: 'Wore this on a vacation trip to Goa. Extremely breezy in humid weather, photograph colors are 100% identical to the app photos, and washed it twice with zero shrinking or fading.',
+            helpful: 32
+          }
+        ];
+      } else if (lower.includes('blazer') || lower.includes('trouser') || lower.includes('shirt') || lower.includes('formal') || lower.includes('linen')) {
+        reviews = [
+          {
+            name: 'Kavita Menon',
+            city: 'Mumbai',
+            size: 'Size M (38)',
+            height: '5\'5" (165 cm)',
+            weight: '58 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '5 days ago',
+            tags: ['💼 Crisp Shoulder Padding', '🛡️ Wrinkle-Resistant', '👔 Fits Over Formal Shirts'],
+            img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+            text: 'Tailoring is sharp and gives a clean executive silhouette. Shoulders sit flat without bunching, and the armholes have enough room to comfortably wear a long-sleeve cotton shirt underneath.',
+            helpful: 61
+          },
+          {
+            name: 'Aditi Rao',
+            city: 'Hyderabad',
+            size: 'Size S (36)',
+            height: '5\'3" (160 cm)',
+            weight: '51 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★☆ 4.0',
+            date: '2 weeks ago',
+            tags: ['📏 Sleeve Length Perfect', '🧵 Premium Inner Lining'],
+            img: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80',
+            text: 'Buttons are sturdy and fabric has a slight mechanical stretch which makes 8-hour desk work and typing very comfortable. Highly recommend!',
+            helpful: 29
+          }
+        ];
+      } else if (lower.includes('kurta') || lower.includes('saree') || lower.includes('anarkali') || lower.includes('sharara') || lower.includes('festive')) {
+        reviews = [
+          {
+            name: 'Sunita Saxena',
+            city: 'Delhi',
+            size: 'Size M',
+            height: '5\'4" (162 cm)',
+            weight: '57 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '4 days ago',
+            tags: ['✨ Real Gold Foil (No Flaking)', '🪔 Comfortable for Floor Sitting', '🧵 Pure Chanderi Feel'],
+            img: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=80',
+            text: 'Bought this for a family sangeet ceremony. The flare on the skirt is huge and twirls beautifully. Gold border didn\'t scratch my skin even after 6 hours of dancing.',
+            helpful: 54
+          },
+          {
+            name: 'Meenakshi Iyer',
+            city: 'Chennai',
+            size: 'Size L',
+            height: '5\'7" (170 cm)',
+            weight: '64 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '10 days ago',
+            tags: ['📏 Floor Length on 5\'7"', '🛡️ Built-in Soft Lining'],
+            img: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80',
+            text: 'Dupatta length is a full 2.5 meters so you can drape it in royal pleats. Zero color bleed when hand washed in cold water.',
+            helpful: 41
+          }
+        ];
+      } else {
+        // Universal High-Fidelity Casual / Footwear / Activewear Review
+        reviews = [
+          {
+            name: 'Rhea Sengupta',
+            city: 'Pune',
+            size: 'Recommended Size',
+            height: '5\'4" (162 cm)',
+            weight: '54 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '2 days ago',
+            tags: ['👟 All-Day Footbed Cushioning', '🛡️ Zero Shoe-Bite', '✨ 100% Genuine Quality'],
+            img: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80',
+            text: 'Fits exactly true to UK/India sizing. Memory foam insole makes walking 10k steps totally painless. Materials feel high-end and premium.',
+            helpful: 37
+          },
+          {
+            name: 'Tanvi Joshi',
+            city: 'Ahmedabad',
+            size: 'Recommended Size',
+            height: '5\'6" (167 cm)',
+            weight: '58 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '1 week ago',
+            tags: ['🧵 Durable Stitching', '💧 Water-Resistant Finish'],
+            img: 'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=600&q=80',
+            text: 'Matches my other wishlist and closet items effortlessly. Quality exceeded my expectations for the price point.',
+            helpful: 24
+          }
+        ];
+      }
+
+      const feed = document.getElementById('buyerReviewFeed');
+      feed.innerHTML = reviews.map((r, idx) => `
+        <article style="background:#ffffff; border:1px solid #eaeaec; border-radius:14px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+          <!-- Reviewer Header -->
+          <div style="padding:10px 12px; display:flex; justify-content:space-between; align-items:flex-start; border-bottom:1px solid #f2f2f4;">
+            <div style="display:flex; gap:8px; align-items:center;">
+              <div style="width:34px; height:34px; border-radius:50%; background:#f0f2f5; font-size:14px; display:grid; place-items:center; font-weight:800; color:#535766;">
+                ${r.name.charAt(0)}
+              </div>
+              <div>
+                <div style="font-size:12px; font-weight:800; color:var(--applique-text-primary); display:flex; align-items:center; gap:4px;">
+                  ${r.name}
+                  <span style="background:#03a685; color:#fff; font-size:8.5px; font-weight:900; padding:1px 5px; border-radius:3px;">VERIFIED BUYER ✓</span>
+                </div>
+                <div style="font-size:10px; color:var(--applique-text-secondary);">${r.city} · ${r.date}</div>
+              </div>
+            </div>
+            <div style="font-size:11px; font-weight:900; color:#03a685;">${r.rating}</div>
+          </div>
+
+          <!-- Body Spec Pill Bar -->
+          <div style="background:#f8f9fc; padding:6px 12px; display:flex; gap:10px; font-size:10px; color:#374151; border-bottom:1px solid #f0f0f4; flex-wrap:wrap;">
+            <span><strong>Size:</strong> ${r.size}</span>
+            <span>•</span>
+            <span><strong>Height:</strong> ${r.height}</span>
+            <span>•</span>
+            <span><strong>Weight:</strong> ${r.weight}</span>
+            <span>•</span>
+            <span style="color:#03a685; font-weight:800;">Fit: ${r.fitVerdict}</span>
+          </div>
+
+          <!-- UGC Photo -->
+          <div style="position:relative; width:100%; height:210px; background:#111;">
+            <img src="${r.img}" alt="${r.name} Try-On" style="width:100%; height:100%; object-fit:cover;">
+            <div style="position:absolute; bottom:8px; right:8px; background:rgba(0,0,0,0.65); backdrop-filter:blur(4px); color:#fff; font-size:9.5px; font-weight:700; padding:3px 8px; border-radius:4px;">
+              📸 Real Customer Photo
+            </div>
+          </div>
+
+          <!-- Review Details & Anxiety Tags -->
+          <div style="padding:10px 12px;">
+            <div style="display:flex; gap:4px; flex-wrap:wrap; margin-bottom:6px;">
+              ${r.tags.map(t => `<span style="font-size:9.5px; font-weight:800; background:#f5f2fe; color:#523399; padding:2px 6px; border-radius:4px;">${t}</span>`).join('')}
+            </div>
+            <p style="font-size:11.5px; color:#282c3f; line-height:1.4; margin-bottom:8px;">"${r.text}"</p>
+            
+            <!-- Helpful Bar -->
+            <div style="display:flex; justify-content:space-between; align-items:center; font-size:10.5px; color:#888; border-top:1px solid #f4f4f6; padding-top:6px;">
+              <button onclick="this.innerHTML='👍 Helpful (${r.helpful + 1}) ✓'; this.style.color='#03a685';" style="background:transparent; border:0; cursor:pointer; font-size:10.5px; color:#535766; font-weight:700;">
+                👍 Helpful (${r.helpful})
+              </button>
+              <span>Report</span>
+            </div>
+          </div>
+        </article>
+      `).join('');
+
       document.getElementById('buyerModal').classList.add('open');
     }
     function closeBuyerModal() {
