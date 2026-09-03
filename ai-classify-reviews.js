@@ -52,7 +52,8 @@ async function askGroq(batch) {
   }) });
   if (!response.ok) { const error = new Error(`Groq HTTP ${response.status}`); error.status = response.status; error.retryAfter = response.headers.get('retry-after'); throw error; }
   const body = await response.json();
-  const value = JSON.parse(body.choices?.[0]?.message?.content || '{}');
+  const content = (body.choices?.[0]?.message?.content || '{}').replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
+  const value = JSON.parse(content);
   if (!Array.isArray(value.reviews)) throw new Error('Groq did not return reviews array.');
   return value.reviews;
 }

@@ -1,8 +1,8 @@
 {
-  "screened_at": "2026-08-30T13:31:52.127Z",
+  "screened_at": "2026-08-31T07:53:21.397Z",
   "total_downloaded": 5703,
-  "in_scope_for_category_discovery_analysis": 423,
-  "excluded_from_themed_analysis": 5280,
+  "in_scope_for_category_discovery_analysis": 45,
+  "excluded_from_themed_analysis": 5658,
   "exclusion_policy": "Excluded only from the category-discovery analysis when no theme keyword was present. Raw reviews are retained and remain visible.",
   "source_breakdown": {
     "Apple App Store (AU)": {
@@ -92,8 +92,8 @@
     },
     "Google Play (India)": {
       "downloaded": 5000,
-      "in_scope": 394,
-      "excluded": 4606
+      "in_scope": 24,
+      "excluded": 4976
     },
     "Reddit r/DesiFragranceAddicts": {
       "downloaded": 1,
@@ -107,8 +107,8 @@
     },
     "Reddit r/LGBTindia": {
       "downloaded": 1,
-      "in_scope": 1,
-      "excluded": 0
+      "in_scope": 0,
+      "excluded": 1
     },
     "Reddit r/GoldIndia": {
       "downloaded": 2,
@@ -122,13 +122,13 @@
     },
     "Reddit r/feminineboys": {
       "downloaded": 1,
-      "in_scope": 1,
-      "excluded": 0
+      "in_scope": 0,
+      "excluded": 1
     },
     "Reddit r/MyntraSucks": {
       "downloaded": 4,
-      "in_scope": 1,
-      "excluded": 3
+      "in_scope": 0,
+      "excluded": 4
     },
     "Reddit r/CreditCardsIndia": {
       "downloaded": 3,
@@ -142,8 +142,8 @@
     },
     "Reddit r/ConsumerAdvice": {
       "downloaded": 1,
-      "in_scope": 1,
-      "excluded": 0
+      "in_scope": 0,
+      "excluded": 1
     },
     "Reddit r/IndianBeautyDeals": {
       "downloaded": 2,
@@ -172,8 +172,8 @@
     },
     "Reddit r/LegalAdviceIndia": {
       "downloaded": 1,
-      "in_scope": 1,
-      "excluded": 0
+      "in_scope": 0,
+      "excluded": 1
     },
     "Reddit r/FuckFlipkart": {
       "downloaded": 1,
@@ -232,8 +232,8 @@
     },
     "Shopping Communities": {
       "downloaded": 12,
-      "in_scope": 4,
-      "excluded": 8
+      "in_scope": 2,
+      "excluded": 10
     },
     "YouTube Comments": {
       "downloaded": 2,
@@ -247,8 +247,8 @@
     },
     "Product Q&A": {
       "downloaded": 12,
-      "in_scope": 8,
-      "excluded": 4
+      "in_scope": 7,
+      "excluded": 5
     }
   },
   "theme_definitions": [
