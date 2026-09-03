@@ -185,10 +185,11 @@
 
     /* Main Form Section */
     .form-container {
-      padding: 24px 28px 20px;
+      padding: 20px 24px 24px;
       flex: 1;
       display: flex;
       flex-direction: column;
+      overflow-y: auto;
     }
     .login-heading {
       font-size: 20px;
@@ -250,7 +251,7 @@
       display: flex;
       align-items: flex-start;
       gap: 10px;
-      margin-top: 22px;
+      margin-top: 20px;
       font-size: 11.5px;
       color: var(--applique-text-secondary);
       line-height: 1.45;
@@ -272,7 +273,7 @@
     .login-btn {
       width: 100%;
       height: 46px;
-      margin-top: 22px;
+      margin-top: 18px;
       border-radius: var(--applique-radius-xs);
       background: var(--applique-text-disabled);
       color: #ffffff;
@@ -296,7 +297,7 @@
 
     /* Footer Help */
     .footer-help {
-      margin-top: 18px;
+      margin-top: 16px;
       font-size: 12px;
       color: var(--applique-text-secondary);
     }
@@ -318,7 +319,7 @@
       font-size: 11px;
       font-weight: 800;
       color: var(--applique-text-primary);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -336,32 +337,37 @@
     .persona-list {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
     }
     .persona-card {
       background: #ffffff;
       border: 1.5px solid var(--applique-border-default);
       border-radius: var(--applique-radius-sm);
-      padding: 10px 12px;
+      padding: 12px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      flex-direction: column;
+      gap: 8px;
       cursor: pointer;
       transition: all 0.15s ease;
     }
     .persona-card:hover, .persona-card.selected {
       border-color: var(--applique-primary);
       background: #fff8f9;
-      box-shadow: 0 2px 8px rgba(255, 63, 108, 0.10);
+      box-shadow: 0 2px 10px rgba(255, 63, 108, 0.12);
+    }
+    .persona-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     .persona-avatar {
-      width: 34px;
-      height: 34px;
+      width: 36px;
+      height: 36px;
       border-radius: var(--applique-radius-full);
       background: #f0f0f4;
       display: grid;
       place-items: center;
-      font-size: 15px;
+      font-size: 16px;
       margin-right: 10px;
       flex-shrink: 0;
     }
@@ -370,18 +376,40 @@
       text-align: left;
     }
     .persona-name {
-      font-size: 12.5px;
+      font-size: 13px;
       font-weight: 800;
       color: var(--applique-text-primary);
     }
     .persona-desc {
-      font-size: 10.5px;
+      font-size: 11px;
       color: var(--applique-text-secondary);
-      margin-top: 1px;
+      margin-top: 2px;
+      line-height: 1.35;
     }
-    .persona-select-radio {
-      accent-color: var(--applique-primary);
-      margin-left: 8px;
+    .persona-login-direct-btn {
+      width: 100%;
+      background: #ffffff;
+      border: 1.5px solid var(--applique-primary);
+      color: var(--applique-primary);
+      padding: 7px;
+      border-radius: var(--applique-radius-xs);
+      font-size: 11.5px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      transition: all 0.15s;
+    }
+    .persona-card.selected .persona-login-direct-btn {
+      background: var(--applique-primary);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(255,63,108,0.3);
+    }
+    .persona-login-direct-btn:hover {
+      background: var(--applique-primary);
+      color: #ffffff;
     }
 
     .ios-home-bar {
@@ -489,53 +517,88 @@
         <div class="persona-list">
           
           <!-- Persona 1: Target Segment -->
-          <div class="persona-card selected" onclick="selectPersona(1, 'Priya Sharma', '9876543210', 'High-Intent Accumulator · 18 Wishlist items')">
-            <div class="persona-avatar">👩</div>
-            <div class="persona-info">
-              <div class="persona-name">Priya Sharma <small style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></div>
-              <div class="persona-desc">26, Bangalore · 18 Saved items · Fit Anxiety on Zara &amp; Biba</div>
+          <div class="persona-card selected" onclick="selectPersona(1, 'Priya Sharma', '9876543210', 'High-Intent Accumulator')">
+            <div class="persona-top-row">
+              <div style="display:flex;align-items:center">
+                <div class="persona-avatar">👩</div>
+                <div class="persona-info">
+                  <div class="persona-name">Priya Sharma <small style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></div>
+                  <div class="persona-desc">26, Bangalore · 18 Saved items · Fit Anxiety on Zara &amp; Biba</div>
+                </div>
+              </div>
+              <input type="radio" name="persona" class="persona-select-radio" checked>
             </div>
-            <input type="radio" name="persona" class="persona-select-radio" checked>
+            <button class="persona-login-direct-btn" onclick="directLogin(1, 'Priya Sharma', '9876543210', 'High-Intent Accumulator')">
+              ⚡ 1-Click Login as Priya Sharma
+            </button>
           </div>
 
           <!-- Persona 2: Workwear Specialist -->
-          <div class="persona-card" onclick="selectPersona(2, 'Rohan Mehta', '9820011223', 'Office Workwear · 12 Wishlist items')">
-            <div class="persona-avatar">👨</div>
-            <div class="persona-info">
-              <div class="persona-name">Rohan Mehta</div>
-              <div class="persona-desc">29, Mumbai · 12 Saved items · Blazer &amp; Sneakerhead</div>
+          <div class="persona-card" onclick="selectPersona(2, 'Rohan Mehta', '9820011223', 'Office Workwear')">
+            <div class="persona-top-row">
+              <div style="display:flex;align-items:center">
+                <div class="persona-avatar">👨</div>
+                <div class="persona-info">
+                  <div class="persona-name">Rohan Mehta</div>
+                  <div class="persona-desc">29, Mumbai · 12 Saved items · Blazer &amp; Sneakerhead</div>
+                </div>
+              </div>
+              <input type="radio" name="persona" class="persona-select-radio">
             </div>
-            <input type="radio" name="persona" class="persona-select-radio">
+            <button class="persona-login-direct-btn" onclick="directLogin(2, 'Rohan Mehta', '9820011223', 'Office Workwear')">
+              ⚡ 1-Click Login as Rohan Mehta
+            </button>
           </div>
 
           <!-- Persona 3: Festive / Wedding Shopper -->
-          <div class="persona-card" onclick="selectPersona(3, 'Ananya Verma', '9811223344', 'Wedding & Sangeet Shopper · 22 Wishlist items')">
-            <div class="persona-avatar">💃</div>
-            <div class="persona-info">
-              <div class="persona-name">Ananya Verma</div>
-              <div class="persona-desc">24, Delhi · 22 Saved items · Kurta &amp; Jewelry pairings</div>
+          <div class="persona-card" onclick="selectPersona(3, 'Ananya Verma', '9811223344', 'Wedding & Sangeet Shopper')">
+            <div class="persona-top-row">
+              <div style="display:flex;align-items:center">
+                <div class="persona-avatar">💃</div>
+                <div class="persona-info">
+                  <div class="persona-name">Ananya Verma</div>
+                  <div class="persona-desc">24, Delhi · 22 Saved items · Kurta &amp; Jewelry pairings</div>
+                </div>
+              </div>
+              <input type="radio" name="persona" class="persona-select-radio">
             </div>
-            <input type="radio" name="persona" class="persona-select-radio">
+            <button class="persona-login-direct-btn" onclick="directLogin(3, 'Ananya Verma', '9811223344', 'Wedding & Sangeet Shopper')">
+              ⚡ 1-Click Login as Ananya Verma
+            </button>
           </div>
 
           <!-- Persona 4: Gen-Z Moodboarder -->
-          <div class="persona-card" onclick="selectPersona(4, 'Meera Nair', '9744556677', 'Trend Explorer · 35 Wishlist items')">
-            <div class="persona-avatar">✨</div>
-            <div class="persona-info">
-              <div class="persona-name">Meera Nair</div>
-              <div class="persona-desc">22, Pune · 35 Saved items · Delivery fee threshold drop-off</div>
+          <div class="persona-card" onclick="selectPersona(4, 'Meera Nair', '9744556677', 'Trend Explorer')">
+            <div class="persona-top-row">
+              <div style="display:flex;align-items:center">
+                <div class="persona-avatar">✨</div>
+                <div class="persona-info">
+                  <div class="persona-name">Meera Nair</div>
+                  <div class="persona-desc">22, Pune · 35 Saved items · Delivery fee drop-off</div>
+                </div>
+              </div>
+              <input type="radio" name="persona" class="persona-select-radio">
             </div>
-            <input type="radio" name="persona" class="persona-select-radio">
+            <button class="persona-login-direct-btn" onclick="directLogin(4, 'Meera Nair', '9744556677', 'Trend Explorer')">
+              ⚡ 1-Click Login as Meera Nair
+            </button>
           </div>
 
           <!-- Persona 5: New Shopper -->
-          <div class="persona-card" onclick="selectPersona(5, 'Sneha Rao', '9988776655', 'First-Time Shopper · 4 Wishlist items')">
-            <div class="persona-avatar">🛍️</div>
-            <div class="persona-info">
-              <div class="persona-name">Sneha Rao</div>
-              <div class="persona-desc">First-time user · Exploring ₹300 welcome voucher</div>
+          <div class="persona-card" onclick="selectPersona(5, 'Sneha Rao', '9988776655', 'First-Time Shopper')">
+            <div class="persona-top-row">
+              <div style="display:flex;align-items:center">
+                <div class="persona-avatar">🛍️</div>
+                <div class="persona-info">
+                  <div class="persona-name">Sneha Rao</div>
+                  <div class="persona-desc">First-time user · Exploring ₹300 welcome voucher</div>
+                </div>
+              </div>
+              <input type="radio" name="persona" class="persona-select-radio">
             </div>
-            <input type="radio" name="persona" class="persona-select-radio">
+            <button class="persona-login-direct-btn" onclick="directLogin(5, 'Sneha Rao', '9988776655', 'First-Time Shopper')">
+              ⚡ 1-Click Login as Sneha Rao
+            </button>
           </div>
 
         </div>
@@ -552,6 +615,12 @@
       phone: '9876543210',
       role: 'High-Intent Accumulator'
     };
+
+    function directLogin(id, name, phone, role) {
+      currentPersona = { id, name, phone, role };
+      localStorage.setItem('myntra_active_persona', JSON.stringify(currentPersona));
+      window.location.href = 'home.html?persona=' + id;
+    }
 
     function selectPersona(id, name, phone, role) {
       currentPersona = { id, name, phone, role };

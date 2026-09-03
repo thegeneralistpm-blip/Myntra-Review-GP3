@@ -141,6 +141,10 @@
       align-items: center;
       gap: 4px;
       cursor: pointer;
+      background: rgba(255,255,255,0.7);
+      padding: 4px 10px;
+      border-radius: var(--applique-radius-full);
+      border: 1px solid rgba(0,0,0,0.06);
     }
     .wallet-pill {
       background: rgba(255,255,255,0.92);
@@ -573,6 +577,86 @@
       margin: 6px auto 4px;
       opacity: 0.8;
     }
+
+    /* Persona Switcher Drawer Modal */
+    .persona-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(4px);
+      display: none;
+      justify-content: center;
+      align-items: flex-end;
+      z-index: 100;
+    }
+    .persona-modal-overlay.open { display: flex; }
+    .persona-sheet {
+      width: 100%;
+      max-width: 420px;
+      background: #fff;
+      border-radius: 24px 24px 0 0;
+      padding: 20px;
+      max-height: 85vh;
+      overflow-y: auto;
+      animation: slideUp 0.22s ease-out;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+    .persona-sheet-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .persona-sheet-header h3 { font-size: 16px; font-weight: 800; color: var(--applique-text-primary); }
+    .persona-card-item {
+      background: #ffffff;
+      border: 1.5px solid var(--applique-border-default);
+      border-radius: var(--applique-radius-md);
+      padding: 12px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: all 0.15s;
+    }
+    .persona-card-item.active-persona {
+      border-color: var(--applique-primary);
+      background: #fff8f9;
+      box-shadow: 0 2px 10px rgba(255,63,108,0.15);
+    }
+    .persona-item-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .p-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--applique-radius-full);
+      background: #f0f0f4;
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .p-info { flex: 1; }
+    .p-name { font-size: 13.5px; font-weight: 800; color: var(--applique-text-primary); }
+    .p-meta { font-size: 11px; color: var(--applique-text-secondary); margin-top: 1px; }
+    .p-btn-switch {
+      background: var(--applique-primary);
+      color: #fff;
+      border: 0;
+      padding: 6px 12px;
+      border-radius: var(--applique-radius-xs);
+      font-size: 11px;
+      font-weight: 800;
+      cursor: pointer;
+      align-self: flex-end;
+    }
   </style>
 </head>
 <body>
@@ -605,7 +689,7 @@
       
       <!-- Delivery Address & Credit Bar -->
       <div class="address-bar">
-        <div class="address-left" onclick="window.location.href='login.html'">
+        <div class="address-left" onclick="openPersonaDrawer()">
           <span>📍</span>
           <span id="userLocation">Deliver to: <strong>Priya Sharma, Bangalore</strong> ⌄</span>
         </div>
@@ -639,9 +723,9 @@
           <a class="icon-btn" href="prototype.html" title="Open Myntra Bingo Wishlist">
             <span class="wishlist-heart-pulse">❤️</span>
           </a>
-          <a class="icon-btn" href="login.html" title="Switch Profile">
+          <div class="icon-btn" onclick="openPersonaDrawer()" title="Switch Profile">
             <span>👤</span>
-          </a>
+          </div>
         </div>
       </div>
 
@@ -775,6 +859,81 @@
     <div class="ios-home-bar"></div>
   </div>
 
+  <!-- Persona Switcher Drawer Modal -->
+  <div class="persona-modal-overlay" id="personaDrawer">
+    <div class="persona-sheet">
+      <div class="persona-sheet-header">
+        <div>
+          <h3>Switch User Profile</h3>
+          <p style="font-size:11px;color:var(--applique-text-secondary)">Explore different user personas &amp; purchase histories</p>
+        </div>
+        <button style="font-size:22px;border:0;background:transparent;cursor:pointer;color:#888" onclick="closePersonaDrawer()">✕</button>
+      </div>
+
+      <!-- 5 Interactive Profiles -->
+      <div class="persona-card-item active-persona" onclick="switchPersona(1)">
+        <div class="persona-item-top">
+          <div class="p-avatar">👩</div>
+          <div class="p-info">
+            <div class="p-name">Priya Sharma <small style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></div>
+            <div class="p-meta">26, Bangalore · 18 Wishlist Items · 4 Past Orders</div>
+            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Levi's 711 Jeans, Tan Slides, White Tote</div>
+          </div>
+        </div>
+        <button class="p-btn-switch">Active Profile ✓</button>
+      </div>
+
+      <div class="persona-card-item" onclick="switchPersona(2)">
+        <div class="persona-item-top">
+          <div class="p-avatar">👨</div>
+          <div class="p-info">
+            <div class="p-name">Rohan Mehta</div>
+            <div class="p-meta">29, Mumbai · 12 Wishlist Items · 6 Past Orders</div>
+            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Puma Sneakers, Linen Shirts, Chinos</div>
+          </div>
+        </div>
+        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+      </div>
+
+      <div class="persona-card-item" onclick="switchPersona(3)">
+        <div class="persona-item-top">
+          <div class="p-avatar">💃</div>
+          <div class="p-info">
+            <div class="p-name">Ananya Verma</div>
+            <div class="p-meta">24, Delhi · 22 Wishlist Items · 5 Past Orders</div>
+            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Kundan Jewelry, Silk Dupattas</div>
+          </div>
+        </div>
+        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+      </div>
+
+      <div class="persona-card-item" onclick="switchPersona(4)">
+        <div class="persona-item-top">
+          <div class="p-avatar">✨</div>
+          <div class="p-info">
+            <div class="p-name">Meera Nair</div>
+            <div class="p-meta">22, Pune · 35 Wishlist Items · 8 Past Orders</div>
+            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Oversized Hoodies, Cargo Pants</div>
+          </div>
+        </div>
+        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+      </div>
+
+      <div class="persona-card-item" onclick="switchPersona(5)">
+        <div class="persona-item-top">
+          <div class="p-avatar">🛍️</div>
+          <div class="p-info">
+            <div class="p-name">Sneha Rao</div>
+            <div class="p-meta">New Shopper · 4 Wishlist Items · 0 Past Orders</div>
+            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Exploring first order voucher (₹300 off)</div>
+          </div>
+        </div>
+        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+      </div>
+
+    </div>
+  </div>
+
   <script>
     const personas = {
       '1': { name: 'Priya Sharma', city: 'Bangalore', items: 18 },
@@ -790,6 +949,16 @@
 
     document.getElementById('userLocation').innerHTML = 'Deliver to: <strong>' + persona.name + ', ' + persona.city + '</strong> ⌄';
     document.getElementById('nudgeText').textContent = persona.name + ', your ' + persona.items + ' saved items were auto-organized by AI into Occasion Folders with verified fit scores!';
+
+    function openPersonaDrawer() {
+      document.getElementById('personaDrawer').classList.add('open');
+    }
+    function closePersonaDrawer() {
+      document.getElementById('personaDrawer').classList.remove('open');
+    }
+    function switchPersona(id) {
+      window.location.href = 'home.html?persona=' + id;
+    }
   </script>
 </body>
 </html>
