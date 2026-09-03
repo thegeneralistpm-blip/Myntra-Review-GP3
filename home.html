@@ -686,6 +686,14 @@
       overflow-y: auto;
       animation: slideUp 0.22s ease-out;
     }
+    #bingoPopupModal .persona-sheet {
+      border-radius: 24px;
+      animation: popModal 0.26s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @keyframes popModal {
+      from { transform: scale(0.86); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
     @keyframes slideUp {
       from { transform: translateY(100%); }
       to { transform: translateY(0); }
@@ -888,15 +896,6 @@
     <!-- Scrollable Home Feed -->
     <main class="home-content">
       
-      <!-- Subtle AI Wishlist Trigger Pill (Re-open anytime) -->
-      <div style="margin:8px 14px 10px; display:flex; justify-content:space-between; align-items:center; background:linear-gradient(90deg, #fff0f5, #f5f2fe); border:1px solid #fbcfe8; border-radius:10px; padding:7px 12px; cursor:pointer;" onclick="openBingoPopup()">
-        <div style="display:flex; align-items:center; gap:6px; font-size:11.5px; font-weight:800; color:var(--applique-primary);">
-          <span>🎯</span>
-          <span>Myntra Bingo: <span style="color:#523399; font-weight:700;" id="pillPersonaText">28 saved items organized by AI</span></span>
-        </div>
-        <span style="font-size:10.5px; font-weight:800; color:var(--applique-primary); background:#fff; padding:2px 8px; border-radius:9999px; border:1px solid #f472b6;">View ✨</span>
-      </div>
-
       <!-- Hero Banner: Big Brands Bash -->
       <section class="hero-banner-wrap">
         <div class="hero-banner-inner">
@@ -1228,9 +1227,10 @@
       }
     }
 
-    // Update Persona Briefing in Pop-Up and Pill
-    document.getElementById('pillPersonaText').textContent = persona.items + ' saved items organized for ' + persona.name.split(' ')[0];
-    document.getElementById('popupPersonaBrief').innerHTML = 'Hey <strong>' + persona.name + '</strong>, we noticed you have <strong>' + persona.items + ' saved items</strong> in your wishlist! Bingo has auto-organized them into smart occasion folders with verified sizing &amp; price stability.';
+    // Update Persona Briefing in Pop-Up
+    const pillText = document.getElementById('pillPersonaText');
+    if (pillText) pillText.textContent = persona.items + ' saved items organized for ' + persona.name.split(' ')[0];
+    document.getElementById('popupPersonaBrief').innerHTML = 'Hey <strong>' + persona.name + '</strong>, we noticed you have <strong>' + persona.items + ' saved items</strong>! Bingo has auto-organized them into smart occasion folders with verified sizing &amp; price stability.';
 
     // Bingo Discovery Pop-Up Controls
     function openBingoPopup() {
