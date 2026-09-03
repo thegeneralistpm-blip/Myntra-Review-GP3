@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: quick-commerce-discovery-engine
+    name: myntra-wishlist-discovery-engine
     runtime: node
     buildCommand: ""
     startCommand: node server.js
