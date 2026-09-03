@@ -2,7 +2,7 @@
 
 The scheduler is defined in `.github/workflows/weekly-review-collection.yml`.
 
-Every Monday it:
+Every Sunday at 8:00 PM IST (14:30 UTC) it:
 
 1. Downloads the newest 500 public Myntra reviews from storefronts.
 2. Screens them against the category-discovery study themes.
