@@ -1331,7 +1331,7 @@
           <div class="fit-box">
             <div class="fit-header">
               <span class="fit-label">✨ FitConfidence</span>
-              <button class="buyer-photos-btn" onclick="openBuyerModal('${p.brand} ${p.name}')">👁️ Verified Buyer Photos</button>
+              <button class="buyer-photos-btn" onclick="openBuyerModal('${p.brand} ${p.name.replace(/'/g, "\\'")}', '${p.img}', '${p.selectedSize}', '${p.folder}')">👁️ Verified Buyer Photos</button>
             </div>
             <div class="size-selector">
               ${p.sizes.map(s => `
@@ -1437,142 +1437,218 @@
       addToBag(activeOutfitTitle, 'Recommended');
     }
 
-    // Dynamic Realistic Buyer Photo & Review Generator
-    function openBuyerModal(title) {
-      document.getElementById('modalTitle').textContent = 'Verified Try-Ons: ' + title;
+    // Dynamic Garment-Matched Realistic Buyer Try-On Photo & Review Generator
+    function openBuyerModal(title, prodImg, selectedSize, folder) {
+      document.getElementById('modalTitle').textContent = 'Verified Try-Ons';
       
       const lower = title.toLowerCase();
       let reviews = [];
 
-      if (lower.includes('dress') || lower.includes('midi') || lower.includes('maxi') || lower.includes('crochet')) {
+      if (lower.includes('blazer') || lower.includes('suit') || lower.includes('coat')) {
+        // Structured Work Blazers
+        reviews = [
+          {
+            name: 'Kavita Menon',
+            city: 'Mumbai',
+            size: selectedSize || 'M (38)',
+            height: '5\'5" (165 cm)',
+            weight: '58 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '3 days ago',
+            tags: ['💼 Sharp Padded Shoulders', '🛡️ Wrinkle-Resistant Crepe', '👔 Fits Over Full Shirts'],
+            img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80',
+            text: 'I was worried about shoulder tightness during long meetings, but Size ' + (selectedSize || 'M') + ' gives a sharp executive drape without pinching. Armholes allow comfortable reach while typing.',
+            helpful: 64
+          },
+          {
+            name: 'Pooja Iyer',
+            city: 'Bangalore',
+            size: selectedSize || 'M (38)',
+            height: '5\'4" (162 cm)',
+            weight: '54 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '1 week ago',
+            tags: ['📏 Sleeve Hits Wrist Bone', '🧵 Smooth Satin Inner Lining'],
+            img: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=700&q=80',
+            text: 'Buttons are secure and the cut tapers slightly at the waist for a modern tailored look. Completely matches the product catalog photo!',
+            helpful: 41
+          }
+        ];
+      } else if (lower.includes('trouser') || lower.includes('pant') || lower.includes('jeans') || lower.includes('denim') || lower.includes('chinos')) {
+        // Trousers & Pants
+        reviews = [
+          {
+            name: 'Sneha Kulkarni',
+            city: 'Pune',
+            size: selectedSize || '32',
+            height: '5\'4" (162 cm)',
+            weight: '55 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '2 days ago',
+            tags: ['📏 High-Rise Flat Front', '🛡️ Zero Pocket Gaping', '🧺 No Wash Shrinkage'],
+            img: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=700&q=80',
+            text: 'Pleats fall straight from hip to hem with zero ankle bunching on 5\'4". Fabric has 4% elastane stretch which makes 9-hour office sitting totally effortless.',
+            helpful: 52
+          },
+          {
+            name: 'Ananya Roy',
+            city: 'Kolkata',
+            size: selectedSize || '32',
+            height: '5\'6" (167 cm)',
+            weight: '58 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '6 days ago',
+            tags: ['👖 Premium Dense Weave', '✨ Deep Usable Pockets'],
+            img: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80',
+            text: 'Waistband sits snug without needing a belt. Hem break lands right above formal loafers. 10/10 purchase.',
+            helpful: 29
+          }
+        ];
+      } else if (lower.includes('kurta') || lower.includes('saree') || lower.includes('anarkali') || lower.includes('sharara') || lower.includes('lehenga') || lower.includes('dupatta')) {
+        // Ethnic & Festive Wear
+        reviews = [
+          {
+            name: 'Sunita Saxena',
+            city: 'Delhi',
+            size: selectedSize || 'M',
+            height: '5\'4" (162 cm)',
+            weight: '57 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '4 days ago',
+            tags: ['✨ Real Gold Foil (No Flaking)', '🪔 Comfortable Floor Sitting', '🧵 Pure Chanderi Feel'],
+            img: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80',
+            text: 'Wore this for my cousin\'s Sangeet. The twirl flare is enormous and the gold border didn\'t scratch my collarbones even after 6 hours of dancing. High-res photo attached!',
+            helpful: 58
+          },
+          {
+            name: 'Meenakshi Iyer',
+            city: 'Chennai',
+            size: selectedSize || 'M',
+            height: '5\'6" (167 cm)',
+            weight: '60 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '10 days ago',
+            tags: ['📏 Floor Length on 5\'6"', '🛡️ Built-in Soft Lining'],
+            img: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=700&q=80',
+            text: 'Stitching and hem finish are boutique quality. Dupatta is a full 2.5 meters for royal pleating.',
+            helpful: 43
+          }
+        ];
+      } else if (lower.includes('shoe') || lower.includes('sneaker') || lower.includes('slides') || lower.includes('clogs') || lower.includes('heels') || lower.includes('loafers') || lower.includes('juttis') || lower.includes('boots')) {
+        // Footwear & Shoes
+        reviews = [
+          {
+            name: 'Rhea Sengupta',
+            city: 'Bangalore',
+            size: selectedSize || 'UK 5',
+            height: '5\'4" (162 cm)',
+            weight: '54 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '2 days ago',
+            tags: ['👟 All-Day Footbed Cushioning', '🛡️ Zero Shoe-Bite Heel', '✨ Authentic Leather Texture'],
+            img: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80',
+            text: 'Ordered my standard UK size and it fit immediately with zero break-in period. Walked 12,000 steps on weekend airport transit without any soreness!',
+            helpful: 49
+          },
+          {
+            name: 'Tanvi Joshi',
+            city: 'Ahmedabad',
+            size: selectedSize || 'UK 5',
+            height: '5\'5" (165 cm)',
+            weight: '56 kg',
+            fitVerdict: 'True to Size',
+            rating: '★★★★★ 5.0',
+            date: '1 week ago',
+            tags: ['💧 Anti-Slip Rubber Grip', '🧵 High-Density Stitching'],
+            img: 'https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=700&q=80',
+            text: 'Looks even better on feet than in the studio photos. Soles have strong wet-surface traction.',
+            helpful: 31
+          }
+        ];
+      } else if (lower.includes('watch') || lower.includes('bag') || lower.includes('tote') || lower.includes('wallet') || lower.includes('luggage') || lower.includes('jewelry') || lower.includes('choker') || lower.includes('sunglasses')) {
+        // Accessories & Bags & Watches
+        reviews = [
+          {
+            name: 'Nisha Verma',
+            city: 'Mumbai',
+            size: 'Standard',
+            height: '5\'5" (165 cm)',
+            weight: '55 kg',
+            fitVerdict: 'Exact Dimensions',
+            rating: '★★★★★ 5.0',
+            date: '3 days ago',
+            tags: ['👜 Fits 13-inch Laptop + Essentials', '✨ Scratch-Resistant Hardware', '🛡️ Anti-Tarnish Coating'],
+            img: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80',
+            text: 'Strap drop length rests comfortably under the shoulder without sliding off blazer sleeves. Finish looks extremely luxurious in person.',
+            helpful: 44
+          },
+          {
+            name: 'Priyanka Das',
+            city: 'Kolkata',
+            size: 'Standard',
+            height: '5\'4" (162 cm)',
+            weight: '52 kg',
+            fitVerdict: 'True to Photos',
+            rating: '★★★★★ 5.0',
+            date: '5 days ago',
+            tags: ['💎 Rich Lustre Dial', '🔒 Secure Magnetic Lock'],
+            img: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=700&q=80',
+            text: 'Dial size is delicate and fits slim wrists perfectly. Packed in original brand gift box with international warranty card.',
+            helpful: 36
+          }
+        ];
+      } else {
+        // Dresses, Tops, Resortwear & Casuals
         reviews = [
           {
             name: 'Pooja Sharma',
             city: 'Bangalore',
-            size: 'Size M',
+            size: selectedSize || 'Size M',
             height: '5\'4" (162 cm)',
             weight: '56 kg',
             fitVerdict: 'True to Size',
             rating: '★★★★★ 5.0',
             date: '3 days ago',
-            tags: ['🛡️ 100% Opaque Lining', '📏 Reaches Mid-Calf', '👗 Snug Bust Fit'],
-            img: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80',
-            text: 'I was really anxious about the bust fit because I\'m 34C, but Size M fits like a glove! The fabric is completely opaque so you don\'t need an extra slip underneath. The length falls perfectly below the knee on my 5\'4" frame.',
-            helpful: 48
+            tags: ['🛡️ 100% Opaque Lining', '📏 Reaches Mid-Calf on 5\'4"', '👗 Snug & Flattering Bust'],
+            img: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=700&q=80',
+            text: 'I was really anxious about the bust fit on this dress because I\'m 34C, but Size ' + (selectedSize || 'M') + ' fits like a custom glove! The fabric is completely opaque so you don\'t need an inner slip. Length falls gracefully below the knee.',
+            helpful: 57
           },
           {
             name: 'Divya Nambiar',
             city: 'Kochi',
-            size: 'Size M',
+            size: selectedSize || 'Size M',
             height: '5\'6" (167 cm)',
             weight: '59 kg',
             fitVerdict: 'True to Size',
             rating: '★★★★★ 5.0',
             date: '1 week ago',
             tags: ['💧 Zero Color Bleed', '✨ Breathable Rayon', '🧺 No Wash Shrinkage'],
-            img: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80',
-            text: 'Wore this on a vacation trip to Goa. Extremely breezy in humid weather, photograph colors are 100% identical to the app photos, and washed it twice with zero shrinking or fading.',
-            helpful: 32
-          }
-        ];
-      } else if (lower.includes('blazer') || lower.includes('trouser') || lower.includes('shirt') || lower.includes('formal') || lower.includes('linen')) {
-        reviews = [
-          {
-            name: 'Kavita Menon',
-            city: 'Mumbai',
-            size: 'Size M (38)',
-            height: '5\'5" (165 cm)',
-            weight: '58 kg',
-            fitVerdict: 'True to Size',
-            rating: '★★★★★ 5.0',
-            date: '5 days ago',
-            tags: ['💼 Crisp Shoulder Padding', '🛡️ Wrinkle-Resistant', '👔 Fits Over Formal Shirts'],
-            img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
-            text: 'Tailoring is sharp and gives a clean executive silhouette. Shoulders sit flat without bunching, and the armholes have enough room to comfortably wear a long-sleeve cotton shirt underneath.',
-            helpful: 61
-          },
-          {
-            name: 'Aditi Rao',
-            city: 'Hyderabad',
-            size: 'Size S (36)',
-            height: '5\'3" (160 cm)',
-            weight: '51 kg',
-            fitVerdict: 'True to Size',
-            rating: '★★★★☆ 4.0',
-            date: '2 weeks ago',
-            tags: ['📏 Sleeve Length Perfect', '🧵 Premium Inner Lining'],
-            img: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80',
-            text: 'Buttons are sturdy and fabric has a slight mechanical stretch which makes 8-hour desk work and typing very comfortable. Highly recommend!',
-            helpful: 29
-          }
-        ];
-      } else if (lower.includes('kurta') || lower.includes('saree') || lower.includes('anarkali') || lower.includes('sharara') || lower.includes('festive')) {
-        reviews = [
-          {
-            name: 'Sunita Saxena',
-            city: 'Delhi',
-            size: 'Size M',
-            height: '5\'4" (162 cm)',
-            weight: '57 kg',
-            fitVerdict: 'True to Size',
-            rating: '★★★★★ 5.0',
-            date: '4 days ago',
-            tags: ['✨ Real Gold Foil (No Flaking)', '🪔 Comfortable for Floor Sitting', '🧵 Pure Chanderi Feel'],
-            img: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=600&q=80',
-            text: 'Bought this for a family sangeet ceremony. The flare on the skirt is huge and twirls beautifully. Gold border didn\'t scratch my skin even after 6 hours of dancing.',
-            helpful: 54
-          },
-          {
-            name: 'Meenakshi Iyer',
-            city: 'Chennai',
-            size: 'Size L',
-            height: '5\'7" (170 cm)',
-            weight: '64 kg',
-            fitVerdict: 'True to Size',
-            rating: '★★★★★ 5.0',
-            date: '10 days ago',
-            tags: ['📏 Floor Length on 5\'7"', '🛡️ Built-in Soft Lining'],
-            img: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80',
-            text: 'Dupatta length is a full 2.5 meters so you can drape it in royal pleats. Zero color bleed when hand washed in cold water.',
-            helpful: 41
-          }
-        ];
-      } else {
-        // Universal High-Fidelity Casual / Footwear / Activewear Review
-        reviews = [
-          {
-            name: 'Rhea Sengupta',
-            city: 'Pune',
-            size: 'Recommended Size',
-            height: '5\'4" (162 cm)',
-            weight: '54 kg',
-            fitVerdict: 'True to Size',
-            rating: '★★★★★ 5.0',
-            date: '2 days ago',
-            tags: ['👟 All-Day Footbed Cushioning', '🛡️ Zero Shoe-Bite', '✨ 100% Genuine Quality'],
-            img: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80',
-            text: 'Fits exactly true to UK/India sizing. Memory foam insole makes walking 10k steps totally painless. Materials feel high-end and premium.',
-            helpful: 37
-          },
-          {
-            name: 'Tanvi Joshi',
-            city: 'Ahmedabad',
-            size: 'Recommended Size',
-            height: '5\'6" (167 cm)',
-            weight: '58 kg',
-            fitVerdict: 'True to Size',
-            rating: '★★★★★ 5.0',
-            date: '1 week ago',
-            tags: ['🧵 Durable Stitching', '💧 Water-Resistant Finish'],
-            img: 'https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=600&q=80',
-            text: 'Matches my other wishlist and closet items effortlessly. Quality exceeded my expectations for the price point.',
-            helpful: 24
+            img: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80',
+            text: 'Wore this on a weekend trip. Extremely breezy in humid weather, colors match the app 100%, and washed twice with zero shrinkage.',
+            helpful: 39
           }
         ];
       }
 
       const feed = document.getElementById('buyerReviewFeed');
-      feed.innerHTML = reviews.map((r, idx) => `
+      feed.innerHTML = `
+        <!-- Clicked Product Reference Header -->
+        <div style="display:flex; gap:10px; align-items:center; background:#fff8f9; border:1px solid #ffccd8; border-radius:10px; padding:8px 10px; margin-bottom:10px;">
+          <img src="${prodImg || 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=150&q=80'}" style="width:42px; height:52px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+          <div style="flex:1; min-width:0;">
+            <div style="font-size:12px; font-weight:800; color:var(--applique-text-primary); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${title}</div>
+            <div style="font-size:10px; color:#be185d; font-weight:700; margin-top:1px;">Showing real try-ons for Size ${selectedSize || 'M'}</div>
+          </div>
+        </div>
+      ` + reviews.map((r, idx) => `
         <article style="background:#ffffff; border:1px solid #eaeaec; border-radius:14px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
           <!-- Reviewer Header -->
           <div style="padding:10px 12px; display:flex; justify-content:space-between; align-items:flex-start; border-bottom:1px solid #f2f2f4;">
@@ -1603,7 +1679,7 @@
           </div>
 
           <!-- UGC Photo -->
-          <div style="position:relative; width:100%; height:210px; background:#111;">
+          <div style="position:relative; width:100%; height:230px; background:#111;">
             <img src="${r.img}" alt="${r.name} Try-On" style="width:100%; height:100%; object-fit:cover;">
             <div style="position:absolute; bottom:8px; right:8px; background:rgba(0,0,0,0.65); backdrop-filter:blur(4px); color:#fff; font-size:9.5px; font-weight:700; padding:3px 8px; border-radius:4px;">
               📸 Real Customer Photo
