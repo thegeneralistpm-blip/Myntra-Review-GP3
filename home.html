@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Myntra Appliqué · Home (High Fidelity)</title>
+  <title>Myntra Appliqué · Home (Interactive Discovery & Live Wishlisting)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -84,7 +84,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      min-height: 870px;
+      height: 890px;
     }
 
     /* iOS Status Bar */
@@ -100,6 +100,7 @@
       color: #111;
       position: relative;
       z-index: 30;
+      flex-shrink: 0;
     }
     .dynamic-island {
       width: 110px;
@@ -120,10 +121,11 @@
     .island-sensor { width: 7px; height: 7px; border-radius: 50%; background: #111; }
     .status-icons { display: flex; align-items: center; gap: 6px; font-size: 11px; }
 
-    /* Top Sky/Lilac Gradient Header (Matches Screenshot) */
+    /* Top Sky/Lilac Gradient Header */
     .app-top-section {
       background: linear-gradient(180deg, #d8e2fd 0%, #ebe5fd 65%, #ffffff 100%);
       padding: 8px 16px 8px;
+      flex-shrink: 0;
     }
 
     /* Delivery Address & Credit Bar */
@@ -264,7 +266,7 @@
       cursor: pointer;
     }
 
-    /* Category Circular Scroller */
+    /* Category Circular Scroller (Interactive) */
     .category-scroll {
       display: flex;
       gap: 14px;
@@ -273,6 +275,7 @@
       scrollbar-width: none;
       background: #fff;
       border-bottom: 1px solid #f2f2f4;
+      flex-shrink: 0;
     }
     .category-scroll::-webkit-scrollbar { display: none; }
     .cat-item {
@@ -282,15 +285,22 @@
       gap: 6px;
       cursor: pointer;
       flex-shrink: 0;
+      transition: transform 0.15s;
     }
+    .cat-item:active { transform: scale(0.95); }
     .cat-img-box {
       width: 58px;
       height: 58px;
       border-radius: var(--applique-radius-md);
       overflow: hidden;
       background: #f8f8fa;
-      border: 1px solid #eee;
+      border: 2px solid transparent;
       box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      transition: all 0.15s;
+    }
+    .cat-item.active .cat-img-box {
+      border-color: var(--applique-primary);
+      box-shadow: 0 2px 8px rgba(255,63,108,0.25);
     }
     .cat-img-box img {
       width: 100%;
@@ -302,16 +312,18 @@
       font-weight: 700;
       color: var(--applique-text-primary);
     }
-    .cat-name.active {
+    .cat-item.active .cat-name {
       color: var(--applique-primary);
     }
 
     /* Main Scrollable Content */
     .home-content {
-      flex: 1;
+      flex: 1 1 auto;
+      min-height: 0;
       overflow-y: auto;
       background: #fafafc;
-      padding-bottom: 20px;
+      padding-bottom: 30px;
+      -webkit-overflow-scrolling: touch;
     }
 
     /* AI Wishlist Bingo Hero Nudge Card */
@@ -367,7 +379,7 @@
       box-shadow: 0 2px 8px rgba(255,63,108,0.3);
     }
 
-    /* Hero Banner: Big Brands Bash (Exact Match to Screenshot) */
+    /* Hero Banner: Big Brands Bash */
     .hero-banner-wrap {
       margin: 6px 14px 12px;
       background: #ffffff;
@@ -379,7 +391,7 @@
     }
     .hero-banner-inner {
       background: linear-gradient(180deg, #cde7ff 0%, #eef6ff 50%, #f7faff 100%);
-      padding: 20px 14px 14px;
+      padding: 16px 14px 14px;
       text-align: center;
       position: relative;
     }
@@ -387,9 +399,9 @@
       display: inline-block;
       background: #ff334b;
       color: #fff;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 900;
-      padding: 4px 14px;
+      padding: 3px 12px;
       border-radius: var(--applique-radius-full);
       letter-spacing: 0.5px;
       box-shadow: 0 4px 12px rgba(255,51,75,0.3);
@@ -410,13 +422,13 @@
 
     /* Spinning Wheel Simulation */
     .wheel-container {
-      width: 220px;
-      height: 220px;
-      margin: 14px auto 8px;
+      width: 170px;
+      height: 170px;
+      margin: 10px auto 6px;
       border-radius: 50%;
       background: #fff8f0;
-      border: 8px solid #f97316;
-      box-shadow: 0 10px 30px rgba(249,115,22,0.25);
+      border: 6px solid #f97316;
+      box-shadow: 0 8px 20px rgba(249,115,22,0.25);
       position: relative;
       display: flex;
       justify-content: center;
@@ -424,109 +436,181 @@
     }
     .wheel-brand {
       position: absolute;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 900;
       color: #1f2937;
     }
-    .wheel-brand.nike { top: 38%; right: 18px; color: #000; font-size: 16px; }
-    .wheel-brand.levis { top: 38%; left: 16px; background: #dc2626; color: #fff; padding: 2px 6px; border-radius: 4px; }
-    .wheel-brand.fossil { top: 20px; color: #0369a1; }
-    .wheel-brand.hm { bottom: 35px; right: 40px; color: #e11d48; font-size: 14px; font-weight: 900; }
-    .wheel-brand.anouk { bottom: 25px; left: 45px; color: #b45309; }
-    .wheel-brand.dotkey { bottom: 50%; left: 24px; color: #059669; font-size: 9px; }
+    .wheel-brand.nike { top: 38%; right: 14px; color: #000; font-size: 13px; }
+    .wheel-brand.levis { top: 38%; left: 12px; background: #dc2626; color: #fff; padding: 2px 5px; border-radius: 4px; }
+    .wheel-brand.fossil { top: 14px; color: #0369a1; }
+    .wheel-brand.hm { bottom: 25px; right: 28px; color: #e11d48; font-size: 12px; font-weight: 900; }
+    .wheel-brand.anouk { bottom: 20px; left: 32px; color: #b45309; }
 
     .wheel-center-knob {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       background: #d97706;
       border-radius: 50%;
-      border: 3px solid #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      border: 2px solid #fff;
     }
     .wheel-pointer {
       position: absolute;
-      top: -14px;
+      top: -12px;
       width: 0;
       height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-top: 16px solid #d97706;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 14px solid #d97706;
     }
 
     .discount-banner-base {
       background: #f97316;
       color: #fff;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 900;
-      padding: 6px 20px;
+      padding: 5px 16px;
       border-radius: var(--applique-radius-md);
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 8px;
       letter-spacing: 0.5px;
-      box-shadow: 0 4px 12px rgba(249,115,22,0.3);
     }
 
-    .shop-now-btn {
-      display: inline-flex;
+    /* Section Header */
+    .section-title-strip {
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 4px;
-      background: #ffffff;
-      color: #111;
-      border: 1px solid #ddd;
-      padding: 5px 14px;
-      border-radius: var(--applique-radius-full);
-      font-size: 11px;
-      font-weight: 800;
-      margin-top: 10px;
-      cursor: pointer;
+      padding: 10px 16px 6px;
     }
-
-    /* Bank Strip below banner */
-    .bank-strip {
-      background: #ffffff;
-      padding: 9px 14px;
-      border-top: 1px solid var(--applique-border-light);
+    .section-title-strip h3 {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--applique-text-primary);
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
-      font-size: 10.5px;
-      font-weight: 700;
-      color: #374151;
+      gap: 6px;
     }
-    .bank-strip span.bank-name {
-      color: #dc2626;
-      font-weight: 900;
+    .section-title-strip span.sub {
+      font-size: 11px;
+      color: var(--applique-text-secondary);
+      font-weight: 600;
     }
 
-    /* Sub-Features Grid */
-    .sub-features-grid {
+    /* Interactive Product Discovery Grid */
+    .discovery-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
-      margin: 0 14px 12px;
+      padding: 0 14px 16px;
     }
-    .sub-card {
+    .home-product-card {
       background: #ffffff;
       border-radius: var(--applique-radius-md);
-      padding: 12px;
       border: 1px solid var(--applique-border-light);
-      cursor: pointer;
+      overflow: hidden;
       box-shadow: var(--applique-shadow-sm);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.15s;
     }
-    .sub-card-deal {
-      background: linear-gradient(135deg, #450a0a, #7f1d1d);
-      color: #fff;
+    .home-product-card:hover { transform: translateY(-2px); }
+    .card-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 170px;
+      background: #f4f4f6;
     }
-    .sub-card-deal h5 { font-size: 13px; font-weight: 900; color: #fde047; }
-    .sub-card-deal p { font-size: 10px; color: #fecaca; margin-top: 3px; }
-
-    .sub-card-drop {
-      background: linear-gradient(135deg, #fff7ed, #ffedd5);
-      border-color: #fed7aa;
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    .sub-card-drop h5 { font-size: 13px; font-weight: 900; color: #c2410c; }
-    .sub-card-drop p { font-size: 10px; color: #ea580c; margin-top: 3px; }
+    .card-heart-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(4px);
+      display: grid;
+      place-items: center;
+      font-size: 15px;
+      cursor: pointer;
+      color: #94969f;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      transition: all 0.15s;
+      border: 0;
+    }
+    .card-heart-btn.active {
+      color: var(--applique-primary);
+      transform: scale(1.15);
+    }
+    .card-rating-tag {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      background: rgba(255,255,255,0.92);
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .card-info {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .card-brand {
+      font-size: 12.5px;
+      font-weight: 800;
+      color: var(--applique-text-primary);
+    }
+    .card-name {
+      font-size: 11px;
+      color: var(--applique-text-secondary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 1px;
+    }
+    .card-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .card-price {
+      font-size: 13.5px;
+      font-weight: 900;
+      color: var(--applique-text-primary);
+    }
+    .card-mrp {
+      font-size: 10.5px;
+      text-decoration: line-through;
+      color: var(--applique-text-subdued);
+    }
+    .card-discount {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--applique-warning);
+    }
+    .card-occasion-badge {
+      margin-top: 6px;
+      background: #f5f2fe;
+      color: #523399;
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 3px 6px;
+      border-radius: 4px;
+      text-align: center;
+    }
 
     /* Applique Bottom Navigation Bar */
     .bottom-nav {
@@ -538,6 +622,7 @@
       justify-content: space-around;
       padding: 10px 0 12px;
       z-index: 20;
+      flex-shrink: 0;
     }
     .nav-item {
       display: flex;
@@ -574,8 +659,9 @@
       height: 4.5px;
       background: #111;
       border-radius: var(--applique-radius-full);
-      margin: 6px auto 4px;
+      margin: 4px auto 2px;
       opacity: 0.8;
+      flex-shrink: 0;
     }
 
     /* Persona Switcher Drawer Modal */
@@ -657,14 +743,38 @@
       cursor: pointer;
       align-self: flex-end;
     }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 60px;
+      background: #20242e;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: var(--applique-radius-full);
+      font-size: 12px;
+      font-weight: 700;
+      display: none;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      z-index: 200;
+      animation: popIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      max-width: 360px;
+    }
+    @keyframes popIn {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .toast.show { display: flex; }
   </style>
 </head>
 <body>
 
   <!-- Top Evaluator Banner -->
   <div class="top-bar">
-    <div><strong>Appliqué Prototype:</strong> Page 2 · High-Fidelity Home</div>
-    <a href="login.html">← Login</a>
+    <div><strong>Appliqué Home:</strong> Page 2 · Click Heart to Wishlist</div>
+    <a href="prototype.html">🎯 Open Bingo →</a>
   </div>
 
   <!-- Mobile Screen Container -->
@@ -706,7 +816,7 @@
             <path d="M15 80V35L35 60L55 35V80" stroke="#ff3f6c" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M45 80V35L65 60L85 35V80" stroke="#f472b6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span class="search-input-text">"Earrings"</span>
+          <span class="search-input-text">Search for brands, dresses, kurtas...</span>
           <div class="search-actions">
             <span>🎙️</span>
             <span>📷</span>
@@ -719,9 +829,10 @@
             <span>🔔</span>
             <div class="bell-badge">1</div>
           </div>
-          <!-- Heart Wishlist Icon (Jumps into Myntra Bingo) -->
+          <!-- Wishlist Heart Icon linking to Bingo Prototype -->
           <a class="icon-btn" href="prototype.html" title="Open Myntra Bingo Wishlist">
             <span class="wishlist-heart-pulse">❤️</span>
+            <div class="bell-badge" id="headerWishlistBadge">28</div>
           </a>
           <div class="icon-btn" onclick="openPersonaDrawer()" title="Switch Profile">
             <span>👤</span>
@@ -729,48 +840,48 @@
         </div>
       </div>
 
-      <!-- Gender Navigation Tabs (Matches Screenshot) -->
+      <!-- Gender Navigation Tabs -->
       <nav class="gender-tabs">
-        <div class="gender-tab active">ALL</div>
-        <div class="gender-tab">MEN</div>
-        <div class="gender-tab">WOMEN</div>
-        <div class="gender-tab">KIDS</div>
-        <div class="grid-menu-icon">🪟</div>
+        <div class="gender-tab active" onclick="filterGender('all')">ALL</div>
+        <div class="gender-tab" onclick="filterGender('men')">MEN</div>
+        <div class="gender-tab" onclick="filterGender('women')">WOMEN</div>
+        <div class="gender-tab" onclick="filterGender('kids')">KIDS</div>
+        <div class="grid-menu-icon" onclick="window.location.href='categories.html'">🪟</div>
       </nav>
 
     </header>
 
-    <!-- Circular Category Scroller (Matches Screenshot) -->
-    <nav class="category-scroll">
-      <div class="cat-item">
+    <!-- Circular Category Scroller (Interactive) -->
+    <nav class="category-scroll" id="catScroller">
+      <div class="cat-item active" onclick="filterCategory('all', this)">
         <div class="cat-img-box">
-          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=200&q=80" alt="Fashion">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=200&q=80" alt="All">
         </div>
-        <span class="cat-name active">Fashion</span>
+        <span class="cat-name">All</span>
       </div>
-      <div class="cat-item">
+      <div class="cat-item" onclick="filterCategory('fashion', this)">
+        <div class="cat-img-box">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=200&q=80" alt="Fashion">
+        </div>
+        <span class="cat-name">Fashion</span>
+      </div>
+      <div class="cat-item" onclick="filterCategory('beauty', this)">
         <div class="cat-img-box">
           <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=200&q=80" alt="Beauty">
         </div>
         <span class="cat-name">Beauty</span>
       </div>
-      <div class="cat-item">
+      <div class="cat-item" onclick="filterCategory('footwear', this)">
         <div class="cat-img-box">
-          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=200&q=80" alt="Home">
-        </div>
-        <span class="cat-name">Home</span>
-      </div>
-      <div class="cat-item">
-        <div class="cat-img-box">
-          <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=200&q=80" alt="Footwear">
+          <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=200&q=80" alt="Footwear">
         </div>
         <span class="cat-name">Footwear</span>
       </div>
-      <div class="cat-item">
+      <div class="cat-item" onclick="filterCategory('accessories', this)">
         <div class="cat-img-box">
-          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=200&q=80" alt="Accessories">
+          <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=200&q=80" alt="Accessories">
         </div>
-        <span class="cat-name">Accessories</span>
+        <span class="cat-name">Bags &amp; Acc</span>
       </div>
     </nav>
 
@@ -784,12 +895,12 @@
             <span>🎯 Myntra BINGO</span>
             <span class="bingo-badge-pink">AI SMART WISHLIST</span>
           </h4>
-          <p id="nudgeText">Priya, your 18 saved items were auto-organized by AI into 3 Occasion Folders with verified fit scores!</p>
+          <p id="nudgeText">Priya, your saved items were auto-organized by AI into 8 Occasion Folders with verified fit scores!</p>
         </div>
         <button class="bingo-nudge-btn">Open Bingo →</button>
       </section>
 
-      <!-- Hero Banner: Big Brands Bash (Exact Match to Screenshot) -->
+      <!-- Hero Banner: Big Brands Bash -->
       <section class="hero-banner-wrap">
         <div class="hero-banner-inner">
           <div class="bash-badge">BIG BRANDS BASH</div>
@@ -802,7 +913,6 @@
             <div class="wheel-pointer"></div>
             <span class="wheel-brand fossil">FOSSIL</span>
             <span class="wheel-brand levis">Levi's</span>
-            <span class="wheel-brand dotkey">DOT &amp; KEY</span>
             <span class="wheel-brand nike">✔ NIKE</span>
             <span class="wheel-brand hm">H&amp;M</span>
             <span class="wheel-brand anouk">✽ anouk</span>
@@ -810,50 +920,41 @@
           </div>
 
           <div class="discount-banner-base">50-80% OFF</div>
-          <div>
-            <button class="shop-now-btn" onclick="window.location.href='prototype.html'">Shop Now ❯</button>
-          </div>
-        </div>
-
-        <!-- Bank Discount Strip -->
-        <div class="bank-strip">
-          <span class="bank-name">HSBC</span> | 
-          <span style="color:#0284c7;font-weight:900">RBL Bank</span> | 
-          <span>Get 10% Instant Discount*</span>
         </div>
       </section>
 
-      <!-- Sub-Features Grid -->
-      <section class="sub-features-grid">
-        <div class="sub-card sub-card-deal" onclick="window.location.href='prototype.html'">
-          <h5>DEAL CLOCK ⏰</h5>
-          <p>● Stay Tuned · Ends 12 AM</p>
-        </div>
-        <div class="sub-card sub-card-drop" onclick="window.location.href='prototype.html'">
-          <h5>MEGA PRICE DROP 💥</h5>
-          <p>Top Brand Steals</p>
-        </div>
-      </section>
+      <!-- Section Title -->
+      <div class="section-title-strip">
+        <h3><span>🔥 Trending on Myntra</span></h3>
+        <span class="sub">Tap 🤍 to Wishlist</span>
+      </div>
+
+      <!-- Interactive 2-Column Product Discovery Grid -->
+      <section class="discovery-grid" id="homeProductGrid"></section>
 
     </main>
 
-    <!-- Applique Bottom Navigation Bar (Matches Screenshot) -->
+    <!-- Applique Bottom Navigation Bar -->
     <nav class="bottom-nav">
       <a class="nav-item active" href="home.html">
         <span class="nav-icon" style="color:var(--applique-primary);font-weight:900">M</span>
         <span>Home</span>
       </a>
-      <a class="nav-item" href="prototype.html">
-        <span class="fwd-logo">fwd</span>
-        <span>Under ₹999</span>
+      <a class="nav-item" href="categories.html">
+        <span class="nav-icon">🪟</span>
+        <span>Categories</span>
       </a>
       <a class="nav-item" href="prototype.html">
-        <span class="luxe-logo">LUXE</span>
-        <span>Luxury</span>
+        <span class="nav-icon">✨</span>
+        <span>Studio</span>
       </a>
       <a class="nav-item" href="prototype.html">
-        <span class="nav-icon">🛍️</span>
-        <span>Bag</span>
+        <span class="nav-icon" style="color:var(--applique-primary)">🎯</span>
+        <span>Bingo</span>
+      </a>
+      <a class="nav-item" onclick="openPersonaDrawer()">
+        <span class="nav-icon">👤</span>
+        <span>Profile</span>
       </a>
     </nav>
     <div class="ios-home-bar"></div>
@@ -876,7 +977,7 @@
           <div class="p-avatar">👩</div>
           <div class="p-info">
             <div class="p-name">Priya Sharma <small style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></div>
-            <div class="p-meta">26, Bangalore · 18 Wishlist Items · 4 Past Orders</div>
+            <div class="p-meta">26, Bangalore · 28 Wishlist Items · 4 Past Orders</div>
             <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Levi's 711 Jeans, Tan Slides, White Tote</div>
           </div>
         </div>
@@ -888,7 +989,7 @@
           <div class="p-avatar">👨</div>
           <div class="p-info">
             <div class="p-name">Rohan Mehta</div>
-            <div class="p-meta">29, Mumbai · 12 Wishlist Items · 6 Past Orders</div>
+            <div class="p-meta">29, Mumbai · 25 Wishlist Items · 6 Past Orders</div>
             <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Puma Sneakers, Linen Shirts, Chinos</div>
           </div>
         </div>
@@ -900,7 +1001,7 @@
           <div class="p-avatar">💃</div>
           <div class="p-info">
             <div class="p-name">Ananya Verma</div>
-            <div class="p-meta">24, Delhi · 22 Wishlist Items · 5 Past Orders</div>
+            <div class="p-meta">24, Delhi · 25 Wishlist Items · 5 Past Orders</div>
             <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Kundan Jewelry, Silk Dupattas</div>
           </div>
         </div>
@@ -912,7 +1013,7 @@
           <div class="p-avatar">✨</div>
           <div class="p-info">
             <div class="p-name">Meera Nair</div>
-            <div class="p-meta">22, Pune · 35 Wishlist Items · 8 Past Orders</div>
+            <div class="p-meta">22, Pune · 25 Wishlist Items · 8 Past Orders</div>
             <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Oversized Hoodies, Cargo Pants</div>
           </div>
         </div>
@@ -924,7 +1025,7 @@
           <div class="p-avatar">🛍️</div>
           <div class="p-info">
             <div class="p-name">Sneha Rao</div>
-            <div class="p-meta">New Shopper · 4 Wishlist Items · 0 Past Orders</div>
+            <div class="p-meta">New Shopper · 25 Wishlist Items · 0 Past Orders</div>
             <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Exploring first order voucher (₹300 off)</div>
           </div>
         </div>
@@ -934,13 +1035,35 @@
     </div>
   </div>
 
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <span id="toastIcon">✨</span>
+    <span id="toastMsg">Added to Wishlist! Bingo AI organized it into "🌴 Vacation"</span>
+  </div>
+
   <script>
+    // Trending Home Catalog with Occasion Tags
+    const homeProducts = [
+      { id: 'hp1', category: 'fashion', gender: 'women', brand: 'Zara', name: 'Floral Print V-Neck Midi Dress', price: '₹1,499', mrp: '₹2,999', discount: '50% OFF', rating: '4.5 ★', occasion: '🌴 Resort Vacation', img: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=500&q=80', wishlisted: true },
+      { id: 'hp2', category: 'fashion', gender: 'women', brand: 'Mango', name: 'Structured Tailored Office Blazer', price: '₹2,499', mrp: '₹4,999', discount: '50% OFF', rating: '4.7 ★', occasion: '💼 Monday Office', img: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&q=80', wishlisted: true },
+      { id: 'hp3', category: 'fashion', gender: 'men', brand: 'Tommy Hilfiger', name: 'Slim Fit Linen Formal Shirt', price: '₹2,199', mrp: '₹3,999', discount: '45% OFF', rating: '4.8 ★', occasion: '💼 Client Meetings', img: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=500&q=80', wishlisted: false },
+      { id: 'hp4', category: 'footwear', gender: 'men', brand: 'Nike', name: 'Air Max SC Lightweight Sneakers', price: '₹4,495', mrp: '₹5,995', discount: '25% OFF', rating: '4.9 ★', occasion: '🏃‍♂️ Gym & Active', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80', wishlisted: false },
+      { id: 'hp5', category: 'fashion', gender: 'women', brand: 'Biba', name: 'Embroidered Silk Anarkali Kurta', price: '₹2,199', mrp: '₹3,999', discount: '45% OFF', rating: '4.6 ★', occasion: '✨ Destination Wedding', img: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=500&q=80', wishlisted: true },
+      { id: 'hp6', category: 'fashion', gender: 'women', brand: 'H&M', name: 'Oversized Cotton Graphic Hoodie', price: '₹1,799', mrp: '₹2,499', discount: '28% OFF', rating: '4.7 ★', occasion: '🛹 College Streetwear', img: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=500&q=80', wishlisted: false },
+      { id: 'hp7', category: 'footwear', gender: 'women', brand: 'Birkenstock', name: 'Arizona Birko-Flor Cork Slides', price: '₹4,490', mrp: '₹5,990', discount: '25% OFF', rating: '4.9 ★', occasion: '☕ Sunday Brunch', img: 'https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=500&q=80', wishlisted: true },
+      { id: 'hp8', category: 'accessories', gender: 'women', brand: 'Aldo', name: 'Woven Raffia Shoulder Crossbody', price: '₹2,499', mrp: '₹4,999', discount: '50% OFF', rating: '4.7 ★', occasion: '🌴 Resort Vacation', img: 'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=500&q=80', wishlisted: true },
+      { id: 'hp9', category: 'accessories', gender: 'women', brand: 'Fossil', name: 'Jacqueline Rose Gold Mesh Watch', price: '₹4,995', mrp: '₹9,995', discount: '50% OFF', rating: '4.9 ★', occasion: '💼 Monday Office', img: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=500&q=80', wishlisted: true },
+      { id: 'hp10', category: 'beauty', gender: 'women', brand: 'Nykaa Beauty', name: 'Matte Liquid Lipstick & Highlighter', price: '₹799', mrp: '₹1,398', discount: '42% OFF', rating: '4.8 ★', occasion: '💃 Reception Party', img: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80', wishlisted: false }
+    ];
+
+    let currentWishlistCount = 28;
+
     const personas = {
-      '1': { name: 'Priya Sharma', city: 'Bangalore', items: 18 },
-      '2': { name: 'Rohan Mehta', city: 'Mumbai', items: 12 },
-      '3': { name: 'Ananya Verma', city: 'Delhi', items: 22 },
-      '4': { name: 'Meera Nair', city: 'Pune', items: 35 },
-      '5': { name: 'Sneha Rao', city: 'Hyderabad', items: 4 }
+      '1': { name: 'Priya Sharma', city: 'Bangalore', items: 28 },
+      '2': { name: 'Rohan Mehta', city: 'Mumbai', items: 25 },
+      '3': { name: 'Ananya Verma', city: 'Delhi', items: 25 },
+      '4': { name: 'Meera Nair', city: 'Pune', items: 25 },
+      '5': { name: 'Sneha Rao', city: 'Hyderabad', items: 25 }
     };
 
     const params = new URLSearchParams(window.location.search);
@@ -948,7 +1071,83 @@
     const persona = personas[personaId] || personas['1'];
 
     document.getElementById('userLocation').innerHTML = 'Deliver to: <strong>' + persona.name + ', ' + persona.city + '</strong> ⌄';
-    document.getElementById('nudgeText').textContent = persona.name + ', your ' + persona.items + ' saved items were auto-organized by AI into Occasion Folders with verified fit scores!';
+    document.getElementById('nudgeText').textContent = persona.name + ', your saved items were auto-organized by AI into occasion folders with verified fit scores!';
+
+    // Render Home Product Grid
+    function renderGrid(products) {
+      const grid = document.getElementById('homeProductGrid');
+      grid.innerHTML = products.map(p => `
+        <article class="home-product-card">
+          <div class="card-img-wrap">
+            <img src="${p.img}" alt="${p.name}" loading="lazy">
+            <button class="card-heart-btn ${p.wishlisted ? 'active' : ''}" onclick="toggleWishlist(this, '${p.brand} ${p.name}', '${p.occasion}')">
+              ${p.wishlisted ? '❤️' : '🤍'}
+            </button>
+            <div class="card-rating-tag">${p.rating}</div>
+          </div>
+          <div class="card-info">
+            <div class="card-brand">${p.brand}</div>
+            <div class="card-name">${p.name}</div>
+            <div class="card-price-row">
+              <span class="card-price">${p.price}</span>
+              <span class="card-mrp">${p.mrp}</span>
+              <span class="card-discount">${p.discount}</span>
+            </div>
+            <div class="card-occasion-badge">✨ ${p.occasion}</div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    renderGrid(homeProducts);
+
+    // Interactive Wishlist Toggle with Occasion Feedback
+    function toggleWishlist(btn, productName, occasion) {
+      const isNowActive = !btn.classList.contains('active');
+      if (isNowActive) {
+        btn.classList.add('active');
+        btn.textContent = '❤️';
+        currentWishlistCount++;
+        document.getElementById('headerWishlistBadge').textContent = currentWishlistCount;
+        showToast('✨ Added to Wishlist! Bingo AI clustered into "' + occasion + '"');
+      } else {
+        btn.classList.remove('active');
+        btn.textContent = '🤍';
+        currentWishlistCount = Math.max(0, currentWishlistCount - 1);
+        document.getElementById('headerWishlistBadge').textContent = currentWishlistCount;
+        showToast('Removed from Wishlist');
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2800);
+    }
+
+    // Category Filter
+    function filterCategory(cat, el) {
+      document.querySelectorAll('.cat-item').forEach(c => c.classList.remove('active'));
+      el.classList.add('active');
+      if (cat === 'all') {
+        renderGrid(homeProducts);
+      } else {
+        const filtered = homeProducts.filter(p => p.category === cat);
+        renderGrid(filtered);
+      }
+    }
+
+    function filterGender(g) {
+      document.querySelectorAll('.gender-tab').forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+      if (g === 'all') {
+        renderGrid(homeProducts);
+      } else {
+        const filtered = homeProducts.filter(p => p.gender === g || p.gender === 'unisex');
+        renderGrid(filtered);
+      }
+    }
 
     function openPersonaDrawer() {
       document.getElementById('personaDrawer').classList.add('open');
