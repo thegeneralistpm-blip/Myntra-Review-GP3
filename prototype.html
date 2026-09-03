@@ -264,10 +264,12 @@
       padding: 14px 16px 30px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 18px;
       background: var(--applique-bg-page);
-      flex: 1;
+      flex: 1 1 auto;
+      min-height: 0;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
     }
     .product-card {
       background: var(--applique-bg-card);
@@ -276,6 +278,11 @@
       overflow: hidden;
       box-shadow: var(--applique-shadow-sm);
       transition: transform 0.2s, box-shadow 0.2s;
+      flex-shrink: 0;
+      width: 100%;
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
     }
     .product-card:hover {
       box-shadow: var(--applique-shadow-md);
@@ -1197,7 +1204,7 @@
         let count = 0;
         document.querySelectorAll('.product-card').forEach(card => {
           if (folder === 'all' || card.dataset.folder === folder) {
-            card.style.display = 'block';
+            card.style.display = 'flex';
             count++;
           } else {
             card.style.display = 'none';
