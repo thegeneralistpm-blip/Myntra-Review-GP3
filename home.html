@@ -1117,7 +1117,8 @@
     currentWishlistCount = persona.items || 25;
 
     document.getElementById('userLocation').innerHTML = 'Deliver to: <strong>' + persona.name + ', ' + persona.city + '</strong> ⌄';
-    document.getElementById('nudgeText').textContent = persona.name + ', your saved items were auto-organized by AI into occasion folders with verified fit scores!';
+    const nudgeEl = document.getElementById('nudgeText');
+    if (nudgeEl) nudgeEl.textContent = persona.name + ', your saved items were auto-organized by AI into occasion folders with verified fit scores!';
     document.getElementById('headerWishlistBadge').textContent = currentWishlistCount;
 
     // Dynamically update all Wishlist and Bingo links to retain active persona
