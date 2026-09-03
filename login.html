@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Myntra Appliqué · Login & Persona Switcher</title>
+  <title>Myntra Appliqué · Login (High Fidelity)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -43,14 +43,14 @@
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background: var(--applique-bg-page);
+      background: #181b22;
       color: var(--applique-text-primary);
       font-family: var(--font-applique);
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
-      padding: 16px 8px;
+      padding: 20px 8px 40px;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -58,42 +58,75 @@
     .top-bar {
       width: 100%;
       max-width: 420px;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #20242e;
+      background: #252a36;
       color: #fff;
-      padding: 10px 14px;
+      padding: 10px 16px;
       border-radius: var(--applique-radius-md);
       font-size: 12px;
-      box-shadow: var(--applique-shadow-sm);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.08);
     }
     .top-bar strong { color: var(--applique-primary); font-weight: 800; }
-    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; background: rgba(255,255,255,0.15); padding: 4px 10px; border-radius: var(--applique-radius-full); transition: background 0.15s; }
+    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; background: rgba(255,255,255,0.15); padding: 4px 12px; border-radius: var(--applique-radius-full); transition: all 0.15s; }
     .top-bar a:hover { background: rgba(255,255,255,0.25); }
 
-    /* Mobile Container Frame */
+    /* iPhone 16 Pro Hardware Container Frame */
     .phone-frame {
       width: 100%;
       max-width: 420px;
       background: var(--applique-bg-card);
-      border-radius: 28px;
+      border-radius: 44px;
       overflow: hidden;
-      box-shadow: var(--applique-shadow-lg);
-      border: 1px solid var(--applique-border-light);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.5), 0 0 0 12px #2b2e38, 0 0 0 14px #1c1e24;
       position: relative;
       display: flex;
       flex-direction: column;
-      min-height: 840px;
+      min-height: 870px;
     }
+
+    /* iOS Status Bar */
+    .ios-status-bar {
+      height: 44px;
+      background: #fdfcff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #111;
+      position: relative;
+      z-index: 30;
+    }
+    .dynamic-island {
+      width: 110px;
+      height: 26px;
+      background: #000;
+      border-radius: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .island-lens { width: 9px; height: 9px; border-radius: 50%; background: #1c2a44; border: 1px solid #2d3b55; }
+    .island-sensor { width: 7px; height: 7px; border-radius: 50%; background: #111; }
+    .status-icons { display: flex; align-items: center; gap: 6px; font-size: 11px; }
 
     /* Top Status Bar & Close */
     .status-bar {
       position: absolute;
-      top: 14px;
+      top: 50px;
       right: 16px;
-      z-index: 10;
+      z-index: 20;
     }
     .close-btn {
       width: 32px;
@@ -114,7 +147,7 @@
     /* Header Promo Banner (Exact Applique Screenshot Match) */
     .promo-banner {
       background: radial-gradient(circle at 50% 30%, #fdfcff 0%, #f1ecfc 60%, #e9e2fa 100%);
-      padding: 42px 20px 24px;
+      padding: 24px 20px 24px;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -260,9 +293,6 @@
     .login-btn.active:hover {
       background: var(--applique-primary-hover);
     }
-    .login-btn.active:active {
-      transform: translateY(1px);
-    }
 
     /* Footer Help */
     .footer-help {
@@ -354,9 +384,9 @@
       margin-left: 8px;
     }
 
-    .home-indicator {
-      width: 120px;
-      height: 4px;
+    .ios-home-bar {
+      width: 130px;
+      height: 4.5px;
       background: #111;
       border-radius: var(--applique-radius-full);
       margin: 16px auto 8px;
@@ -368,13 +398,27 @@
 
   <!-- Top Evaluator Banner -->
   <div class="top-bar">
-    <div><strong>Appliqué Prototype:</strong> Page 1 · Login &amp; Personas</div>
+    <div><strong>Appliqué Prototype:</strong> Page 1 · High-Fidelity Login</div>
     <a href="home.html">Home Page →</a>
   </div>
 
   <!-- Mobile Phone Frame -->
   <div class="phone-frame">
     
+    <!-- iOS Status Bar & Dynamic Island -->
+    <div class="ios-status-bar">
+      <span>9:41</span>
+      <div class="dynamic-island">
+        <div class="island-lens"></div>
+        <div class="island-sensor"></div>
+      </div>
+      <div class="status-icons">
+        <span>5G</span>
+        <span>📶</span>
+        <span>🔋</span>
+      </div>
+    </div>
+
     <div class="status-bar">
       <button class="close-btn" onclick="continueToWishlist()">✕</button>
     </div>
@@ -497,7 +541,7 @@
         </div>
       </section>
 
-      <div class="home-indicator"></div>
+      <div class="ios-home-bar"></div>
     </main>
   </div>
 

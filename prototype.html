@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Myntra Appliqué · Myntra Bingo Wishlist</title>
+  <title>Myntra Appliqué · Myntra Bingo (High-Fidelity MVP)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -44,14 +44,14 @@
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background: var(--applique-bg-page);
+      background: #181b22;
       color: var(--applique-text-primary);
       font-family: var(--font-applique);
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
-      padding: 16px 8px;
+      padding: 20px 8px 40px;
       -webkit-font-smoothing: antialiased;
     }
     
@@ -59,40 +59,74 @@
     .top-bar {
       width: 100%;
       max-width: 420px;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #20242e;
+      background: #252a36;
       color: #fff;
-      padding: 10px 14px;
+      padding: 10px 16px;
       border-radius: var(--applique-radius-md);
       font-size: 12px;
-      box-shadow: var(--applique-shadow-sm);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.08);
     }
     .top-bar strong { color: var(--applique-primary); font-weight: 800; }
-    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; background: rgba(255,255,255,0.15); padding: 4px 10px; border-radius: var(--applique-radius-full); }
+    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; background: rgba(255,255,255,0.15); padding: 4px 12px; border-radius: var(--applique-radius-full); transition: all 0.15s; }
+    .top-bar a:hover { background: rgba(255,255,255,0.25); }
 
-    /* Mobile Container Frame */
+    /* iPhone 16 Pro Physical Hardware Frame */
     .phone-frame {
       width: 100%;
       max-width: 420px;
       background: var(--applique-bg-card);
-      border-radius: 28px;
+      border-radius: 44px;
       overflow: hidden;
-      box-shadow: var(--applique-shadow-lg);
-      border: 1px solid var(--applique-border-light);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.5), 0 0 0 12px #2b2e38, 0 0 0 14px #1c1e24;
       position: relative;
       display: flex;
       flex-direction: column;
-      min-height: 840px;
+      min-height: 870px;
     }
+
+    /* iOS Top Status Bar & Dynamic Island */
+    .ios-status-bar {
+      height: 44px;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #111;
+      position: relative;
+      z-index: 30;
+    }
+    .dynamic-island {
+      width: 110px;
+      height: 26px;
+      background: #000;
+      border-radius: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .island-lens { width: 9px; height: 9px; border-radius: 50%; background: #1c2a44; border: 1px solid #2d3b55; }
+    .island-sensor { width: 7px; height: 7px; border-radius: 50%; background: #111; }
+    .status-icons { display: flex; align-items: center; gap: 6px; font-size: 11px; }
 
     /* Persona Switcher Bar */
     .persona-banner {
-      background: #fff8f9;
-      border-bottom: 1px solid #ffd6e0;
-      padding: 7px 16px;
+      background: #fff5f7;
+      border-bottom: 1px solid #ffd1dc;
+      padding: 8px 18px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -103,7 +137,7 @@
 
     /* App Header */
     .app-header {
-      padding: 14px 16px 12px;
+      padding: 12px 18px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -111,7 +145,7 @@
       background: #ffffff;
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 20;
     }
     .brand-logo {
       display: flex;
@@ -144,8 +178,8 @@
     }
     .header-icons {
       display: flex;
-      gap: 14px;
-      font-size: 18px;
+      gap: 16px;
+      font-size: 19px;
       color: var(--applique-text-primary);
       position: relative;
     }
@@ -157,19 +191,20 @@
       color: #fff;
       font-size: 9px;
       font-weight: 800;
-      width: 15px;
-      height: 15px;
+      width: 16px;
+      height: 16px;
       border-radius: var(--applique-radius-full);
       display: grid;
       place-items: center;
+      box-shadow: 0 2px 6px rgba(255,63,108,0.4);
     }
 
-    /* Feature 2: Bingo Occasion Tabs Bar */
+    /* Bingo Auto-Cluster Strip */
     .ai-cluster-banner {
       background: linear-gradient(135deg, #20242e, #2e3444);
       color: #ffffff;
-      padding: 9px 16px;
-      font-size: 11px;
+      padding: 9px 18px;
+      font-size: 11.5px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -183,14 +218,15 @@
     .ai-badge-pulse {
       background: #6c47ff;
       color: #fff;
-      padding: 2px 7px;
+      padding: 2px 8px;
       border-radius: var(--applique-radius-full);
       font-weight: 800;
       font-size: 9.5px;
       letter-spacing: 0.5px;
+      box-shadow: 0 0 10px rgba(108,71,255,0.4);
     }
     .tabs-wrap {
-      padding: 12px 14px;
+      padding: 12px 16px;
       background: #ffffff;
       border-bottom: 1px solid var(--applique-border-light);
       display: flex;
@@ -202,7 +238,7 @@
     .tab-pill {
       background: #f5f5f6;
       border: 1px solid transparent;
-      padding: 7px 13px;
+      padding: 8px 14px;
       border-radius: var(--applique-radius-full);
       font-size: 12px;
       font-weight: 700;
@@ -215,30 +251,36 @@
     .tab-pill.active {
       background: var(--applique-primary);
       color: #fff;
-      box-shadow: 0 3px 8px rgba(255,63,108,0.25);
+      box-shadow: 0 3px 10px rgba(255,63,108,0.3);
     }
 
-    /* Feed & Product Cards */
+    /* Product Feed */
     .feed {
-      padding: 14px 14px;
+      padding: 16px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 18px;
       background: var(--applique-bg-page);
+      flex: 1;
+      overflow-y: auto;
     }
     .product-card {
       background: var(--applique-bg-card);
-      border-radius: var(--applique-radius-lg);
+      border-radius: 20px;
       border: 1px solid var(--applique-border-light);
       overflow: hidden;
       box-shadow: var(--applique-shadow-sm);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .product-card:hover {
+      box-shadow: var(--applique-shadow-md);
     }
     
-    /* Product Image Container */
+    /* High-Fidelity Product Images */
     .product-img-wrap {
       position: relative;
       width: 100%;
-      height: 270px;
+      height: 290px;
       background: #f0f0f4;
       overflow: hidden;
     }
@@ -246,13 +288,17 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+    .product-card:hover .product-img {
+      transform: scale(1.02);
     }
     .rating-badge {
       position: absolute;
       bottom: 12px;
       left: 12px;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(4px);
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(6px);
       padding: 4px 8px;
       border-radius: var(--applique-radius-xs);
       font-size: 11px;
@@ -261,33 +307,39 @@
       display: flex;
       align-items: center;
       gap: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
     .wish-heart {
       position: absolute;
       top: 12px;
       right: 12px;
-      width: 34px;
-      height: 34px;
+      width: 36px;
+      height: 36px;
       border-radius: var(--applique-radius-full);
-      background: rgba(255,255,255,0.92);
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(6px);
       display: grid;
       place-items: center;
       color: var(--applique-primary);
-      font-size: 16px;
+      font-size: 18px;
       cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      transition: transform 0.15s;
     }
+    .wish-heart:active { transform: scale(0.88); }
 
     /* Product Info Area */
     .product-info {
-      padding: 14px 14px 16px;
+      padding: 16px;
     }
     .product-brand {
-      font-size: 14px;
+      font-size: 14.5px;
       font-weight: 800;
       color: var(--applique-text-primary);
+      letter-spacing: -0.2px;
     }
     .product-name {
-      font-size: 12px;
+      font-size: 12.5px;
       color: var(--applique-text-secondary);
       margin-top: 2px;
       white-space: nowrap;
@@ -318,17 +370,22 @@
       color: var(--applique-warning);
     }
 
-    /* Feature 5: Smart Value Check Badge */
+    /* Feature 5: Smart Value Check with Sparkline */
     .smart-value-badge {
-      margin-top: 8px;
+      margin-top: 10px;
       background: #fdfaf3;
       border: 1px solid #faeccb;
       border-radius: var(--applique-radius-sm);
-      padding: 6px 10px;
+      padding: 8px 12px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-size: 11px;
+    }
+    .smart-value-left {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
     }
     .smart-value-title {
       font-weight: 800;
@@ -342,20 +399,24 @@
       font-weight: 600;
       font-size: 10.5px;
     }
+    .sparkline-svg {
+      width: 58px;
+      height: 22px;
+    }
 
     /* Sizing & FitConfidence */
     .fit-box {
-      margin-top: 10px;
+      margin-top: 12px;
       background: #fafafc;
       border: 1px solid var(--applique-border-light);
       border-radius: var(--applique-radius-md);
-      padding: 11px;
+      padding: 12px;
     }
     .fit-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
     .fit-label {
       font-size: 12px;
@@ -368,27 +429,30 @@
       color: var(--applique-primary);
       background: var(--applique-primary-light);
       border: 0;
-      padding: 3px 8px;
+      padding: 4px 10px;
       border-radius: var(--applique-radius-full);
       cursor: pointer;
       font-family: inherit;
+      transition: background 0.15s;
     }
+    .buyer-photos-btn:hover { background: #ffe2eb; }
     .size-selector {
       display: flex;
-      gap: 6px;
-      margin: 6px 0;
+      gap: 8px;
+      margin: 8px 0;
     }
     .size-btn {
       flex: 1;
-      padding: 7px 3px;
+      padding: 8px 4px;
       border-radius: var(--applique-radius-xs);
-      border: 1px solid var(--applique-border-default);
+      border: 1.5px solid var(--applique-border-default);
       background: #fff;
-      font-size: 11.5px;
+      font-size: 12px;
       font-weight: 800;
       cursor: pointer;
       text-align: center;
       font-family: inherit;
+      transition: all 0.15s;
     }
     .size-btn.selected {
       border-color: var(--applique-primary);
@@ -397,23 +461,23 @@
       box-shadow: 0 0 0 1px var(--applique-primary);
     }
     .fit-hint {
-      font-size: 10.5px;
+      font-size: 11px;
       color: var(--applique-text-secondary);
       line-height: 1.35;
-      margin-top: 4px;
+      margin-top: 6px;
     }
 
     /* Feature 3: AI Wardrobe Matchmaker Card */
     .wardrobe-match {
-      margin-top: 10px;
+      margin-top: 12px;
       background: var(--applique-purple-bg);
       border: 1px solid #e3dcff;
       border-radius: var(--applique-radius-sm);
-      padding: 9px 11px;
+      padding: 10px 12px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 11px;
+      font-size: 11.5px;
     }
     .wardrobe-text {
       color: var(--applique-purple-text);
@@ -429,26 +493,27 @@
       background: #6c47ff;
       color: #fff;
       border: 0;
-      padding: 6px 10px;
+      padding: 7px 12px;
       border-radius: var(--applique-radius-xs);
-      font-size: 10.5px;
+      font-size: 11px;
       font-weight: 800;
       cursor: pointer;
       white-space: nowrap;
       font-family: inherit;
+      box-shadow: 0 2px 6px rgba(108,71,255,0.25);
     }
     .preview-outfit-btn:hover { background: #5533e0; }
 
     /* Appliqué Primary Action Button */
     .move-to-bag-btn {
       width: 100%;
-      margin-top: 12px;
-      padding: 12px;
+      margin-top: 14px;
+      padding: 13px;
       border-radius: var(--applique-radius-xs);
       background: var(--applique-primary);
       color: #fff;
       border: 0;
-      font-size: 13px;
+      font-size: 13.5px;
       font-weight: 800;
       letter-spacing: 0.5px;
       cursor: pointer;
@@ -457,9 +522,11 @@
       align-items: center;
       gap: 6px;
       font-family: inherit;
-      box-shadow: 0 3px 10px rgba(255, 63, 108, 0.25);
+      box-shadow: 0 4px 14px rgba(255, 63, 108, 0.35);
+      transition: all 0.15s;
     }
-    .move-to-bag-btn:hover { background: var(--applique-primary-hover); }
+    .move-to-bag-btn:hover { background: var(--applique-primary-hover); transform: translateY(-1px); }
+    .move-to-bag-btn:active { transform: translateY(1px); }
 
     /* Outfit Preview Modal */
     .modal-overlay {
@@ -477,11 +544,11 @@
       width: 100%;
       max-width: 420px;
       background: #fff;
-      border-radius: 20px 20px 0 0;
-      padding: 18px;
+      border-radius: 24px 24px 0 0;
+      padding: 20px;
       max-height: 88vh;
       overflow-y: auto;
-      animation: slideUp 0.2s ease;
+      animation: slideUp 0.22s ease-out;
     }
     @keyframes slideUp {
       from { transform: translateY(100%); }
@@ -491,38 +558,38 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
-    .modal-header h3 { font-size: 15px; font-weight: 800; color: var(--applique-text-primary); }
-    .close-modal { font-size: 20px; border: 0; background: transparent; cursor: pointer; color: #888; }
+    .modal-header h3 { font-size: 16px; font-weight: 800; color: var(--applique-text-primary); }
+    .close-modal { font-size: 22px; border: 0; background: transparent; cursor: pointer; color: #888; }
     
     .outfit-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin: 12px 0;
+      gap: 12px;
+      margin: 14px 0;
     }
     .outfit-item {
       background: #f8f8fa;
       border: 1px solid var(--applique-border-light);
-      border-radius: var(--applique-radius-sm);
-      padding: 8px;
-      font-size: 11px;
+      border-radius: var(--applique-radius-md);
+      padding: 10px;
+      font-size: 11.5px;
     }
     .outfit-item img {
       width: 100%;
-      height: 120px;
+      height: 140px;
       object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 6px;
+      border-radius: 8px;
+      margin-bottom: 8px;
     }
     .outfit-source-tag {
       display: inline-block;
       font-size: 9.5px;
       font-weight: 800;
-      padding: 2px 5px;
+      padding: 2px 6px;
       border-radius: 4px;
-      margin-bottom: 3px;
+      margin-bottom: 4px;
     }
     .tag-closet { background: #e0f2fe; color: #0369a1; }
     .tag-wishlist { background: #fce7f3; color: #be185d; }
@@ -535,7 +602,7 @@
       border-top: 1px solid var(--applique-border-light);
       display: flex;
       justify-content: space-around;
-      padding: 8px 0 10px;
+      padding: 10px 0 12px;
       z-index: 20;
     }
     .nav-item {
@@ -553,39 +620,68 @@
       color: var(--applique-primary);
     }
     .nav-icon {
-      font-size: 16px;
+      font-size: 17px;
+    }
+
+    /* iOS Home Bar */
+    .ios-home-bar {
+      width: 130px;
+      height: 4.5px;
+      background: #111;
+      border-radius: var(--applique-radius-full);
+      margin: 6px auto 4px;
+      opacity: 0.8;
     }
 
     /* Toast */
     .toast {
       position: fixed;
-      bottom: 24px;
+      bottom: 30px;
       background: #20242e;
       color: #fff;
-      padding: 12px 20px;
+      padding: 12px 22px;
       border-radius: var(--applique-radius-full);
       font-size: 13px;
       font-weight: 700;
       display: none;
       align-items: center;
       gap: 8px;
-      box-shadow: var(--applique-shadow-lg);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
       z-index: 200;
+      animation: popIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @keyframes popIn {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
     }
     .toast.show { display: flex; }
   </style>
 </head>
 <body>
 
-  <!-- Top Evaluator Banner -->
+  <!-- Top Evaluator Navigation Banner -->
   <div class="top-bar">
-    <div><strong>Appliqué Prototype:</strong> Page 3 · Myntra Bingo Wishlist</div>
-    <a href="home.html">← Home</a>
+    <div><strong>Part 5 MVP:</strong> High-Fidelity Myntra Bingo</div>
+    <a href="home.html">← Appliqué Home</a>
   </div>
 
-  <!-- Mobile Screen Container -->
+  <!-- iPhone 16 Pro Frame Container -->
   <div class="phone-frame">
     
+    <!-- iOS Status Bar & Dynamic Island -->
+    <div class="ios-status-bar">
+      <span>9:41</span>
+      <div class="dynamic-island">
+        <div class="island-lens"></div>
+        <div class="island-sensor"></div>
+      </div>
+      <div class="status-icons">
+        <span>5G</span>
+        <span>📶</span>
+        <span>🔋</span>
+      </div>
+    </div>
+
     <!-- Persona Switcher Bar -->
     <div class="persona-banner">
       <span>👤 Logged in as: <strong id="personaDisplay">Priya Sharma</strong> <small style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></span>
@@ -630,7 +726,7 @@
         <div class="product-img-wrap">
           <img class="product-img" src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=700&q=80" alt="Floral Midi Dress">
           <div class="rating-badge"><span>★</span> 4.5 | 1.2k</div>
-          <div class="wish-heart">♥</div>
+          <div class="wish-heart" onclick="toggleHeart(this)">♥</div>
         </div>
         <div class="product-info">
           <div class="product-brand">Zara</div>
@@ -642,10 +738,17 @@
             <span class="discount-pct">(50% OFF)</span>
           </div>
 
-          <!-- Feature 5: Smart Value Check -->
+          <!-- Feature 5: Smart Value Check with 60-day Sparkline -->
           <div class="smart-value-badge">
-            <span class="smart-value-title">💡 Smart Value Check: 9.4/10</span>
-            <span class="smart-value-note">Stable at ₹1,499 for 12d · Lowest in 60 days</span>
+            <div class="smart-value-left">
+              <span class="smart-value-title">💡 Smart Value Check: 9.4/10</span>
+              <span class="smart-value-note">Stable at ₹1,499 for 12d · Lowest in 60 days</span>
+            </div>
+            <!-- Mini SVG Sparkline -->
+            <svg class="sparkline-svg" viewBox="0 0 60 24" fill="none">
+              <path d="M2 18 L15 18 L28 14 L42 14 L58 4" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="58" cy="4" r="3" fill="#d97706"/>
+            </svg>
           </div>
 
           <!-- Sizing & FitConfidence -->
@@ -683,7 +786,7 @@
         <div class="product-img-wrap">
           <img class="product-img" src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80" alt="Structured Formal Blazer">
           <div class="rating-badge"><span>★</span> 4.7 | 840</div>
-          <div class="wish-heart">♥</div>
+          <div class="wish-heart" onclick="toggleHeart(this)">♥</div>
         </div>
         <div class="product-info">
           <div class="product-brand">Mango</div>
@@ -695,10 +798,15 @@
             <span class="discount-pct">(50% OFF)</span>
           </div>
 
-          <!-- Feature 5: Smart Value Check -->
           <div class="smart-value-badge">
-            <span class="smart-value-title">💡 Smart Value Check: 9.6/10</span>
-            <span class="smart-value-note">Stable at ₹2,499 for 8d · Next restock in 6 wks</span>
+            <div class="smart-value-left">
+              <span class="smart-value-title">💡 Smart Value Check: 9.6/10</span>
+              <span class="smart-value-note">Stable at ₹2,499 for 8d · Restock in 6 wks</span>
+            </div>
+            <svg class="sparkline-svg" viewBox="0 0 60 24" fill="none">
+              <path d="M2 14 L20 14 L35 10 L58 4" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="58" cy="4" r="3" fill="#d97706"/>
+            </svg>
           </div>
 
           <div class="fit-box">
@@ -712,11 +820,10 @@
               <button class="size-btn" onclick="selectSize(this, 'L', 'Loose fit')">L</button>
             </div>
             <div class="fit-hint">
-              <span>📏 <strong>92% say True to Size</strong> · Tailored padded shoulders. No fabric shine.</span>
+              <span>📏 <strong>92% say True to Size</strong> · Tailored padded shoulders. No shine.</span>
             </div>
           </div>
 
-          <!-- Feature 3: AI Wardrobe Matchmaker -->
           <div class="wardrobe-match">
             <div class="wardrobe-text">
               ✨ <strong>AI Style Match:</strong> Pairs with your <em>[Levi's 711 Jeans (Bought June)]</em>
@@ -735,7 +842,7 @@
         <div class="product-img-wrap">
           <img class="product-img" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80" alt="Embroidered Kurti">
           <div class="rating-badge"><span>★</span> 4.6 | 2.1k</div>
-          <div class="wish-heart">♥</div>
+          <div class="wish-heart" onclick="toggleHeart(this)">♥</div>
         </div>
         <div class="product-info">
           <div class="product-brand">Biba</div>
@@ -748,8 +855,14 @@
           </div>
 
           <div class="smart-value-badge">
-            <span class="smart-value-title">💡 Smart Value Check: 9.1/10</span>
-            <span class="smart-value-note">Stable at ₹2,199 · Festive seasonal benchmark</span>
+            <div class="smart-value-left">
+              <span class="smart-value-title">💡 Smart Value Check: 9.1/10</span>
+              <span class="smart-value-note">Stable at ₹2,199 · Festive seasonal benchmark</span>
+            </div>
+            <svg class="sparkline-svg" viewBox="0 0 60 24" fill="none">
+              <path d="M2 16 L25 16 L45 8 L58 4" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="58" cy="4" r="3" fill="#d97706"/>
+            </svg>
           </div>
 
           <div class="fit-box">
@@ -785,7 +898,7 @@
         <div class="product-img-wrap">
           <img class="product-img" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80" alt="Slim Jeans">
           <div class="rating-badge"><span>★</span> 4.4 | 1.9k</div>
-          <div class="wish-heart">♥</div>
+          <div class="wish-heart" onclick="toggleHeart(this)">♥</div>
         </div>
         <div class="product-info">
           <div class="product-brand">Levi's</div>
@@ -798,8 +911,14 @@
           </div>
 
           <div class="smart-value-badge">
-            <span class="smart-value-title">💡 Smart Value Check: 9.8/10</span>
-            <span class="smart-value-note">Stable at ₹1,899 · Core staple, rarely discounted</span>
+            <div class="smart-value-left">
+              <span class="smart-value-title">💡 Smart Value Check: 9.8/10</span>
+              <span class="smart-value-note">Stable at ₹1,899 · Core staple, rarely discounted</span>
+            </div>
+            <svg class="sparkline-svg" viewBox="0 0 60 24" fill="none">
+              <path d="M2 10 L22 10 L44 8 L58 6" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="58" cy="6" r="3" fill="#d97706"/>
+            </svg>
           </div>
 
           <div class="fit-box">
@@ -855,6 +974,7 @@
         <span>Profile</span>
       </a>
     </nav>
+    <div class="ios-home-bar"></div>
   </div>
 
   <!-- Feature 3: Outfit Preview Modal -->
@@ -990,6 +1110,12 @@
       document.getElementById('toastMsg').textContent = msg;
       toast.classList.add('show');
       setTimeout(() => toast.classList.remove('show'), 2400);
+    }
+
+    function toggleHeart(heartBtn) {
+      heartBtn.style.transform = 'scale(1.35)';
+      setTimeout(() => heartBtn.style.transform = 'scale(1)', 200);
+      showToast('Wishlist updated!');
     }
 
     // Feature 3: Outfit Modal

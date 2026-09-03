@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Myntra Appliqué · Home</title>
+  <title>Myntra Appliqué · Home (High Fidelity)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -43,14 +43,14 @@
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background: var(--applique-bg-page);
+      background: #181b22;
       color: var(--applique-text-primary);
       font-family: var(--font-applique);
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
-      padding: 16px 8px;
+      padding: 20px 8px 40px;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -58,39 +58,72 @@
     .top-bar {
       width: 100%;
       max-width: 420px;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #20242e;
+      background: #252a36;
       color: #fff;
-      padding: 10px 14px;
+      padding: 10px 16px;
       border-radius: var(--applique-radius-md);
       font-size: 12px;
-      box-shadow: var(--applique-shadow-sm);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.08);
     }
     .top-bar strong { color: var(--applique-primary); font-weight: 800; }
-    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; background: rgba(255,255,255,0.15); padding: 4px 10px; border-radius: var(--applique-radius-full); }
+    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; background: rgba(255,255,255,0.15); padding: 4px 12px; border-radius: var(--applique-radius-full); }
 
-    /* Mobile Container Frame */
+    /* iPhone 16 Pro Physical Hardware Frame */
     .phone-frame {
       width: 100%;
       max-width: 420px;
       background: var(--applique-bg-card);
-      border-radius: 28px;
+      border-radius: 44px;
       overflow: hidden;
-      box-shadow: var(--applique-shadow-lg);
-      border: 1px solid var(--applique-border-light);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.5), 0 0 0 12px #2b2e38, 0 0 0 14px #1c1e24;
       position: relative;
       display: flex;
       flex-direction: column;
-      min-height: 840px;
+      min-height: 870px;
     }
+
+    /* iOS Status Bar */
+    .ios-status-bar {
+      height: 44px;
+      background: #d8e2fd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #111;
+      position: relative;
+      z-index: 30;
+    }
+    .dynamic-island {
+      width: 110px;
+      height: 26px;
+      background: #000;
+      border-radius: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .island-lens { width: 9px; height: 9px; border-radius: 50%; background: #1c2a44; border: 1px solid #2d3b55; }
+    .island-sensor { width: 7px; height: 7px; border-radius: 50%; background: #111; }
+    .status-icons { display: flex; align-items: center; gap: 6px; font-size: 11px; }
 
     /* Top Sky/Lilac Gradient Header (Matches Screenshot) */
     .app-top-section {
       background: linear-gradient(180deg, #d8e2fd 0%, #ebe5fd 65%, #ffffff 100%);
-      padding: 14px 16px 8px;
+      padding: 8px 16px 8px;
     }
 
     /* Delivery Address & Credit Bar */
@@ -277,7 +310,7 @@
       padding-bottom: 20px;
     }
 
-    /* AI Wishlist Bingo Hero Nudge (Direct Bridge to Prototype) */
+    /* AI Wishlist Bingo Hero Nudge Card */
     .bingo-nudge-banner {
       margin: 12px 14px;
       background: linear-gradient(135deg, #20242e 0%, #2e3444 100%);
@@ -371,7 +404,7 @@
       margin-top: 4px;
     }
 
-    /* Spinning Wheel Graphic Graphic Simulation */
+    /* Spinning Wheel Simulation */
     .wheel-container {
       width: 220px;
       height: 220px;
@@ -491,7 +524,7 @@
     .sub-card-drop h5 { font-size: 13px; font-weight: 900; color: #c2410c; }
     .sub-card-drop p { font-size: 10px; color: #ea580c; margin-top: 3px; }
 
-    /* Applique Bottom Navigation Bar (Matches Screenshot) */
+    /* Applique Bottom Navigation Bar */
     .bottom-nav {
       position: sticky;
       bottom: 0;
@@ -499,7 +532,7 @@
       border-top: 1px solid var(--applique-border-light);
       display: flex;
       justify-content: space-around;
-      padding: 8px 0 10px;
+      padding: 10px 0 12px;
       z-index: 20;
     }
     .nav-item {
@@ -517,7 +550,7 @@
       color: var(--applique-primary);
     }
     .nav-icon {
-      font-size: 16px;
+      font-size: 17px;
     }
     .fwd-logo {
       font-size: 12px;
@@ -532,19 +565,41 @@
       letter-spacing: 1px;
       color: #111;
     }
+    .ios-home-bar {
+      width: 130px;
+      height: 4.5px;
+      background: #111;
+      border-radius: var(--applique-radius-full);
+      margin: 6px auto 4px;
+      opacity: 0.8;
+    }
   </style>
 </head>
 <body>
 
   <!-- Top Evaluator Banner -->
   <div class="top-bar">
-    <div><strong>Appliqué Prototype:</strong> Page 2 · Home Screen</div>
+    <div><strong>Appliqué Prototype:</strong> Page 2 · High-Fidelity Home</div>
     <a href="login.html">← Login</a>
   </div>
 
   <!-- Mobile Screen Container -->
   <div class="phone-frame">
     
+    <!-- iOS Status Bar & Dynamic Island -->
+    <div class="ios-status-bar">
+      <span>9:41</span>
+      <div class="dynamic-island">
+        <div class="island-lens"></div>
+        <div class="island-sensor"></div>
+      </div>
+      <div class="status-icons">
+        <span>5G</span>
+        <span>📶</span>
+        <span>🔋</span>
+      </div>
+    </div>
+
     <!-- Top Sky Gradient Header Area -->
     <header class="app-top-section">
       
@@ -684,7 +739,7 @@
         </div>
       </section>
 
-      <!-- Sub-Features Grid (Deal Clock & Mega Price Drop) -->
+      <!-- Sub-Features Grid -->
       <section class="sub-features-grid">
         <div class="sub-card sub-card-deal" onclick="window.location.href='prototype.html'">
           <h5>DEAL CLOCK ⏰</h5>
@@ -717,11 +772,10 @@
         <span>Bag</span>
       </a>
     </nav>
-
+    <div class="ios-home-bar"></div>
   </div>
 
   <script>
-    // Read Persona from URL or localStorage
     const personas = {
       '1': { name: 'Priya Sharma', city: 'Bangalore', items: 18 },
       '2': { name: 'Rohan Mehta', city: 'Mumbai', items: 12 },
