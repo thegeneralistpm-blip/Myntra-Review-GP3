@@ -664,16 +664,17 @@
       flex-shrink: 0;
     }
 
-    /* Persona Switcher Drawer Modal */
+    /* Persona Switcher & Bingo Pop-Up Modal Overlays (Anchored inside Phone Frame) */
     .persona-modal-overlay {
-      position: fixed;
+      position: absolute;
       inset: 0;
-      background: rgba(0,0,0,0.65);
-      backdrop-filter: blur(4px);
+      background: rgba(0,0,0,0.68);
+      backdrop-filter: blur(5px);
       display: none;
       justify-content: center;
-      align-items: flex-end;
-      z-index: 100;
+      align-items: center;
+      z-index: 120;
+      padding: 16px;
     }
     .persona-modal-overlay.open { display: flex; }
     .persona-sheet {
@@ -953,130 +954,129 @@
         <span>Profile</span>
       </a>
     </nav>
+    <!-- Persona Switcher Drawer Modal (Inside Phone Frame) -->
+    <div class="persona-modal-overlay" id="personaDrawer" style="align-items: flex-end; padding: 0;">
+      <div class="persona-sheet">
+        <div class="persona-sheet-header">
+          <div>
+            <h3>Switch User Profile</h3>
+            <p style="font-size:11px;color:var(--applique-text-secondary)">Explore different user personas &amp; purchase histories</p>
+          </div>
+          <button style="font-size:22px;border:0;background:transparent;cursor:pointer;color:#888" onclick="closePersonaDrawer()">✕</button>
+        </div>
+
+        <!-- 5 Interactive Profiles -->
+        <div class="persona-card-item active-persona" onclick="switchPersona(1)">
+          <div class="persona-item-top">
+            <div class="p-avatar">👩</div>
+            <div class="p-info">
+              <div class="p-name">Priya Sharma <small style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></div>
+              <div class="p-meta">26, Bangalore · 28 Wishlist Items · 4 Past Orders</div>
+              <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Levi's 711 Jeans, Tan Slides, White Tote</div>
+            </div>
+          </div>
+          <button class="p-btn-switch">Active Profile ✓</button>
+        </div>
+
+        <div class="persona-card-item" onclick="switchPersona(2)">
+          <div class="persona-item-top">
+            <div class="p-avatar">👨</div>
+            <div class="p-info">
+              <div class="p-name">Rohan Mehta</div>
+              <div class="p-meta">29, Mumbai · 25 Wishlist Items · 6 Past Orders</div>
+              <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Puma Sneakers, Linen Shirts, Chinos</div>
+            </div>
+          </div>
+          <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+        </div>
+
+        <div class="persona-card-item" onclick="switchPersona(3)">
+          <div class="persona-item-top">
+            <div class="p-avatar">💃</div>
+            <div class="p-info">
+              <div class="p-name">Ananya Verma</div>
+              <div class="p-meta">24, Delhi · 25 Wishlist Items · 5 Past Orders</div>
+              <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Kundan Jewelry, Silk Dupattas</div>
+            </div>
+          </div>
+          <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+        </div>
+
+        <div class="persona-card-item" onclick="switchPersona(4)">
+          <div class="persona-item-top">
+            <div class="p-avatar">✨</div>
+            <div class="p-info">
+              <div class="p-name">Meera Nair</div>
+              <div class="p-meta">22, Pune · 25 Wishlist Items · 8 Past Orders</div>
+              <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Oversized Hoodies, Cargo Pants</div>
+            </div>
+          </div>
+          <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+        </div>
+
+        <div class="persona-card-item" onclick="switchPersona(5)">
+          <div class="persona-item-top">
+            <div class="p-avatar">🛍️</div>
+            <div class="p-info">
+              <div class="p-name">Sneha Rao</div>
+              <div class="p-meta">New Shopper · 25 Wishlist Items · 0 Past Orders</div>
+              <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Exploring first order voucher (₹300 off)</div>
+            </div>
+          </div>
+          <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Myntra Bingo Discovery Pop-Up Modal (Inside Phone Frame) -->
+    <div class="persona-modal-overlay" id="bingoPopupModal" style="align-items: center; padding: 18px; z-index: 150;">
+      <div class="persona-sheet" style="border-radius: 24px; position: relative; width: 100%; max-width: 380px; padding: 22px 18px 18px; box-shadow: 0 20px 60px rgba(0,0,0,0.35);">
+        <!-- Close Button Top Right -->
+        <button onclick="closeBingoPopup()" style="position: absolute; right: 14px; top: 14px; width: 32px; height: 32px; border-radius: 50%; background: #f2f2f5; border: 0; font-size: 15px; font-weight: 800; cursor: pointer; color: #535766; display: grid; place-items: center;">✕</button>
+
+        <!-- Header Icon & Badges -->
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+          <span style="font-size: 24px;">🎯</span>
+          <div>
+            <span style="background: var(--applique-primary); color: #fff; font-size: 9px; font-weight: 900; padding: 2px 7px; border-radius: 4px; letter-spacing: 0.5px;">AI SMART WISHLIST</span>
+            <h3 style="font-size: 16.5px; font-weight: 900; color: var(--applique-text-primary); margin-top: 1px;">Introducing Myntra BINGO</h3>
+          </div>
+        </div>
+
+        <!-- Personalized Briefing -->
+        <p id="popupPersonaBrief" style="font-size: 11.5px; color: #4b5563; line-height: 1.45; margin: 8px 0 12px;">
+          Priya, we noticed you have 28 saved items! Bingo has auto-organized them into smart occasion folders with verified sizing &amp; price stability.
+        </p>
+
+        <!-- 3 Key AI Feature Highlights -->
+        <div style="display: flex; flex-direction: column; gap: 8px; background: #f9f9fb; border: 1px solid #eaeaec; border-radius: 14px; padding: 10px 12px; margin-bottom: 14px;">
+          <div style="display: flex; gap: 8px; align-items: flex-start; font-size: 11px; color: #1f2937;">
+            <span style="font-size: 13px;">🌴</span>
+            <div><strong>Occasion Clustering:</strong> Pre-grouped for Vacation, Office, Weddings &amp; Weekend.</div>
+          </div>
+          <div style="display: flex; gap: 8px; align-items: flex-start; font-size: 11px; color: #1f2937;">
+            <span style="font-size: 13px;">👗</span>
+            <div><strong>FitConfidence:</strong> Real customer try-on photos filtered to your exact size.</div>
+          </div>
+          <div style="display: flex; gap: 8px; align-items: flex-start; font-size: 11px; color: #1f2937;">
+            <span style="font-size: 13px;">💡</span>
+            <div><strong>Smart Value Check:</strong> 60-day price floor tracking — zero fake sale stress.</div>
+          </div>
+        </div>
+
+        <!-- Action CTA Buttons -->
+        <button onclick="goToBingoWishlist()" style="width: 100%; background: var(--applique-primary); color: #fff; border: 0; padding: 12px; border-radius: 12px; font-size: 13px; font-weight: 800; cursor: pointer; box-shadow: 0 4px 14px rgba(255,63,108,0.35); display: flex; justify-content: center; align-items: center; gap: 6px;">
+          <span>🎯 Let's Go to Wishlist</span>
+          <span>→</span>
+        </button>
+
+        <button onclick="closeBingoPopup()" style="width: 100%; background: transparent; border: 0; color: #6b7280; font-size: 11px; font-weight: 700; margin-top: 8px; cursor: pointer;">
+          I'll explore later
+        </button>
+      </div>
+    </div>
+
     <div class="ios-home-bar"></div>
-  </div>
-
-  <!-- Persona Switcher Drawer Modal -->
-  <div class="persona-modal-overlay" id="personaDrawer">
-    <div class="persona-sheet">
-      <div class="persona-sheet-header">
-        <div>
-          <h3>Switch User Profile</h3>
-          <p style="font-size:11px;color:var(--applique-text-secondary)">Explore different user personas &amp; purchase histories</p>
-        </div>
-        <button style="font-size:22px;border:0;background:transparent;cursor:pointer;color:#888" onclick="closePersonaDrawer()">✕</button>
-      </div>
-
-      <!-- 5 Interactive Profiles -->
-      <div class="persona-card-item active-persona" onclick="switchPersona(1)">
-        <div class="persona-item-top">
-          <div class="p-avatar">👩</div>
-          <div class="p-info">
-            <div class="p-name">Priya Sharma <small style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></div>
-            <div class="p-meta">26, Bangalore · 28 Wishlist Items · 4 Past Orders</div>
-            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Levi's 711 Jeans, Tan Slides, White Tote</div>
-          </div>
-        </div>
-        <button class="p-btn-switch">Active Profile ✓</button>
-      </div>
-
-      <div class="persona-card-item" onclick="switchPersona(2)">
-        <div class="persona-item-top">
-          <div class="p-avatar">👨</div>
-          <div class="p-info">
-            <div class="p-name">Rohan Mehta</div>
-            <div class="p-meta">29, Mumbai · 25 Wishlist Items · 6 Past Orders</div>
-            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Puma Sneakers, Linen Shirts, Chinos</div>
-          </div>
-        </div>
-        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
-      </div>
-
-      <div class="persona-card-item" onclick="switchPersona(3)">
-        <div class="persona-item-top">
-          <div class="p-avatar">💃</div>
-          <div class="p-info">
-            <div class="p-name">Ananya Verma</div>
-            <div class="p-meta">24, Delhi · 25 Wishlist Items · 5 Past Orders</div>
-            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Kundan Jewelry, Silk Dupattas</div>
-          </div>
-        </div>
-        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
-      </div>
-
-      <div class="persona-card-item" onclick="switchPersona(4)">
-        <div class="persona-item-top">
-          <div class="p-avatar">✨</div>
-          <div class="p-info">
-            <div class="p-name">Meera Nair</div>
-            <div class="p-meta">22, Pune · 25 Wishlist Items · 8 Past Orders</div>
-            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Past orders: Oversized Hoodies, Cargo Pants</div>
-          </div>
-        </div>
-        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
-      </div>
-
-      <div class="persona-card-item" onclick="switchPersona(5)">
-        <div class="persona-item-top">
-          <div class="p-avatar">🛍️</div>
-          <div class="p-info">
-            <div class="p-name">Sneha Rao</div>
-            <div class="p-meta">New Shopper · 25 Wishlist Items · 0 Past Orders</div>
-            <div style="font-size:10.5px;color:#0369a1;margin-top:2px">Exploring first order voucher (₹300 off)</div>
-          </div>
-        </div>
-        <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Myntra Bingo Discovery Pop-Up Modal -->
-  <div class="persona-modal-overlay" id="bingoPopupModal" style="align-items: center; padding: 20px;">
-    <div class="persona-sheet" style="border-radius: 24px; position: relative; max-width: 380px; padding: 24px 20px 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.35);">
-      <!-- Close Button Top Right -->
-      <button onclick="closeBingoPopup()" style="position: absolute; right: 16px; top: 16px; width: 32px; height: 32px; border-radius: 50%; background: #f2f2f5; border: 0; font-size: 16px; font-weight: 800; cursor: pointer; color: #535766; display: grid; place-items: center;">✕</button>
-
-      <!-- Header Icon & Badges -->
-      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-        <span style="font-size: 26px;">🎯</span>
-        <div>
-          <span style="background: var(--applique-primary); color: #fff; font-size: 9px; font-weight: 900; padding: 2px 7px; border-radius: 4px; letter-spacing: 0.5px;">AI SMART WISHLIST</span>
-          <h3 style="font-size: 17px; font-weight: 900; color: var(--applique-text-primary); margin-top: 2px;">Introducing Myntra BINGO</h3>
-        </div>
-      </div>
-
-      <!-- Personalized Briefing -->
-      <p id="popupPersonaBrief" style="font-size: 12px; color: #4b5563; line-height: 1.45; margin: 10px 0 14px;">
-        Priya, we noticed you have 28 saved items! Bingo has auto-organized them into smart occasion folders with verified sizing &amp; price stability.
-      </p>
-
-      <!-- 3 Key AI Feature Highlights -->
-      <div style="display: flex; flex-direction: column; gap: 8px; background: #f9f9fb; border: 1px solid #eaeaec; border-radius: 14px; padding: 12px; margin-bottom: 16px;">
-        <div style="display: flex; gap: 8px; align-items: flex-start; font-size: 11.5px; color: #1f2937;">
-          <span style="font-size: 14px;">🌴</span>
-          <div><strong>Occasion Clustering:</strong> Pre-grouped for Vacation, Office, Weddings &amp; Weekend.</div>
-        </div>
-        <div style="display: flex; gap: 8px; align-items: flex-start; font-size: 11.5px; color: #1f2937;">
-          <span style="font-size: 14px;">👗</span>
-          <div><strong>FitConfidence:</strong> Real customer try-on photos filtered to your exact size.</div>
-        </div>
-        <div style="display: flex; gap: 8px; align-items: flex-start; font-size: 11.5px; color: #1f2937;">
-          <span style="font-size: 14px;">💡</span>
-          <div><strong>Smart Value Check:</strong> 60-day price floor tracking — zero fake sale stress.</div>
-        </div>
-      </div>
-
-      <!-- Action CTA Buttons -->
-      <button onclick="goToBingoWishlist()" style="width: 100%; background: var(--applique-primary); color: #fff; border: 0; padding: 12px; border-radius: 12px; font-size: 13.5px; font-weight: 800; cursor: pointer; box-shadow: 0 4px 14px rgba(255,63,108,0.35); display: flex; justify-content: center; align-items: center; gap: 6px;">
-        <span>🎯 Let's Go to Wishlist</span>
-        <span>→</span>
-      </button>
-
-      <button onclick="closeBingoPopup()" style="width: 100%; background: transparent; border: 0; color: #6b7280; font-size: 11px; font-weight: 700; margin-top: 10px; cursor: pointer;">
-        I'll explore later
-      </button>
-    </div>
   </div>
 
   <!-- Toast -->
