@@ -1268,15 +1268,23 @@
       }
     }
 
-    // Render Persona Wishlist Dynamically
+    // Render Persona Wishlist Dynamically with LocalStorage Persistence
     const params = new URLSearchParams(window.location.search);
-    const personaId = params.get('persona') || '1';
+    const personaId = params.get('persona') || localStorage.getItem('myntra_active_persona') || '1';
+    localStorage.setItem('myntra_active_persona', personaId);
+    
     const activeCatalog = generateCatalog(personaId);
 
     // Update Header and Profile Banner
     document.getElementById('personaDisplay').textContent = activeCatalog.name;
     document.getElementById('personaRole').textContent = activeCatalog.role;
     document.getElementById('totalCount').textContent = '(' + activeCatalog.products.length + ' items)';
+
+    // Update Home & Category navigation links to retain active persona
+    const bottomHome = document.querySelector('.bottom-nav a[href="home.html"]');
+    if (bottomHome) bottomHome.href = 'home.html?persona=' + personaId;
+    const bottomCat = document.querySelector('.bottom-nav a[href="categories.html"]');
+    if (bottomCat) bottomCat.href = 'categories.html?persona=' + personaId;
 
     // Mark active card in drawer
     document.querySelectorAll('.persona-card-item').forEach((c, idx) => {
@@ -1385,6 +1393,7 @@
       document.getElementById('personaDrawer').classList.remove('open');
     }
     function switchPersona(id) {
+      localStorage.setItem('myntra_active_persona', id);
       window.location.href = 'prototype.html?persona=' + id;
     }
 

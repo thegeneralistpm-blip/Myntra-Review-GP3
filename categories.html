@@ -378,6 +378,20 @@
       ]
     };
 
+    const params = new URLSearchParams(window.location.search);
+    const personaId = params.get('persona') || localStorage.getItem('myntra_active_persona') || '1';
+    localStorage.setItem('myntra_active_persona', personaId);
+
+    // Update all navigation links
+    const topBingo = document.querySelector('.top-bar a');
+    if (topBingo) topBingo.href = 'prototype.html?persona=' + personaId;
+    const headerHeart = document.querySelector('.header-bar a');
+    if (headerHeart) headerHeart.href = 'prototype.html?persona=' + personaId;
+    const bottomBingo = document.querySelector('.bottom-nav a[href="prototype.html"]');
+    if (bottomBingo) bottomBingo.href = 'prototype.html?persona=' + personaId;
+    const bottomHome = document.querySelector('.bottom-nav a[href="home.html"]');
+    if (bottomHome) bottomHome.href = 'home.html?persona=' + personaId;
+
     function renderDepartment(dep) {
       const list = document.getElementById('catList');
       const items = departments[dep] || departments.women;

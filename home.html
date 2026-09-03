@@ -1067,11 +1067,45 @@
     };
 
     const params = new URLSearchParams(window.location.search);
-    const personaId = params.get('persona') || '1';
+    const personaId = params.get('persona') || localStorage.getItem('myntra_active_persona') || '1';
+    localStorage.setItem('myntra_active_persona', personaId);
     const persona = personas[personaId] || personas['1'];
+    currentWishlistCount = persona.items || 25;
 
     document.getElementById('userLocation').innerHTML = 'Deliver to: <strong>' + persona.name + ', ' + persona.city + '</strong> ⌄';
     document.getElementById('nudgeText').textContent = persona.name + ', your saved items were auto-organized by AI into occasion folders with verified fit scores!';
+    document.getElementById('headerWishlistBadge').textContent = currentWishlistCount;
+
+    // Dynamically update all Wishlist and Bingo links to retain active persona
+    const topBingo = document.querySelector('.top-bar a');
+    if (topBingo) topBingo.href = 'prototype.html?persona=' + personaId;
+
+    const headerHeart = document.querySelector('.header-icon-group a[title*="Wishlist"]');
+    if (headerHeart) headerHeart.href = 'prototype.html?persona=' + personaId;
+
+    const nudgeBanner = document.querySelector('.bingo-nudge-banner');
+    if (nudgeBanner) nudgeBanner.onclick = () => window.location.href = 'prototype.html?persona=' + personaId;
+
+    const navBingo = document.querySelector('.bottom-nav a[href="prototype.html"]');
+    if (navBingo) navBingo.href = 'prototype.html?persona=' + personaId;
+
+    const navCat = document.querySelector('.bottom-nav a[href="categories.html"]');
+    if (navCat) navCat.href = 'categories.html?persona=' + personaId;
+
+    // Mark active card in drawer
+    document.querySelectorAll('.persona-card-item').forEach((c, idx) => {
+      if ((idx + 1) == personaId) {
+        c.classList.add('active-persona');
+        c.querySelector('.p-btn-switch').textContent = 'Active Profile ✓';
+        c.querySelector('.p-btn-switch').style.background = 'var(--applique-primary)';
+        c.querySelector('.p-btn-switch').style.color = '#fff';
+      } else {
+        c.classList.remove('active-persona');
+        c.querySelector('.p-btn-switch').textContent = 'Switch Profile →';
+        c.querySelector('.p-btn-switch').style.background = '#f1f1f4';
+        c.querySelector('.p-btn-switch').style.color = '#282c3f';
+      }
+    });
 
     // Render Home Product Grid
     function renderGrid(products) {
@@ -1156,6 +1190,7 @@
       document.getElementById('personaDrawer').classList.remove('open');
     }
     function switchPersona(id) {
+      localStorage.setItem('myntra_active_persona', id);
       window.location.href = 'home.html?persona=' + id;
     }
   </script>

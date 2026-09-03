@@ -618,12 +618,13 @@
 
     function directLogin(id, name, phone, role) {
       currentPersona = { id, name, phone, role };
-      localStorage.setItem('myntra_active_persona', JSON.stringify(currentPersona));
-      window.location.href = 'home.html?persona=' + id;
+      localStorage.setItem('myntra_active_persona', id.toString());
+      window.location.href = 'prototype.html?persona=' + id;
     }
 
     function selectPersona(id, name, phone, role) {
       currentPersona = { id, name, phone, role };
+      localStorage.setItem('myntra_active_persona', id.toString());
       document.getElementById('mobileNumber').value = phone;
       
       const cards = document.querySelectorAll('.persona-card');
@@ -660,15 +661,16 @@
       btn.textContent = 'Verifying OTP...';
       btn.style.opacity = '0.85';
 
-      localStorage.setItem('myntra_active_persona', JSON.stringify(currentPersona));
+      localStorage.setItem('myntra_active_persona', currentPersona.id.toString());
 
       setTimeout(() => {
-        window.location.href = 'home.html?persona=' + currentPersona.id;
+        window.location.href = 'prototype.html?persona=' + currentPersona.id;
       }, 500);
     }
 
     function continueToWishlist() {
-      window.location.href = 'home.html';
+      const id = localStorage.getItem('myntra_active_persona') || '1';
+      window.location.href = 'prototype.html?persona=' + id;
     }
 
     validateForm();
