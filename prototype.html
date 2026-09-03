@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Myntra Smart Decision Wishlist · MVP Prototype</title>
+  <title>Myntra Smart Decision Wishlist · Ambient AI Prototype</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -12,6 +12,8 @@
       --pink: #ff3f6c;
       --pink-dark: #e01e52;
       --pink-light: #fff0f5;
+      --purple: #6c47ff;
+      --purple-light: #f3f0ff;
       --ink: #20201c;
       --muted: #6d6d66;
       --bg: #f4f4f6;
@@ -33,7 +35,7 @@
       padding: 20px 10px;
     }
     
-    /* Top Banner / Evaluation Bar */
+    /* Top Banner / Evaluator Bar */
     .top-bar {
       width: 100%;
       max-width: 440px;
@@ -119,7 +121,31 @@
       place-items: center;
     }
 
-    /* Feature 1: Smart Occasion Tabs */
+    /* Feature 2: AI Auto-Occasion Clustering Strip */
+    .ai-cluster-banner {
+      background: linear-gradient(135deg, #20242e, #2d3342);
+      color: #fff;
+      padding: 9px 16px;
+      font-size: 11px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .ai-cluster-banner span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+    .ai-badge-pulse {
+      background: #6c47ff;
+      color: #fff;
+      padding: 2px 7px;
+      border-radius: 99px;
+      font-weight: 800;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+    }
     .tabs-wrap {
       padding: 12px 16px;
       background: #fff;
@@ -133,7 +159,7 @@
     .tab-pill {
       background: #f5f5f6;
       border: 1px solid transparent;
-      padding: 7px 14px;
+      padding: 7px 13px;
       border-radius: 99px;
       font-size: 12px;
       font-weight: 700;
@@ -148,7 +174,7 @@
       box-shadow: 0 3px 8px rgba(255,63,108,0.25);
     }
 
-    /* Product Cards Feed */
+    /* Feed & Product Cards */
     .feed {
       padding: 14px 16px;
       display: flex;
@@ -162,14 +188,13 @@
       border: 1px solid #ececec;
       overflow: hidden;
       box-shadow: 0 4px 16px rgba(0,0,0,0.03);
-      transition: transform 0.15s;
     }
     
-    /* Product Image Container */
+    /* Product Image */
     .product-img-wrap {
       position: relative;
       width: 100%;
-      height: 280px;
+      height: 270px;
       background: #f0f0f4;
       overflow: hidden;
     }
@@ -193,7 +218,6 @@
       align-items: center;
       gap: 4px;
     }
-    .rating-badge span { color: #087852; font-size: 12px; }
     .wish-heart {
       position: absolute;
       top: 12px;
@@ -209,7 +233,7 @@
       cursor: pointer;
     }
 
-    /* Product Details */
+    /* Product Info */
     .product-info {
       padding: 14px 16px 16px;
     }
@@ -227,7 +251,7 @@
       text-overflow: ellipsis;
     }
 
-    /* Price Section & Feature 3: Price Memory Anchor */
+    /* Price Row & Feature 5: AI Price & Value Score */
     .price-row {
       display: flex;
       align-items: baseline;
@@ -249,80 +273,76 @@
       font-weight: 800;
       color: var(--amber);
     }
-    
-    /* Feature 3: The Subtle Price Memory Label */
-    .price-memory-tag {
-      margin-top: 6px;
-      display: inline-flex;
+
+    /* Feature 5: AI Price & Value Score Badge */
+    .ai-value-badge {
+      margin-top: 8px;
+      background: #fdfaf3;
+      border: 1px solid #faeccb;
+      border-radius: 8px;
+      padding: 6px 10px;
+      display: flex;
       align-items: center;
-      gap: 6px;
-      background: #f8f9fa;
-      border: 1px solid #ebebeb;
-      padding: 4px 9px;
-      border-radius: 6px;
+      justify-content: space-between;
       font-size: 11px;
-      color: #444;
     }
-    .price-memory-tag strong {
-      color: #111;
-      font-weight: 700;
+    .ai-value-score {
+      font-weight: 800;
+      color: #996200;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .ai-value-note {
+      color: #555;
+      font-weight: 500;
+      font-size: 10.5px;
     }
 
-    /* Feature 2: FitConfidence Interactive Gauge */
+    /* Sizing & FitConfidence */
     .fit-box {
-      margin-top: 12px;
+      margin-top: 10px;
       background: #fafafc;
       border: 1px solid #ebebec;
       border-radius: 12px;
-      padding: 12px;
+      padding: 11px;
     }
     .fit-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .fit-label {
       font-size: 12px;
       font-weight: 800;
       color: var(--ink);
-      display: flex;
-      align-items: center;
-      gap: 5px;
     }
     .buyer-photos-btn {
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 800;
       color: var(--pink);
       background: var(--pink-light);
       border: 0;
-      padding: 4px 8px;
+      padding: 3px 8px;
       border-radius: 99px;
       cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 4px;
     }
-    .buyer-photos-btn:hover { background: #ffe4ec; }
-
-    /* Size Selector Pills */
     .size-selector {
       display: flex;
-      gap: 8px;
-      margin: 8px 0;
+      gap: 6px;
+      margin: 6px 0;
     }
     .size-btn {
       flex: 1;
-      padding: 8px 4px;
-      border-radius: 8px;
+      padding: 7px 3px;
+      border-radius: 7px;
       border: 1px solid #dcdce0;
       background: #fff;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 800;
-      color: var(--ink);
       cursor: pointer;
       text-align: center;
-      transition: all 0.15s;
     }
     .size-btn.selected {
       border-color: var(--pink);
@@ -330,29 +350,53 @@
       color: var(--pink);
       box-shadow: 0 0 0 1px var(--pink);
     }
-    .size-btn .rec-dot {
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      background: var(--green);
-      border-radius: 50%;
-      margin-left: 3px;
-    }
     .fit-hint {
-      font-size: 11px;
+      font-size: 10.5px;
       color: var(--muted);
-      line-height: 1.4;
-      display: flex;
-      align-items: center;
-      gap: 5px;
+      line-height: 1.35;
+      margin-top: 4px;
     }
-    .fit-hint strong { color: var(--green); font-weight: 800; }
 
-    /* Primary CTA Button */
+    /* Feature 3: AI Wardrobe Matchmaker Card */
+    .wardrobe-match {
+      margin-top: 10px;
+      background: var(--purple-light);
+      border: 1px solid #e3dcff;
+      border-radius: 10px;
+      padding: 9px 11px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+    }
+    .wardrobe-text {
+      color: #3b2c75;
+      font-weight: 600;
+      line-height: 1.35;
+      padding-right: 8px;
+    }
+    .wardrobe-text strong {
+      color: var(--purple);
+      font-weight: 800;
+    }
+    .preview-outfit-btn {
+      background: var(--purple);
+      color: #fff;
+      border: 0;
+      padding: 6px 10px;
+      border-radius: 7px;
+      font-size: 10.5px;
+      font-weight: 800;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .preview-outfit-btn:hover { background: #5533e0; }
+
+    /* CTA Button */
     .move-to-bag-btn {
       width: 100%;
-      margin-top: 14px;
-      padding: 13px;
+      margin-top: 12px;
+      padding: 12px;
       border-radius: 10px;
       background: var(--pink);
       color: #fff;
@@ -363,16 +407,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 8px;
-      transition: background 0.15s;
+      gap: 6px;
     }
     .move-to-bag-btn:hover { background: var(--pink-dark); }
 
-    /* Modal for Real Buyer Photos */
+    /* Outfit Preview Modal */
     .modal-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.65);
       backdrop-filter: blur(4px);
       display: none;
       justify-content: center;
@@ -385,10 +428,10 @@
       max-width: 440px;
       background: #fff;
       border-radius: 20px 20px 0 0;
-      padding: 20px;
-      max-height: 85vh;
+      padding: 18px;
+      max-height: 88vh;
       overflow-y: auto;
-      animation: slideUp 0.25s ease;
+      animation: slideUp 0.2s ease;
     }
     @keyframes slideUp {
       from { transform: translateY(100%); }
@@ -398,28 +441,44 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
-    .modal-header h3 { font-size: 16px; font-weight: 800; }
+    .modal-header h3 { font-size: 15px; font-weight: 800; }
     .close-modal { font-size: 20px; border: 0; background: transparent; cursor: pointer; color: #888; }
-    .buyer-grid {
+    
+    /* Outfit Look Grid */
+    .outfit-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 12px;
+      gap: 10px;
+      margin: 12px 0;
     }
-    .buyer-card {
-      background: #f8f8f9;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid #eee;
+    .outfit-item {
+      background: #f8f8fa;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      padding: 8px;
+      font-size: 11px;
     }
-    .buyer-card img { width: 100%; height: 160px; object-fit: cover; }
-    .buyer-info { padding: 8px; font-size: 11px; }
-    .buyer-info strong { display: block; color: var(--ink); }
-    .buyer-info span { color: var(--muted); font-size: 10px; }
+    .outfit-item img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+    .outfit-source-tag {
+      display: inline-block;
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 2px 5px;
+      border-radius: 4px;
+      margin-bottom: 3px;
+    }
+    .tag-closet { background: #e0f2fe; color: #0369a1; }
+    .tag-wishlist { background: #fce7f3; color: #be185d; }
 
-    /* Toast notification */
+    /* Toast */
     .toast {
       position: fixed;
       bottom: 24px;
@@ -442,7 +501,7 @@
 
   <!-- Evaluator Banner -->
   <div class="top-bar">
-    <div><strong>Part 5 MVP Prototype:</strong> Smart Decision Wishlist</div>
+    <div><strong>Part 5 MVP:</strong> Smart Decision Wishlist</div>
     <a href="index.html">← Discovery Engine</a>
   </div>
 
@@ -464,12 +523,18 @@
       </div>
     </header>
 
-    <!-- Feature 1: Smart Occasion Folders (Tabs) -->
+    <!-- Feature 2: AI Auto-Occasion Clustering Strip & Tabs -->
+    <div class="ai-cluster-banner">
+      <span>✨ <strong>AI Auto-Cluster:</strong> Organized by upcoming occasions</span>
+      <span class="ai-badge-pulse">ACTIVE</span>
+    </div>
+
+    <!-- Smart Occasion Tabs -->
     <nav class="tabs-wrap" id="folderTabs">
       <button class="tab-pill active" data-folder="all">All (4)</button>
-      <button class="tab-pill" data-folder="vacation">🌴 Vacation (1)</button>
-      <button class="tab-pill" data-folder="workwear">💼 Workwear (2)</button>
-      <button class="tab-pill" data-folder="wedding">✨ Wedding & Festive (1)</button>
+      <button class="tab-pill" data-folder="vacation">🌴 Vacation / Resort (1)</button>
+      <button class="tab-pill" data-folder="workwear">💼 Monday Office (2)</button>
+      <button class="tab-pill" data-folder="wedding">✨ Wedding &amp; Festive (1)</button>
     </nav>
 
     <!-- Product Feed -->
@@ -486,32 +551,41 @@
           <div class="product-brand">Zara</div>
           <div class="product-name">Floral Print V-Neck A-Line Midi Dress</div>
           
-          <!-- Price & Feature 3: Price Memory Anchor -->
+          <!-- Price Section -->
           <div class="price-row">
             <span class="current-price">₹1,499</span>
             <span class="mrp">₹2,999</span>
             <span class="discount-pct">(50% OFF)</span>
           </div>
-          <div class="price-memory-tag">
-            <span>🏷️ Price when saved: <strong>₹1,499</strong> (12d ago · Price Stable)</span>
+
+          <!-- Feature 5: AI Price & Value Score -->
+          <div class="ai-value-badge">
+            <span class="ai-value-score">⭐ AI Value Score: 9.4/10</span>
+            <span class="ai-value-note">Stable at ₹1,499 for 12d · Lowest in 60 days</span>
           </div>
 
-          <!-- Feature 2: FitConfidence Gauge -->
+          <!-- Sizing & FitConfidence -->
           <div class="fit-box">
             <div class="fit-header">
               <span class="fit-label">✨ FitConfidence</span>
-              <button class="buyer-photos-btn" onclick="openBuyerModal('Zara Floral Dress')">👁️ 14 Real Buyer Photos</button>
+              <button class="buyer-photos-btn" onclick="openBuyerModal('Zara Floral Dress')">👁️ 14 Buyer Photos</button>
             </div>
             <div class="size-selector">
               <button class="size-btn" onclick="selectSize(this, 'S', 'Snug at shoulders')">S</button>
-              <button class="size-btn selected" onclick="selectSize(this, 'M', '86% say True to Size · Recommended')">M <span class="rec-dot"></span></button>
-              <button class="size-btn" onclick="selectSize(this, 'L', 'Relaxed fit around waist')">L</button>
-              <button class="size-btn" onclick="selectSize(this, 'XL', 'Loose drape')">XL</button>
+              <button class="size-btn selected" onclick="selectSize(this, 'M', '86% say True to Size · Recommended')">M</button>
+              <button class="size-btn" onclick="selectSize(this, 'L', 'Relaxed waist drape')">L</button>
             </div>
             <div class="fit-hint">
-              <span class="fit-icon">📏</span>
-              <span class="fit-text"><strong>86% say True to Size</strong> · Recommended for you (Snug bust, true waist)</span>
+              <span>📏 <strong>86% say True to Size</strong> · Snug bust, true waist. 100% opaque.</span>
             </div>
+          </div>
+
+          <!-- Feature 3: AI Wardrobe Matchmaker -->
+          <div class="wardrobe-match">
+            <div class="wardrobe-text">
+              ✨ <strong>AI Style Match:</strong> Pairs with your <em>[White Straw Tote]</em> + <em>[Tan Slides]</em>
+            </div>
+            <button class="preview-outfit-btn" onclick="openOutfitModal('Vacation Resort Look', 'Zara Floral Dress', 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=700&q=80', 'Tan Flat Slides (In Your Closet)', 'https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=400&q=80')">Preview Look</button>
           </div>
 
           <!-- CTA Button -->
@@ -532,31 +606,41 @@
           <div class="product-brand">Mango</div>
           <div class="product-name">Structured Single-Breasted Tailored Blazer</div>
           
-          <!-- Price & Feature 3: Price Memory Anchor -->
+          <!-- Price Section -->
           <div class="price-row">
             <span class="current-price">₹2,499</span>
             <span class="mrp">₹4,999</span>
             <span class="discount-pct">(50% OFF)</span>
           </div>
-          <div class="price-memory-tag">
-            <span>🏷️ Price when saved: <strong>₹2,499</strong> (8d ago · Price Stable)</span>
+
+          <!-- Feature 5: AI Price & Value Score -->
+          <div class="ai-value-badge">
+            <span class="ai-value-score">⭐ AI Value Score: 9.6/10</span>
+            <span class="ai-value-note">Stable at ₹2,499 for 8d · Next restock in 6 wks</span>
           </div>
 
-          <!-- Feature 2: FitConfidence Gauge -->
+          <!-- Sizing & FitConfidence -->
           <div class="fit-box">
             <div class="fit-header">
               <span class="fit-label">✨ FitConfidence</span>
-              <button class="buyer-photos-btn" onclick="openBuyerModal('Mango Structured Blazer')">👁️ 9 Real Buyer Photos</button>
+              <button class="buyer-photos-btn" onclick="openBuyerModal('Mango Structured Blazer')">👁️ 9 Buyer Photos</button>
             </div>
             <div class="size-selector">
-              <button class="size-btn selected" onclick="selectSize(this, 'S', '92% say True to Size · Recommended')">S <span class="rec-dot"></span></button>
-              <button class="size-btn" onclick="selectSize(this, 'M', 'Slightly oversized sleeves')">M</button>
-              <button class="size-btn" onclick="selectSize(this, 'L', 'Boxy fit')">L</button>
+              <button class="size-btn selected" onclick="selectSize(this, 'S', '92% say True to Size · Recommended')">S</button>
+              <button class="size-btn" onclick="selectSize(this, 'M', 'Oversized boxy look')">M</button>
+              <button class="size-btn" onclick="selectSize(this, 'L', 'Loose fit')">L</button>
             </div>
             <div class="fit-hint">
-              <span class="fit-icon">📏</span>
-              <span class="fit-text"><strong>92% say True to Size</strong> · Structured padded shoulders</span>
+              <span>📏 <strong>92% say True to Size</strong> · Tailored padded shoulders. No fabric shine.</span>
             </div>
+          </div>
+
+          <!-- Feature 3: AI Wardrobe Matchmaker -->
+          <div class="wardrobe-match">
+            <div class="wardrobe-text">
+              ✨ <strong>AI Style Match:</strong> Pairs with your <em>[Levi's 711 Jeans (Bought June)]</em>
+            </div>
+            <button class="preview-outfit-btn" onclick="openOutfitModal('Smart Casual Office Look', 'Mango Blazer', 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80', 'Levi\'s 711 Jeans (Your Past Order)', 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=400&q=80')">Preview Look</button>
           </div>
 
           <!-- CTA Button -->
@@ -566,7 +650,7 @@
         </div>
       </article>
 
-      <!-- Card 3: Wedding Anarkali Kurta Set -->
+      <!-- Card 3: Wedding Kurti Set -->
       <article class="product-card" data-folder="wedding" data-id="3">
         <div class="product-img-wrap">
           <img class="product-img" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80" alt="Embroidered Kurti">
@@ -577,31 +661,41 @@
           <div class="product-brand">Biba</div>
           <div class="product-name">Embroidered Silk Blend Anarkali Kurta Set</div>
           
-          <!-- Price & Feature 3: Price Memory Anchor -->
+          <!-- Price Section -->
           <div class="price-row">
             <span class="current-price">₹2,199</span>
             <span class="mrp">₹3,999</span>
             <span class="discount-pct">(45% OFF)</span>
           </div>
-          <div class="price-memory-tag">
-            <span>🏷️ Price when saved: <strong>₹2,199</strong> (15d ago · Stable)</span>
+
+          <!-- Feature 5: AI Price & Value Score -->
+          <div class="ai-value-badge">
+            <span class="ai-value-score">⭐ AI Value Score: 9.1/10</span>
+            <span class="ai-value-note">Stable at ₹2,199 · Festive seasonal benchmark</span>
           </div>
 
-          <!-- Feature 2: FitConfidence Gauge -->
+          <!-- Sizing & FitConfidence -->
           <div class="fit-box">
             <div class="fit-header">
               <span class="fit-label">✨ FitConfidence</span>
-              <button class="buyer-photos-btn" onclick="openBuyerModal('Biba Anarkali Kurta')">👁️ 22 Real Buyer Photos</button>
+              <button class="buyer-photos-btn" onclick="openBuyerModal('Biba Anarkali Kurta')">👁️ 22 Buyer Photos</button>
             </div>
             <div class="size-selector">
               <button class="size-btn" onclick="selectSize(this, '38', 'Fits 32-34 bust')">38</button>
-              <button class="size-btn selected" onclick="selectSize(this, '40', '88% say True to Size · Recommended')">40 <span class="rec-dot"></span></button>
+              <button class="size-btn selected" onclick="selectSize(this, '40', '88% say True to Size · Recommended')">40</button>
               <button class="size-btn" onclick="selectSize(this, '42', 'Flared skirt')">42</button>
             </div>
             <div class="fit-hint">
-              <span class="fit-icon">📏</span>
-              <span class="fit-text"><strong>88% say True to Size</strong> · 100% Breathable Silk-Cotton Blend</span>
+              <span>📏 <strong>88% say True to Size</strong> · 100% Breathable Silk-Cotton. No shrinkage.</span>
             </div>
+          </div>
+
+          <!-- Feature 3: AI Wardrobe Matchmaker -->
+          <div class="wardrobe-match">
+            <div class="wardrobe-text">
+              ✨ <strong>AI Style Match:</strong> Pairs with your <em>[Kundan Jhumkas (In Wishlist)]</em>
+            </div>
+            <button class="preview-outfit-btn" onclick="openOutfitModal('Sangeet Night Look', 'Biba Anarkali Set', 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80', 'Gold Kundan Jhumkas (In Wishlist)', 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=400&q=80')">Preview Look</button>
           </div>
 
           <!-- CTA Button -->
@@ -622,34 +716,41 @@
           <div class="product-brand">Levi's</div>
           <div class="product-name">711 High-Rise Skinny Stretch Jeans</div>
           
-          <!-- Price & Feature 3: Price Memory Anchor -->
           <div class="price-row">
             <span class="current-price">₹1,899</span>
             <span class="mrp">₹3,199</span>
             <span class="discount-pct">(40% OFF)</span>
           </div>
-          <div class="price-memory-tag">
-            <span>🏷️ Price when saved: <strong>₹1,899</strong> (5d ago · Stable)</span>
+
+          <!-- Feature 5: AI Price & Value Score -->
+          <div class="ai-value-badge">
+            <span class="ai-value-score">⭐ AI Value Score: 9.8/10</span>
+            <span class="ai-value-note">Stable at ₹1,899 · Core staple, rarely discounted</span>
           </div>
 
-          <!-- Feature 2: FitConfidence Gauge -->
           <div class="fit-box">
             <div class="fit-header">
               <span class="fit-label">✨ FitConfidence</span>
-              <button class="buyer-photos-btn" onclick="openBuyerModal('Levis 711 Jeans')">👁️ 31 Real Buyer Photos</button>
+              <button class="buyer-photos-btn" onclick="openBuyerModal('Levis 711 Jeans')">👁️ 31 Buyer Photos</button>
             </div>
             <div class="size-selector">
-              <button class="size-btn" onclick="selectSize(this, '26', 'Tight at hips')">26</button>
-              <button class="size-btn selected" onclick="selectSize(this, '28', '94% say True to Size · Recommended')">28 <span class="rec-dot"></span></button>
+              <button class="size-btn" onclick="selectSize(this, '26', 'Tight waist')">26</button>
+              <button class="size-btn selected" onclick="selectSize(this, '28', '94% say True to Size · Recommended')">28</button>
               <button class="size-btn" onclick="selectSize(this, '30', 'Comfort waist')">30</button>
             </div>
             <div class="fit-hint">
-              <span class="fit-icon">📏</span>
-              <span class="fit-text"><strong>94% say True to Size</strong> · High Stretch Denim (Mid-weight)</span>
+              <span>📏 <strong>94% say True to Size</strong> · High-Stretch Cotton Blend.</span>
             </div>
           </div>
 
-          <!-- CTA Button -->
+          <!-- Feature 3: AI Wardrobe Matchmaker -->
+          <div class="wardrobe-match">
+            <div class="wardrobe-text">
+              ✨ <strong>AI Style Match:</strong> Pairs with <em>[Mango Blazer]</em> in your wishlist!
+            </div>
+            <button class="preview-outfit-btn" onclick="openOutfitModal('Executive Chic Look', 'Levi\'s 711 Jeans', 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80', 'Mango Structured Blazer (Wishlist)', 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=400&q=80')">Preview Look</button>
+          </div>
+
           <button class="move-to-bag-btn" onclick="addToBag('Levis 711 Jeans', '28')">
             <span>🛍️ Move Size 28 to Bag</span>
           </button>
@@ -657,6 +758,40 @@
       </article>
 
     </main>
+  </div>
+
+  <!-- Feature 3: Outfit Preview Modal -->
+  <div class="modal-overlay" id="outfitModal">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <div>
+          <h3 id="outfitTitle">AI Styled Complete Look</h3>
+          <p style="font-size:11px;color:var(--muted)">Synthesized pairing from your closet &amp; wishlist</p>
+        </div>
+        <button class="close-modal" onclick="closeOutfitModal()">✕</button>
+      </div>
+      
+      <div class="outfit-grid">
+        <div class="outfit-item">
+          <img id="outfitImg1" src="" alt="Item 1">
+          <span class="outfit-source-tag tag-wishlist">WISHLIST ITEM</span>
+          <strong id="outfitName1" style="display:block;font-size:11px"></strong>
+        </div>
+        <div class="outfit-item">
+          <img id="outfitImg2" src="" alt="Item 2">
+          <span class="outfit-source-tag tag-closet" id="outfitTag2">PAST ORDER</span>
+          <strong id="outfitName2" style="display:block;font-size:11px"></strong>
+        </div>
+      </div>
+
+      <div style="background:#f4f0ff;border:1px solid #e2d9ff;padding:10px 12px;border-radius:8px;font-size:11px;color:#3b2c75;margin:8px 0;line-height:1.4">
+        ✨ <strong>AI Styling Rationale:</strong> The silhouette balance works because the structured upper offsets the relaxed drape below. Tested by 40+ fashion community members.
+      </div>
+
+      <button class="move-to-bag-btn" style="margin-top:12px;background:var(--purple)" onclick="addOutfitToBag()">
+        <span>🛍️ Add Wishlisted Item to Bag &amp; Wear This Look</span>
+      </button>
+    </div>
   </div>
 
   <!-- Real Buyer Photos Modal -->
@@ -669,29 +804,29 @@
         </div>
         <button class="close-modal" onclick="closeBuyerModal()">✕</button>
       </div>
-      <div class="buyer-grid">
-        <div class="buyer-card">
-          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80" alt="Buyer 1">
-          <div class="buyer-info">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+        <div style="background:#f8f8f9;border-radius:10px;overflow:hidden;border:1px solid #eee;font-size:11px">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80" style="width:100%;height:150px;object-fit:cover">
+          <div style="padding:8px">
             <strong>Pooja M. · Verified</strong>
-            <span>Height: 5'4" · Size: M</span>
-            <p style="margin-top:3px;font-size:10px;color:#444">"Fabric drapes beautifully, no transparent lining issues!"</p>
+            <span style="display:block;color:#777;font-size:10px">Height: 5'4" · Size: M</span>
+            <p style="margin-top:4px;font-size:10px;color:#444">"Drapes perfectly, zero transparent lining issues!"</p>
           </div>
         </div>
-        <div class="buyer-card">
-          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80" alt="Buyer 2">
-          <div class="buyer-info">
+        <div style="background:#f8f8f9;border-radius:10px;overflow:hidden;border:1px solid #eee;font-size:11px">
+          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80" style="width:100%;height:150px;object-fit:cover">
+          <div style="padding:8px">
             <strong>Ananya K. · Verified</strong>
-            <span>Height: 5'6" · Size: M</span>
-            <p style="margin-top:3px;font-size:10px;color:#444">"Fits true on waist, exactly like the model."</p>
+            <span style="display:block;color:#777;font-size:10px">Height: 5'6" · Size: M</span>
+            <p style="margin-top:4px;font-size:10px;color:#444">"Fits true on waist, exactly like the model."</p>
           </div>
         </div>
       </div>
-      <button class="move-to-bag-btn" style="margin-top:16px" onclick="closeBuyerModal()">Looks Good · Close</button>
+      <button class="move-to-bag-btn" style="margin-top:14px" onclick="closeBuyerModal()">Looks Good · Close</button>
     </div>
   </div>
 
-  <!-- Success Toast -->
+  <!-- Toast -->
   <div class="toast" id="toast">
     <span>✅</span>
     <span id="toastMsg">Moved to bag!</span>
@@ -700,7 +835,7 @@
   <script>
     let cartCount = 0;
 
-    // Feature 1: Filter by Occasion Folder Tabs
+    // Feature 2: Smart Occasion Tabs
     const tabs = document.querySelectorAll('.tab-pill');
     const cards = document.querySelectorAll('.product-card');
     tabs.forEach(tab => {
@@ -721,20 +856,16 @@
       });
     });
 
-    // Feature 2: Interactive Size Selector & Fit Gauge
+    // Size Selector
     function selectSize(btn, size, fitAdvice) {
       const card = btn.closest('.product-card');
       card.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
       btn.classList.add('selected');
-      
-      const fitText = card.querySelector('.fit-text');
-      fitText.innerHTML = '<strong>Size ' + size + ':</strong> ' + fitAdvice;
-
       const ctaBtn = card.querySelector('.move-to-bag-btn span');
       ctaBtn.textContent = '🛍️ Move Size ' + size + ' to Bag';
     }
 
-    // Add to Bag Simulation
+    // Add to Bag
     function addToBag(title, size) {
       cartCount++;
       document.getElementById('cartBadge').textContent = cartCount;
@@ -745,10 +876,29 @@
       const toast = document.getElementById('toast');
       document.getElementById('toastMsg').textContent = msg;
       toast.classList.add('show');
-      setTimeout(() => toast.classList.remove('show'), 2500);
+      setTimeout(() => toast.classList.remove('show'), 2400);
     }
 
-    // Modal Drawer for Real Buyer Photos
+    // Feature 3: Outfit Modal
+    let activeOutfitTitle = '';
+    function openOutfitModal(lookTitle, name1, img1, name2, img2) {
+      activeOutfitTitle = name1;
+      document.getElementById('outfitTitle').textContent = 'AI Look: ' + lookTitle;
+      document.getElementById('outfitName1').textContent = name1;
+      document.getElementById('outfitImg1').src = img1;
+      document.getElementById('outfitName2').textContent = name2;
+      document.getElementById('outfitImg2').src = img2;
+      document.getElementById('outfitModal').classList.add('open');
+    }
+    function closeOutfitModal() {
+      document.getElementById('outfitModal').classList.remove('open');
+    }
+    function addOutfitToBag() {
+      closeOutfitModal();
+      addToBag(activeOutfitTitle, 'Recommended');
+    }
+
+    // Buyer Photo Modal
     function openBuyerModal(title) {
       document.getElementById('modalTitle').textContent = 'Buyer Try-On: ' + title;
       document.getElementById('buyerModal').classList.add('open');
