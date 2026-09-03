@@ -106,19 +106,46 @@
       color: #333;
       position: relative;
     }
-    .cart-badge {
-      position: absolute;
-      top: -6px;
-      right: -8px;
-      background: var(--pink);
-      color: #fff;
+    /* Persona Banner */
+    .persona-banner {
+      background: #fff8f9;
+      border-bottom: 1px solid #ffd6e0;
+      padding: 7px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+    }
+    .persona-banner strong { color: var(--ink); }
+    .persona-banner a { color: var(--pink); text-decoration: none; font-weight: 800; }
+
+    /* Applique Bottom Navigation Bar */
+    .bottom-nav {
+      position: sticky;
+      bottom: 0;
+      background: #ffffff;
+      border-top: 1px solid #eaeaea;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0 10px;
+      z-index: 20;
+    }
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
       font-size: 10px;
-      font-weight: 800;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
+      font-weight: 700;
+      color: #7e818c;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .nav-item.active {
+      color: var(--pink);
+    }
+    .nav-icon {
+      font-size: 16px;
     }
 
     /* Feature 2: AI Auto-Occasion Clustering Strip */
@@ -508,6 +535,12 @@
   <!-- Mobile Screen Container -->
   <div class="phone-frame">
     
+    <!-- Persona Switcher Bar -->
+    <div class="persona-banner">
+      <span>👤 Logged in as: <strong id="personaDisplay">Priya Sharma</strong> <small style="color:var(--pink);font-weight:800">(Target Segment)</small></span>
+      <a href="login.html">Switch Profile ⇄</a>
+    </div>
+
     <!-- Top Header -->
     <header class="app-header">
       <div class="brand-logo">
@@ -758,6 +791,30 @@
       </article>
 
     </main>
+
+    <!-- Applique Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+      <a class="nav-item" href="login.html">
+        <span class="nav-icon">🏠</span>
+        <span>Home</span>
+      </a>
+      <a class="nav-item" href="login.html">
+        <span class="nav-icon">🛍️</span>
+        <span>Categories</span>
+      </a>
+      <a class="nav-item" href="login.html">
+        <span class="nav-icon">✨</span>
+        <span>Studio</span>
+      </a>
+      <a class="nav-item active" href="prototype.html">
+        <span class="nav-icon">🎯</span>
+        <span>Bingo</span>
+      </a>
+      <a class="nav-item" href="login.html">
+        <span class="nav-icon">👤</span>
+        <span>Profile</span>
+      </a>
+    </nav>
   </div>
 
   <!-- Feature 3: Outfit Preview Modal -->
@@ -834,6 +891,22 @@
 
   <script>
     let cartCount = 0;
+
+    // Dynamic Persona Loader
+    const personas = {
+      '1': { name: 'Priya Sharma', role: '(Target Segment)' },
+      '2': { name: 'Rohan Mehta', role: '(Workwear Profile)' },
+      '3': { name: 'Ananya Verma', role: '(Festive Profile)' },
+      '4': { name: 'Meera Nair', role: '(Trend Explorer)' },
+      '5': { name: 'Sneha Rao', role: '(New Shopper)' }
+    };
+    const params = new URLSearchParams(window.location.search);
+    const personaId = params.get('persona') || '1';
+    const persona = personas[personaId] || personas['1'];
+    const pDisplay = document.getElementById('personaDisplay');
+    if (pDisplay) {
+      pDisplay.textContent = persona.name;
+    }
 
     // Feature 2: Smart Occasion Tabs
     const tabs = document.querySelectorAll('.tab-pill');
