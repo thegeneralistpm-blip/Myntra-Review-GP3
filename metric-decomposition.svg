@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <style>
+      .title { font: 800 26px Inter, -apple-system, sans-serif; fill: #20201c; letter-spacing: -0.5px; }
+      .tagline { font: 700 11px Inter, -apple-system, sans-serif; fill: #6d6d66; text-transform: uppercase; letter-spacing: 1.2px; }
+      .brand { font: 900 28px Inter, -apple-system, sans-serif; fill: #ff3f6c; letter-spacing: -1px; }
+      .stage-title { font: 800 16px Inter, -apple-system, sans-serif; letter-spacing: -0.2px; }
+      .body-bold { font: 700 13px Inter, -apple-system, sans-serif; fill: #20201c; }
+      .body-text { font: 12.5px Inter, -apple-system, sans-serif; fill: #525866; line-height: 1.45; }
+      .stat-badge { font: 800 11px Inter, -apple-system, sans-serif; }
+      .math-eq { font: 700 14px "Fira Code", monospace, sans-serif; fill: #20201c; }
+    </style>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#141824" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#fbfbfc"/>
+
+  <!-- Header -->
+  <g transform="translate(40, 24)">
+    <text x="0" y="24" class="title">Decomposing 30-Day Wishlist-to-Purchase Conversion</text>
+    <text x="0" y="44" class="tagline">Part 2: Business Metric Tree · Mathematical Funnel &amp; Product Outcomes (Zero Discounts)</text>
+    <text x="1200" y="24" class="brand" text-anchor="end">Myntra</text>
+    <line x1="0" y1="56" x2="1200" y2="56" stroke="#e5e4dc" stroke-width="1.2"/>
+  </g>
+
+  <!-- Top North Star Funnel Banner -->
+  <g transform="translate(40, 94)">
+    <rect width="1200" height="66" rx="12" fill="#20242e" filter="url(#shadow)"/>
+    <text x="24" y="28" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#ff3f6c" text-transform="uppercase" letter-spacing="1px">NORTH STAR METRIC FORMULA</text>
+    <text x="24" y="49" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#ffffff">
+      30-Day Conversion Rate = 
+      <tspan fill="#ff3f6c">P(Wishlist Revisit)</tspan> × 
+      <tspan fill="#087852">P(Wishlist → Bag Transfer | Revisit)</tspan> × 
+      <tspan fill="#f28c28">P(Order Checkout | Bag)</tspan>
+    </text>
+    <rect x="990" y="16" width="186" height="34" rx="8" fill="rgba(255,255,255,0.08)"/>
+    <text x="1083" y="38" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Multiplicative Funnel</text>
+  </g>
+
+  <!-- Three Funnel Columns -->
+  <!-- Column 1: Stage 1 Revisit / Retrieval -->
+  <g transform="translate(40, 178)">
+    <rect width="384" height="428" rx="14" fill="#ffffff" stroke="#e5e4dc" stroke-width="1.2" filter="url(#shadow)"/>
+    <rect width="384" height="6" rx="3" fill="#ff3f6c"/>
+    
+    <!-- Header -->
+    <text x="20" y="32" class="stage-title" fill="#ff3f6c">STAGE 1: RETRIEVAL &amp; REVISIT</text>
+    <text x="20" y="50" class="tagline">Does the user ever return to saved items?</text>
+    
+    <!-- Metric Box -->
+    <rect x="20" y="66" width="344" height="52" rx="8" fill="#fff0f5"/>
+    <text x="32" y="86" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#ff3f6c">PRIMARY SUB-METRIC</text>
+    <text x="32" y="104" class="body-bold">14-Day Wishlist Reopen Rate (%)</text>
+    
+    <!-- Friction Signal -->
+    <text x="20" y="142" class="body-bold">Core Friction Signal in Reviews:</text>
+    <rect x="20" y="152" width="344" height="74" rx="8" fill="#f8f9fa" stroke="#e5e4dc"/>
+    <text x="32" y="174" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#20201c">Wishlist Clutter &amp; Forgotten Items</text>
+    <text x="32" y="193" class="body-text">• <tspan font-weight="700" fill="#ff3f6c">181 Signals (7.2%)</tspan> in Review Analyzer</text>
+    <text x="32" y="210" class="body-text">• Wishlist becomes a 100-item dead graveyard</text>
+    
+    <!-- Behavioral Root Cause -->
+    <text x="20" y="248" class="body-bold">Behavioral Drop-off Cause:</text>
+    <text x="20" y="268" class="body-text">
+      <tspan x="20" dy="0">Shoppers bulk-save items during browsing,</tspan>
+      <tspan x="20" dy="18">causing cognitive overload. High-intent items</tspan>
+      <tspan x="20" dy="18">get pushed down the feed and forgotten.</tspan>
+    </text>
+    
+    <!-- Product Outcome -->
+    <text x="20" y="336" class="body-bold">Target Product Outcome:</text>
+    <rect x="20" y="346" width="344" height="66" rx="8" fill="#f4f5f8"/>
+    <text x="32" y="368" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#20201c">Smart Occasion Folders</text>
+    <text x="32" y="386" class="body-text">Auto-group items by "Work", "Vacation", "Party"</text>
+    <text x="32" y="401" class="body-text">Retrieval time drops from 45s to &lt; 5s</text>
+  </g>
+
+  <!-- Column 2: Stage 2 Wishlist to Bag Transfer (THE CORE LEVER) -->
+  <g transform="translate(448, 178)">
+    <rect width="384" height="428" rx="14" fill="#ffffff" stroke="#087852" stroke-width="2" filter="url(#shadow)"/>
+    <rect width="384" height="6" rx="3" fill="#087852"/>
+    
+    <!-- Header -->
+    <text x="20" y="32" class="stage-title" fill="#087852">STAGE 2: WISHLIST → BAG TRANSFER</text>
+    <text x="20" y="50" class="tagline">Does user commit to buying the item?</text>
+    
+    <!-- Priority Callout Badge -->
+    <rect x="248" y="16" width="116" height="22" rx="11" fill="#087852"/>
+    <text x="306" y="31" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle">PRIMARY BOTTLENECK</text>
+    
+    <!-- Metric Box -->
+    <rect x="20" y="66" width="344" height="52" rx="8" fill="#edf7f2"/>
+    <text x="32" y="86" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#087852">PRIMARY SUB-METRIC</text>
+    <text x="32" y="104" class="body-bold">Wishlist Card-to-Bag CTR for Saved Size (%)</text>
+    
+    <!-- Friction Signal -->
+    <text x="20" y="142" class="body-bold">Core Friction Signal in Reviews:</text>
+    <rect x="20" y="152" width="344" height="74" rx="8" fill="#f8f9fa" stroke="#e5e4dc"/>
+    <text x="32" y="174" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#20201c">Fit &amp; Fabric Anxiety + Stockouts</text>
+    <text x="32" y="193" class="body-text">• <tspan font-weight="800" fill="#087852">2,252 Signals (89.8% of All Friction!)</tspan></text>
+    <text x="32" y="210" class="body-text">• 17 Size Stockout signals halt purchase</text>
+    
+    <!-- Behavioral Root Cause -->
+    <text x="20" y="248" class="body-bold">Behavioral Drop-off Cause:</text>
+    <text x="20" y="268" class="body-text">
+      <tspan x="20" dy="0">Studio photos fail to convey fit or drape.</tspan>
+      <tspan x="20" dy="18">Users fear exchange loops and leave items saved.</tspan>
+      <tspan x="20" dy="18">Sizes sell out during the hesitation period.</tspan>
+    </text>
+    
+    <!-- Product Outcome -->
+    <text x="20" y="336" class="body-bold">Target Product Outcome:</text>
+    <rect x="20" y="346" width="344" height="66" rx="8" fill="#edf7f2"/>
+    <text x="32" y="368" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#087852">FitConfidence Card + Size Restock</text>
+    <text x="32" y="386" class="body-text">Live True-to-Size curve + Buyer photo reels</text>
+    <text x="32" y="401" class="body-text">Provides instant pre-purchase confidence</text>
+  </g>
+
+  <!-- Column 3: Stage 3 Checkout & Delivery Friction -->
+  <g transform="translate(856, 178)">
+    <rect width="384" height="428" rx="14" fill="#ffffff" stroke="#e5e4dc" stroke-width="1.2" filter="url(#shadow)"/>
+    <rect width="384" height="6" rx="3" fill="#f28c28"/>
+    
+    <!-- Header -->
+    <text x="20" y="32" class="stage-title" fill="#f28c28">STAGE 3: BAG → ORDER CHECKOUT</text>
+    <text x="20" y="50" class="tagline">Does the user complete payment?</text>
+    
+    <!-- Metric Box -->
+    <rect x="20" y="66" width="344" height="52" rx="8" fill="#fff6ec"/>
+    <text x="32" y="86" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#f28c28">PRIMARY SUB-METRIC</text>
+    <text x="32" y="104" class="body-bold">Single-Item Wishlist Checkout Rate (%)</text>
+    
+    <!-- Friction Signal -->
+    <text x="20" y="142" class="body-bold">Core Friction Signal in Reviews:</text>
+    <rect x="20" y="152" width="344" height="74" rx="8" fill="#f8f9fa" stroke="#e5e4dc"/>
+    <text x="32" y="174" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#20201c">Delivery &amp; Shipping Charges</text>
+    <text x="32" y="193" class="body-text">• <tspan font-weight="700" fill="#f28c28">91 Signals (3.6%)</tspan> in Review Analyzer</text>
+    <text x="32" y="210" class="body-text">• ₹99 delivery fee on a ₹499 item triggers exit</text>
+    
+    <!-- Behavioral Root Cause -->
+    <text x="20" y="248" class="body-bold">Behavioral Drop-off Cause:</text>
+    <text x="20" y="268" class="body-text">
+      <tspan x="20" dy="0">Users want to buy a single wishlisted item but</tspan>
+      <tspan x="20" dy="18">perceive delivery charges as an unfair penalty,</tspan>
+      <tspan x="20" dy="18">postponing order until they find more items.</tspan>
+    </text>
+    
+    <!-- Product Outcome -->
+    <text x="20" y="336" class="body-bold">Target Product Outcome:</text>
+    <rect x="20" y="346" width="344" height="66" rx="8" fill="#fff6ec"/>
+    <text x="32" y="368" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#f28c28">Free Delivery Cart Bundler</text>
+    <text x="32" y="386" class="body-text">1-click prompt during any cart checkout</text>
+    <text x="32" y="401" class="body-text">Unlocks free shipping threshold naturally</text>
+  </g>
+
+  <!-- Bottom Synthesis & Strategic Takeaway -->
+  <g transform="translate(40, 622)">
+    <rect width="1200" height="74" rx="12" fill="#ffffff" stroke="#e5e4dc" stroke-width="1.2" filter="url(#shadow)"/>
+    <rect x="18" y="16" width="42" height="42" rx="8" fill="#fff0f5"/>
+    <text x="39" y="42" font-family="Inter, sans-serif" font-size="18" font-weight="900" fill="#ff3f6c" text-anchor="middle">🎯</text>
+    
+    <text x="74" y="34" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#20201c">Strategic Opportunity Sizing Conclusion (Slide 2 Key Message):</text>
+    <text x="74" y="52" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#525866">
+      While Stage 1 (Clutter) causes forgetfulness and Stage 3 (Delivery Fee) causes payment drop-off, <tspan font-weight="800" fill="#087852">89.8% of all purchase hesitation</tspan> is trapped in <tspan font-weight="800" fill="#087852">Stage 2 (Fit &amp; Fabric Anxiety)</tspan>.
+      Solving pre-purchase fit confidence provides the highest conversion multiplier across the entire funnel.
+    </text>
+  </g>
+</svg>
