@@ -230,10 +230,71 @@
     .wishlist-heart-pulse {
       color: var(--applique-primary);
       animation: heartPulse 1.8s infinite ease-in-out;
+      display: inline-block;
     }
     @keyframes heartPulse {
       0%, 100% { transform: scale(1); }
       50% { transform: scale(1.18); }
+    }
+
+    /* Shining Heart Effect & Callout Badge upon closing modal */
+    .icon-btn.heart-shine-active {
+      position: relative;
+    }
+    .icon-btn.heart-shine-active::before {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 63, 108, 0.45) 0%, rgba(255, 63, 108, 0) 75%);
+      animation: radiantGlow 1.2s infinite alternate ease-in-out;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .icon-btn.heart-shine-active .wishlist-heart-pulse {
+      display: inline-block;
+      animation: shineHeartBeat 0.9s infinite alternate cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      filter: drop-shadow(0 0 8px rgba(255, 63, 108, 0.9)) drop-shadow(0 0 16px rgba(255, 63, 108, 0.6));
+    }
+    .heart-callout-nudge {
+      position: absolute;
+      top: 32px;
+      right: -10px;
+      background: linear-gradient(135deg, #ff3f6c 0%, #e11d48 100%);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 4px 8px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(255,63,108,0.45);
+      white-space: nowrap;
+      pointer-events: none;
+      display: none;
+      z-index: 50;
+      animation: calloutBounce 1.4s infinite ease-in-out;
+    }
+    .heart-callout-nudge::after {
+      content: '';
+      position: absolute;
+      top: -4px;
+      right: 18px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #ff3f6c;
+    }
+    .heart-callout-nudge.show { display: block; }
+    @keyframes radiantGlow {
+      from { transform: scale(0.9); opacity: 0.4; }
+      to { transform: scale(1.5); opacity: 1; }
+    }
+    @keyframes shineHeartBeat {
+      0% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.35) rotate(-8deg); }
+      100% { transform: scale(1.2) rotate(8deg); }
+    }
+    @keyframes calloutBounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(3px); }
     }
 
     /* Gender Tabs Bar */
@@ -839,9 +900,10 @@
             <div class="bell-badge">1</div>
           </div>
           <!-- Wishlist Heart Icon linking to Bingo Prototype -->
-          <a class="icon-btn" href="prototype.html" title="Open Myntra Bingo Wishlist">
+          <a class="icon-btn" id="headerWishlistBtn" href="prototype.html" title="Open Myntra Bingo Wishlist">
             <span class="wishlist-heart-pulse">❤️</span>
             <div class="bell-badge" id="headerWishlistBadge">28</div>
+            <div class="heart-callout-nudge" id="heartCallout">✨ AI Wishlist Ready!</div>
           </a>
           <div class="icon-btn" onclick="openPersonaDrawer()" title="Switch Profile">
             <span>👤</span>
@@ -1239,6 +1301,20 @@
     }
     function closeBingoPopup() {
       document.getElementById('bingoPopupModal').classList.remove('open');
+      
+      // Activate Shining Glow & Floating Callout on Heart Wishlist Icon
+      const heartBtn = document.getElementById('headerWishlistBtn');
+      if (heartBtn) heartBtn.classList.add('heart-shine-active');
+      const callout = document.getElementById('heartCallout');
+      if (callout) {
+        callout.classList.add('show');
+        // Keep callout visible for 6 seconds, glow stays active
+        setTimeout(() => {
+          callout.style.transition = 'opacity 0.6s';
+          callout.style.opacity = '0';
+          setTimeout(() => callout.classList.remove('show'), 600);
+        }, 6000);
+      }
     }
     function goToBingoWishlist() {
       closeBingoPopup();
