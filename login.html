@@ -336,7 +336,7 @@
   <!-- Top Evaluator Banner -->
   <div class="top-bar">
     <div><strong>Part 5 Prototype:</strong> Page 1 · Myntra Appliqué Login</div>
-    <a href="prototype.html">Wishlist View →</a>
+    <a href="home.html">Home Page →</a>
   </div>
 
   <!-- Mobile Phone Frame -->
@@ -524,12 +524,12 @@
       localStorage.setItem('myntra_active_persona', JSON.stringify(currentPersona));
 
       setTimeout(() => {
-        window.location.href = 'prototype.html?persona=' + currentPersona.id;
-      }, 600);
+        window.location.href = 'home.html?persona=' + currentPersona.id;
+      }, 500);
     }
 
     function continueToWishlist() {
-      window.location.href = 'prototype.html';
+      window.location.href = 'home.html';
     }
 
     // Initialize form validation
