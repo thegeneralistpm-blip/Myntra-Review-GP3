@@ -888,17 +888,14 @@
     <!-- Scrollable Home Feed -->
     <main class="home-content">
       
-      <!-- AI Wishlist Bingo Bridge Nudge Card -->
-      <section class="bingo-nudge-banner" onclick="window.location.href='prototype.html'">
-        <div class="bingo-nudge-left">
-          <h4>
-            <span>🎯 Myntra BINGO</span>
-            <span class="bingo-badge-pink">AI SMART WISHLIST</span>
-          </h4>
-          <p id="nudgeText">Priya, your saved items were auto-organized by AI into 8 Occasion Folders with verified fit scores!</p>
+      <!-- Subtle AI Wishlist Trigger Pill (Re-open anytime) -->
+      <div style="margin:8px 14px 10px; display:flex; justify-content:space-between; align-items:center; background:linear-gradient(90deg, #fff0f5, #f5f2fe); border:1px solid #fbcfe8; border-radius:10px; padding:7px 12px; cursor:pointer;" onclick="openBingoPopup()">
+        <div style="display:flex; align-items:center; gap:6px; font-size:11.5px; font-weight:800; color:var(--applique-primary);">
+          <span>🎯</span>
+          <span>Myntra Bingo: <span style="color:#523399; font-weight:700;" id="pillPersonaText">28 saved items organized by AI</span></span>
         </div>
-        <button class="bingo-nudge-btn">Open Bingo →</button>
-      </section>
+        <span style="font-size:10.5px; font-weight:800; color:var(--applique-primary); background:#fff; padding:2px 8px; border-radius:9999px; border:1px solid #f472b6;">View ✨</span>
+      </div>
 
       <!-- Hero Banner: Big Brands Bash -->
       <section class="hero-banner-wrap">
@@ -1032,6 +1029,54 @@
         <button class="p-btn-switch" style="background:#f1f1f4;color:#282c3f">Switch Profile →</button>
       </div>
 
+    </div>
+  </div>
+
+  <!-- Myntra Bingo Discovery Pop-Up Modal -->
+  <div class="persona-modal-overlay" id="bingoPopupModal" style="align-items: center; padding: 20px;">
+    <div class="persona-sheet" style="border-radius: 24px; position: relative; max-width: 380px; padding: 24px 20px 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.35);">
+      <!-- Close Button Top Right -->
+      <button onclick="closeBingoPopup()" style="position: absolute; right: 16px; top: 16px; width: 32px; height: 32px; border-radius: 50%; background: #f2f2f5; border: 0; font-size: 16px; font-weight: 800; cursor: pointer; color: #535766; display: grid; place-items: center;">✕</button>
+
+      <!-- Header Icon & Badges -->
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+        <span style="font-size: 26px;">🎯</span>
+        <div>
+          <span style="background: var(--applique-primary); color: #fff; font-size: 9px; font-weight: 900; padding: 2px 7px; border-radius: 4px; letter-spacing: 0.5px;">AI SMART WISHLIST</span>
+          <h3 style="font-size: 17px; font-weight: 900; color: var(--applique-text-primary); margin-top: 2px;">Introducing Myntra BINGO</h3>
+        </div>
+      </div>
+
+      <!-- Personalized Briefing -->
+      <p id="popupPersonaBrief" style="font-size: 12px; color: #4b5563; line-height: 1.45; margin: 10px 0 14px;">
+        Priya, we noticed you have 28 saved items! Bingo has auto-organized them into smart occasion folders with verified sizing &amp; price stability.
+      </p>
+
+      <!-- 3 Key AI Feature Highlights -->
+      <div style="display: flex; flex-direction: column; gap: 8px; background: #f9f9fb; border: 1px solid #eaeaec; border-radius: 14px; padding: 12px; margin-bottom: 16px;">
+        <div style="display: flex; gap: 8px; align-items: flex-start; font-size: 11.5px; color: #1f2937;">
+          <span style="font-size: 14px;">🌴</span>
+          <div><strong>Occasion Clustering:</strong> Pre-grouped for Vacation, Office, Weddings &amp; Weekend.</div>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: flex-start; font-size: 11.5px; color: #1f2937;">
+          <span style="font-size: 14px;">👗</span>
+          <div><strong>FitConfidence:</strong> Real customer try-on photos filtered to your exact size.</div>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: flex-start; font-size: 11.5px; color: #1f2937;">
+          <span style="font-size: 14px;">💡</span>
+          <div><strong>Smart Value Check:</strong> 60-day price floor tracking — zero fake sale stress.</div>
+        </div>
+      </div>
+
+      <!-- Action CTA Buttons -->
+      <button onclick="goToBingoWishlist()" style="width: 100%; background: var(--applique-primary); color: #fff; border: 0; padding: 12px; border-radius: 12px; font-size: 13.5px; font-weight: 800; cursor: pointer; box-shadow: 0 4px 14px rgba(255,63,108,0.35); display: flex; justify-content: center; align-items: center; gap: 6px;">
+        <span>🎯 Let's Go to Wishlist</span>
+        <span>→</span>
+      </button>
+
+      <button onclick="closeBingoPopup()" style="width: 100%; background: transparent; border: 0; color: #6b7280; font-size: 11px; font-weight: 700; margin-top: 10px; cursor: pointer;">
+        I'll explore later
+      </button>
     </div>
   </div>
 
@@ -1182,6 +1227,27 @@
         renderGrid(filtered);
       }
     }
+
+    // Update Persona Briefing in Pop-Up and Pill
+    document.getElementById('pillPersonaText').textContent = persona.items + ' saved items organized for ' + persona.name.split(' ')[0];
+    document.getElementById('popupPersonaBrief').innerHTML = 'Hey <strong>' + persona.name + '</strong>, we noticed you have <strong>' + persona.items + ' saved items</strong> in your wishlist! Bingo has auto-organized them into smart occasion folders with verified sizing &amp; price stability.';
+
+    // Bingo Discovery Pop-Up Controls
+    function openBingoPopup() {
+      document.getElementById('bingoPopupModal').classList.add('open');
+    }
+    function closeBingoPopup() {
+      document.getElementById('bingoPopupModal').classList.remove('open');
+    }
+    function goToBingoWishlist() {
+      closeBingoPopup();
+      window.location.href = 'prototype.html?persona=' + personaId;
+    }
+
+    // Auto-open pop-up on landing (subtle & non-intrusive)
+    setTimeout(() => {
+      openBingoPopup();
+    }, 450);
 
     function openPersonaDrawer() {
       document.getElementById('personaDrawer').classList.add('open');
