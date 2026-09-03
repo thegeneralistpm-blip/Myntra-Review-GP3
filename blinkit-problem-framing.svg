@@ -1,35 +1,139 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
-<rect width="1280" height="720" fill="#fffdfb"/>
+<rect width="1280" height="720" fill="#fbfbfc"/>
 <style>
-.title{font:700 31px Arial;fill:#171717}.head{font:700 18px Arial;fill:#c61f45}.body{font:15px Arial;fill:#27272a}.nav{font:700 9px Arial;fill:#252525}
+.title{font:800 28px Inter,Arial,sans-serif;fill:#20201c;letter-spacing:-0.5px}
+.brand{font:900 32px Inter,Arial,sans-serif;fill:#ff3f6c;letter-spacing:-1px}
+.tagline{font:700 11px Inter,Arial,sans-serif;fill:#6d6d66;text-transform:uppercase;letter-spacing:1.2px}
+.head{font:800 16px Inter,Arial,sans-serif;fill:#ff3f6c;letter-spacing:-0.2px}
+.body{font:14px Inter,Arial,sans-serif;fill:#29303e;line-height:1.45}
+.nav-text{font:700 8.5px Inter,Arial,sans-serif;fill:#29303e}
+.pill{font:700 10px Inter,Arial,sans-serif;fill:#087852}
 </style>
-<text x="28" y="45" class="title">The Reorder Loop Is Limiting Blinkit’s Cross-Category Growth</text>
-<line x1="28" y1="65" x2="1252" y2="65" stroke="#ecd5d7"/>
-<text x="1110" y="43" style="font:700 31px Arial;fill:#1f1f1b">blinkit</text><circle cx="1230" cy="32" r="20" fill="#f7d34b"/>
 
-<g stroke="#e6b8bf">
-<rect x="28" y="82" width="398" height="235" rx="16" fill="#fbe8eb"/><rect x="436" y="82" width="398" height="235" rx="16" fill="#fbe8eb"/><rect x="844" y="82" width="408" height="235" rx="16" fill="#fbe8eb"/>
-<rect x="28" y="329" width="398" height="257" rx="16" fill="#fff0e6"/><rect x="436" y="329" width="398" height="257" rx="16" fill="#fff0e6"/><rect x="844" y="329" width="408" height="257" rx="16" fill="#fff0e6"/>
-</g>
-<text x="46" y="108" class="head">What Is the True Problem?</text>
-<text x="46" y="136" class="body"><tspan x="46" dy="0">Customers open Blinkit with a known mission—</tspan><tspan x="46" dy="19">often groceries, snacks or household essentials—</tspan><tspan x="46" dy="19">and reorder familiar categories.</tspan><tspan x="46" dy="27">When a new category appears, confidence can drop</tspan><tspan x="46" dy="19">because quality, price, availability, substitutions</tspan><tspan x="46" dy="19">and returns are hard to judge quickly.</tspan><tspan x="46" dy="27">This can suppress monthly new-category trial.</tspan></text>
-<text x="454" y="108" class="head">Who Faces the Problem?</text>
-<text x="454" y="136" class="body"><tspan x="454" dy="0">Routine replenishment users: repeated monthly</tspan><tspan x="454" dy="19">orders in one or two categories, with little/no</tspan><tspan x="454" dy="19">cross-category trial.</tspan><tspan x="454" dy="27">They value speed and predictability, but may</tspan><tspan x="454" dy="19">experiment when a recommendation feels relevant,</tspan><tspan x="454" dy="19">available and low-risk.</tspan><tspan x="454" dy="27">Validate with 5–6 user interviews.</tspan></text>
-<text x="862" y="108" class="head">How Do We Know It’s Real?</text>
-<text x="862" y="136" class="body"><tspan x="862" dy="0">Directional evidence from 3,000 public App Store</tspan><tspan x="862" dy="19">and Google Play reviews.</tspan><tspan x="862" dy="27">555 records are flagged by keyword screening for</tspan><tspan x="862" dy="19">discovery/category signals; AI validation pending.</tspan><tspan x="862" dy="27">Trust, availability, product-quality and navigation</tspan><tspan x="862" dy="19">concerns recur. Reviews are not causal proof.</tspan></text>
+<!-- Header -->
+<text x="32" y="44" class="title">Wishlist Hesitation Halts Conversion Before Checkout on Myntra</text>
+<text x="32" y="62" class="tagline">North Star: 30-Day Wishlist-to-Purchase Conversion · Constraint: Zero Monetary Incentives</text>
+<line x1="32" y1="74" x2="1248" y2="74" stroke="#e5e4dc" stroke-width="1.2"/>
+<text x="1100" y="46" class="brand">Myntra</text>
+<rect x="1212" y="27" width="36" height="20" rx="10" fill="#fff0f5"/>
+<text x="1230" y="41" font-family="Inter,Arial" font-size="10" font-weight="800" fill="#ff3f6c" text-anchor="middle">VOC</text>
 
-<text x="46" y="356" class="head">Value to the Customer</text>
-<text x="46" y="385" class="body"><tspan x="46" dy="0">• Discover adjacent categories without browsing a</tspan><tspan x="46" dy="19">  huge catalogue.</tspan><tspan x="46" dy="27">• Get confidence cues: brand, rating, price, quality,</tspan><tspan x="46" dy="19">  availability and recovery path.</tspan><tspan x="46" dy="27">• Keep the speed and control of quick commerce.</tspan></text>
-<text x="454" y="356" class="head">Value to the Business</text>
-<text x="454" y="385" class="body"><tspan x="454" dy="0">• Increase monthly active customers buying a new</tspan><tspan x="454" dy="19">  category.</tspan><tspan x="454" dy="27">• Turn routine journeys into relevant discovery.</tspan><tspan x="454" dy="27">• Expand category penetration and basket breadth</tspan><tspan x="454" dy="19">  while protecting trust and repeat frequency.</tspan></text>
-<text x="862" y="356" class="head">Why Solve This Now?</text>
-<text x="862" y="385" class="body"><tspan x="862" dy="0">Quick commerce is already part of weekly routines.</tspan><tspan x="862" dy="27">A weekly review pipeline can surface emerging</tspan><tspan x="862" dy="19">friction and new themes.</tspan><tspan x="862" dy="27">Next gate: validate segment, triggers and barriers</tspan><tspan x="862" dy="19">through 5–6 interviews before scaling.</tspan></text>
+<!-- 6 PM Framework Cards -->
+<g stroke="#e5e4dc" stroke-width="1">
+  <!-- Top Row -->
+  <rect x="32" y="88" width="392" height="236" rx="14" fill="#ffffff"/>
+  <rect x="444" y="88" width="392" height="236" rx="14" fill="#ffffff"/>
+  <rect x="856" y="88" width="392" height="236" rx="14" fill="#ffffff"/>
 
-<g fill="#f6f3f1" stroke="#353535">
-<rect x="28" y="603" width="116" height="49" rx="10"/><rect x="150" y="603" width="116" height="49" rx="10"/><rect x="272" y="603" width="116" height="49" rx="10"/><rect x="394" y="603" width="116" height="49" rx="10" stroke="#ff355d"/><rect x="516" y="603" width="116" height="49" rx="10"/><rect x="638" y="603" width="116" height="49" rx="10"/><rect x="760" y="603" width="116" height="49" rx="10"/><rect x="882" y="603" width="116" height="49" rx="10"/><rect x="1004" y="603" width="116" height="49" rx="10"/><rect x="1126" y="603" width="126" height="49" rx="10"/>
+  <!-- Bottom Row -->
+  <rect x="32" y="338" width="392" height="248" rx="14" fill="#ffffff"/>
+  <rect x="444" y="338" width="392" height="248" rx="14" fill="#ffffff"/>
+  <rect x="856" y="338" width="392" height="248" rx="14" fill="#ffffff"/>
 </g>
-<text x="28" y="684" style="font:10px Arial;fill:#6b7280">Blinkit discovery engine • Public review corpus + primary research validation pending</text>
-<g class="nav" text-anchor="middle">
-<text x="86" y="620">SLIDE 1<tspan x="86" dy="12">REVIEW ANALYZER</tspan><tspan x="86" dy="10">WORKFLOW</tspan></text><text x="208" y="626">SLIDE 2<tspan x="208" dy="12">USER SEGMENTATION</tspan></text><text x="330" y="626">SLIDE 3<tspan x="330" dy="12">USER RESEARCH</tspan></text><text x="452" y="626">SLIDE 4<tspan x="452" dy="12">PROBLEM FRAMING</tspan></text><text x="574" y="626">SLIDE 5<tspan x="574" dy="12">SOLUTIONS</tspan></text><text x="696" y="626">SLIDE 6<tspan x="696" dy="12">PRIORITIZATION</tspan></text><text x="818" y="626">SLIDE 7<tspan x="818" dy="12">USER FLOW</tspan></text><text x="940" y="626">SLIDE 8<tspan x="940" dy="12">WIREFRAMES</tspan></text><text x="1062" y="626">SLIDE 9<tspan x="1062" dy="12">METRICS</tspan></text><text x="1189" y="626">SLIDE 10<tspan x="1189" dy="12">GTM + RISK</tspan></text>
+
+<!-- Card 1: What Is the True Problem? -->
+<rect x="32" y="88" width="392" height="5" rx="2" fill="#ff3f6c"/>
+<text x="50" y="116" class="head">1. What Is the True Problem?</text>
+<text x="50" y="142" class="body">
+  <tspan x="50" dy="0">Users browse and save fashion items to wishlists</tspan>
+  <tspan x="50" dy="19">(expressing strong intent) but stop short of buying.</tspan>
+  <tspan x="50" dy="25">Hesitation is driven by size &amp; fit uncertainty,</tspan>
+  <tspan x="50" dy="19">fabric quality doubts, out-of-stock sizes, clutter</tspan>
+  <tspan x="50" dy="19">(forgetting saved items), and delivery fees.</tspan>
+  <tspan x="50" dy="25">Key Constraint: We cannot offer monetary discounts</tspan>
+  <tspan x="50" dy="19">or coupons. Solutions must be 100% product-led.</tspan>
+</text>
+
+<!-- Card 2: Who Faces the Problem? -->
+<rect x="444" y="88" width="392" height="5" rx="2" fill="#f28c28"/>
+<text x="462" y="116" class="head">2. Who Faces the Problem?</text>
+<text x="462" y="142" class="body">
+  <tspan x="462" dy="0">High-Intent Wishlist Accumulators: Myntra users</tspan>
+  <tspan x="462" dy="19">with 10+ items saved in their wishlist over 30 days</tspan>
+  <tspan x="462" dy="19">with zero wishlist-to-cart conversions.</tspan>
+  <tspan x="462" dy="25">They treat wishlists as holding carts or style</tspan>
+  <tspan x="462" dy="19">moodboards, but lack confidence cues (fit, styling,</tspan>
+  <tspan x="462" dy="19">or fabric feel) needed to pull the trigger.</tspan>
+  <tspan x="462" dy="25">Recommended target for 5–6 qualitative user interviews.</tspan>
+</text>
+
+<!-- Card 3: How Do We Know It's Real? -->
+<rect x="856" y="88" width="392" height="5" rx="2" fill="#087852"/>
+<text x="874" y="116" class="head">3. How Do We Know It’s Real?</text>
+<text x="874" y="142" class="body">
+  <tspan x="874" dy="0">Scaled VoC evidence from 20,703 public reviews</tspan>
+  <tspan x="874" dy="19">across Google Play India, App Store, &amp; Reddit.</tspan>
+  <tspan x="874" dy="25">2,508 in-scope friction signals validated by AI:</tspan>
+  <tspan x="874" dy="19">• Fit &amp; Fabric Anxiety: 2,252 signals (sizing doubts)</tspan>
+  <tspan x="874" dy="19">• Wishlist Clutter: 181 signals (lost/forgotten items)</tspan>
+  <tspan x="874" dy="19">• Delivery Friction: 91 signals (charges at checkout)</tspan>
+  <tspan x="874" dy="19">• Styling Doubts: 89 signals (how to wear/match)</tspan>
+</text>
+
+<!-- Card 4: Value to the Customer -->
+<rect x="32" y="338" width="392" height="5" rx="2" fill="#ff3f6c"/>
+<text x="50" y="366" class="head">4. Value to the Customer</text>
+<text x="50" y="394" class="body">
+  <tspan x="50" dy="0">• Buying Confidence: Fit badges (% true-to-size)</tspan>
+  <tspan x="50" dy="19">  and customer photos directly on wishlist cards.</tspan>
+  <tspan x="50" dy="25">• Clutter-Free Curation: Smart Folders group items</tspan>
+  <tspan x="50" dy="19">  by occasion (e.g. Workwear, Vacation, Festive).</tspan>
+  <tspan x="50" dy="25">• Stock Peace of Mind: Real-time size-restock alerts</tspan>
+  <tspan x="50" dy="19">  and identical in-stock alternative recommendations.</tspan>
+</text>
+
+<!-- Card 5: Value to the Business -->
+<rect x="444" y="338" width="392" height="5" rx="2" fill="#087852"/>
+<text x="462" y="366" class="head">5. Value to the Business</text>
+<text x="462" y="394" class="body">
+  <tspan x="462" dy="0">• Accelerates North Star: Increases 30-day wishlist</tspan>
+  <tspan x="462" dy="19">  checkout rate without discounting or margins loss.</tspan>
+  <tspan x="462" dy="25">• Unlocks High Latent GMV: Activates millions of</tspan>
+  <tspan x="462" dy="19">  dormant items currently sitting idle in wishlists.</tspan>
+  <tspan x="462" dy="25">• Lowers Return Rates: Accurate pre-purchase fit</tspan>
+  <tspan x="462" dy="19">  confidence reduces reverse logistics costs.</tspan>
+</text>
+
+<!-- Card 6: Why Solve This Now? -->
+<rect x="856" y="338" width="392" height="5" rx="2" fill="#29303e"/>
+<text x="874" y="366" class="head">6. Why Solve This Now?</text>
+<text x="874" y="394" class="body">
+  <tspan x="874" dy="0">• Wishlisting is high-intent, but customer attention</tspan>
+  <tspan x="874" dy="19">  decays fast after 7–14 days of inactivity.</tspan>
+  <tspan x="874" dy="25">• Margin pressures require non-monetary growth:</tspan>
+  <tspan x="874" dy="19">  improving UX/trust converts users organically.</tspan>
+  <tspan x="874" dy="25">• Automated data pipeline is live; immediate next</tspan>
+  <tspan x="874" dy="19">  step is 5–6 primary interviews to validate solutions.</tspan>
+</text>
+
+<!-- Navigation Bar (10 PM Slides) -->
+<g fill="#f1f1eb" stroke="#d5d5cd">
+  <rect x="32" y="604" width="115" height="48" rx="8"/>
+  <rect x="153" y="604" width="115" height="48" rx="8"/>
+  <rect x="274" y="604" width="115" height="48" rx="8"/>
+  <rect x="395" y="604" width="115" height="48" rx="8" stroke="#ff3f6c" stroke-width="2" fill="#fff0f5"/>
+  <rect x="516" y="604" width="115" height="48" rx="8"/>
+  <rect x="637" y="604" width="115" height="48" rx="8"/>
+  <rect x="758" y="604" width="115" height="48" rx="8"/>
+  <rect x="879" y="604" width="115" height="48" rx="8"/>
+  <rect x="1000" y="604" width="115" height="48" rx="8"/>
+  <rect x="1121" y="604" width="127" height="48" rx="8"/>
 </g>
+<g class="nav-text" text-anchor="middle">
+  <text x="89" y="622">SLIDE 1<tspan x="89" dy="13">VOC ENGINE</tspan></text>
+  <text x="210" y="622">SLIDE 2<tspan x="210" dy="13">SEGMENTATION</tspan></text>
+  <text x="331" y="622">SLIDE 3<tspan x="331" dy="13">USER RESEARCH</tspan></text>
+  <text x="452" y="622" fill="#ff3f6c">SLIDE 4<tspan x="452" dy="13">PROBLEM FRAMING</tspan></text>
+  <text x="573" y="622">SLIDE 5<tspan x="573" dy="13">SOLUTIONS</tspan></text>
+  <text x="694" y="622">SLIDE 6<tspan x="694" dy="13">PRIORITIZATION</tspan></text>
+  <text x="815" y="622">SLIDE 7<tspan x="815" dy="13">USER FLOWS</tspan></text>
+  <text x="936" y="622">SLIDE 8<tspan x="936" dy="13">WIREFRAMES</tspan></text>
+  <text x="1057" y="622">SLIDE 9<tspan x="1057" dy="13">METRICS &amp; AB</tspan></text>
+  <text x="1184" y="622">SLIDE 10<tspan x="1184" dy="13">GTM &amp; RISKS</tspan></text>
+</g>
+
+<!-- Footer -->
+<text x="32" y="688" style="font:700 11px Inter,Arial,sans-serif;fill:#6d6d66">Myntra Wishlist Conversion Engine · Directional public VoC research + primary user validation</text>
+<text x="1248" y="688" text-anchor="end" style="font:700 11px Inter,Arial,sans-serif;fill:#ff3f6c">Product Management Graduation Project</text>
+
 </svg>

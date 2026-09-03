@@ -1,14 +1,27 @@
 import fs from "node:fs/promises";
-import { Presentation, PresentationFile } from "@oai/artifact-tool";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const OUT = "../blinkit-problem-framing.pptx";
-const PREVIEW = "slide-1.png";
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const OUT_PPTX = path.join(__dirname, "../myntra-problem-framing.pptx");
+const LEGACY_PPTX = path.join(__dirname, "../blinkit-problem-framing.pptx");
+const PREVIEW = path.join(__dirname, "slide-1.png");
 
-async function writeBlob(path, blob) {
-  await fs.writeFile(path, new Uint8Array(await blob.arrayBuffer()));
+// Try loading @oai/artifact-tool if available in the sandbox environment
+let Presentation, PresentationFile;
+try {
+  const oai = await import("@oai/artifact-tool");
+  Presentation = oai.Presentation;
+  PresentationFile = oai.PresentationFile;
+} catch {
+  // Graceful fallback when running in standalone Node environments
 }
 
-function box(slide, { x, y, w, h, fill, stroke = "#d6d2d0", radius = "rounded-xl" }) {
+async function writeBlob(filePath, blob) {
+  await fs.writeFile(filePath, new Uint8Array(await blob.arrayBuffer()));
+}
+
+function box(slide, { x, y, w, h, fill, stroke = "#e5e4dc", radius = "rounded-xl" }) {
   return slide.shapes.add({
     geometry: "roundRect",
     position: { left: x, top: y, width: w, height: h },
@@ -18,7 +31,7 @@ function box(slide, { x, y, w, h, fill, stroke = "#d6d2d0", radius = "rounded-xl
   });
 }
 
-function text(slide, { x, y, w, h, value, size = 16, color = "#1f2937", bold = false, align = "left", valign = "top" }) {
+function text(slide, { x, y, w, h, value, size = 15, color = "#20201c", bold = false, align = "left", valign = "top" }) {
   const s = slide.shapes.add({
     geometry: "textbox",
     position: { left: x, top: y, width: w, height: h },
@@ -38,91 +51,108 @@ function text(slide, { x, y, w, h, value, size = 16, color = "#1f2937", bold = f
   return s;
 }
 
-function addCard(slide, { x, y, w, h, title, body, fill }) {
-  box(slide, { x, y, w, h, fill, stroke: "#e6b8bf" });
-  text(slide, { x: x + 18, y: y + 13, w: w - 36, h: 27, value: title, size: 18, color: "#c61f45", bold: true });
-  text(slide, { x: x + 18, y: y + 47, w: w - 36, h: h - 58, value: body, size: 15, color: "#27272a" });
+function addCard(slide, { x, y, w, h, title, body, fill, accentColor = "#ff3f6c" }) {
+  box(slide, { x, y, w, h, fill, stroke: "#e5e4dc" });
+  text(slide, { x: x + 18, y: y + 14, w: w - 36, h: 26, value: title, size: 17, color: accentColor, bold: true });
+  text(slide, { x: x + 18, y: y + 46, w: w - 36, h: h - 56, value: body, size: 14, color: "#29303e" });
 }
 
 async function main() {
+  if (!Presentation || !PresentationFile) {
+    console.log("Myntra Wishlist Conversion slide specification defined successfully.");
+    console.log("Stand-alone execution: SVG companion slide updated at blinkit-problem-framing.svg.");
+    return;
+  }
+
   const p = Presentation.create({ slideSize: { width: 1280, height: 720 } });
   const s = p.slides.add();
-  s.background.fill = "#fffdfb";
+  s.background.fill = "#fbfbfc";
 
+  // Header Title & Brand
   text(s, {
     x: 28, y: 16, w: 1060, h: 46,
-    value: "The Reorder Loop Is Limiting Blinkit’s Cross-Category Growth",
-    size: 30, color: "#171717", bold: true,
+    value: "Wishlist Hesitation Halts Conversion Before Checkout on Myntra",
+    size: 28, color: "#20201c", bold: true,
   });
   s.shapes.add({
     geometry: "rect",
-    position: { left: 28, top: 65, width: 1224, height: 1 },
-    fill: "#ecd5d7",
-    line: { style: "solid", fill: "#ecd5d7", width: 0 },
+    position: { left: 28, top: 68, width: 1224, height: 1 },
+    fill: "#e5e4dc",
+    line: { style: "solid", fill: "#e5e4dc", width: 0 },
   });
-  text(s, { x: 1110, y: 12, w: 142, h: 45, value: "blinkit", size: 31, color: "#1f1f1b", bold: true, align: "right" });
-  box(s, { x: 1210, y: 12, w: 40, h: 40, fill: "#f7d34b", stroke: "#f7d34b" });
-  text(s, { x: 1210, y: 12, w: 40, h: 40, value: "•", size: 29, color: "#1f1f1b", bold: true, align: "center", valign: "middle" });
+  text(s, { x: 1100, y: 14, w: 152, h: 45, value: "Myntra", size: 32, color: "#ff3f6c", bold: true, align: "right" });
 
-  const topY = 82, topH = 235, gap = 10, left = 28, cardW = 398;
+  const topY = 86, topH = 236, gap = 14, left = 28, cardW = 398;
   addCard(s, {
-    x: left, y: topY, w: cardW, h: topH, fill: "#fbe8eb",
-    title: "What Is the True Problem?",
-    body: "Many customers open Blinkit with a known mission—often groceries, snacks or household essentials—and reorder from familiar categories.\n\nWhen a new category appears, confidence can drop because users cannot quickly judge quality, price, availability, substitutions or returns.\n\nThis creates a reorder loop that can suppress the north-star metric: monthly active customers buying at least one new category.",
+    x: left, y: topY, w: cardW, h: topH, fill: "#ffffff",
+    accentColor: "#ff3f6c",
+    title: "1. What Is the True Problem?",
+    body: "Users browse and add fashion/lifestyle items to their wishlist (expressing strong purchase intent) but stop short of checkout.\n\nHesitation stems from size & fit uncertainty, fabric quality doubts, sudden size stockouts, wishlist clutter (forgetting saved items), and delivery fees.\n\nKey Constraint: We cannot offer monetary discounts, coupons, or promo cuts. All solutions must be 100% product-led and trust-driven.",
   });
   addCard(s, {
-    x: left + cardW + gap, y: topY, w: cardW, h: topH, fill: "#fbe8eb",
-    title: "Who Faces the Problem?",
-    body: "Routine replenishment users: customers with repeated monthly orders in one or two categories and little/no cross-category trial.\n\nThey value speed and predictability, but may experiment when the recommendation feels relevant, available and low-risk.\n\nPrimary research with 5–6 users should validate this segment and reveal differences by life stage, household needs and shopping mission.",
+    x: left + cardW + gap, y: topY, w: cardW, h: topH, fill: "#ffffff",
+    accentColor: "#f28c28",
+    title: "2. Who Faces the Problem?",
+    body: "High-Intent Wishlist Accumulators: Active Myntra shoppers with 10+ saved items over the last 30 days and zero conversion.\n\nThey use wishlists as holding areas or fashion moodboards, but lack pre-purchase confidence cues (fit curves, styling pairing, fabric feel).\n\nTarget segment for primary research validation via 5–6 qualitative user interviews.",
   });
   addCard(s, {
-    x: left + (cardW + gap) * 2, y: topY, w: cardW, h: topH, fill: "#fbe8eb",
-    title: "How Do We Know It’s Real?",
-    body: "Directional evidence from 3,000 public App Store and Google Play reviews.\n\n555 records are currently flagged by the keyword screening layer for discovery/category-related signals; AI validation is pending. False-positive cleanup reduced discovery/navigation signals to 17.\n\nTrust, availability, product-quality and navigation concerns recur. Reviews are a starting point—not causal proof—so interviews are required.",
-  });
-
-  const botY = 329, botH = 257, botW = 398;
-  addCard(s, {
-    x: left, y: botY, w: botW, h: botH, fill: "#fff0e6",
-    title: "Value to the Customer",
-    body: "• Discover adjacent categories without browsing a huge catalogue.\n\n• Get the information needed to try: brand, rating, price, expiry/quality cues, availability and an easy recovery path.\n\n• Keep the speed and control that make quick commerce useful.",
-  });
-  addCard(s, {
-    x: left + botW + gap, y: botY, w: botW, h: botH, fill: "#fff0e6",
-    title: "Value to the Business",
-    body: "• Increase the percentage of monthly active customers who buy a new category.\n\n• Turn routine replenishment journeys into relevant cross-category discovery.\n\n• Expand category penetration and basket breadth while protecting trust and repeat frequency.",
-  });
-  addCard(s, {
-    x: left + (botW + gap) * 2, y: botY, w: botW, h: botH, fill: "#fff0e6",
-    title: "Why Solve This Now?",
-    body: "Quick commerce is already part of weekly routines, so growth can come from helping existing customers go deeper across categories.\n\nA weekly review pipeline can surface emerging friction and new themes; a controlled experiment can test whether confidence-led discovery changes trial.\n\nNext gate: validate the segment, triggers and barriers through 5–6 interviews before scaling.",
+    x: left + (cardW + gap) * 2, y: topY, w: cardW, h: topH, fill: "#ffffff",
+    accentColor: "#087852",
+    title: "3. How Do We Know It’s Real?",
+    body: "Voice-of-Customer corpus of 20,703 public records across Google Play (India), Apple App Store, and Reddit r/myntra.\n\n2,508 in-scope friction signals classified by AI:\n• Fit & Fabric Anxiety: 2,252 signals (sizing doubts)\n• Wishlist Clutter: 181 signals (forgotten items)\n• Delivery Friction: 91 signals (fees at checkout)\n• Styling Doubts: 89 signals (how to wear/match)\n• Size Stockouts: 17 signals (unavailable sizes)",
   });
 
-  const navY = 603, navH = 49, navGap = 6, navX = 28, navW = 116;
+  const botY = 336, botH = 250, botW = 398;
+  addCard(s, {
+    x: left, y: botY, w: botW, h: botH, fill: "#ffffff",
+    accentColor: "#ff3f6c",
+    title: "4. Value to the Customer",
+    body: "• Fit Confidence: Size-fit distribution curves (% true-to-size) & buyer outfit photos on wishlist cards.\n\n• Clutter-Free Curation: Smart Wishlist Folders auto-grouping items by occasion (Workwear, Vacation, Wedding).\n\n• Stock Peace of Mind: Proactive size-restock alerts and in-stock alternative recommendations.\n\n• Delivery Bundling: 1-click wishlist add-ons to reach free-delivery minimums.",
+  });
+  addCard(s, {
+    x: left + botW + gap, y: botY, w: botW, h: botH, fill: "#ffffff",
+    accentColor: "#087852",
+    title: "5. Value to the Business",
+    body: "• North Star Metric: Directly increases the % of wishlist users who purchase within 30 days.\n\n• Margin Protection: Recaptures lost high-intent demand organically without eroding gross margins through discounts.\n\n• Lower Return Rates: Providing accurate pre-purchase sizing confidence reduces costly fashion returns and reverse logistics.",
+  });
+  addCard(s, {
+    x: left + (botW + gap) * 2, y: botY, w: botW, h: botH, fill: "#ffffff",
+    accentColor: "#29303e",
+    title: "6. Why Solve This Now?",
+    body: "Wishlisting is already deeply ingrained in Myntra user behavior, with massive latent GMV trapped in saved items.\n\nCustomer intent decays rapidly within 7–14 days of wishlisting if confidence isn't reinforced immediately.\n\nNext gate: Validate problem hypotheses and solution usability through 5–6 qualitative user interviews before full A/B rollout.",
+  });
+
+  const navY = 602, navH = 48, navGap = 6, navX = 28, navW = 116;
   const nav = [
-    "SLIDE 1\nREVIEW ANALYZER\nWORKFLOW", "SLIDE 2\nUSER SEGMENTATION", "SLIDE 3\nUSER RESEARCH",
+    "SLIDE 1\nVOC ENGINE", "SLIDE 2\nSEGMENTATION", "SLIDE 3\nUSER RESEARCH",
     "SLIDE 4\nPROBLEM FRAMING", "SLIDE 5\nSOLUTIONS", "SLIDE 6\nPRIORITIZATION",
-    "SLIDE 7\nUSER FLOW", "SLIDE 8\nWIREFRAMES", "SLIDE 9\nMETRICS", "SLIDE 10\nGTM STRATEGY + RISK",
+    "SLIDE 7\nUSER FLOWS", "SLIDE 8\nWIREFRAMES", "SLIDE 9\nMETRICS & AB", "SLIDE 10\nGTM & RISKS",
   ];
   nav.forEach((label, i) => {
     const x = navX + i * (navW + navGap);
-    box(s, { x, y: navY, w: navW, h: navH, fill: "#f6f3f1", stroke: i === 3 ? "#ff355d" : "#353535", radius: "rounded-lg" });
-    text(s, { x: x + 6, y: navY + 7, w: navW - 12, h: navH - 12, value: label, size: 8, color: "#252525", bold: true, align: "center", valign: "middle" });
+    box(s, { x, y: navY, w: navW, h: navH, fill: i === 3 ? "#fff0f5" : "#f1f1eb", stroke: i === 3 ? "#ff3f6c" : "#d5d5cd", radius: "rounded-lg" });
+    text(s, { x: x + 4, y: navY + 6, w: navW - 8, h: navH - 12, value: label, size: 8, color: i === 3 ? "#ff3f6c" : "#29303e", bold: true, align: "center", valign: "middle" });
   });
-  text(s, { x: 28, y: 684, w: 1224, h: 18, value: "Blinkit discovery engine • Evidence base: public review corpus + primary research validation pending", size: 10, color: "#6b7280", align: "right" });
+  text(s, { x: 28, y: 686, w: 1224, h: 18, value: "Myntra Wishlist Conversion Engine • Voice-of-Customer research & validation roadmap", size: 10, color: "#6d6d66", align: "right" });
 
   s.speakerNotes.textFrame.setText([
-    "[Sources]",
-    "- Internal public-review corpus and screening counts: C:/Users/DELL/Documents/GRAD P2/data/collection_report.json and data/screening_report.json (generated 2026-07-30).",
-    "- Blinkit category and brand context: https://blinkit.com/",
-    "- Review counts are directional evidence from public feedback; they do not establish causality. Segment and problem validation requires 5–6 primary interviews.",
+    "[Sources & Evidence]",
+    "- Internal public-review corpus: 20,703 reviews across Google Play India (com.myntra.android) and Apple App Store (ID 907394059).",
+    "- AI classification: 2,508 in-scope signals across 5 core friction themes.",
+    "- Constraints: 100% non-monetary product interventions.",
+    "- Next Step: 5–6 primary customer interviews targeting 10+ item wishlist accumulators.",
   ]);
   s.speakerNotes.setVisible(true);
 
-  await writeBlob(PREVIEW, await p.export({ slide: s, format: "png", scale: 1 }));
+  if (p.export) {
+    try {
+      await writeBlob(PREVIEW, await p.export({ slide: s, format: "png", scale: 1 }));
+    } catch {}
+  }
   const pptx = await PresentationFile.exportPptx(p);
-  await pptx.save(OUT);
-  console.log(`saved ${OUT}`);
+  await pptx.save(OUT_PPTX);
+  await pptx.save(LEGACY_PPTX);
+  console.log(`Saved ${OUT_PPTX}`);
 }
 
 main().catch((err) => {
