@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Myntra Smart Decision Wishlist · MVP Prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #ff3f6c;
+      --pink-dark: #e01e52;
+      --pink-light: #fff0f5;
+      --ink: #20201c;
+      --muted: #6d6d66;
+      --bg: #f4f4f6;
+      --card: #ffffff;
+      --line: #e8e7df;
+      --green: #087852;
+      --green-bg: #edf7f2;
+      --amber: #f28c28;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px 10px;
+    }
+    
+    /* Top Banner / Evaluation Bar */
+    .top-bar {
+      width: 100%;
+      max-width: 440px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #20242e;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-size: 12px;
+    }
+    .top-bar strong { color: #ff3f6c; font-weight: 800; }
+    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; background: rgba(255,255,255,0.15); padding: 4px 10px; border-radius: 99px; }
+
+    /* Mobile Container Frame */
+    .phone-frame {
+      width: 100%;
+      max-width: 440px;
+      background: #ffffff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.12);
+      border: 1px solid #e0e0e0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* App Header */
+    .app-header {
+      padding: 16px 18px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f0f0f0;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-logo span {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--pink);
+      letter-spacing: -1px;
+    }
+    .wishlist-count {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .wishlist-count small {
+      color: var(--muted);
+      font-weight: 500;
+      margin-left: 4px;
+    }
+    .header-icons {
+      display: flex;
+      gap: 16px;
+      font-size: 18px;
+      color: #333;
+      position: relative;
+    }
+    .cart-badge {
+      position: absolute;
+      top: -6px;
+      right: -8px;
+      background: var(--pink);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+    }
+
+    /* Feature 1: Smart Occasion Tabs */
+    .tabs-wrap {
+      padding: 12px 16px;
+      background: #fff;
+      border-bottom: 1px solid #f4f4f4;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .tabs-wrap::-webkit-scrollbar { display: none; }
+    .tab-pill {
+      background: #f5f5f6;
+      border: 1px solid transparent;
+      padding: 7px 14px;
+      border-radius: 99px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--ink);
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .tab-pill.active {
+      background: var(--pink);
+      color: #fff;
+      box-shadow: 0 3px 8px rgba(255,63,108,0.25);
+    }
+
+    /* Product Cards Feed */
+    .feed {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      background: #fafafb;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #ececec;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+      transition: transform 0.15s;
+    }
+    
+    /* Product Image Container */
+    .product-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      background: #f0f0f4;
+      overflow: hidden;
+    }
+    .product-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .rating-badge {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(4px);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      color: #20201c;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .rating-badge span { color: #087852; font-size: 12px; }
+    .wish-heart {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.9);
+      display: grid;
+      place-items: center;
+      color: var(--pink);
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Product Details */
+    .product-info {
+      padding: 14px 16px 16px;
+    }
+    .product-brand {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+    .product-name {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Price Section & Feature 3: Price Memory Anchor */
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .current-price {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--ink);
+    }
+    .mrp {
+      font-size: 13px;
+      text-decoration: line-through;
+      color: #999;
+    }
+    .discount-pct {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--amber);
+    }
+    
+    /* Feature 3: The Subtle Price Memory Label */
+    .price-memory-tag {
+      margin-top: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #f8f9fa;
+      border: 1px solid #ebebeb;
+      padding: 4px 9px;
+      border-radius: 6px;
+      font-size: 11px;
+      color: #444;
+    }
+    .price-memory-tag strong {
+      color: #111;
+      font-weight: 700;
+    }
+
+    /* Feature 2: FitConfidence Interactive Gauge */
+    .fit-box {
+      margin-top: 12px;
+      background: #fafafc;
+      border: 1px solid #ebebec;
+      border-radius: 12px;
+      padding: 12px;
+    }
+    .fit-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .fit-label {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .buyer-photos-btn {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--pink);
+      background: var(--pink-light);
+      border: 0;
+      padding: 4px 8px;
+      border-radius: 99px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .buyer-photos-btn:hover { background: #ffe4ec; }
+
+    /* Size Selector Pills */
+    .size-selector {
+      display: flex;
+      gap: 8px;
+      margin: 8px 0;
+    }
+    .size-btn {
+      flex: 1;
+      padding: 8px 4px;
+      border-radius: 8px;
+      border: 1px solid #dcdce0;
+      background: #fff;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--ink);
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.15s;
+    }
+    .size-btn.selected {
+      border-color: var(--pink);
+      background: var(--pink-light);
+      color: var(--pink);
+      box-shadow: 0 0 0 1px var(--pink);
+    }
+    .size-btn .rec-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      margin-left: 3px;
+    }
+    .fit-hint {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.4;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .fit-hint strong { color: var(--green); font-weight: 800; }
+
+    /* Primary CTA Button */
+    .move-to-bag-btn {
+      width: 100%;
+      margin-top: 14px;
+      padding: 13px;
+      border-radius: 10px;
+      background: var(--pink);
+      color: #fff;
+      border: 0;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.15s;
+    }
+    .move-to-bag-btn:hover { background: var(--pink-dark); }
+
+    /* Modal for Real Buyer Photos */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(4px);
+      display: none;
+      justify-content: center;
+      align-items: flex-end;
+      z-index: 100;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-sheet {
+      width: 100%;
+      max-width: 440px;
+      background: #fff;
+      border-radius: 20px 20px 0 0;
+      padding: 20px;
+      max-height: 85vh;
+      overflow-y: auto;
+      animation: slideUp 0.25s ease;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .modal-header h3 { font-size: 16px; font-weight: 800; }
+    .close-modal { font-size: 20px; border: 0; background: transparent; cursor: pointer; color: #888; }
+    .buyer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .buyer-card {
+      background: #f8f8f9;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #eee;
+    }
+    .buyer-card img { width: 100%; height: 160px; object-fit: cover; }
+    .buyer-info { padding: 8px; font-size: 11px; }
+    .buyer-info strong { display: block; color: var(--ink); }
+    .buyer-info span { color: var(--muted); font-size: 10px; }
+
+    /* Toast notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      background: #20242e;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 99px;
+      font-size: 13px;
+      font-weight: 700;
+      display: none;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      z-index: 200;
+    }
+    .toast.show { display: flex; }
+  </style>
+</head>
+<body>
+
+  <!-- Evaluator Banner -->
+  <div class="top-bar">
+    <div><strong>Part 5 MVP Prototype:</strong> Smart Decision Wishlist</div>
+    <a href="index.html">← Discovery Engine</a>
+  </div>
+
+  <!-- Mobile Screen Container -->
+  <div class="phone-frame">
+    
+    <!-- Top Header -->
+    <header class="app-header">
+      <div class="brand-logo">
+        <span>Myntra</span>
+        <div class="wishlist-count">Wishlist <small id="totalCount">(4 items)</small></div>
+      </div>
+      <div class="header-icons">
+        <span>🔍</span>
+        <div style="position:relative">
+          <span>🛍️</span>
+          <div class="cart-badge" id="cartBadge">0</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Feature 1: Smart Occasion Folders (Tabs) -->
+    <nav class="tabs-wrap" id="folderTabs">
+      <button class="tab-pill active" data-folder="all">All (4)</button>
+      <button class="tab-pill" data-folder="vacation">🌴 Vacation (1)</button>
+      <button class="tab-pill" data-folder="workwear">💼 Workwear (2)</button>
+      <button class="tab-pill" data-folder="wedding">✨ Wedding & Festive (1)</button>
+    </nav>
+
+    <!-- Product Feed -->
+    <main class="feed" id="productFeed">
+      
+      <!-- Card 1: Vacation Floral Dress -->
+      <article class="product-card" data-folder="vacation" data-id="1">
+        <div class="product-img-wrap">
+          <img class="product-img" src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=700&q=80" alt="Floral Midi Dress">
+          <div class="rating-badge"><span>★</span> 4.5 | 1.2k</div>
+          <div class="wish-heart">♥</div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand">Zara</div>
+          <div class="product-name">Floral Print V-Neck A-Line Midi Dress</div>
+          
+          <!-- Price & Feature 3: Price Memory Anchor -->
+          <div class="price-row">
+            <span class="current-price">₹1,499</span>
+            <span class="mrp">₹2,999</span>
+            <span class="discount-pct">(50% OFF)</span>
+          </div>
+          <div class="price-memory-tag">
+            <span>🏷️ Price when saved: <strong>₹1,499</strong> (12d ago · Price Stable)</span>
+          </div>
+
+          <!-- Feature 2: FitConfidence Gauge -->
+          <div class="fit-box">
+            <div class="fit-header">
+              <span class="fit-label">✨ FitConfidence</span>
+              <button class="buyer-photos-btn" onclick="openBuyerModal('Zara Floral Dress')">👁️ 14 Real Buyer Photos</button>
+            </div>
+            <div class="size-selector">
+              <button class="size-btn" onclick="selectSize(this, 'S', 'Snug at shoulders')">S</button>
+              <button class="size-btn selected" onclick="selectSize(this, 'M', '86% say True to Size · Recommended')">M <span class="rec-dot"></span></button>
+              <button class="size-btn" onclick="selectSize(this, 'L', 'Relaxed fit around waist')">L</button>
+              <button class="size-btn" onclick="selectSize(this, 'XL', 'Loose drape')">XL</button>
+            </div>
+            <div class="fit-hint">
+              <span class="fit-icon">📏</span>
+              <span class="fit-text"><strong>86% say True to Size</strong> · Recommended for you (Snug bust, true waist)</span>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <button class="move-to-bag-btn" onclick="addToBag('Zara Floral Dress', 'M')">
+            <span>🛍️ Move Size M to Bag</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Card 2: Workwear Formal Blazer -->
+      <article class="product-card" data-folder="workwear" data-id="2">
+        <div class="product-img-wrap">
+          <img class="product-img" src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80" alt="Structured Formal Blazer">
+          <div class="rating-badge"><span>★</span> 4.7 | 840</div>
+          <div class="wish-heart">♥</div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand">Mango</div>
+          <div class="product-name">Structured Single-Breasted Tailored Blazer</div>
+          
+          <!-- Price & Feature 3: Price Memory Anchor -->
+          <div class="price-row">
+            <span class="current-price">₹2,499</span>
+            <span class="mrp">₹4,999</span>
+            <span class="discount-pct">(50% OFF)</span>
+          </div>
+          <div class="price-memory-tag">
+            <span>🏷️ Price when saved: <strong>₹2,499</strong> (8d ago · Price Stable)</span>
+          </div>
+
+          <!-- Feature 2: FitConfidence Gauge -->
+          <div class="fit-box">
+            <div class="fit-header">
+              <span class="fit-label">✨ FitConfidence</span>
+              <button class="buyer-photos-btn" onclick="openBuyerModal('Mango Structured Blazer')">👁️ 9 Real Buyer Photos</button>
+            </div>
+            <div class="size-selector">
+              <button class="size-btn selected" onclick="selectSize(this, 'S', '92% say True to Size · Recommended')">S <span class="rec-dot"></span></button>
+              <button class="size-btn" onclick="selectSize(this, 'M', 'Slightly oversized sleeves')">M</button>
+              <button class="size-btn" onclick="selectSize(this, 'L', 'Boxy fit')">L</button>
+            </div>
+            <div class="fit-hint">
+              <span class="fit-icon">📏</span>
+              <span class="fit-text"><strong>92% say True to Size</strong> · Structured padded shoulders</span>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <button class="move-to-bag-btn" onclick="addToBag('Mango Structured Blazer', 'S')">
+            <span>🛍️ Move Size S to Bag</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Card 3: Wedding Anarkali Kurta Set -->
+      <article class="product-card" data-folder="wedding" data-id="3">
+        <div class="product-img-wrap">
+          <img class="product-img" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80" alt="Embroidered Kurti">
+          <div class="rating-badge"><span>★</span> 4.6 | 2.1k</div>
+          <div class="wish-heart">♥</div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand">Biba</div>
+          <div class="product-name">Embroidered Silk Blend Anarkali Kurta Set</div>
+          
+          <!-- Price & Feature 3: Price Memory Anchor -->
+          <div class="price-row">
+            <span class="current-price">₹2,199</span>
+            <span class="mrp">₹3,999</span>
+            <span class="discount-pct">(45% OFF)</span>
+          </div>
+          <div class="price-memory-tag">
+            <span>🏷️ Price when saved: <strong>₹2,199</strong> (15d ago · Stable)</span>
+          </div>
+
+          <!-- Feature 2: FitConfidence Gauge -->
+          <div class="fit-box">
+            <div class="fit-header">
+              <span class="fit-label">✨ FitConfidence</span>
+              <button class="buyer-photos-btn" onclick="openBuyerModal('Biba Anarkali Kurta')">👁️ 22 Real Buyer Photos</button>
+            </div>
+            <div class="size-selector">
+              <button class="size-btn" onclick="selectSize(this, '38', 'Fits 32-34 bust')">38</button>
+              <button class="size-btn selected" onclick="selectSize(this, '40', '88% say True to Size · Recommended')">40 <span class="rec-dot"></span></button>
+              <button class="size-btn" onclick="selectSize(this, '42', 'Flared skirt')">42</button>
+            </div>
+            <div class="fit-hint">
+              <span class="fit-icon">📏</span>
+              <span class="fit-text"><strong>88% say True to Size</strong> · 100% Breathable Silk-Cotton Blend</span>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <button class="move-to-bag-btn" onclick="addToBag('Biba Anarkali Kurta', '40')">
+            <span>🛍️ Move Size 40 to Bag</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- Card 4: Workwear High-Rise Jeans -->
+      <article class="product-card" data-folder="workwear" data-id="4">
+        <div class="product-img-wrap">
+          <img class="product-img" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80" alt="Slim Jeans">
+          <div class="rating-badge"><span>★</span> 4.4 | 1.9k</div>
+          <div class="wish-heart">♥</div>
+        </div>
+        <div class="product-info">
+          <div class="product-brand">Levi's</div>
+          <div class="product-name">711 High-Rise Skinny Stretch Jeans</div>
+          
+          <!-- Price & Feature 3: Price Memory Anchor -->
+          <div class="price-row">
+            <span class="current-price">₹1,899</span>
+            <span class="mrp">₹3,199</span>
+            <span class="discount-pct">(40% OFF)</span>
+          </div>
+          <div class="price-memory-tag">
+            <span>🏷️ Price when saved: <strong>₹1,899</strong> (5d ago · Stable)</span>
+          </div>
+
+          <!-- Feature 2: FitConfidence Gauge -->
+          <div class="fit-box">
+            <div class="fit-header">
+              <span class="fit-label">✨ FitConfidence</span>
+              <button class="buyer-photos-btn" onclick="openBuyerModal('Levis 711 Jeans')">👁️ 31 Real Buyer Photos</button>
+            </div>
+            <div class="size-selector">
+              <button class="size-btn" onclick="selectSize(this, '26', 'Tight at hips')">26</button>
+              <button class="size-btn selected" onclick="selectSize(this, '28', '94% say True to Size · Recommended')">28 <span class="rec-dot"></span></button>
+              <button class="size-btn" onclick="selectSize(this, '30', 'Comfort waist')">30</button>
+            </div>
+            <div class="fit-hint">
+              <span class="fit-icon">📏</span>
+              <span class="fit-text"><strong>94% say True to Size</strong> · High Stretch Denim (Mid-weight)</span>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <button class="move-to-bag-btn" onclick="addToBag('Levis 711 Jeans', '28')">
+            <span>🛍️ Move Size 28 to Bag</span>
+          </button>
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+  <!-- Real Buyer Photos Modal -->
+  <div class="modal-overlay" id="buyerModal">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalTitle">Real Buyer Try-On Photos</h3>
+          <p style="font-size:11px;color:var(--muted)">Verified buyers wearing recommended size</p>
+        </div>
+        <button class="close-modal" onclick="closeBuyerModal()">✕</button>
+      </div>
+      <div class="buyer-grid">
+        <div class="buyer-card">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=80" alt="Buyer 1">
+          <div class="buyer-info">
+            <strong>Pooja M. · Verified</strong>
+            <span>Height: 5'4" · Size: M</span>
+            <p style="margin-top:3px;font-size:10px;color:#444">"Fabric drapes beautifully, no transparent lining issues!"</p>
+          </div>
+        </div>
+        <div class="buyer-card">
+          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80" alt="Buyer 2">
+          <div class="buyer-info">
+            <strong>Ananya K. · Verified</strong>
+            <span>Height: 5'6" · Size: M</span>
+            <p style="margin-top:3px;font-size:10px;color:#444">"Fits true on waist, exactly like the model."</p>
+          </div>
+        </div>
+      </div>
+      <button class="move-to-bag-btn" style="margin-top:16px" onclick="closeBuyerModal()">Looks Good · Close</button>
+    </div>
+  </div>
+
+  <!-- Success Toast -->
+  <div class="toast" id="toast">
+    <span>✅</span>
+    <span id="toastMsg">Moved to bag!</span>
+  </div>
+
+  <script>
+    let cartCount = 0;
+
+    // Feature 1: Filter by Occasion Folder Tabs
+    const tabs = document.querySelectorAll('.tab-pill');
+    const cards = document.querySelectorAll('.product-card');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const folder = tab.dataset.folder;
+        let count = 0;
+        cards.forEach(card => {
+          if (folder === 'all' || card.dataset.folder === folder) {
+            card.style.display = 'block';
+            count++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        document.getElementById('totalCount').textContent = '(' + count + ' item' + (count === 1 ? '' : 's') + ')';
+      });
+    });
+
+    // Feature 2: Interactive Size Selector & Fit Gauge
+    function selectSize(btn, size, fitAdvice) {
+      const card = btn.closest('.product-card');
+      card.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      
+      const fitText = card.querySelector('.fit-text');
+      fitText.innerHTML = '<strong>Size ' + size + ':</strong> ' + fitAdvice;
+
+      const ctaBtn = card.querySelector('.move-to-bag-btn span');
+      ctaBtn.textContent = '🛍️ Move Size ' + size + ' to Bag';
+    }
+
+    // Add to Bag Simulation
+    function addToBag(title, size) {
+      cartCount++;
+      document.getElementById('cartBadge').textContent = cartCount;
+      showToast('Moved ' + title + ' (Size ' + size + ') to Bag!');
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2500);
+    }
+
+    // Modal Drawer for Real Buyer Photos
+    function openBuyerModal(title) {
+      document.getElementById('modalTitle').textContent = 'Buyer Try-On: ' + title;
+      document.getElementById('buyerModal').classList.add('open');
+    }
+    function closeBuyerModal() {
+      document.getElementById('buyerModal').classList.remove('open');
+    }
+  </script>
+</body>
+</html>
