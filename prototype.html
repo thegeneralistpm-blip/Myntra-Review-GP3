@@ -137,47 +137,59 @@
     .persona-banner strong { color: var(--applique-text-primary); }
     .persona-banner a { color: var(--applique-primary); text-decoration: none; font-weight: 800; cursor: pointer; }
 
-    /* App Header */
+    /* App Header - Premium Redesign */
     .app-header {
-      padding: 12px 18px;
+      padding: 10px 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #f0f0f2;
+      border-bottom: 1px solid #f0f0f4;
       background: #ffffff;
       position: sticky;
       top: 0;
       z-index: 20;
       flex-shrink: 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
     }
     .brand-logo {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
     }
-    .brand-logo span {
-      font-size: 22px;
-      font-weight: 900;
-      color: var(--applique-primary);
-      letter-spacing: -1px;
+    .myntra-svg-logo {
+      height: 24px;
+      width: auto;
+      display: block;
     }
-    .bingo-badge-top {
-      background: var(--applique-primary);
-      color: #fff;
-      font-size: 11px;
+    .brand-name {
+      font-size: 20px;
       font-weight: 900;
-      padding: 2px 7px;
-      border-radius: 4px;
-      letter-spacing: 0.5px;
+      color: #282c3f;
+      letter-spacing: -0.5px;
+      font-family: 'Assistant', sans-serif;
+    }
+    .bingo-pill {
+      background: linear-gradient(135deg, #ff3f6c 0%, #ff6b8b 100%);
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 12px;
+      letter-spacing: 0.6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      box-shadow: 0 2px 6px rgba(255, 63, 108, 0.25);
     }
     .wishlist-count {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
-      color: var(--applique-text-primary);
+      color: #535766;
+      margin-left: 4px;
     }
     .wishlist-count small {
-      color: var(--applique-text-subdued);
-      font-weight: 500;
+      color: #94969f;
+      font-weight: 600;
     }
     .header-icons {
       display: flex;
@@ -395,38 +407,50 @@
       color: var(--applique-warning);
     }
 
-    /* Feature 5: Smart Value Check with Sparkline */
+    /* Feature 5: Smart Value Check (Clean Price When Added - No Graph) */
     .smart-value-badge {
       margin-top: 8px;
-      background: #fdfaf3;
-      border: 1px solid #faeccb;
+      background: #fffdf7;
+      border: 1px solid #f6e0b5;
       border-radius: var(--applique-radius-sm);
-      padding: 7px 10px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 11px;
+    }
+    .smart-value-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 10.5px;
-    }
-    .smart-value-left {
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
     }
     .smart-value-title {
       font-weight: 800;
-      color: #996200;
+      color: #78350f;
       display: flex;
       align-items: center;
       gap: 4px;
+    }
+    .price-drop-pill {
+      background: #dcfce7;
+      color: #15803d;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .price-stable-pill {
+      background: #f1f5f9;
+      color: #475569;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
     }
     .smart-value-note {
       color: var(--applique-text-secondary);
       font-weight: 600;
       font-size: 10px;
-    }
-    .sparkline-svg {
-      width: 52px;
-      height: 20px;
     }
 
     /* Sizing & FitConfidence */
@@ -732,14 +756,20 @@
       gap: 10px;
     }
     .p-avatar {
-      width: 38px;
-      height: 38px;
-      border-radius: var(--applique-radius-full);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
       background: #f0f0f4;
-      display: grid;
-      place-items: center;
-      font-size: 18px;
+      overflow: hidden;
       flex-shrink: 0;
+      border: 2px solid #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    .p-avatar-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
     .p-info { flex: 1; }
     .p-name { font-size: 13.5px; font-weight: 800; color: var(--applique-text-primary); }
@@ -788,17 +818,27 @@
       <a onclick="openPersonaDrawer()">Switch Profile ⇄</a>
     </div>
 
-    <!-- Top Header -->
+    <!-- Top Header - Premium Redesign with Myntra Logo -->
     <header class="app-header">
       <div class="brand-logo">
-        <span>Myntra</span>
-        <span class="bingo-badge-top">BINGO</span>
+        <svg class="myntra-svg-logo" viewBox="0 0 100 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 65L32 15L48 45L64 15L84 65H68L56 36L48 65H38L28 36L20 65H12Z" fill="url(#myntraHeaderGrad)"/>
+          <defs>
+            <linearGradient id="myntraHeaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ff3f6c" />
+              <stop offset="50%" stop-color="#ff7e29" />
+              <stop offset="100%" stop-color="#ff2459" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="brand-name">Myntra</span>
+        <span class="bingo-pill">🎯 BINGO</span>
         <div class="wishlist-count">Wishlist <small id="totalCount">(28 items)</small></div>
       </div>
       <div class="header-icons">
-        <span>🔍</span>
-        <div style="position:relative">
-          <span>🛍️</span>
+        <span style="font-size:18px; cursor:pointer;">🔍</span>
+        <div style="position:relative; cursor:pointer;">
+          <span style="font-size:18px;">🛍️</span>
           <div class="cart-badge" id="cartBadge">0</div>
         </div>
       </div>
@@ -853,10 +893,10 @@
         <button style="font-size:22px;border:0;background:transparent;cursor:pointer;color:#888" onclick="closePersonaDrawer()">✕</button>
       </div>
 
-      <!-- 5 Interactive Profiles -->
+      <!-- 5 Interactive Profiles with Real DP Photos -->
       <div class="persona-card-item" id="pCard1" onclick="switchPersona(1)">
         <div class="persona-item-top">
-          <div class="p-avatar">👩</div>
+          <div class="p-avatar"><img class="p-avatar-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Priya Sharma"></div>
           <div class="p-info">
             <div class="p-name">Priya Sharma <small style="color:var(--applique-primary);font-weight:800">(Target Segment)</small></div>
             <div class="p-meta">26, Bangalore · 28 Saved Items Across 8 Occasions</div>
@@ -868,7 +908,7 @@
 
       <div class="persona-card-item" id="pCard2" onclick="switchPersona(2)">
         <div class="persona-item-top">
-          <div class="p-avatar">👨</div>
+          <div class="p-avatar"><img class="p-avatar-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Rohan Mehta"></div>
           <div class="p-info">
             <div class="p-name">Rohan Mehta <small style="color:#0284c7;font-weight:800">(Workwear Specialist)</small></div>
             <div class="p-meta">29, Mumbai · 26 Saved Items Across 6 Occasions</div>
@@ -880,7 +920,7 @@
 
       <div class="persona-card-item" id="pCard3" onclick="switchPersona(3)">
         <div class="persona-item-top">
-          <div class="p-avatar">💃</div>
+          <div class="p-avatar"><img class="p-avatar-img" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="Ananya Verma"></div>
           <div class="p-info">
             <div class="p-name">Ananya Verma <small style="color:#d97706;font-weight:800">(Festive Shopper)</small></div>
             <div class="p-meta">24, Delhi · 27 Saved Items Across 7 Occasions</div>
@@ -892,7 +932,7 @@
 
       <div class="persona-card-item" id="pCard4" onclick="switchPersona(4)">
         <div class="persona-item-top">
-          <div class="p-avatar">✨</div>
+          <div class="p-avatar"><img class="p-avatar-img" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Meera Nair"></div>
           <div class="p-info">
             <div class="p-name">Meera Nair <small style="color:#7c3aed;font-weight:800">(Gen-Z Trend Explorer)</small></div>
             <div class="p-meta">22, Pune · 30 Saved Items Across 8 Occasions</div>
@@ -904,7 +944,7 @@
 
       <div class="persona-card-item" id="pCard5" onclick="switchPersona(5)">
         <div class="persona-item-top">
-          <div class="p-avatar">🛍️</div>
+          <div class="p-avatar"><img class="p-avatar-img" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="Sneha Rao"></div>
           <div class="p-info">
             <div class="p-name">Sneha Rao <small style="color:#059669;font-weight:800">(First-Time Shopper)</small></div>
             <div class="p-meta">21, Hyderabad · 25 Saved Items Across 5 Occasions</div>
@@ -1323,17 +1363,47 @@
             <span class="discount-pct">${p.discount}</span>
           </div>
 
-          <!-- Feature 5: Smart Value Check -->
-          <div class="smart-value-badge">
-            <div class="smart-value-left">
-              <span class="smart-value-title">💡 Smart Value Check</span>
-              <span class="smart-value-note">${p.valueScore}</span>
-            </div>
-            <svg class="sparkline-svg" viewBox="0 0 60 24" fill="none">
-              <path d="${p.sparkline}" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="58" cy="4" r="3" fill="#d97706"/>
-            </svg>
-          </div>
+          <!-- Feature 5: Smart Value Check (Clean Price When Added - No Graph) -->
+          ${(() => {
+            const currentVal = parseInt((p.price || '').replace(/[^\d]/g, ''), 10) || 0;
+            const mrpVal = parseInt((p.mrp || '').replace(/[^\d]/g, ''), 10) || currentVal;
+            const idNum = parseInt((p.id || '').replace(/[^\d]/g, ''), 10) || 0;
+            
+            let addedVal = p.addedPrice ? parseInt(p.addedPrice.replace(/[^\d]/g, ''), 10) : 0;
+            if (!addedVal) {
+              if (idNum % 2 !== 0 && mrpVal > currentVal) {
+                const diff = mrpVal - currentVal;
+                addedVal = currentVal + Math.round((diff * 0.35) / 50) * 50;
+              } else {
+                addedVal = currentVal;
+              }
+            }
+            
+            const savedStr = `₹${addedVal.toLocaleString('en-IN')}`;
+            const dropVal = addedVal - currentVal;
+            
+            if (dropVal > 0) {
+              return `
+                <div class="smart-value-badge">
+                  <div class="smart-value-header">
+                    <span class="smart-value-title">💡 Saved at ${savedStr}</span>
+                    <span class="price-drop-pill">📉 -₹${dropVal.toLocaleString('en-IN')} Drop</span>
+                  </div>
+                  <div class="smart-value-note">Historic 60-day floor low — zero fake sale stress.</div>
+                </div>
+              `;
+            } else {
+              return `
+                <div class="smart-value-badge">
+                  <div class="smart-value-header">
+                    <span class="smart-value-title">💡 Saved at ${savedStr}</span>
+                    <span class="price-stable-pill">✓ Best Price</span>
+                  </div>
+                  <div class="smart-value-note">Stable price floor — current price is lowest in 60 days.</div>
+                </div>
+              `;
+            }
+          })()}
 
           <!-- Sizing & FitConfidence -->
           <div class="fit-box">
